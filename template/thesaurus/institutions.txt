@@ -1,0 +1,685 @@
+Abu Dhabi School of Management ARE
+    business analytics program, abu dhabi school of management, abu dhabi, 0000, united arab emirates
+Affiliated Hospital of Jiangxi University of Traditional Chinese Medicine CHN
+    department of neurology, affiliated hospital of jiangxi university of traditional chinese medicine, nanchang, 330006, china
+Agricultural University of Athens GRC
+    department of regional and economic development, agricultural university of athens, nea poli, amfissa  33100, greece
+All India Institute of Medical Sciences IND
+    all india institute of medical sciences, new delhi, delhi, india
+    all india institute of medical sciences, raebareli, uttar pradesh, india
+Amhara National Regional State Health Bureau ETH
+    amhara national regional state health bureau, bahir dar, ethiopia
+Anhembi Morumbi University BRA
+    biomedical engineering department, anhembi morumbi university, sao paulo, sp, brazil
+Army Medical University CHN
+    department of military medical technology support, school of non-commissioned officer, army medical university, shijiazhuang, china
+Bahir Dar University ETH
+    school of public health, bahir dar university, bahir dar, ethiopia
+Bambino Gesu Children Hospital ITA
+    bambino gesu children hospital, roma, italy
+Banaras Hindu University IND
+    department of computer science, institute of science, banaras hindu university, varanasi, 221005, india
+Beijing Jiaotong University CHN
+    department of mathematics ,school of science, beijing jiaotong university, beijing, 100044, china
+Bennett University IND
+    department of electronics & communication engineering, bennett university, greater noida, india
+Bergische Universitat Wuppertal DEU
+    center for health economics and health services research, bergische universitat wuppertal, gaussstrasse 20, wuppertal, 42119, germany
+    lehrstuhl fur angewandte mathematik und numerische analysis, bergische universitat wuppertal, gaussstrasse 20, wuppertal, 42119, germany
+Bigelow Laboratory for Ocean Sciences USA
+    bigelow laboratory for ocean sciences, east boothbay, me, united states
+Binghamton University USA
+    department of economics, binghamton university, 4400 vestal parkway east, po box 6000, binghamton, ny  13902-6000, united states
+Biocomplexity Institute of Virginia Tech USA
+    social decision analytics laboratory, biocomplexity institute of virginia tech, 900 n glebe rd., arlington, va  22203, united states
+Brazilian Ministry of Economy BRA
+    brazilian ministry of economy, brasilia, distrito federal  70048-900, brazil
+Burapha University THA
+    department of mathematics, burapha university, 169 muangchonburi, thailand
+Carnegie Mellon University USA
+    computer science dept., carnegie mellon university, united states
+Carthage University TUN
+    laboratory of environmental sciences and technologies, higher institute of sciences and technologies of environment, carthage university, tunis, tunisia
+Case Western Reserve University USA
+    department of mathematics, applied mathematics and statistics, case western reserve university, cleveland, oh, united states
+    center for community health integration, case western reserve university, cleveland, oh, united states
+Center for Innovation BRA
+    center for innovation, technology and education - cite, parque tecnologico de sao jose dos campos, estrada dr. altino bondensan, 500, sao jose dos campos, sp  12247-016, brazil
+Center for Ocean USA
+    center for ocean-land-atmosphere studies, calverton, md 20705-3106, united states
+Centre for Advanced Post Graduate Studies IND
+    department of mechanical engineering, centre for advanced post graduate studies, bput, rourkela, odisha, india
+Centro de Investigacion En Matematicas MEX
+    centro de investigacion en matematicas a.c., jalisco s/n, col. valenciana, cp: 36240, guanajuato, gto, mexico
+Chandigarh Engineering College IND
+    department of computer science and engineering, chandigarh engineering college, landran, mohali, india
+Chandrakasem Rajabhat University THA
+    information technology, faculty of science, chandrakasem rajabhat university, bangkok, thailand
+Changsha Research Institute of Mining and Metallurgy Co CHN
+    changsha research institute of mining and metallurgy co.,ltd, changsha, hunan, 410000, china
+China University of Geosciences CHN
+    school of mathematics and physics, china university of geosciences, wuhan, 430074, china
+    school of information engineering, china university of geosciences, beijing, 100083, china
+    school of information engineering, china university of geosciences, beijing, china
+Chitkara University Institute of Engineering and Technology IND
+    chitkara university institute of engineering and technology, chitkara university, punjab, india
+Chouaib Doukkali University MAR
+    molecular modeling and spectroscopy research team, faculty of science, chouaib doukkali university, p.o. box 20, el jadida, 24000, morocco
+Christian Medical College IND
+    associate research officer, department of biostatistics, christian medical college, vellore, tamil nadu  632 002, india
+    department of biostatistics, christian medical college, vellore, tamil nadu  632 002, india
+Climate Research Laboratory ESP
+    icrea, climate research laboratory, barcelona, catalunya, spain
+Colorado State University USA
+    department of statistics, colorado state university, 851 oval dr, fort collins, co  80523-1877, united states
+Columbia University USA
+    department of environmental health sciences, mailman school of public health, columbia university, new york, ny, united states
+Cornell University USA
+    center for applied mathematics, cornell university, 657 frank h.t. rhodes hall, ithaca, ny  14853, united states
+Department of Biostatistics USA
+    department of biostatistics, harvard t.h. chan school of public health, boston, united states
+    department of biostatistics, uw school of public health, seattle, wa, united states
+    department of biostatistics, fielding school of public health, ucla, los angeles, ca, united states
+Department of Community and Family Medicine IND
+    department of community and family medicine, aiims bhopal, madhya pradesh, india
+Department of Emergency Medicine USA
+    department of emergency medicine, david geffen school of medicine, ucla, los angeles, ca, united states
+Department of Epidemiology FRA
+    department of epidemiology, sanofi pasteur msd, lyon, france
+Department of Epidemiology USA
+    department of epidemiology, harvard t.h. chan school of public health, boston, united states
+Department of Gastroenterology and Hepatology Medicine PAK
+    department of gastroenterology and hepatology medicine, district head quarters hospital jhang35200, pakistan
+Department of Global Health and Population USA
+    department of global health and population, harvard t.h. chan school of public health, boston, united states
+Department of Gynaecology and Obstetrics PAK
+    department of gynaecology and obstetrics, district head quarters hospital jhang35200, pakistan
+Department of Infectious Diseases GBR
+    disease control unit, department of infectious diseases, london sch. of hyg. and trop. med., keppel street, london wc1e 7ht, united kingdom
+Department of Medicine USA
+    department of medicine, david geffen school of medicine, ucla, los angeles, ca, united states
+    department of medicine, uw school of medicine, seattle, wa, united states
+Dongbei University of Finance and Economics CHN
+    center of econometric analysis and forecasting, dongbei university of finance and economics, dalian 116025, china
+    school of mathematics and quantitative economics, dongbei university of finance and economics, dalian 116025, china
+Earth Resource Observation and Science Center USA
+    earth resource observation and science (eros) center, united states geological survey, sioux falls, sd, united states
+East Asia Office IND
+    operational research, the union south-east asia office, new delhi, delhi, india
+Estacio de Sa University BRA
+    estacio de sa university, nova fribugo, rj, brazil
+Euro Mediterranean Scientific Biomedical Institute BEL
+    euro mediterranean scientific biomedical institute (isbem), bruxelles, 1040, belgium
+Federal Institute of Rio Grande do Norte BRA
+    department of computer science, federal institute of rio grande do norte, mossoro, rn  59628-330, brazil
+Federal Rural University of Pernambuco BRA
+    department of statistics and informatics, federal rural university of pernambuco, recife-pe, brazil
+Federal University of Cariri BRA
+    center for science and technology, federal university of cariri, juazeiro do norte-ce, brazil
+Federal University of Rio Grande do Norte BRA
+    department of computer engineering and automation, federal university of rio grande do norte, natal, rn  59078-970, brazil
+Fogarty International Center USA
+    fogarty international center, national institutes of health, 16 center drive, bethesda, md 20892, united states
+Fudan University CHN
+    department of epidemiology and biostatistics, school of public health, fudan university, shanghai, 200032, china
+Fudan Universityshanghai  200032 CHN
+    department of epidemiology and biostatistics, school of public health, fudan universityshanghai  200032, china
+G B Pant Engineering College IND
+    department of computer science, g. b. pant engineering college, delhi, india
+Gamby College of Medical Science ETH
+    gamby college of medical science, bahir dar, ethiopia
+Georgia State University USA
+    department of mathematics and statistics, georgia state university, atlanta, united states
+    school of public health, georgia state university, atlanta, united states
+    department of mathematics and statistics, georgia state university, atlanta, ga, united states
+    school of public health, georgia state university, atlanta, ga, united states
+Government College of Engineering IND
+    department of mechanical engineering, government college of engineering, kalahandi, bhawanipatna, odisha, india
+    department of electrical engineering, government college of engineering, kalahandi, bhawanipatna, odisha, india
+Group Health Research Institute USA
+    group health research institute, seattle, united states
+Guangzhou Women and Childrens Medical Center CHN
+    guangzhou women and children's medical center, guangzhou, 510623, china
+Gulf of Maine Research Institute USA
+    gulf of maine research institute, portland, me, united states
+Harbin Institute of Technology CHN
+    department of computer science and technology, harbin institute of technology, harbin, china
+Harvard Medical School USA
+    harvard medical school, boston, united states
+Helmholtz Institute Freiberg for Resource Technology DEU
+    machine learning group, helmholtz-zentrum dresden-rossendorf, helmholtz institute freiberg for resource technology, chemnitzer straße 40, freiberg, 09599, germany
+    helmholtz-zentrum dresden-rossendorf, helmholtz institute freiberg for resource technology, chemnitzer straße 40, freiberg, 09599, germany
+Hematology Hospital CHN
+    hematology hospital, chinese academy of medical sciences, heping, tianjin, 300020, china
+Hiroshima University JPN
+    school of health science, hiroshima university, kasumi, minami-ku, hiroshima, japan
+Hokkaido University JPN
+    hokkaido university, school of medicine, sapporo 060, japan
+    faculty of engineering, hokkaido university, sapporo 060, japan
+Huaiyin Institute of Technology CHN
+    school of life science and food engineering, huaiyin institute of technology, huaian, 223003, china
+Ibm Tj Watson Research Center USA
+    ibm t.j. watson research center, united states
+Ii Mechnikov Research Institute of Vaccines and Sera RUS
+    i.i. mechnikov research institute of vaccines and sera, small kazenny lane, 5a, moscow, 105064, russian federation
+    i.i. mechnikov research institute of vaccines and sera, moscow, russian federation
+Imam Abdulrahman Bin Faisal University SAU
+    computer science department, college of science and humanities in jubail, imam abdulrahman bin faisal university, p.o. box 31961, jubail, saudi arabia
+    biomedical engineering department, college of engineering, imam abdulrahman bin faisal university, p.o. box 1982, dammam, 31451, saudi arabia
+Imam Mohammad Ibn Saud Islamic University SAU
+    college of computer and information sciences, imam mohammad ibn saud islamic university, riyadh, saudi arabia
+Imperial College London GBR
+    mrc centre for outbreak analysis and modelling, department of infectious disease epidemiology, imperial college london, norfolk place, london w2 1pg, united kingdom
+    mrc centre for global infectious disease analysis, imperial college london, london, w2 1pg, united kingdom
+Indian Institute of Technology Delhi IND
+    department of electrical engineering, indian institute of technology delhi, delhi, india
+Indian Institute of Technology IND
+    department of electrical engineering, indian institute of technology, jodhpur, 342037, india
+Indian Statistical Institute IND
+    indian statistical institute, kolkata, west bengal  700 108, india
+Institut de Recherche Pour Le Developpement/Umi 233 FRA
+    institut de recherche pour le developpement/umi 233, montpellier, france
+Institute of Applied Sciences and Intelligent Systems ITA
+    institute of applied sciences and intelligent systems, lecce, 73100, italy
+Institute of Epidemiology and Microbiology CHN
+    institute of epidemiology and microbiology, chinese academy of preventive medicine, beijing, china
+Institute of Medical Informatics DEU
+    institute of medical informatics, biometry, and epidemiology, friedrich-alexander-universitat erlangen-nurnberg, erlangen, 91054, germany
+Instituto Abinader BRA
+    instituto abinader, manaus, am, brazil
+Instituto Mexicano del Petroleo MEX
+    programa en matematicas aplicadas y computacion, instituto mexicano del petroleo, mexico d.f., mexico
+Instituto de Medicina Integral Professor Fernando Figueira BRA
+    instituto de medicina integral professor fernando figueira, recife, pe, brazil
+International Center for Diarrheal Disease Research BGD
+    international center for diarrheal disease research, dhaka 1000, bangladesh
+International Center for Hydrology Dino Tonini ITA
+    dipartimento image, international center for hydrology 'dino tonini', universita di padova, padova, italy
+International Hellenic University GRC
+    laboratory of complex systems, department of physics, faculty of sciences, international hellenic university, kavala campus, st. loukas, 65404, greece
+International Islamic University PAK
+    international islamic university, sector h-10, islamabad, 45210, pakistan
+International Management Institute Bhubaneswar IND
+    international management institute bhubaneswar, gothapatna, bhubaneswar, odisha, india
+International Union Against Tuberculosis and Lung Disease FRA
+    centre for operational research, international union against tuberculosis and lung disease (the union), paris, france
+International University VNM
+    international university, vietnam national university hcmc, viet nam
+Iowa State University USA
+    department of statistics, iowa state university, 2409 snedecor hall, ames, ia  50011, united states
+Iqra University PAK
+    iqra university, islamabad sector h-9/1, islamabad, 45210, pakistan
+Istanbul Gelisim University TUR
+    department of computer engineering, faculty of engineering and architecture, istanbul gelisim university, istanbul, turkey
+Itmo University RUS
+    itmo university, saint-petersburg, russian federation
+    itmo university, 49 kronverksky pr 197101, st. petersburg, russian federation
+J Selye University SVK
+    department of mathematics, j. selye university, komarno, 94501, slovakia
+Jawaharlal Institute of Postgraduate Medical Education and Research IND
+    jawaharlal institute of postgraduate medical education and research (jipmer), puducherry, india
+Jiangsu Information Analysis Engineering Laboratory CHN
+    jiangsu information analysis engineering laboratory, nanjing, china
+    jiangsu information analysis engineering laboratory, nanjing 211169, china
+Jiangsu University CHN
+    general office, affiliated hospital of jiangsu university, zhenjiang, 212000, china
+Jigjiga University ETH
+    assistant professor in bio-statistics, jigjiga university, department of statistics, ethiopia
+Jinling Institute of Technology CHN
+    school of information technology, jinling institute of technology, nanjing, china
+    school of information technology, jinling institute of technology, nanjing 211169, china
+Johannes Kepler University In Linz AUT
+    linz institute of technology & department of applied statistics, johannes kepler university in linz, linz, austria
+Jomo Kenyatta University of Agriculture and Technology KEN
+    school of mathematical sciences, jomo kenyatta university of agriculture and technology, nairobi, kenya
+Kerman University of Medical Sciences IRN
+    modeling in health research center, institute for futures studies in health, kerman university of medical sciences, kerman, iran
+    department of biostatistics and epidemiology, faculty of health, kerman university of medical sciences, kerman, iran
+King Abdulaziz University SAU
+    department of mathematics, faculty of science, king abdulaziz university, jeddah, 21589, saudi arabia
+    nonlinear analysis and applied mathematics (naam) research group, department of mathematics, faculty of science, king abdulaziz university, jeddah, 21589, saudi arabia
+Kookmin University KOR
+    nano and electronic physics, kookmin university, 136-702 seoul, south korea
+Korea Institute of Science and Technology KOR
+    sensor system research center, korea institute of science and technology (kist), 136-791 seoul, south korea
+Kunming University of Science and Technology CHN
+    department of applied mathematics, kunming university of science and technology, kunming, yunnan 650093, china
+Kursk State University RUS
+    department of theoretical physics, kursk state university, radishcheva st., 33, kursk, 305000, russian federation
+Kyushu Institute of Technology JPN
+    faculty of computer science and systems engineering, kyushu institute of technology, kawazu 680-4, iizuka, fukuoka, 820-8502, japan
+Kyushu University JPN
+    igses, kyushu university, fukuoka, japan
+Laboratoire de Biometrie Et Biologie Evolutive FRA
+    laboratoire de biometrie et biologie evolutive, equipe biotatistique-sante, cnrs umr5558, villeurbanne, france
+Laboratory of Ecohydrology Echo/Iste/Enac CHE
+    laboratory of ecohydrology echo/iste/enac, ecole polytechnique federale lausanne, lausanne, switzerland
+Liaoning Normal University CHN
+    center for studies of marine economy and sustainable development, liaoning normal university, dalian 116029, china
+Lomonosov Moscow State University RUS
+    lomonosov moscow state university, moscow, russian federation
+London School of Economics GBR
+    london school of economics, houghton street, london wc2a 2ae, united kingdom
+London School of Hygiene  and  Tropical Medicine GBR
+    faculty of infectious and tropical diseases, london school of hygiene & tropical medicine, london, united kingdom
+Los Alamos National Laboratory USA
+    los alamos national laboratory, los alamos, nm  87545, united states
+M G Degroote Institute for Infectious Disease Research CAN
+    m. g. degroote institute for infectious disease research, 1280 main street west, hamilton, on  l8s 4k1, canada
+Machakos University KEN
+    mathematics and statistics department, machakos university, machakos, kenya
+Mahidol University THA
+    department of tropical hygiene, faculty of tropical medicine, mahidol university, bangkok, thailand
+    rural health training and research centre, faculty of public health, mahidol university, bangkok, thailand
+    mahidol-oxford unit, faculty of tropical medicine, mahidol university, bangkok, thailand
+    faculty of ict, mahidol university, nakhon pathom, thailand
+    faculty of tropical medicine, mahidol university, bangkok, thailand
+Malaria Association ETH
+    health, development, and anti-malaria association, addis ababa, ethiopia
+Malla Reddy Engineering College IND
+    department of computer science and engineering, malla reddy engineering college, hyderabad, india
+Marseille University FRA
+    theoretical neuroscience group, institute of neuroscience systems, aix-marseille university, marseille, france
+Maulana Azad Medical College IND
+    maulana azad medical college (mamc), new delhi, india
+Mbm Engineering College IND
+    department of electrical engineering, m.b.m. engineering college, jodhpur, 342011, india
+Mcmaster University CAN
+    dept. of mathematics and statistics, mcmaster university, hamilton, ont. l8s 4k1, canada
+    department of mathematics and statistics, mcmaster university, hamilton, on l8s 4k1, canada
+    department of mathematics and statistics, mcmaster university, 1280 main street west, hamilton, on  l8s 4k1, canada
+Meinian Institute of Healthbeijing  100191 CHN
+    meinian institute of healthbeijing  100191, china
+Ministry of Environment IND
+    member of indian forest service, ministry of environment, forest and climate change, new delhi, india
+Ministry of Health and Medical Education IRN
+    center for disease control and prevention, ministry of health and medical education, tehran, iran
+Montana State University USA
+    northern rocky mountain science center, us geological survey, montana state university, bozeman, mt 59717, united states
+    department of ecology, 229 ajm johnson hall, montana state university, bozeman, mt 59717, united states
+    229 ajm johnson hall, montana state university, bozeman, mt 59717, united states
+Nanjing Forestry University CHN
+    college of science, nanjing forestry university, nanjing, 210037, china
+Nanjing Medical University CHN
+    departments of epidemiology and biostatistics, center for global health, school of public health, nanjing medical university, nanjing, 211166, china
+    department of biostatistics, school of public health, nanjing medical university, nanjing, 211166, china
+Nanjing University of Posts and Telecommunications CHN
+    center for control and intelligence technology, nanjing university of posts and telecommunications, nanjing, china
+    center for control and intelligence technology, nanjing university of posts and telecommunications, nanjing 210003, china
+Nanjing University of Science and Technology CHN
+    department of management science and engineering, nanjing university of science and technology, nanjing, 210094, china
+National Aerospace University UKR
+    mathematical modeling and artificial intelligence department, national aerospace university, kharkiv aviation institute, kharkiv, ukraine
+National Center for Atmospheric Research USA
+    climate and global dynamics division, national center for atmospheric research, boulder, co, united states
+National Clinical Research Center for Geriatrics Diseases CHN
+    beijing key laboratory of aging and geriatrics, national clinical research center for geriatrics diseases, second medical center of chinese, pla general hospital, institute of geriatrics, beijing, china
+National Higher School of Electricity and Mechanics MAR
+    national higher school of electricity and mechanics, casablanca, morocco
+National Institute for Space Research BRA
+    national institute for space research, sao jose dos campos, brazil
+National Institute of Infectious Diseases JPN
+    infectious diseases surveillance center, national institute of infectious diseases, 1-23-1 toyama, shinjuku, tokyo, japan
+National Institute of Technology Hamirpur IND
+    department of electronics & communication engineering, national institute of technology hamirpur, hamirpur, india
+National Institute of Technology IND
+    national institute of technology, rourkela, india
+National Institute of Technology Jamshedpur IND
+    department of computer applications, national institute of technology jamshedpur, jamshedpur, jharkhand, india
+National Research University RUS
+    a.n. tikhonov moscow institute of electronics and mathematics, national research university, higher school of economics”, moscow, russian federation
+National Taiwan University TWN
+    department of bioenvironmental systems engineering, national taiwan university, no. 1 roosevelt rd. sec. 4, taipei, 10617, taiwan
+National Technical University of Athens GRC
+    school of applied mathematics and physical sciences, national technical university of athens, gr 157 80, athens, greece
+    national technical university of athens, applied mathematics and physical sciences, athens, greece
+National University of Defense Technology CHN
+    school of system engineer, national university of defense technology, changsha, hunan, 410012, china
+National University of Singapore SGP
+    department of statistics and applied probability, risk management institute, national university of singapore, singapore
+Network Dynamics and Simulation Science Laboratory USA
+    network dynamics and simulation science laboratory, virginia tech, blacksburg, va  24060, united states
+Nguyen Tat Thanh University VNM
+    institute of science and technology of industry 4.0, nguyen tat thanh university, viet nam
+North China Electric Power University CHN
+    north china electric power university, beijing, china
+Obuda University HUN
+    john von neumann faculty of informatics, obuda university, budapest, 1034, hungary
+    kalman kando faculty of electrical engineering, obuda university, budapest, 1034, hungary
+Odense University DNK
+    department of biochemistry, odense university, odense m, denmark
+Oregon Health and Oscience University USA
+    medicine department, oregon health and oscience university, portland, or  97239, united states
+Pakistan Institute of Engineering and Applied Sciences PAK
+    department of computer & information sciences, pakistan institute of engineering & applied sciences (pieas), nilore, islamabad, 45650, pakistan
+Peking University CHN
+    department of business statistics and econometrics, guanghua school of management, peking university, beijing, 100871, china
+    department of epidemiology and biostatistics, school of public health, peking university, beijing, 100191, china
+Pennsylvania State University USA
+    depts. of entomology and biology, 501 asi bldg., pennsylvania state university, university park, pa 16802, united states
+    center for infectious disease dynamics, pennsylvania state university, 208 mueller lab., university park, pa 16802, united states
+Phenikaa Research and Technology Institute VNM
+    phenikaa research and technology institute (prati), a&a green phoenix group, 167 hoang ngan, hanoi, 100000, viet nam
+Phenikaa University VNM
+    faculty of electrical and electronic engineering, phenikaa institute for advanced study (pias), phenikaa university, yen nghia, ha dong district, hanoi, 100000, viet nam
+Pj Safarik University SVK
+    institute of mathematics, faculty of science, p.j. safarik university, kosice, slovakia
+Pmas Arid Agriculture University PAK
+    institute for geo-information and earth observation (igeo), pmas arid agriculture university, rawalpindi, pakistan
+Politecnico Di Milano ITA
+    dipartimento di elettronica e informazione, politecnico di milano, via ponzio 34/5, 20133 milano, italy
+    dipartimento di elettronica e informazione, politecnico di milano, milano, italy
+Pondicherry Institute of Medical Science IND
+    pondicherry institute of medical science (pims), puducherry, india
+Pontificia Universidad Javeriana COL
+    departamento de salud publica y epidemiologia, pontificia universidad javeriana, cali, colombia
+    facultad de ingenieria y ciencias, pontificia universidad javeriana, cali, colombia
+Princeton University USA
+    department of ecology and evolutionary biology, princeton university, princeton, nj 08544, united states
+    department of civil and environmental engineering, princeton university, princeton, nj, united states
+Psychiatric Biostatistics Laboratory USA
+    psychiatric biostatistics laboratory, mclean hospital, belmont, united states
+Queensland University of Technology AUS
+    school of mathematical sciences, queensland university of technology, brisbane, qld  4001, australia
+    acems arc centre of excellence, queensland university of technology, brisbane, qld  4001, australia
+    institute of health and biomedical innovation, queensland university of technology, brisbane, qld, australia
+Quixada Catholic University Center BRA
+    quixada catholic university center, quixada-ce, brazil
+Roskilde University DNK
+    department of mathematics and physics, roskilde university, dk-4000 roskilde, denmark
+Samsun University TUR
+    samsun university, faculty of engineering, industrial engineering department, samsun, 55420, turkey
+San Diego State University USA
+    department of geography, san diego state university, storm hall 314, 5500 campanile drive, san diego, ca, 92182-4493, united states
+Santo Antonio de Padua College BRA
+    santo antonio de padua college, santo antonio de padua, rj, brazil
+Sapienza Universita Di Roma ITA
+    dipartimento di informatica, sapienza universita di roma, italy
+Sapporo Medical University JPN
+    department of hygiene, sapporo medical university, school of medicine, sapporo 060, japan
+    department of public health, sapporo medical university, chuo-ku,sapporo, japan
+    department of public health, sapporo medical university, japan, chuo-ku, sapporo, japan
+Sapporo Medical University School of Medicine JPN
+    department of hygiene, sapporo medical university school of medicine, s-1, w-17, chuo-ku, sapporo 060-8556, japan
+    center for medical education, department of liberal arts and sciences, sapporo medical university school of medicine, sapporo 060-8556, japan
+Satya Wacana Christian University IDN
+    department of informatics, satya wacana christian university, diponegoro 52-60, salatiga, 50711, indonesia
+Seacom Skills University IND
+    department of geography, seacom skills university, kendradangal, bolpur, birbhum, west bengal  731236, india
+Sfax University TUN
+    laboratory of probability and statistics, faculty of sciences of sfax, sfax university, sfax, tunisia
+Shaanxi Normal University CHN
+    school of computer science, shaanxi normal university, xi’an, 710119, china
+    college of life sciences, shaanxi normal university, xi’an, 710119, china
+Shanghai Jiao Tong University CHN
+    school of electronic information and electrical engineering, shanghai jiao tong university, shanghai, 200240, china
+    school of mechanical engineering, shanghai jiao tong university, shanghai, 200240, china
+    zhiyuan college, shanghai jiao tong university, shanghai, 200240, china
+Shanghai University of Traditional Chinese Medicine CHN
+    shanghai university of traditional chinese medicine, shanghai, 201203, china
+Sheffield Hallam University GBR
+    department of engineering and mathematics, sheffield hallam university, sheffield, s1 1wb, united kingdom
+Shenzhen University CHN
+    college of economics, shenzhen university, shenzhen, guangdong  518060, china
+Shiraz University of Medical Sciences IRN
+    department of medical physics and engineering, shiraz university of medical sciences, shiraz, iran
+Sichuan University of Science and Engineering CHN
+    school of mathematics and statistics, sichuan university of science and engineering, zigong, 643000, china
+Social Decision Analytics Laboratory USA
+    social decision analytics laboratory, virginia tech, united states
+South Dakota State University USA
+    geographic information science center of excellence, south dakota state university, brookings, sd, united states
+    department of electrical engineering and computer science, south dakota state university, brookings sd, united states
+    geospatial sciences center of excellence, south dakota state university, brookings, sd, united states
+    department of electrical engineering and computer science, south dakota state university, brookings, sd, united states
+Southeast University CHN
+    department of mathematics, southeast university, nanjing, 210096, china
+Sri Sri University IND
+    sri sri university, cuttack, india
+State University of New York USA
+    school of business, state university of new york, oswego, ny  13126, united states
+Strathmore University KEN
+    institute of mathematical sciences, strathmore university, nairobi, kenya
+Sultan Moulay Slimane University MAR
+    electrochemistry and molecular inorganic materials team, sultan moulay slimane university, faculty of sciences and technology, beni-mellal, morocco
+Sun Yat-Sen University CHN
+    department of medical statistics, school of public health, sun yat-sen university, guangzhou, 510080, china
+Super Specialty Cancer Institute and Hospital IND
+    super specialty cancer institute and hospital, lucknow, india
+Taipei Medical University Hospital TWN
+    taipei medical university hospital, taipei, taiwan
+    division of infectious disease, department of internal medicine, taipei medical university hospital, taipei, taiwan
+Taipei Medical University TWN
+    department of surgery, school of medicine, college of medicine, taipei medical university, taipei, taiwan
+    graduate institute of biomedical informatics, taipei medical university, 250 wuxing street, taipei, 11031, taiwan
+Technische Universitat Dresden DEU
+    faculty of civil engineering, technische universitat dresden, dresden, 01069, germany
+Technology Innovation Center for Territory Spatial Big CHN
+    technology innovation center for territory spatial big-data, mnr of china, beijing, china
+Technology Innovation Center of Territory Spatial Big CHN
+    technology innovation center of territory spatial big-data, mnr of china, beijing, 100036, china
+Tecnologico de Monterrey MEX
+    tecnologico de monterrey, school of engineering and sciences, campus monterrey, ave. eugenio garza sada 2501, monterrey, n.l., cp 64849, mexico
+Tehran University of Medical Sciences IRN
+    department of medical entomology and vector control, school of public health, tehran university of medical sciences, tehran, iran
+    non-communicable diseases research center, endocrinology and metabolism population sciences institute, tehran university of medical sciences, tehran, iran
+    hematology-oncology and stem cell transplantation research center, tehran university of medical sciences, tehran, iran
+    department of epidemiology and biostatistics, school of public health, tehran university of medical sciences, tehran, iran
+Tel Aviv University Biomathematics Unit ISR
+    tel aviv university biomathematics unit, faculty life science, tel-aviv university, p.o. 39040, ramt aviv, israel
+Texas Tech University USA
+    department of mathematics and statistics, texas tech university, 2500 broadway, lubbock, tx  79409, united states
+Thapar Institute of Engineering  and  Technology IND
+    dept. of ece, thapar institute of engineering & technology, patiala, india
+The Royal Institute of Technology SWE
+    the royal institute of technology, department of mathematics, 10044, stockholm, sweden
+Thuringian Institute of Sustainability and Climate Protection DEU
+    thuringian institute of sustainability and climate protection, jena, 07743, germany
+Tianjin University of Science  and  Technology CHN
+    college of science, tianjin university of science & technology, binhai, tianjin, 300457, china
+Tien Giang Preventive Health Center VNM
+    tien giang preventive health center, viet nam
+Ton Duc Thang University VNM
+    faculty of information technology, ton duc thang university, ho chi minh city, viet nam
+Tottori University JPN
+    information media center, tottori university, nishi-machi 86, yonago, japan
+    information media center, tottori university, japan, koyama, tottori, 4-101, japan
+Universidad Adolfo Ibanez CHL
+    faculty of engineering & sciences, universidad adolfo ibanez, chile
+Universidad Finis Terrae CHL
+    faculty of engineering, universidad finis terrae, chile
+Universidad Nacional Autonoma de Mexico MEX
+    conacyt - institute of mathematics, universidad nacional autonoma de mexico (unam), juriquilla, 76230, mexico
+    institute of mathematics, universidad nacional autonoma de mexico (unam), juriquilla, 76230, mexico
+Universidad Politecnica de Valencia ESP
+    instituto de matematica multidiskiplinar, universidad politecnica de valencia, camino de vera s/n, e-46022 valencia, spain
+Universidad de Cordoba COL
+    departamento de matematicas y estadistica, universidad de cordoba, monteria, colombia
+Universidad de Granada ESP
+    department of statistics and operations research, university of granada, campus fuentenueva s/n, granada, 18071, spain
+Universidad de Los Andes VEN
+    departamento de calculo, universidad de los andes, merida, venezuela
+Universidad de Valparaiso CHL
+    department of statistics, university of valparaiso, valparaiso, chile
+    centro de micro-bioinnovacion, escuela de nutricion y dietetica, facultad de farmacia, universidad de valparaiso, valparaiso, chile
+Universidad del Valle COL
+    escuela de salud publica, facultad de salud, universidad del valle, cali, colombia
+Universidade Federal Da Paraiba BRA
+    universidade federal da paraiba, departamento de biologia molecular, joao pessoa, pb, brazil
+    universidade federal da paraiba, departamento de estatistica, joao pessoa, pb, brazil
+Universidade Federal de Minas Gerais BRA
+    universidade federal de minas gerais, departamento de matematica, avenida antonio carlos, 6627, caixa postal 702, 31270-901 belo horizonte, mg, brazil
+    universidade federal de minas gerais, departamento de fisica, brazil
+Universidade Federal de Pernambuco BRA
+    universidade federal de pernambuco, departamento de genetica, recife, pe, brazil
+    universidade federal de pernambuco, departamento de medicina tropical, recife, pe, brazil
+Universidade Federal do Para BRA
+    federal university of para, belem, brazil
+Universidade Presbiteriana Mackenzie BRA
+    ps-graduao em engenharia eletrica, escola de engenharia, universidade presbiteriana mackenzie, rua da consolao n.896, 01302-907 so paulo, sp, brazil
+    universidade presbiteriana mackenzie, escola de engenharia, sao paulo, sp, brazil
+Universidade de Sao Paulo BRA
+    universidade de sao paulo, escola politecnica, sao paulo, sp, brazil
+    departamento de engenharia aeronautica, universidade de sao paulo, sao paulo, sp, brazil
+    faculdade de medicina de ribeirao preto, universidade de sao paulo, ribeirao preto, brazil
+    federal university of sao paulo, sao jose dos campos, brazil
+    university of sao paulo, sao carlos, brazil
+Universidade de So Paulo BRA
+    departamento de engenharia de telecomunicaes e controle, escola politecnica, universidade de so paulo, avendia professor luciano gualberto travessa 3 n.380, 05508-900 so paulo, sp, brazil
+    departamento de fisiologia, instituto de biocincias, universidade de so paulo, rua do mato travessa 14 n.321, 05508-900 so paulo, sp, brazil
+Universita Degli Studi Di Milano ITA
+    universita degli studi di milano, dipartimento di scienze della terra “a. desio”, via cicognara 7, milano, 20129, italy
+Universita Degli Studi Di Parma ITA
+    dipartimento di scienze ambientali, universita degli studi di parma, 43100 parma, italy
+Universitas Padjadjaran IDN
+    department of mathematics, faculty of mathematics and natural sciences, universitas padjadjaran, jl. raya bandung-sumedang km 21, jatinangor, 45363, indonesia
+Universitat Autonoma de Barcelona ESP
+    dept. of telecommunications and systems engineering, universitat autonoma de barcelona, bellaterra, barcelona, 08193, spain
+Universitat Oldenburg DEU
+    medizinische physik and cluster of excellence hearing4all, universitat oldenburg, oldenburg, 26111, germany
+Universitat de Girona ESP
+    departament d'informatica, matematica aplicada i estadistica, universitat de girona, 17071 girona, catalonia, spain
+Universitatsklinikum Heidelberg DEU
+    universitatsklinikum heidelberg, im neuenheimer feld 410, heidelberg, 69120, germany
+Universitatsstrasse 1 DEU
+    medizinische fakultat, heinrich-heine-universitat dusseldorf, universitatsstrasse 1, dusseldorf, 40225, germany
+Universite Lyon 1 FRA
+    universite lyon 1, villeurbanne, france
+Universite Pierre Et Marie Curie FRA
+    epidemiol. and information sciences, inserm unit 444, universite pierre et marie curie, paris, france
+Universite Sultan Moulay Slimane MAR
+    laboratory of chemical processes and applied materials, faculte des sciences et techniques, universite sultan moulay slimane, b.p. 523, beni-mellal, morocco
+    laboratoire de chimie organique et analytiques, faculte des sciences et techniques, universite sultan moulay slimane, b.p. 523, beni-mellal, morocco
+Universite de Lyon FRA
+    universite de lyon, lyon, france
+Universiti Putra Malaysia MYS
+    department of electrical and electronic engineering, faculty of engineering, universiti putra malaysia, serdang, selangor  43400, malaysia
+    department of computer and wireless communication, faculty of engineering, universiti putra malaysia, serdang, selangor  43400, malaysia
+    laboratory of computational statistics and operations research, institute for mathematical research, universiti putra malaysia, serdang, selangor  43400, malaysia
+Universiti Sains Malaysia Usm MYS
+    school of mathematical sciences, universiti sains malaysia usm, pulau pinang, 11800, malaysia
+Universiti Tenaga Nasional MYS
+    college of computer science and information technology, universiti tenaga nasional, kajang, 43000, malaysia
+University Brunei Darussalam BRN
+    institute for applied data analytics, university brunei darussalam, jalan tungku link, gadong, be 1410, brunei darussalam
+University Medical Center Rotterdam NLD
+    department of public health, erasmus mc, university medical center rotterdam, netherlands
+University of Akron USA
+    department of mathematics, the university of akron, akron, oh, united states
+University of Alberta CAN
+    department of mathematical and statistical sciences, university of alberta, edmonton, alberta  t6g 2g1, canada
+University of Amazon BRA
+    university of amazon, belem, brazil
+University of Brasilia BRA
+    institute of biological sciences, university of brasilia, distrito federal70910-900, brazil
+    university of brasilia, campus darcy ribeiro, brasilia, distrito federal  70910-900, brazil
+University of Bremen DEU
+    bremen spatial cognition center, university of bremen, bremen, germany
+University of California USA
+    biophysics graduate group, university of california at berkeley, 201 wellman hall, berkeley, ca 94720-3112, united states
+    department of environmental science, policy and management, university of california at berkeley, 201 wellman hall, berkeley, ca 94720-3112, united states
+    dept. of computer science and engineering, university of california, riverside, united states
+    mechatronics, embedded systems and automation lab, university of california, merced, merced, ca  95343, united states
+University of Cambridge GBR
+    department of zoology, university of cambridge, cambridge cb2 3ej, united kingdom
+    department of plant sciences, university of cambridge, cambridge, united kingdom
+University of Chicago USA
+    department of public health sciences, university of chicago, chicago, il, united states
+University of Electronic Science and Technology of China CHN
+    school of automation engineering, university of electronic science and technology of china, chengdu, 611731, china
+    school of life science and technology, university of electronic science and technology of china, chengdu, 611731, china
+University of Essex GBR
+    department of mathematical sciences, university of essex, wivenhoe park, united kingdom
+University of Guelph CAN
+    department of mathematics and statistics, university of guelph, 50 stone road east, guelph, ont. n1g 2w1, canada
+University of Hail SAU
+    computer science and information department, college of computer science and engineering, university of ha’il, hail, 8145, saudi arabia
+University of Helsinki FIN
+    department of medicine, university of helsinki, finland
+University of Iowa USA
+    department of statistics and actuarial science, university of iowa, iowa city, ia, united states
+University of Limerick IRL
+    university of limerick, department of mathematics and statistics, health research institute (hri), limerick, ireland
+University of Manitoba CAN
+    department of mathematics, university of manitoba, winnipeg, mb, canada
+    department of community health sciences, university of manitoba, s111 - 750 bannatyne avenue, winnipeg, mb r3e 0w3, canada
+University of Michigan USA
+    department of ecology and evolutionary biology, university of michigan, ann arbor, mi 48105, united states
+University of Milan ITA
+    department of environmental sciences and policy, university of milan, milan, 20133, italy
+University of Oxford GBR
+    wellcome trust ctr. epidemiol. i., department of zoology, university of oxford, south parks road, oxford ox1 3ps, united kingdom
+    mathematical ecology research group, department of zoology, university of oxford, oxford, united kingdom
+    department of statistics, university of oxford, oxford, ox1 3lb, united kingdom
+University of Patras GRC
+    division of genetics, cell and developmental biology, university of patras, patras, greece
+University of Pretoria ZAF
+    department of zoology and entomology, mammal research institute, university of pretoria, south africa
+University of Regina CAN
+    faculty of engineering and applied science, university of regina, regina, saskatchewan  s4s0a2, canada
+University of Science and Technology of China CHN
+    department of automation, university of science and technology of china, hefei, anhui, 230027, china
+    hefei national lab for physical sciences at the microscale and the centers for biomedical engineering, university of science and technology of china, hefei, anhui, 230027, china
+University of Sydney AUS
+    school of physics, the university of sydney, sydney, australia
+University of Technology AUS
+    faculty of engineering & information technology, university of technology sydneynsw 2007, australia
+University of Technology CHN
+    department of management engineering, xuzhou university of technology, xuzhou, 221018, china
+University of Technology IRN
+    department of mechatronic engineering, k.n. toosi university of technology, tehran, iran
+    ece department, isfahan university of technology, iran
+    biomedical engineering department, amirkabir university of technology, tehran, 15875-4413, iran
+University of Technology POL
+    division of dynamics, lodz university of technology, stefanowskiego 1/15, lodz, 90-924, poland
+University of Tehran IRN
+    school of civil engineering, university of tehran, tehran, iran
+University of Texas USA
+    department of mathematics, university of texas at arlington, p.o. box 19408, arlington, tx 76019-0408, united states
+    department of mathematics, university of texas at arlington, arlington, tx 76019, united states
+    university of texas health science center at san antonio, san antonio, tx, united states
+    school of mathematical and statistical sciences, the university of texas rio grande valley, 1201 w. university drive, edinburg, tx  78539, united states
+University of The Basque Country ESP
+    dept. of electricity and electronics, university of the basque country, bilbao, 48080, spain
+University of The Punjab PAK
+    center for geographical information systems, university of the punjab, lahore, pakistan
+    college for environmental and earth studies (cees), university of the punjab, lahore, pakistan
+University of Thessaly GRC
+    department of planning and regional development, university of thessaly, pedion areos, volos, 38334, greece
+University of Turku FIN
+    department of geography, university of turku, finland
+University of Valencia ESP
+    department of statistics and operational research, university of valencia, dr. moliner 50, burjassot, 46100, spain
+University of Victoria CAN
+    department of mathematics and statistics, university of victoria, victoria, bc  v8w 3r4, canada
+University of Virginia USA
+    network systems science and advanced computing division, biocomplexity institute and initiative 8 department of computer science, university of virginia, charlottesville, va  22904, united states
+University of Warwick GBR
+    department of statistics, university of warwick, coventry cv4 7al, united kingdom
+    mathematics institute, university of warwick, coventry cv4 7al, united kingdom
+University of Zurich CHE
+    epidemiology, biostatistics and prevention institute, university of zurich, zurich, 8001, switzerland
+Utrecht University NLD
+    department of farm animal health, faculty of veterinary medicine, utrecht university, utrecht, netherlands
+Vidyasagar University IND
+    department of remote sensing and gis, vidyasagar university, vidyasagar university rd, rangamati, midnapore, west bengal  721102, india
+    department of geography, raja n l khan women’s college, vidyasagar university, rangamati, midnapore, west bengal  721102, india
+Wageningen University NLD
+    quantitative veterinary epidemiology group, department of animal sciences, wageningen university, wageningen, netherlands
+Wageningen University and Research Centre NLD
+    division of infectious diseases, animal sciences group, wageningen university and research centre, lelystad, netherlands
+    department of virology, central institute for animal disease control, wageningen university and research centre, lelystad, netherlands
+Warren Alpert Medical School of Brown University USA
+    division of infectious diseases, rhode island hospital, warren alpert medical school of brown university, providence, ri, united states
+Xiangya International Medical Center CHN
+    xiangya international medical center, xiangya hospital, central south university, changsha, hunan, 410008, china
+Yebilaptsa General Hospital BTN
+    yebilaptsa general hospital, zhemgang, bhutan
+York University USA
+    new york university school of medicine, new york, united states
+Zhejiang University CHN
+    institute of islands and coastal ecozystems, zhejiang university, no. 866 yuhangtan rd., hangzhou, 310058, china
+Zhongshan University CHN
+    department of medical statistics, school of public health, zhongshan university, guangzhou, 510080, china
+Zhoukou Normal University CHN
+    department of mathematics and information science, zhoukou normal university, zhoukou, henan 466001, china

@@ -1,0 +1,13 @@
+{
+	"name": "python3-vscode-minimal",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+	},
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+	"extensions": [
+		"ms-python.python"
+	]
+}
