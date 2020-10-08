@@ -1,6 +1,7 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
 import pandas as pd
+import ipywidgets as widgets
 
 import techminer.core.dashboard as dash
 from techminer.core import (
@@ -279,7 +280,6 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         COLUMNS = sorted(
             [
@@ -309,8 +309,8 @@ class DASHapp(DASH, Model):
         )
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Matrix",
                     "Heatmap",
@@ -319,21 +319,15 @@ class DASHapp(DASH, Model):
                     "Chord diagram",
                 ],
             ),
-            dash.dropdown(
-                description="Column:",
-                options=COLUMNS,
-            ),
-            dash.dropdown(
-                description="By:",
-                options=COLUMNS,
-            ),
-            dash.dropdown(
-                description="Method:",
-                options=["pearson", "kendall", "spearman"],
+            dash.HTML("Parameters:"),
+            dash.Dropdown(description="Column:", options=COLUMNS),
+            dash.Dropdown(description="By:", options=COLUMNS),
+            dash.Dropdown(
+                description="Method:", options=["pearson", "kendall", "spearman"]
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Clustering:",
                 options=[
                     "Label propagation",
@@ -342,15 +336,15 @@ class DASHapp(DASH, Model):
                     "Walktrap",
                 ],
             ),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
                     "Global Citations",
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort C-axis by:",
                 options=[
                     "Alphabetic",
@@ -359,7 +353,7 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.c_axis_ascending(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort R-axis by:",
                 options=[
                     "Alphabetic",
@@ -375,6 +369,38 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "by": self.command_panel[4],
+                "method": self.command_panel[5],
+                "min_occ": self.command_panel[6],
+                "max_items": self.command_panel[7],
+                "clustering": self.command_panel[8],
+                # Visualization
+                "top_by": self.command_panel[10],
+                "sort_c_axis_by": self.command_panel[11],
+                "c_axis_ascending": self.command_panel[12],
+                "sort_r_axis_by": self.command_panel[13],
+                "r_axis_ascending": self.command_panel[14],
+                "colormap": self.command_panel[15],
+                "layout": self.command_panel[16],
+                "n_labels": self.command_panel[17],
+                "nx_iterations": self.command_panel[18],
+                "width": self.command_panel[19],
+                "height": self.command_panel[20],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 

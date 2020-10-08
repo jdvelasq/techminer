@@ -69,7 +69,7 @@ APPS = {
     "*** Growth indicators": GrowthIndicators,
     "*** Bigraph analysis": BigraphAnalyzer,
     "*** Graph analyzer": GraphAnalyzer,
-    "*** Correlation analysis": CorrelationAnalysis,
+    "Correlation analysis": CorrelationAnalysis,
     "Conceptual structure": ConceptualStructure,
     "Co-word analysis": CoWordAnalysis,
     "Comparative analysis": ComparativeAnalysis,

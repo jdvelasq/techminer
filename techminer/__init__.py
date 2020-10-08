@@ -8,7 +8,8 @@ from .by_term_per_year_analysis import by_term_per_year_analysis
 #  from .by_year_analysis import by_year_analysis
 #  from .comparative_analysis import comparative_analysis
 from .concept_mapping import concept_mapping
-from .correlation_analysis import correlation_analysis
+
+# from .correlation_analysis import correlation_analysis
 
 #  from .coverage import coverage
 from .create_institutions_thesaurus import create_institutions_thesaurus
