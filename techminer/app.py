@@ -24,6 +24,7 @@ from techminer.thematic_analysis import DASHapp as ThematicAnalysis
 from techminer.column_explorer import DASHapp as ColumnExplorer
 from techminer.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.top_documents import DASHapp as TopDocuments
+from techminer.worldmap import DASHapp as WorldMap
 
 from techminer.coverage import DASHapp as CoverageReporter
 from techminer.descriptive_stats import DASHapp as StatisticsReporter
@@ -65,6 +66,7 @@ APPS = {
     "Top documents": TopDocuments,
     "Time analysis": YearAnalyzer,
     "*** Term analysis": TermAnalyzer,
+    "Worldmap": WorldMap,
     "*** Term per year analysis": TermYearAnalyzer,
     "*** Growth indicators": GrowthIndicators,
     "Bigraph analysis": BigraphAnalyzer,
