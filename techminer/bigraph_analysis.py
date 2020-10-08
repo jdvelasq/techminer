@@ -6,7 +6,7 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 from pyvis.network import Network
-
+import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
     DASH,
@@ -653,13 +653,12 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         COLUMNS = sorted([column for column in data.columns])
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Matrix",
                     "Heatmap",
@@ -668,14 +667,14 @@ class DASHapp(DASH, Model):
                     "Slope chart",
                 ],
             ),
-            dash.separator(text="Column"),
-            dash.dropdown(
+            dash.HTML("Column parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(description="Min OCC COL"),
             dash.max_items(description="Max items COL"),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort C-axis by:",
                 options=[
                     "Alphabetic",
@@ -685,14 +684,14 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.c_axis_ascending(),
-            dash.separator(text="Index"),
-            dash.dropdown(
+            dash.HTML("Index parameters:"),
+            dash.Dropdown(
                 description="By:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(description="Min OCC by:"),
             dash.max_items(description="Max items by:"),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort R-axis by:",
                 options=[
                     "Alphabetic",
@@ -702,8 +701,8 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.r_axis_ascending(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
@@ -720,6 +719,70 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Column Parameters:
+                "column": self.command_panel[3],
+                "min_occ_col": self.command_panel[4],
+                "max_items_col": self.command_panel[5],
+                "sort_c_axis_by": self.command_panel[6],
+                "c_axis_ascending": self.command_panel[7],
+                # Index Parameters:
+                "by": self.command_panel[9],
+                "min_occ_by": self.command_panel[10],
+                "max_items_by": self.command_panel[11],
+                "sort_r_axis_by": self.command_panel[12],
+                "r_axis_ascending": self.command_panel[13],
+                # Visualization
+                "top_by": self.command_panel[15],
+                "colormap_col": self.command_panel[16],
+                "colormap_by": self.command_panel[17],
+                "nx_iterations": self.command_panel[18],
+                "nx_k": self.command_panel[19],
+                "nx_scale": self.command_panel[20],
+                "random_state": self.command_panel[21],
+                "width": self.command_panel[22],
+                "height": self.command_panel[23],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                # Display:
+                "menu": self.command_panel[1].value,
+                # Column Parameters:
+                "column": self.command_panel[3].value,
+                "min_occ_col": self.command_panel[4].value,
+                "max_items_col": self.command_panel[5].value,
+                "sort_c_axis_by": self.command_panel[6].value,
+                "c_axis_ascending": self.command_panel[7].value,
+                # Index Parameters:
+                "by": self.command_panel[9].value,
+                "min_occ_by": self.command_panel[10].value,
+                "max_items_by": self.command_panel[11].value,
+                "sort_r_axis_by": self.command_panel[12].value,
+                "r_axis_ascending": self.command_panel[13].value,
+                # Visualization
+                "top_by": self.command_panel[15].value,
+                "colormap_col": self.command_panel[16].value,
+                "colormap_by": self.command_panel[17].value,
+                "nx_iterations": self.command_panel[18].value,
+                "nx_k": self.command_panel[19].value,
+                "nx_scale": self.command_panel[20].value,
+                "random_state": self.command_panel[21].value,
+                "width": self.command_panel[22].value,
+                "height": self.command_panel[23].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 
@@ -762,22 +825,3 @@ class DASHapp(DASH, Model):
         #     self.set_enabled("nx interations:")
         # else:
         #     self.set_disabled("nx iterations:")
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def bigraph_analysis(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()

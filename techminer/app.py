@@ -67,7 +67,7 @@ APPS = {
     "*** Term analysis": TermAnalyzer,
     "*** Term per year analysis": TermYearAnalyzer,
     "*** Growth indicators": GrowthIndicators,
-    "*** Bigraph analysis": BigraphAnalyzer,
+    "Bigraph analysis": BigraphAnalyzer,
     "Graph analyzer": GraphAnalyzer,
     "Correlation analysis": CorrelationAnalysis,
     "Conceptual structure": ConceptualStructure,
