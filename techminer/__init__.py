@@ -19,7 +19,7 @@ from .create_keywords_thesaurus import create_keywords_thesaurus
 from .document_term_analysis import document_term_analysis
 
 #  from .factor_analysis import factor_analysis
-from .graph_analysis import graph_analysis
+# from .graph_analysis import graph_analysis
 from .growth_indicators import growth_indicators
 from .scopus_importer import ScopusImporter
 

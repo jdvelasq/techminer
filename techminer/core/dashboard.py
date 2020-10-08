@@ -464,6 +464,21 @@ def y_axis(n=10, value=1):
     )
 
 
+def network_clustering():
+    return widgets.Dropdown(
+        description="Clustering:",
+        options=[
+            "Label propagation",
+            "Leiden",
+            "Louvain",
+            "Walktrap",
+        ],
+        value="Louvain",
+        layout=Layout(width="auto"),
+        style={"description_width": "130px"},
+    )
+
+
 ################################################################
 ################################################################
 

@@ -293,7 +293,6 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         COLUMNS = sorted(
             [
@@ -323,8 +322,8 @@ class DASHapp(DASH, Model):
         )
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Matrix",
                     "Heatmap",
@@ -336,31 +335,24 @@ class DASHapp(DASH, Model):
                     "Communities (Python code)",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
             dash.normalization(),
-            dash.dropdown(
-                description="Clustering:",
-                options=[
-                    "Label propagation",
-                    "Leiden",
-                    "Louvain",
-                    "Walktrap",
-                ],
-            ),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.network_clustering(),
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
                     "Global Citations",
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort C-axis by:",
                 options=[
                     "Alphabetic",
@@ -370,7 +362,7 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.c_axis_ascending(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort R-axis by:",
                 options=[
                     "Alphabetic",
@@ -389,6 +381,39 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "normalization": self.command_panel[6],
+                "clustering": self.command_panel[7],
+                # Visualization
+                "top_by": self.command_panel[9],
+                "sort_c_axis_by": self.command_panel[10],
+                "c_axis_ascending": self.command_panel[11],
+                "sort_r_axis_by": self.command_panel[12],
+                "r_axis_ascending": self.command_panel[13],
+                "colormap": self.command_panel[14],
+                "n_labels": self.command_panel[15],
+                "nx_iterations": self.command_panel[16],
+                "nx_k": self.command_panel[17],
+                "nx_scale": self.command_panel[18],
+                "random_state": self.command_panel[19],
+                "width": self.command_panel[20],
+                "height": self.command_panel[21],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 

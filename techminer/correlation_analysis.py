@@ -327,15 +327,7 @@ class DASHapp(DASH, Model):
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.Dropdown(
-                description="Clustering:",
-                options=[
-                    "Label propagation",
-                    "Leiden",
-                    "Louvain",
-                    "Walktrap",
-                ],
-            ),
+            dash.network_clustering(),
             dash.HTML("Visualization:"),
             dash.Dropdown(
                 description="Top by:",
