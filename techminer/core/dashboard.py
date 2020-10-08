@@ -492,7 +492,13 @@ class DASH:
             style={"button_color": "#BDC3C7"},
         )
         calculate_button.on_click(self.on_click)
-        self.command_panel += [calculate_button]
+        self.command_panel += [
+            widgets.HTML(
+                "<hr>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            calculate_button,
+        ]
 
         #
         # Creates command panel (Generic)

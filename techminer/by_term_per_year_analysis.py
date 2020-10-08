@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 
 import techminer.core.dashboard as dash
-from techminer.by_year_analysis import by_year_analysis
+
+#  from techminer.by_year_analysis import by_year_analysis
 from techminer.core import (
     DASH,
     add_counters_to_axis,

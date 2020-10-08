@@ -1,3 +1,6 @@
+import ipywidgets as widgets
+from ipywidgets import GridspecLayout, Layout
+
 import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA, FactorAnalysis, FastICA, TruncatedSVD
@@ -364,20 +367,41 @@ class Model:
 ##
 ###############################################################################
 
-COLUMNS = sorted(
-    [
-        "Abstract_phrase_words",
-        "Abstract_words_CL",
-        "Abstract_words",
-        "Author_Keywords_CL",
-        "Author_Keywords",
-        "Index_Keywords_CL",
-        "Index_Keywords",
-        "Keywords_CL",
-        "Title_words_CL",
-        "Title_words",
-    ]
-)
+
+RANDOM_STATE=[
+            "0012345",
+            "0123456",
+            "0234567",
+            "0345678",
+            "0456789",
+            "0567890",
+            "0678901",
+            "0789012",
+            "0890123",
+            "0901234",
+            "1012345",
+            "1123456",
+            "1234567",
+            "1345678",
+            "1456789",
+            "1567890",
+            "1678901",
+            "1789012",
+            "1890123",
+            "1901234",
+            "2012345",
+            "2123456",
+            "2234567",
+            "2345678",
+            "2456789",
+            "2567890",
+            "2678901",
+            "2789012",
+            "2890123",
+            "2901234",
+            "3012345",
+        ]
+
 
 
 class DASHapp(DASH, Model):
@@ -396,11 +420,11 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
+        
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            widgets.HTML("<b>Display:</b>"),
+            widgets.Dropdown(
                 options=[
                     "Keywords Map",
                     "Keywords by Cluster (table)",
@@ -408,8 +432,13 @@ class DASHapp(DASH, Model):
                     "Keywords by Cluster (Python code)",
                     "Keywords coverage",
                 ],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
+            widgets.HTML(
+                "<hr><b>Parameters:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
                 description="Method:",
                 options=[
                     "Multidimensional Scaling",
@@ -418,26 +447,153 @@ class DASHapp(DASH, Model):
                     "Factor Analysis",
                     "Correspondence Analysis",
                 ],
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
             ),
-            dash.normalization(include_none=False),
-            dash.dropdown(
+            widgets.Dropdown(
+                description="Normalization:",
+                options=[
+                    "Association",
+                    "Jaccard",
+                    "Dice",
+                    "Salton/Cosine",
+                    "Equivalence",
+                    "Inclusion",
+                    "Mutual Information",
+                ],
+                layout=Layout(width="auto"),
+                value="Association",
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
                 description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
+                options=[z for z in data.columns if "keywords" in z.lower()],
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
             ),
-            dash.min_occurrence(),
-            dash.max_items(),
-            dash.random_state(),
-            dash.separator(text="Clustering"),
-            dash.clustering_method(),
-            dash.n_clusters(m=2, n=11, i=1),
-            dash.affinity(),
-            dash.linkage(),
-            dash.separator(text="Visualization"),
-            dash.top_n(),
-            dash.fig_width(),
-            dash.fig_height(),
+            widgets.Dropdown(
+                description="Min OCC:",
+                options=list(range(1, 21)),
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                options=list(range(5, 40, 1))
+                + list(range(40, 100, 5))
+                + list(range(100, 3001, 100)),
+                description="Max items:",
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                description="Random State:",
+                options=RANDOM_STATE,
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.HTML(
+                "<hr><b>Clustering:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                description="Clustering Method:",
+                options=[
+                    "Affinity Propagation",
+                    "Agglomerative Clustering",
+                    "Birch",
+                    "DBSCAN",
+                    "KMeans",
+                    "Mean Shift",
+                ],
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                description="N Clusters:",
+                options=list(range(3, 11, 1)),
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                description="Affinity",
+                options=["euclidean", "l1", "l2", "manhattan", "cosine"],
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                description="Linkage:",
+                options=["ward", "complete", "average", "single"],
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.HTML(
+                "<hr><b>Visualization:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                description="Top N:",
+                options=list(range(10, 51, 1)),
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+                
+            ),
+            widgets.Dropdown(
+                description="Width:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
+            widgets.Dropdown(
+                description="Height:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+                style={"description_width": "130px"},
+            ),
         ]
         
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                "menu": self.command_panel[1],
+                "method": self.command_panel[3],
+                "normalization": self.command_panel[4],
+                "column": self.command_panel[5],
+                "min_occ": self.command_panel[6],
+                "max_items": self.command_panel[7],
+                "random_state": self.command_panel[8],
+                "clustering_method": self.command_panel[10],
+                "n_clusters": self.command_panel[11],
+                "affinity": self.command_panel[12],
+                "linkage": self.command_panel[13],
+                "top_n": self.command_panel[15],
+                "width": self.command_panel[16],
+                "height": self.command_panel[17],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                "menu": self.command_panel[1].value,
+                "method": self.command_panel[3].value,
+                "normalization": self.command_panel[4].value,
+                "column": self.command_panel[5].value,
+                "min_occ": self.command_panel[6].value,
+                "max_items": self.command_panel[7].value,
+                "random_state": self.command_panel[8].value,
+                "clustering_method": self.command_panel[10].value,
+                "n_clusters": self.command_panel[11].value,
+                "affinity": self.command_panel[12].value,
+                "linkage": self.command_panel[13].value,
+                "top_n": self.command_panel[15].value,
+                "width": self.command_panel[16].value,
+                "height": self.command_panel[17].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 

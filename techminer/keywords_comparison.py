@@ -32,6 +32,7 @@ from techminer.plots import (
     expand_ax_limits,
 )
 from techminer.plots import set_spines_invisible
+from ipywidgets import GridspecLayout, Layout
 
 ###############################################################################
 ##
@@ -151,8 +152,7 @@ class Model:
         X = X[X.sum(axis=1) > 0]
 
         X = X[
-            X.index.map(lambda w: int(w.split(" ")[-1].split(":")[0]))
-            >= self.min_occ
+            X.index.map(lambda w: int(w.split(" ")[-1].split(":")[0])) >= self.min_occ
         ]
 
         X = sort_by_axis(data=X, sort_by="Num_Documents", ascending=False, axis=0)
@@ -320,127 +320,147 @@ class Model:
 ##
 ###############################################################################
 
-COLUMNS = [
-    "Abstract_Keywords_CL",
-    "Abstract_Keywords",
-    "Author_Keywords_CL",
-    "Author_Keywords",
-    "Index_Keywords_CL",
-    "Index_Keywords",
-    "Keywords_CL",
-    "Title_Keywords_CL",
-    "Title_Keywords",
+
+COLORMAPS = [
+    "Greys",
+    "Purples",
+    "Blues",
+    "Greens",
+    "Oranges",
+    "Reds",
+    "Pastel1",
+    "Pastel2",
+    "tab10",
+    "tab20",
+    "tab20b",
+    "tab20c",
 ]
 
 
 class DASHapp(DASH, Model):
     def __init__(
         self,
-        top_n=50,
-        limit_to=None,
-        exclude=None,
-        years_range=None,
     ):
+
         data = pd.read_csv("corpus.csv")
 
         Model.__init__(
             self,
             data=data,
-            top_n=top_n,
-            limit_to=limit_to,
-            exclude=exclude,
-            years_range=years_range,
+            top_n=None,
+            limit_to=None,
+            exclude=None,
+            years_range=None,
         )
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            widgets.HTML("<b>Display:</b>"),
+            widgets.Dropdown(
                 options=[
                     "Concordances",
                     "Radial Diagram",
                 ],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
+            widgets.HTML(
+                "<hr><b>Keywords selection:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                options=[z for z in data.columns if "keywords" in z.lower()],
                 description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
+            widgets.Dropdown(
+                options=[],
                 description="Keyword A:",
-                options=[],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
+            widgets.Dropdown(
+                options=[],
                 description="Keyword B:",
-                options=[],
+                layout=Layout(width="auto"),
             ),
-            dash.min_occurrence(),
-            dash.max_items(),
-            #  dash.normalization(include_none=False),
-            dash.separator(text="Visualization"),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            widgets.Dropdown(
+                options=list(range(1, 21)),
+                description="Min OCC:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                options=list(range(5, 40, 1))
+                + list(range(40, 100, 5))
+                + list(range(100, 3001, 100)),
+                description="Max items:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.HTML(
+                "<hr><b>Visualization:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                options=COLORMAPS,
+                description="Colormap:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                description="Width:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                description="Height:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+            ),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                "menu": self.command_panel[1],
+                "column": self.command_panel[3],
+                "keyword_a": self.command_panel[4],
+                "keyword_b": self.command_panel[5],
+                "min_occ": self.command_panel[6],
+                "max_items": self.command_panel[7],
+                "colormap": self.command_panel[9],
+                "width": self.command_panel[10],
+                "height": self.command_panel[11],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                "menu": self.command_panel[1].value,
+                "column": self.command_panel[3].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 
         DASH.interactive_output(self, **kwargs)
-        keywords_ = None
 
-        if self.top_n is not None:
-            #
-            # Populate value control with top_n terms
-            #
-            y = self.data.copy()
-            y["Num_Documents"] = 1
-            y = explode(
-                y[
-                    [
-                        self.column,
-                        "Num_Documents",
-                        "Global_Citations",
-                        "ID",
-                    ]
-                ],
-                self.column,
-            )
-            y = y.groupby(self.column, as_index=True).agg(
-                {
-                    "Num_Documents": np.sum,
-                    "Global_Citations": np.sum,
-                }
-            )
-            y["Global_Citations"] = y["Global_Citations"].map(lambda w: int(w))
-            top_terms_freq = set(
-                y.sort_values("Num_Documents", ascending=False).head(self.top_n).index
-            )
-            top_terms_cited_by = set(
-                y.sort_values("Global_Citations", ascending=False)
-                .head(self.top_n)
-                .index
-            )
-            top_terms = sorted(top_terms_freq | top_terms_cited_by)
-            self.command_panel[2].options = top_terms
-            keywords_ = top_terms
-
-        else:
-
-            #
-            # Populate Keywords with all terms
-            #
-            x = explode(self.data, self.column)
-            all_terms = pd.Series(x[self.column].unique())
-            all_terms = all_terms[all_terms.map(lambda w: not pd.isna(w))]
-            all_terms = all_terms.sort_values()
-            self.command_panel[2].options = all_terms
-            keywords_ = all_terms
+        #
+        # Populate Keywords with all terms
+        #
+        x = explode(self.data, self.column)
+        all_terms = pd.Series(x[self.column].unique())
+        all_terms = all_terms[all_terms.map(lambda w: not pd.isna(w))]
+        all_terms = all_terms.sort_values()
+        self.command_panel[4].options = all_terms
+        keywords_ = all_terms
 
         if "Abstract" in self.data.columns:
 
             ##
             ## Selected keyword in the GUI
             ##
-            keyword_a = self.command_panel[2].value
+            keyword_a = self.command_panel[4].value
 
             ##
             ## Keywords that appear in the same phrase
@@ -465,29 +485,8 @@ class DASHapp(DASH, Model):
             )
             data = data.explode("Abstract")
             all_terms = sorted(set(data.Abstract.tolist()))
-            self.command_panel[3].options = all_terms
-            # with self.output:
-            #      print("---->", keyword_a)
+            self.command_panel[5].options = all_terms
+
         else:
-            self.command_panel[3].options = keywords_
 
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def keywords_comparison(
-    top_n=50,
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        top_n=top_n,
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
+            self.command_panel[5].options = keywords_

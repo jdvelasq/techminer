@@ -45,7 +45,7 @@ class DASHapp:
             ),
             widgets.Select(
                 options=[],
-                layout=Layout(height="300pt", width="auto"),
+                layout=Layout(height="379pt", width="auto"),
             ),
         ]
 

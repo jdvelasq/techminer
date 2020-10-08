@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 from pandas.core.base import NoNewAttributesMixin
 
+import ipywidgets as widgets
+from ipywidgets import GridspecLayout, Layout
+
 import techminer.core.dashboard as dash
 from techminer.core import DASH, corpus_filter
 from techminer.plots import bar_plot, barh_plot
@@ -142,6 +145,21 @@ class Model:
 ##
 ###############################################################################
 
+COLORMAPS = [
+    "Greys",
+    "Purples",
+    "Blues",
+    "Greens",
+    "Oranges",
+    "Reds",
+    "Pastel1",
+    "Pastel2",
+    "tab10",
+    "tab20",
+    "tab20b",
+    "tab20c",
+]
+
 
 class DASHapp(DASH, Model):
     def __init__(self, years_range=None):
@@ -151,11 +169,10 @@ class DASHapp(DASH, Model):
         data = pd.read_csv("corpus.csv")
 
         Model.__init__(self, data, years_range=years_range)
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            widgets.HTML("<b>Display:</b>"),
+            widgets.Dropdown(
                 options=[
                     "Table",
                     "Num Documents by Year",
@@ -165,8 +182,11 @@ class DASHapp(DASH, Model):
                     "Avg Global Citations by Year",
                 ],
             ),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            widgets.HTML(
+                "<hr><b>Visualization:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
                 description="Sort by:",
                 options=[
                     "Year",
@@ -177,21 +197,54 @@ class DASHapp(DASH, Model):
                     "Avg_Global_Citations",
                 ],
             ),
-            dash.ascending(),
-            dash.dropdown(
+            widgets.Dropdown(
+                description="Ascending:",
+                options=[True, False],
+            ),
+            widgets.Dropdown(
                 description="Plot:",
                 options=["Bar plot", "Horizontal bar plot"],
             ),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            widgets.Dropdown(
+                options=COLORMAPS,
+                description="Colormap:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                description="Width:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                description="Height:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+            ),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                "menu": self.command_panel[1],
+                "sort_by": self.command_panel[3],
+                "ascending": self.command_panel[4],
+                "plot": self.command_panel[5],
+                "colormap": self.command_panel[6],
+                "width": self.command_panel[7],
+                "height": self.command_panel[8],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 
-        super().interactive_output(**kwargs)
+        DASH.interactive_output(self, **kwargs)
 
-        if self.menu == self.menu_options[0]:
+        if self.menu == self.command_panel[1].options:
 
             self.set_enabled("Sort by:")
             self.set_enabled("Ascending:")
@@ -208,19 +261,3 @@ class DASHapp(DASH, Model):
             self.set_enabled("Colormap:")
             self.set_enabled("Width:")
             self.set_enabled("Height:")
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def by_year_analysis(
-    years_range=None,
-):
-
-    return DASHapp(
-        years_range=years_range,
-    ).run()

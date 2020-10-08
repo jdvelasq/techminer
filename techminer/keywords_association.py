@@ -289,11 +289,13 @@ class DASHapp(DASH, Model):
         self,
     ):
         data = pd.read_csv("corpus.csv")
+        self.limit_to = None
+        self.exclude = None
 
         Model.__init__(self, data=data)
 
         self.command_panel = [
-            widgets.HTML("<b>View:</b>"),
+            widgets.HTML("<b>Display:</b>"),
             widgets.Dropdown(
                 options=[
                     "Concordances",
@@ -337,16 +339,14 @@ class DASHapp(DASH, Model):
                 layout=Layout(width="auto"),
             ),
             widgets.Dropdown(
-                description="Height:",
-                options=range(5, 26, 1),
-                layout=Layout(width="auto"),
-                style={"description_width": "140px"},
-            ),
-            widgets.Dropdown(
                 description="Width:",
                 options=range(5, 26, 1),
                 layout=Layout(width="auto"),
-                style={"description_width": "140px"},
+            ),
+            widgets.Dropdown(
+                description="Height:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
             ),
         ]
 
@@ -362,8 +362,8 @@ class DASHapp(DASH, Model):
                 "min_occ": self.command_panel[5],
                 "max_items": self.command_panel[6],
                 "colormap": self.command_panel[8],
-                "height": self.command_panel[9],
-                "width": self.command_panel[10],
+                "width": self.command_panel[9],
+                "height": self.command_panel[10],
             },
         )
 

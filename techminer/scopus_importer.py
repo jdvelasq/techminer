@@ -46,12 +46,10 @@ class ScopusImporter(DASH):
             widgets.Checkbox(
                 value=True,
                 description="Article",
-                #  layout=Layout(width="auto"),  #  , border="2px solid gray"
             ),
             widgets.Checkbox(
                 value=True,
                 description="Article in press",
-                #  layout=Layout(width="auto"),
             ),
             widgets.Checkbox(
                 value=True,
@@ -133,11 +131,36 @@ class ScopusImporter(DASH):
                 description="Undefinided",
                 layout=Layout(width="auto"),
             ),
-            widgets.HTML("<hr>"),
         ]
 
-    def run(self):
-        return DASH.run(self)
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                "article": self.command_panel[4],
+                "article_in_press": self.command_panel[5],
+                "book": self.command_panel[4],
+                "book_chapter": self.command_panel[5],
+                "business_article": self.command_panel[6],
+                "conference_paper": self.command_panel[8],
+                "conference_review": self.command_panel[9],
+                "data_paper": self.command_panel[10],
+                "editorial": self.command_panel[11],
+                "letter": self.command_panel[12],
+                "note": self.command_panel[13],
+                "review": self.command_panel[14],
+                "short_survey": self.command_panel[15],
+                "erratum": self.command_panel[16],
+                "report": self.command_panel[17],
+                "retracted": self.command_panel[18],
+                "abstract_report": self.command_panel[19],
+                "undefinided": self.command_panel[20],
+            },
+        )
+
+        DASH.__init__(self)
 
     def on_click(self, args):
 
