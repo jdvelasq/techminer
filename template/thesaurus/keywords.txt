@@ -443,6 +443,8 @@ compartmental epidemic model
     compartmental epidemic model
 compartmental model
     compartmental model
+compartmental models
+    compartmental models
 complex network model
     complex network model
     complex network models
@@ -741,6 +743,8 @@ disease progression
     disease progression
 disease propagation
     disease propagation
+disease severity
+    disease severity
 disease simulation
     disease simulation
 disease spread
@@ -1159,6 +1163,8 @@ geoinformatics
     geoinformatics
 germany
     germany
+global health
+    global health
 global optimization
     global optimization
 global optimization algorithm
@@ -1329,6 +1335,8 @@ individual-based
     individual-based
 individual-based epidemic models
     individual-based epidemic models
+individual-based models
+    individual-based models
 indonesia
     indonesia
 indoor air environments
@@ -1388,6 +1396,8 @@ influenza a virus, h7n7 subtype
     influenza a virus, h7n7 subtype
 influenza epidemics
     influenza epidemics
+influenza forecasting
+    influenza forecasting
 influenza h1n1
     influenza h1n1
 influenza in birds
@@ -1574,6 +1584,8 @@ macroscopic levels
     macroscopic levels
 madagascar
     madagascar
+magnitude estimation method
+    magnitude estimation method
 major clinical study
     major clinical study
 malaria
@@ -1678,6 +1690,8 @@ medical parameters
     medical parameters
 medical professionals
     medical professionals
+medline
+    medline
 metapopulation
     metapopulation
 meteorological factors
@@ -2741,6 +2755,8 @@ system of ordinary differential equations
     system of ordinary differential equations
 system-level analysis
     system-level analysis
+systematic review
+    systematic review
 systemic inflammatory response syndrome
     systemic inflammatory response syndrome
 taiwan

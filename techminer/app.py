@@ -28,6 +28,7 @@ from techminer.worldmap import DASHapp as WorldMap
 
 from techminer.coverage import DASHapp as CoverageReporter
 from techminer.descriptive_stats import DASHapp as StatisticsReporter
+from techminer.core_authors import DASHapp as CoreAuthors
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -57,28 +58,29 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
+    "*** Document term analysis": DocumentTermAnalysis,
+    "*** Growth indicators": GrowthIndicators,
+    "*** Term analysis": TermAnalyzer,
+    "*** Term per year analysis": TermYearAnalyzer,
+    "*** Thematic analysis": ThematicAnalysis,
+    "Bigraph analysis": BigraphAnalyzer,
+    "Co-word analysis": CoWordAnalysis,
+    "Column explorer": ColumnExplorer,
+    "Comparative analysis": ComparativeAnalysis,
+    "Conceptual structure": ConceptualStructure,
+    "Core Authors": CoreAuthors,
+    "Correlation analysis": CorrelationAnalysis,
     "Coverage": CoverageReporter,
     "Descriptive Statistics": StatisticsReporter,
-    "Column explorer": ColumnExplorer,
-    "Matrix explorer": MatrixExplorer,
+    "Factor analysis": FactorAnalysis,
+    "Graph analyzer": GraphAnalyzer,
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
-    "Top documents": TopDocuments,
-    "Time analysis": YearAnalyzer,
-    "*** Term analysis": TermAnalyzer,
-    "Worldmap": WorldMap,
-    "*** Term per year analysis": TermYearAnalyzer,
-    "*** Growth indicators": GrowthIndicators,
-    "Bigraph analysis": BigraphAnalyzer,
-    "Graph analyzer": GraphAnalyzer,
-    "Correlation analysis": CorrelationAnalysis,
-    "Conceptual structure": ConceptualStructure,
-    "Co-word analysis": CoWordAnalysis,
-    "Comparative analysis": ComparativeAnalysis,
-    "Factor analysis": FactorAnalysis,
     "Latent semantic analysis": LatentSemanticAnalysis,
-    "*** Thematic analysis": ThematicAnalysis,
-    "*** Document term analysis": DocumentTermAnalysis,
+    "Matrix explorer": MatrixExplorer,
+    "Time analysis": YearAnalyzer,
+    "Top documents": TopDocuments,
+    "Worldmap": WorldMap,
 }
 
 

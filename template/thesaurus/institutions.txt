@@ -57,6 +57,8 @@ Chandrakasem Rajabhat University THA
     information technology, faculty of science, chandrakasem rajabhat university, bangkok, thailand
 Changsha Research Institute of Mining and Metallurgy Co CHN
     changsha research institute of mining and metallurgy co.,ltd, changsha, hunan, 410000, china
+Childrens Hospital Informatics Program USA
+    children's hospital informatics program, boston children's hospital, boston, ma, united states
 China University of Geosciences CHN
     school of mathematics and physics, china university of geosciences, wuhan, 430074, china
     school of information engineering, china university of geosciences, beijing, 100083, china
@@ -82,6 +84,8 @@ Department of Biostatistics USA
     department of biostatistics, fielding school of public health, ucla, los angeles, ca, united states
 Department of Community and Family Medicine IND
     department of community and family medicine, aiims bhopal, madhya pradesh, india
+Department of Computer Science USA
+    department of computer science, virginia tech, blacksburg, va, united states
 Department of Emergency Medicine USA
     department of emergency medicine, david geffen school of medicine, ucla, los angeles, ca, united states
 Department of Epidemiology FRA
@@ -99,6 +103,8 @@ Department of Infectious Diseases GBR
 Department of Medicine USA
     department of medicine, david geffen school of medicine, ucla, los angeles, ca, united states
     department of medicine, uw school of medicine, seattle, wa, united states
+Department of Pediatrics USA
+    department of pediatrics, harvard medical school, boston, ma, united states
 Dongbei University of Finance and Economics CHN
     center of econometric analysis and forecasting, dongbei university of finance and economics, dalian 116025, china
     school of mathematics and quantitative economics, dongbei university of finance and economics, dalian 116025, china
@@ -284,6 +290,8 @@ Maulana Azad Medical College IND
     maulana azad medical college (mamc), new delhi, india
 Mbm Engineering College IND
     department of electrical engineering, m.b.m. engineering college, jodhpur, 342011, india
+Mcgill University CAN
+    department of epidemiology, biostatistics and occupational health, mcgill university, montreal, qc, canada
 Mcmaster University CAN
     dept. of mathematics and statistics, mcmaster university, hamilton, ont. l8s 4k1, canada
     department of mathematics and statistics, mcmaster university, hamilton, on l8s 4k1, canada
@@ -664,6 +672,8 @@ Utrecht University NLD
 Vidyasagar University IND
     department of remote sensing and gis, vidyasagar university, vidyasagar university rd, rangamati, midnapore, west bengal  721102, india
     department of geography, raja n l khan women’s college, vidyasagar university, rangamati, midnapore, west bengal  721102, india
+Virginia Bioinformatics Institute USA
+    network dynamics and simulation science laboratory, virginia bioinformatics institute, virginia tech, blacksburg, va, united states
 Wageningen University NLD
     quantitative veterinary epidemiology group, department of animal sciences, wageningen university, wageningen, netherlands
 Wageningen University and Research Centre NLD
