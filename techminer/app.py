@@ -29,6 +29,7 @@ from techminer.worldmap import DASHapp as WorldMap
 from techminer.coverage import DASHapp as CoverageReporter
 from techminer.descriptive_stats import DASHapp as StatisticsReporter
 from techminer.core_authors import DASHapp as CoreAuthors
+from techminer.core_sources import DASHapp as CoreSources
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -68,7 +69,8 @@ APPS = {
     "Column explorer": ColumnExplorer,
     "Comparative analysis": ComparativeAnalysis,
     "Conceptual structure": ConceptualStructure,
-    "Core Authors": CoreAuthors,
+    "Core authors analysis": CoreAuthors,
+    "Core sources analysis": CoreSources,
     "Correlation analysis": CorrelationAnalysis,
     "Coverage": CoverageReporter,
     "Descriptive Statistics": StatisticsReporter,
