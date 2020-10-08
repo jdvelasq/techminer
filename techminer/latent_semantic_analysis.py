@@ -12,7 +12,9 @@ from techminer.core import (
     corpus_filter,
     limit_to_exclude,
 )
+from techminer.core.dashboard import fig_height
 from techminer.plots import counters_to_node_sizes, xy_clusters_plot
+import ipywidgets as widgets
 
 ###############################################################################
 ##
@@ -109,11 +111,11 @@ class Model:
             "Fast ICA": FastICA,
             "SVD": TruncatedSVD,
             "MDS": MDS,
-        }[self.method](
+        }[self.decomposition_method](
             n_components=self.n_components, random_state=int(self.random_state)
         )
 
-        if self.method == "MDS":
+        if self.decomposition_method == "MDS":
             R = model.fit_transform(X=M.values)
         else:
             R = model.fit_transform(X=M.values)
@@ -222,51 +224,109 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
+
         #
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", margin="0px 0px 0px 5px", hr=False),
+            dash.Dropdown(
                 options=[
                     "Cluster members",
                     "Cluster plot",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
             dash.random_state(),
-            dash.separator(text="Decomposition"),
-            dash.dropdown(
+            dash.HTML("Decomposition:"),
+            dash.Dropdown(
                 description="Apply to:",
                 options=[
                     "TF matrix",
                     "TF*IDF matrix",
                 ],
             ),
-            dash.dropdown(
-                description="Method:",
-                options=["Factor Analysis", "PCA", "Fast ICA", "SVD", "MDS"],
-            ),
-            dash.separator(text="Clustering"),
+            dash.decomposition_method("Method:"),
+            dash.HTML("Clustering:"),
             dash.clustering_method(),
-            dash.n_clusters(m=3, n=50, i=1),
+            dash.n_clusters(m=3, n=51, i=1),
             dash.affinity(),
             dash.linkage(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
-                description="Top by:",
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 options=["Num Documents", "Global Citations"],
+                description="Top by:",
             ),
-            dash.top_n(),
-            dash.x_axis(),
-            dash.y_axis(),
+            dash.top_n(10, 51, 1),
+            dash.x_axis(n=self.n_components),
+            dash.y_axis(n=self.n_components),
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "random_state": self.command_panel[6],
+                # Decomposition:
+                "apply_to": self.command_panel[8],
+                "decomposition_method": self.command_panel[9],
+                # Clustering:
+                "clustering_method": self.command_panel[11],
+                "n_clusters": self.command_panel[12],
+                "affinity": self.command_panel[13],
+                "linkage": self.command_panel[14],
+                # Visualization
+                "top_by": self.command_panel[16],
+                "top_n": self.command_panel[17],
+                "x_axis": self.command_panel[18],
+                "y_axis": self.command_panel[19],
+                "width": self.command_panel[20],
+                "height": self.command_panel[21],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                # Display:
+                "menu": self.command_panel[1].value,
+                # Parameters:
+                "column": self.command_panel[3].value,
+                "min_occ": self.command_panel[4].value,
+                "max_items": self.command_panel[5].value,
+                "random_state": self.command_panel[6].value,
+                # Decomposition:
+                "apply_to": self.command_panel[8].value,
+                "decomposition_method": self.command_panel[9].value,
+                # Clustering:
+                "clustering_method": self.command_panel[11].value,
+                "n_clusters": self.command_panel[12].value,
+                "affinity": self.command_panel[13].value,
+                "linkage": self.command_panel[14].value,
+                # Visualization
+                "top_by": self.command_panel[16].value,
+                "top_n": self.command_panel[17].value,
+                "x_axis": self.command_panel[18].value,
+                "y_axis": self.command_panel[19].value,
+                "width": self.command_panel[20].value,
+                "height": self.command_panel[21].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 
@@ -286,8 +346,8 @@ class DASHapp(DASH, Model):
 
         self.enable_disable_clustering_options()
 
-        self.set_options(name="X-axis:", options=list(range(self.n_components)))
-        self.set_options(name="Y-axis:", options=list(range(self.n_components)))
+        #  self.set_options(name="X-axis:", options=list(range(self.n_components)))
+        #  self.set_options(name="Y-axis:", options=list(range(self.n_components)))
 
 
 ###############################################################################

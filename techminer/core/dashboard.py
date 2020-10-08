@@ -11,82 +11,82 @@ COLORMAPS = [
     "Greens",
     "Oranges",
     "Reds",
-    "ocean",
-    "gnuplot",
-    "gnuplot2",
-    "YlOrBr",
-    "YlOrRd",
-    "OrRd",
-    "PuRd",
-    "RdPu",
-    "BuPu",
-    "GnBu",
-    "PuBu",
-    "YlGnBu",
-    "PuBuGn",
-    "BuGn",
-    "YlGn",
-    "viridis",
-    "plasma",
-    "inferno",
-    "magma",
-    "cividis",
-    "binary",
-    "gist_yarg",
-    "gist_gray",
-    "gray",
-    "bone",
-    "pink",
-    "spring",
-    "summer",
-    "autumn",
-    "winter",
-    "cool",
-    "Wistia",
-    "hot",
-    "afmhot",
-    "gist_heat",
-    "copper",
-    "PiYG",
-    "PRGn",
-    "BrBG",
-    "PuOr",
-    "RdGy",
-    "RdBu",
-    "RdYlBu",
-    "RdYlGn",
-    "Spectral",
-    "coolwarm",
-    "bwr",
-    "seismic",
-    "twilight",
-    "twilight_shifted",
-    "hsv",
+    #  "ocean",
+    #  "gnuplot",
+    #  "gnuplot2",
+    #  "YlOrBr",
+    #  "YlOrRd",
+    #  "OrRd",
+    #  "PuRd",
+    #  "RdPu",
+    #  "BuPu",
+    #  "GnBu",
+    #  "PuBu",
+    #  "YlGnBu",
+    #  "PuBuGn",
+    #  "BuGn",
+    #  "YlGn",
+    #  "viridis",
+    #  "plasma",
+    #  "inferno",
+    #  "magma",
+    #  "cividis",
+    #  "binary",
+    #  "gist_yarg",
+    #  "gist_gray",
+    #  "gray",
+    #  "bone",
+    #  "pink",
+    #  "spring",
+    #  "summer",
+    #  "autumn",
+    #  "winter",
+    #  "cool",
+    #  "Wistia",
+    #  "hot",
+    #  "afmhot",
+    #  "gist_heat",
+    #  "copper",
+    #  "PiYG",
+    #  "PRGn",
+    #  "BrBG",
+    #  "PuOr",
+    # "RdGy",
+    #  "RdBu",
+    #  "RdYlBu",
+    #  "RdYlGn",
+    #  "Spectral",
+    #  "coolwarm",
+    #  "bwr",
+    #  "seismic",
+    #  "twilight",
+    #  "twilight_shifted",
+    #  "hsv",
     "Pastel1",
     "Pastel2",
-    "Paired",
-    "Accent",
-    "Dark2",
-    "Set1",
-    "Set2",
-    "Set3",
+    #  "Paired",
+    #  "Accent",
+    #  "Dark2",
+    #  "Set1",
+    #  "Set2",
+    #  "Set3",
     "tab10",
     "tab20",
     "tab20b",
     "tab20c",
-    "flag",
-    "prism",
-    "gist_earth",
-    "terrain",
-    "gist_stern",
-    "CMRmap",
-    "cubehelix",
-    "brg",
-    "gist_rainbow",
-    "rainbow",
-    "jet",
-    "nipy_spectral",
-    "gist_ncar",
+    #  "flag",
+    #  "prism",
+    #  "gist_earth",
+    #  "terrain",
+    #  "gist_stern",
+    #  "CMRmap",
+    #  "cubehelix",
+    #  "brg",
+    #  "gist_rainbow",
+    #  "rainbow",
+    #  "jet",
+    #  "nipy_spectral",
+    # "gist_ncar",
 ]
 
 #
@@ -97,7 +97,7 @@ def affinity():
         description="Affinity",
         options=["euclidean", "l1", "l2", "manhattan", "cosine"],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -106,7 +106,7 @@ def ascending():
         description="Ascending:",
         options=[True, False],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -115,7 +115,7 @@ def c_axis_ascending():
         description="C-axis ascending:",
         options=[True, False],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -124,7 +124,7 @@ def r_axis_ascending():
         description="R-axis ascending:",
         options=[True, False],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -140,7 +140,7 @@ def clustering_method():
             "Mean Shift",
         ],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -149,7 +149,7 @@ def cmap(description="Colormap:"):
         description=description,
         options=COLORMAPS,
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -167,43 +167,43 @@ def color_scheme():
             "Reds",
         ],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
-def decomposition_method():
+def decomposition_method(description="Decompostion method:"):
     return widgets.Dropdown(
-        description="Decompostion method:",
+        description=description,
         options=["Factor Analysis", "PCA", "Fast ICA", "SVD"],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
-def dropdown(description, options):
+def Dropdown(options, description=""):
     return widgets.Dropdown(
         description=description,
         options=options,
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
-def fig_height():
+def fig_height(description="Height:"):
     return widgets.Dropdown(
-        description="Height:",
+        description=description,
         options=range(5, 26, 1),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
-def fig_width():
+def fig_width(description="Width:"):
     return widgets.Dropdown(
-        description="Width:",
+        description=description,
         options=range(5, 26, 1),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -212,7 +212,7 @@ def linkage():
         description="Linkage:",
         options=["ward", "complete", "average", "single"],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -221,18 +221,18 @@ def max_iter():
         description="Max iterations:",
         options=list(range(50, 501, 50)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
 def max_items(description="Max items:"):
     return widgets.Dropdown(
         description=description,
-        options=list(range(5, 40, 1))
+        options=list(range(10, 40, 1))
         + list(range(40, 100, 5))
         + list(range(100, 3001, 100)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -241,7 +241,7 @@ def n_labels():
         description="N labels:",
         options=list(range(5, 151, 5)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -250,7 +250,7 @@ def min_occurrence(description="Min OCC:"):
         description=description,
         options=list(range(1, 21)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -259,7 +259,7 @@ def n_iter():
         description="Iterations:",
         options=list(range(5, 51, 1)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -268,7 +268,7 @@ def n_clusters(m=3, n=21, i=1):
         description="N Clusters:",
         options=list(range(m, n, i)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -276,7 +276,7 @@ def n_clusters_ac():
     return widgets.Dropdown(
         options=["None"] + list(range(2, 21)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -285,7 +285,7 @@ def n_components():
         description="N components:",
         options=list(range(2, 11)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -308,7 +308,7 @@ def normalization(include_none=True):
         options=options,
         layout=Layout(width="auto"),
         value="Association",
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -339,7 +339,7 @@ def nx_scale():
         ],
         layout=Layout(width="auto"),
         value=1.0,
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -357,7 +357,7 @@ def nx_k():
         + [k / 10 for k in range(1, 21)]
         + [2.5, 3.0, 3.5, 4.0, 4.5, 5.0],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -367,7 +367,7 @@ def nx_iterations():
         options=list(range(5, 101, 1)),
         layout=Layout(width="auto"),
         value=50,
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -384,7 +384,7 @@ def nx_layout():
             "Shell",
         ],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -425,14 +425,15 @@ def random_state():
             "3012345",
         ],
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
-def separator(text):
-    return widgets.HTML(
-        "<hr><b>" + text + "</b>", layout=Layout(margin="20px 0px 0px 0px")
-    )
+def HTML(text, margin="20px 0px 0px 0px", hr=True):
+    text = "<b>" + text + "</b>"
+    if hr:
+        text = "<hr>" + text
+    return widgets.HTML(text, layout=Layout(margin=margin))
 
 
 def top_n(m=10, n=51, i=5):
@@ -440,7 +441,7 @@ def top_n(m=10, n=51, i=5):
         description="Top N:",
         options=list(range(m, n, i)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -449,7 +450,7 @@ def x_axis(n=10):
         description="X-axis:",
         options=list(range(n)),
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -459,7 +460,7 @@ def y_axis(n=10, value=1):
         options=list(range(n)),
         value=1,
         layout=Layout(width="auto"),
-        style={"description_width": "140px"},
+        style={"description_width": "130px"},
     )
 
 
@@ -581,13 +582,13 @@ class DASH:
                 widget.disabled = True
                 return
 
-    # def set_options(self, name, options):
-    #     for index, _ in enumerate(self.command_panel):
-    #         x = self.text_transform(self.command_panel[index]["desc"])
-    #         name = self.text_transform(name)
-    #         if x == name:
-    #             self.command_panel[index]["widget"].options = options
-    #             return
+    def set_options(self, name, options):
+        for index, _ in enumerate(self.command_panel):
+            x = self.text_transform(self.command_panel[index].description)
+            name = self.text_transform(name)
+            if x == name:
+                self.command_panel[index].options = options
+                return
 
     def enable_disable_clustering_options(self, include_random_state=False):
 
