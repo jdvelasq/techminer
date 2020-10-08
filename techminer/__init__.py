@@ -4,7 +4,8 @@ from .apply_keywords_thesaurus import apply_keywords_thesaurus
 
 # from .bigraph_analysis import bigraph_analysis
 from .by_term_analysis import by_term_analysis
-from .by_term_per_year_analysis import by_term_per_year_analysis
+
+#  from .by_term_per_year_analysis import by_term_per_year_analysis
 
 #  from .by_year_analysis import by_year_analysis
 #  from .comparative_analysis import comparative_analysis

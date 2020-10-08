@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-
+import ipywidgets as widgets
 import techminer.core.dashboard as dash
 
 #  from techminer.by_year_analysis import by_year_analysis
@@ -363,25 +363,25 @@ class MatrixDASHapp(DASH, MatrixModel):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         COLUMNS = sorted(
             [column for column in data.columns if column != "Abstract_phrase_words"]
         )
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=["Matrix", "Heatmap", "Bubble plot", "Gant", "Gant0"],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents per Year",
@@ -392,7 +392,7 @@ class MatrixDASHapp(DASH, MatrixModel):
                     "Global Citations",
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort by:",
                 options=["Alphabetic", "Values", "Num Documents", "Global Citations"],
             ),
@@ -401,6 +401,30 @@ class MatrixDASHapp(DASH, MatrixModel):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                # Visualization:
+                "top_by": self.command_panel[7],
+                "sort_by": self.command_panel[8],
+                "ascending": self.command_panel[9],
+                "colormap": self.command_panel[10],
+                "width": self.command_panel[11],
+                "height": self.command_panel[12],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 
