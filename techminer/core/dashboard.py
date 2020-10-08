@@ -430,7 +430,9 @@ def random_state():
 
 
 def separator(text):
-    return widgets.HTML("<b>" + text + "</b><hr>")
+    return widgets.HTML(
+        "<hr><b>" + text + "</b>", layout=Layout(margin="20px 0px 0px 0px")
+    )
 
 
 def top_n(m=10, n=51, i=5):
@@ -468,52 +470,32 @@ def y_axis(n=10, value=1):
 class DASH:
     def __init__(self):
 
-        ## layout
-        self.app_layout = []
-
-        ## Panel controls
-        self.command_panel = []
-        self.output = None
-
-        ## display pandas options
+        #
+        # Display pandas options
+        #
         self.pandas_max_rows = 100
         self.pandas_max_columns = 100
 
-    def logging_info(self, msg):
-        with self.output:
-            print(
-                "{} - INFO - {}".format(
-                    datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"), msg
-                )
-            )
-
-    def interactive_output(self, **kwargs):
-        for key in kwargs.keys():
-            setattr(self, key, kwargs[key])
-
-    def run(self):
-
         #
-        # Grid size
+        # Grid size (Generic)
         #
         self.app_layout = GridspecLayout(
             max(9, len(self.command_panel) + 1), 4, height="820px"
         )
 
         #
-        # Calculate button
+        # Calculate button (Generic)
         #
         calculate_button = widgets.Button(
             description="Apply",
             layout=Layout(width="auto", border="2px solid gray"),
-            #  button_style="warning",
             style={"button_color": "#BDC3C7"},
         )
         calculate_button.on_click(self.on_click)
         self.command_panel += [calculate_button]
 
         #
-        # Creates left panel
+        # Creates command panel (Generic)
         #
         self.app_layout[:, 0] = widgets.VBox(
             self.command_panel,
@@ -523,7 +505,7 @@ class DASH:
         )
 
         #
-        # Output area
+        # Output area (Generic)
         #
         self.output = widgets.Output().add_class("output_color")
         self.app_layout[0:, 1:] = widgets.VBox(
@@ -531,21 +513,13 @@ class DASH:
             layout=Layout(margin="10px 4px 4px 4px", border="1px solid gray"),
         )
 
-        #
-        # interactive
-        #
-        args = {}
-        for widget in self.command_panel:
-            if widget._model_name not in ["HTMLModel", "ButtonModel"]:
-                description = self.text_transform(widget.description)
-                args = {**args, **{description: widget}}
-
-        widgets.interactive_output(
-            self.interactive_output,
-            args,
-        )
-
+    def run(self):
         return self.app_layout
+
+    def interactive_output(self, **kwargs):
+
+        for key in kwargs.keys():
+            setattr(self, key, kwargs[key])
 
     def text_transform(self, text):
         return (
@@ -555,6 +529,14 @@ class DASH:
             .replace(":", "")
             .lower()
         )
+
+    def logging_info(self, msg):
+        with self.output:
+            print(
+                "{} - INFO - {}".format(
+                    datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"), msg
+                )
+            )
 
     def on_click(self, button):
 
@@ -651,35 +633,3 @@ class DASH:
             self.set_disabled("Linkage:")
             if include_random_state is True:
                 self.set_disabled("Random State:")
-
-
-#  def processing():
-#     html = """
-#         <style>
-#         .loader {
-#         border: 16px solid #f3f3f3;
-#         border-radius: 50%;
-#         border-top: 16px solid #3498db;
-#         width: 70px;
-#         height: 70px;
-#         -webkit-animation: spin 2s linear infinite; /* Safari */
-#         animation: spin 2s linear infinite;
-#         }
-
-#         /* Safari */
-#         @-webkit-keyframes spin {
-#         0% { -webkit-transform: rotate(0deg); }
-#         100% { -webkit-transform: rotate(360deg); }
-#         }
-
-#         @keyframes spin {
-#         0% { transform: rotate(0deg); }
-#         100% { transform: rotate(360deg); }
-#         }
-#         </style>
-#         </head>
-#         <h3>Processing ... </h3>
-#         <div class="loader"></div>
-
-#         """
-#     return widgets.HTML(html)

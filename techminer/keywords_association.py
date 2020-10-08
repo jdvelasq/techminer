@@ -7,6 +7,7 @@ import pandas as pd
 from pyvis.network import Network
 import matplotlib
 import networkx as nx
+from ipywidgets import GridspecLayout, Layout
 
 import techminer.core.dashboard as dash
 from techminer.core import (
@@ -44,20 +45,9 @@ class Model:
     def __init__(
         self,
         data,
-        top_n,
-        limit_to,
-        exclude,
-        years_range,
     ):
-        #
-        if years_range is not None:
-            initial_year, final_year = years_range
-            data = data[(data.Year >= initial_year) & (data.Year <= final_year)]
 
         self.data = data
-        self.limit_to = limit_to
-        self.exclude = exclude
-        self.top_n = top_n
 
         self.colormap = None
         self.column = None
@@ -278,123 +268,138 @@ class Model:
 ##
 ###############################################################################
 
-COLUMNS = [
-    "Author_Keywords",
-    "Author_Keywords_CL",
-    "Index_Keywords",
-    "Index_Keywords_CL",
-    "Keywords_CL",
-    "Title_Keywords",
-    "Title_Keywords_CL",
-    "Abstract_Keywords",
-    "Abstract_Keywords_CL",
+COLORMAPS = [
+    "Greys",
+    "Purples",
+    "Blues",
+    "Greens",
+    "Oranges",
+    "Reds",
+    "Pastel1",
+    "Pastel2",
+    "tab10",
+    "tab20",
+    "tab20b",
+    "tab20c",
 ]
 
 
 class DASHapp(DASH, Model):
     def __init__(
         self,
-        top_n=50,
-        limit_to=None,
-        exclude=None,
-        years_range=None,
     ):
         data = pd.read_csv("corpus.csv")
 
-        Model.__init__(
-            self,
-            data=data,
-            top_n=top_n,
-            limit_to=limit_to,
-            exclude=exclude,
-            years_range=years_range,
-        )
-        DASH.__init__(self)
+        Model.__init__(self, data=data)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            widgets.HTML("<b>View:</b>"),
+            widgets.Dropdown(
                 options=[
                     "Concordances",
                     "Radial Diagram",
                 ],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
+            widgets.HTML(
+                "<hr><b>Keywords selection:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                options=[z for z in data.columns if "keywords" in z.lower()],
                 description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
+                layout=Layout(width="auto"),
             ),
-            dash.dropdown(
-                description="Keyword:",
+            widgets.Dropdown(
                 options=[],
+                description="Keyword:",
+                layout=Layout(width="auto"),
             ),
-            dash.min_occurrence(),
-            dash.max_items(),
-            # dash.normalization(include_none=False),
-            dash.separator(text="Visualization"),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            widgets.Dropdown(
+                options=list(range(1, 21)),
+                description="Min OCC:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                options=list(range(5, 40, 1))
+                + list(range(40, 100, 5))
+                + list(range(100, 3001, 100)),
+                description="Max items:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.HTML(
+                "<hr><b>Visualization:</b>",
+                layout=Layout(margin="20px 0px 0px 0px"),
+            ),
+            widgets.Dropdown(
+                options=COLORMAPS,
+                description="Colormap:",
+                layout=Layout(width="auto"),
+            ),
+            widgets.Dropdown(
+                description="Height:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+                style={"description_width": "140px"},
+            ),
+            widgets.Dropdown(
+                description="Width:",
+                options=range(5, 26, 1),
+                layout=Layout(width="auto"),
+                style={"description_width": "140px"},
+            ),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                "menu": self.command_panel[1],
+                "column": self.command_panel[3],
+                "keyword": self.command_panel[4],
+                "min_occ": self.command_panel[5],
+                "max_items": self.command_panel[6],
+                "colormap": self.command_panel[8],
+                "height": self.command_panel[9],
+                "width": self.command_panel[10],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                "menu": self.command_panel[1].value,
+                "column": self.command_panel[3].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        with self.output:
 
-        if self.menu == "Concordances":
+            DASH.interactive_output(self, **kwargs)
 
-            data = self.data[[self.column, "Abstract"]].dropna()
-            data[self.column] = data[self.column].map(lambda w: w.split(";"))
-            data = data.explode(self.column)
-            data.index = list(range(len(data)))
-            data["selected"] = [
-                (k, v) for k, v in zip(data[self.column], data.Abstract)
-            ]
-            data["selected"] = data["selected"].map(lambda w: w[0] in w[1].lower())
-            data = data[data.selected]
-            keywords = sorted(set(data[self.column].tolist()))
+            if self.menu == "Concordances":
 
-            if self.top_n is None:
+                data = self.data[[self.column, "Abstract"]].dropna()
+                data[self.column] = data[self.column].map(lambda w: w.split(";"))
+                data = data.explode(self.column)
+                data.index = list(range(len(data)))
+                data["selected"] = [
+                    (k, v) for k, v in zip(data[self.column], data.Abstract)
+                ]
+                data["selected"] = data["selected"].map(lambda w: w[0] in w[1].lower())
+                data = data[data.selected]
+                keywords = sorted(set(data[self.column].tolist()))
+                self.command_panel[4].options = keywords
 
-                self.command_panel[2].options = keywords
-
-            else:
+            if self.menu == "Radial Diagram":
 
                 data = self.data[[self.column]].dropna()
                 data[self.column] = data[self.column].map(lambda w: w.split(";"))
                 data = data.explode(self.column)
-                data["OCC"] = 1
-                x = data.groupby([self.column], as_index=True).agg({"OCC": np.sum})
-                x = x.sort_values(by="OCC", ascending=False)
-                x = x.head(self.top_n)
-                x = x.index.tolist()
-                keywords = [k for k in keywords if k in x]
-                self.command_panel[2].options = keywords
-
-        if self.menu == "Radial Diagram":
-
-            data = self.data[[self.column]].dropna()
-            data[self.column] = data[self.column].map(lambda w: w.split(";"))
-            data = data.explode(self.column)
-            keywords = sorted(set(data[self.column].tolist()))
-            self.command_panel[2].options = keywords
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def keywords_association(
-    top_n=50,
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        top_n=top_n,
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
+                keywords = sorted(set(data[self.column].tolist()))
+                self.command_panel[4].options = keywords

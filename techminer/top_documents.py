@@ -8,7 +8,7 @@ class DASHapp:
     def __init__(self):
 
         command_panel = [
-            widgets.HTML("Top N:"),
+            widgets.HTML("<b>Top N:</b>"),
             widgets.IntSlider(
                 value=7,
                 min=10,
@@ -28,8 +28,8 @@ class DASHapp:
                 description=" ",
                 style={"description_width": "50px"},
             ),
-            widgets.HTML("<hr>"),
-            widgets.HTML("Citations:"),
+            widgets.HTML("<hr>", layout=Layout(margin="20px 0px 0px 0px")),
+            widgets.HTML("<b>Citations:</b>"),
             widgets.ToggleButtons(
                 options=[("Global", True), ("Local", False)],
                 disabled=False,
@@ -41,8 +41,8 @@ class DASHapp:
                 ),
                 style={"button_width": "50px"},
             ),
-            widgets.HTML("<hr>"),
-            widgets.HTML("Normalized citations:"),
+            widgets.HTML("<hr>", layout=Layout(margin="20px 0px 0px 0px")),
+            widgets.HTML("<b>Normalized citations:</b>"),
             widgets.ToggleButtons(
                 options=[("Yes", True), ("No", False)],
                 value=False,
@@ -55,8 +55,8 @@ class DASHapp:
                 ),
                 style={"button_width": "50px"},
             ),
-            widgets.HTML("<hr>"),
-            widgets.HTML("Detailed data:"),
+            widgets.HTML("<hr>", layout=Layout(margin="20px 0px 0px 0px")),
+            widgets.HTML("<b>Detailed data:</b>"),
             widgets.ToggleButtons(
                 options=[("Yes", True), ("No", False)],
                 disabled=False,
@@ -68,7 +68,7 @@ class DASHapp:
                 ),
                 style={"button_width": "50px"},
             ),
-            widgets.HTML("<hr>"),
+            widgets.HTML("<hr>", layout=Layout(margin="20px 0px 0px 0px")),
         ]
 
         #

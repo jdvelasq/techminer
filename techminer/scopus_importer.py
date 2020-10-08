@@ -35,14 +35,14 @@ class ScopusImporter(DASH):
     def __init__(self):
 
         self.command_panel = [
-            widgets.HTML("Scopus Filename:"),
+            widgets.HTML("<b>Scopus Filename:</b>"),
             widgets.FileUpload(
                 accept="scopus.csv",
                 multiple=False,
                 Layout=Layout(width="auto"),
             ),
             widgets.HTML("<hr>"),
-            widgets.HTML("Document types:"),
+            widgets.HTML("<b>Document types:</b>"),
             widgets.Checkbox(
                 value=True,
                 description="Article",
