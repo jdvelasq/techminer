@@ -60,7 +60,6 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
-    "*** Document term analysis": DocumentTermAnalysis,
     "*** Growth indicators": GrowthIndicators,
     "*** Term analysis": TermAnalyzer,
     "*** Term per year analysis": TermYearAnalyzer,
@@ -82,6 +81,7 @@ APPS = {
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
     "Matrix explorer": MatrixExplorer,
+    "TF*IDF analysis": DocumentTermAnalysis,
     "Time analysis": YearAnalyzer,
     "Top documents": TopDocuments,
     "Worldmap": WorldMap,

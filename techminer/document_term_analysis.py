@@ -164,13 +164,12 @@ class DASHapp(DASH, Model):
         Model.__init__(
             self, data=data, limit_to=limit_to, exclude=exclude, years_range=years_range
         )
-        DASH.__init__(self)
 
         self.pandas_max_rows = 300
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Table",
                     "Bar plot",
@@ -178,29 +177,30 @@ class DASHapp(DASH, Model):
                     "LIMIT TO python code",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[t for t in sorted(data.columns) if t in COLUMNS],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Norm:",
                 options=[None, "L1", "L2"],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Use IDF:",
                 options=[
                     True,
                     False,
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Smooth IDF:",
                 options=[
                     True,
                     False,
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sublinear TF:",
                 options=[
                     True,
@@ -209,8 +209,8 @@ class DASHapp(DASH, Model):
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Sort by:",
                 options=[
                     "Alphabetic",
@@ -225,28 +225,30 @@ class DASHapp(DASH, Model):
             dash.fig_height(),
         ]
 
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "norm": self.command_panel[4],
+                "use_idf": self.command_panel[5],
+                "smooth_idf": self.command_panel[6],
+                "sublinear_tf": self.command_panel[7],
+                "min_occ": self.command_panel[8],
+                "max_items": self.command_panel[9],
+                # Visualization
+                "sort_by": self.command_panel[11],
+                "ascending": self.command_panel[12],
+                "colormap": self.command_panel[13],
+                "width": self.command_panel[14],
+                "height": self.command_panel[15],
+            },
+        )
+
+        DASH.__init__(self)
+
     def interactive_output(self, **kwargs):
 
         DASH.interactive_output(self, **kwargs)
-
-        if self.menu == self.menu_options[0]:
-            self.set_disabled("Width:")
-            self.set_disabled("Height:")
-        else:
-            self.set_enabled("Width:")
-            self.set_enabled("Height:")
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def document_term_analysis(limit_to=None, exclude=None, years_range=None):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
