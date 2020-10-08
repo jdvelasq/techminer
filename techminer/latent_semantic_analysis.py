@@ -345,25 +345,3 @@ class DASHapp(DASH, Model):
             self.set_enabled("Height:")
 
         self.enable_disable_clustering_options()
-
-        #  self.set_options(name="X-axis:", options=list(range(self.n_components)))
-        #  self.set_options(name="Y-axis:", options=list(range(self.n_components)))
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def latent_semantic_analysis(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()

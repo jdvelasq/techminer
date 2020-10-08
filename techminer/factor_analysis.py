@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.decomposition import PCA, FactorAnalysis, FastICA, TruncatedSVD
 from sklearn.manifold import MDS
 
+import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
     DASH,
@@ -253,11 +254,10 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", margin="0px 0px 0px 5px", hr=False),
+            dash.Dropdown(
                 options=[
                     "Cluster members",
                     "Cluster plot",
@@ -265,7 +265,8 @@ class DASHapp(DASH, Model):
                     "Conceptual Structure Members",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
@@ -273,13 +274,13 @@ class DASHapp(DASH, Model):
             dash.max_items(),
             dash.normalization(include_none=False),
             dash.random_state(),
-            dash.separator(text="Clustering"),
+            dash.HTML("Clustering"),
             dash.decomposition_method(),
             dash.clustering_method(),
             dash.n_clusters(m=3, n=21, i=1),
             dash.affinity(),
             dash.linkage(),
-            dash.separator(text="Visualization"),
+            dash.HTML("Visualization"),
             dash.top_n(),
             dash.color_scheme(),
             dash.x_axis(),
@@ -287,6 +288,64 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "normalization": self.command_panel[6],
+                "random_state": self.command_panel[7],
+                # Clustering:
+                "decomposition_method": self.command_panel[9],
+                "clustering_method": self.command_panel[10],
+                "n_clusters": self.command_panel[11],
+                "affinity": self.command_panel[12],
+                "linkage": self.command_panel[13],
+                # Visualization
+                "top_n": self.command_panel[15],
+                "color_scheme": self.command_panel[16],
+                "x_axis": self.command_panel[17],
+                "y_axis": self.command_panel[18],
+                "width": self.command_panel[19],
+                "height": self.command_panel[20],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                # Display:
+                "menu": self.command_panel[1].value,
+                # Parameters:
+                "column": self.command_panel[3].value,
+                "min_occ": self.command_panel[4].value,
+                "max_items": self.command_panel[5].value,
+                "normalization": self.command_panel[6].value,
+                "random_state": self.command_panel[7].value,
+                # Clustering:
+                "decomposition_method": self.command_panel[9].value,
+                "clustering_method": self.command_panel[10].value,
+                "n_clusters": self.command_panel[11].value,
+                "affinity": self.command_panel[12].value,
+                "linkage": self.command_panel[13].value,
+                # Visualization
+                "top_n": self.command_panel[15].value,
+                "color_scheme": self.command_panel[16].value,
+                "x_axis": self.command_panel[17].value,
+                "y_axis": self.command_panel[18].value,
+                "width": self.command_panel[19].value,
+                "height": self.command_panel[20].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 
@@ -323,22 +382,3 @@ class DASHapp(DASH, Model):
             self.set_disabled("Color Scheme:")
 
         self.enable_disable_clustering_options()
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def factor_analysis(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()

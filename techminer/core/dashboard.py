@@ -429,7 +429,7 @@ def random_state():
     )
 
 
-def HTML(text, margin="20px 0px 0px 0px", hr=True):
+def HTML(text, margin="20px 0px 0px 5px", hr=True):
     text = "<b>" + text + "</b>"
     if hr:
         text = "<hr>" + text

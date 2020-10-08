@@ -1,6 +1,7 @@
 from collections import Counter
 
 import pandas as pd
+import ipywidgets as widgets
 
 import techminer.core.dashboard as dash
 from techminer.core import (
@@ -276,7 +277,6 @@ class DASHapp(DASH, Model):
         exclude=None,
         years_range=None,
     ):
-        """Dashboard app"""
 
         data = pd.read_csv("corpus.csv")
 
@@ -287,34 +287,34 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         #  COLUMNS = sorted(
         #      [column for column in sorted(data.columns) if column not in EXCLUDE_COLS]
         #  )
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "CA plot of keywords",
                     "Cluster plot of keywords",
                     "Cluster plot of documents",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[t for t in sorted(data.columns) if t in COLUMNS],
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.separator(text="Clustering"),
+            dash.HTML("Clustering:"),
             dash.clustering_method(),
             dash.n_clusters(m=3, n=50, i=1),
             dash.affinity(),
             dash.linkage(),
             dash.random_state(),
-            dash.separator(text="Visualization"),
+            dash.HTML("Visualization:"),
             dash.top_n(m=10, n=51, i=5),
             dash.color_scheme(),
             dash.x_axis(),
@@ -322,6 +322,36 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                # Clustering
+                "clustering_method": self.command_panel[7],
+                "n_clusters": self.command_panel[8],
+                "affinity": self.command_panel[9],
+                "linkage": self.command_panel[10],
+                "random_state": self.command_panel[11],
+                # Visualization
+                "top_n": self.command_panel[13],
+                "colors": self.command_panel[14],
+                "x_axis": self.command_panel[15],
+                "y_axis": self.command_panel[16],
+                "width": self.command_panel[17],
+                "height": self.command_panel[18],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 

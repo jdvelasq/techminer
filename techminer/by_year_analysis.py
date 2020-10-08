@@ -7,6 +7,7 @@ from ipywidgets import GridspecLayout, Layout
 
 import techminer.core.dashboard as dash
 from techminer.core import DASH, corpus_filter
+from techminer.core.dashboard import ascending
 from techminer.plots import bar_plot, barh_plot
 
 ###############################################################################
@@ -171,8 +172,8 @@ class DASHapp(DASH, Model):
         Model.__init__(self, data, years_range=years_range)
 
         self.command_panel = [
-            widgets.HTML("<b>Display:</b>"),
-            widgets.Dropdown(
+            dash.HTML("<b>Display:</b>", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Table",
                     "Num Documents by Year",
@@ -182,11 +183,8 @@ class DASHapp(DASH, Model):
                     "Avg Global Citations by Year",
                 ],
             ),
-            widgets.HTML(
-                "<hr><b>Visualization:</b>",
-                layout=Layout(margin="20px 0px 0px 0px"),
-            ),
-            widgets.Dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Sort by:",
                 options=[
                     "Year",
@@ -197,29 +195,14 @@ class DASHapp(DASH, Model):
                     "Avg_Global_Citations",
                 ],
             ),
-            widgets.Dropdown(
-                description="Ascending:",
-                options=[True, False],
-            ),
-            widgets.Dropdown(
+            dash.ascending(),
+            dash.Dropdown(
                 description="Plot:",
                 options=["Bar plot", "Horizontal bar plot"],
             ),
-            widgets.Dropdown(
-                options=COLORMAPS,
-                description="Colormap:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                description="Width:",
-                options=range(5, 26, 1),
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                description="Height:",
-                options=range(5, 26, 1),
-                layout=Layout(width="auto"),
-            ),
+            dash.cmap(),
+            dash.fig_width(),
+            dash.fig_height(),
         ]
 
         #

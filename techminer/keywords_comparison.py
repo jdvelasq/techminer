@@ -23,6 +23,7 @@ from techminer.core import (
 
 #  from techminer.core.params import EXCLUDE_COLS
 from techminer.core import cluster_table_to_list
+from techminer.core.dashboard import fig_height, fig_width, max_items, min_occurrence
 from techminer.plots import ChordDiagram
 from techminer.plots import bubble_plot as bubble_plot_
 from techminer.plots import counters_to_node_colors, counters_to_node_sizes
@@ -354,64 +355,26 @@ class DASHapp(DASH, Model):
         )
 
         self.command_panel = [
-            widgets.HTML("<b>Display:</b>"),
-            widgets.Dropdown(
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Concordances",
                     "Radial Diagram",
-                ],
-                layout=Layout(width="auto"),
+                ]
             ),
-            widgets.HTML(
-                "<hr><b>Keywords selection:</b>",
-                layout=Layout(margin="20px 0px 0px 0px"),
-            ),
-            widgets.Dropdown(
+            dash.HTML("Keywords selection:"),
+            dash.Dropdown(
                 options=[z for z in data.columns if "keywords" in z.lower()],
                 description="Column:",
-                layout=Layout(width="auto"),
             ),
-            widgets.Dropdown(
-                options=[],
-                description="Keyword A:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                options=[],
-                description="Keyword B:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                options=list(range(1, 21)),
-                description="Min OCC:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                options=list(range(5, 40, 1))
-                + list(range(40, 100, 5))
-                + list(range(100, 3001, 100)),
-                description="Max items:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.HTML(
-                "<hr><b>Visualization:</b>",
-                layout=Layout(margin="20px 0px 0px 0px"),
-            ),
-            widgets.Dropdown(
-                options=COLORMAPS,
-                description="Colormap:",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                description="Width:",
-                options=range(5, 26, 1),
-                layout=Layout(width="auto"),
-            ),
-            widgets.Dropdown(
-                description="Height:",
-                options=range(5, 26, 1),
-                layout=Layout(width="auto"),
-            ),
+            dash.Dropdown(options=[], description="Keyword A:"),
+            dash.Dropdown(options=[], description="Keyword B:"),
+            dash.min_occurrence(),
+            dash.max_items(),
+            dash.HTML("Visualization:"),
+            dash.cmap(),
+            dash.fig_width(),
+            dash.fig_height(),
         ]
 
         #

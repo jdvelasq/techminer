@@ -5,6 +5,7 @@ from IPython.display import display
 from ipywidgets import GridspecLayout, Layout
 
 from techminer.core import corpus_filter, explode, record_to_HTML
+import techminer.core.dashboard as dash
 
 
 class DASHapp:
@@ -19,44 +20,35 @@ class DASHapp:
         # Left panel controls
         #
         self.command_panel = [
-            widgets.HTML("<b>Display:</b>"),
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
             widgets.Checkbox(
                 value=True,
                 description="Show only abstract",
-                layout=Layout(width="auto"),
             ),
-            widgets.HTML(
-                "<hr><b>First column:</b>", layout=Layout(margin="15px 0px 0px 0px")
-            ),
-            widgets.Dropdown(
+            dash.HTML("First column:"),
+            dash.Dropdown(
                 options=sorted(self.data.columns),
                 description="Column:",
-                layout=Layout(width="auto"),
             ),
-            widgets.Dropdown(
+            dash.Dropdown(
                 options=[],
                 description="Value:",
-                layout=Layout(width="auto"),
             ),
-            widgets.HTML(
-                "<hr><b>Second column:</b>", layout=Layout(margin="15px 0px 0px 0px")
-            ),
-            widgets.Dropdown(
+            dash.HTML("Second column:"),
+            dash.Dropdown(
                 options=sorted(self.data.columns),
                 description="Column:",
-                layout=Layout(width="auto"),
             ),
-            widgets.Dropdown(
+            dash.Dropdown(
                 options=[],
                 description="Value:",
-                layout=Layout(width="auto"),
             ),
-            widgets.HTML(
-                "<hr><b>Found articles:</b>", layout=Layout(margin="15px 0px 0px 0px")
-            ),
+            dash.HTML("Found articles:"),
             widgets.Select(
                 options=[],
-                layout=Layout(height="330pt", width="auto"),
+                layout=Layout(
+                    height="320pt", width="auto", margin="0px, 0px, 0px, 5px"
+                ),
             ),
         ]
 

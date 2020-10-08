@@ -3,7 +3,7 @@ import matplotlib.pyplot as pyplot
 import numpy as np
 import pandas as pd
 from sklearn.manifold import MDS
-
+import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
     CA,
@@ -446,11 +446,10 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "MDS Keywords Map",
                     "MDS Cluster Map",
@@ -465,42 +464,63 @@ class DASHapp(DASH, Model):
                     "Strategic Map",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
             dash.normalization(include_none=False),
-            dash.separator(text="Clustering"),
+            dash.HTML("Clustering"),
             dash.clustering_method(),
             dash.n_clusters(m=3, n=50, i=1),
             dash.affinity(),
             dash.linkage(),
             dash.random_state(),
-            dash.separator(text="CA diagram"),
+            dash.HTML("CA diagram"),
             dash.x_axis(),
             dash.y_axis(),
-            dash.separator(text="Visualization"),
+            dash.HTML("Visualization"),
             dash.top_n(),
-            dash.dropdown(
-                description="Colors:",
-                options=[
-                    "4 Quadrants",
-                    "Clusters",
-                    "Greys",
-                    "Purples",
-                    "Blues",
-                    "Greens",
-                    "Oranges",
-                    "Reds",
-                ],
-            ),
+            dash.color_scheme(),
             dash.fig_width(),
             dash.fig_height(),
         ]
 
         self.n_components = 10
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "normalization": self.command_panel[6],
+                # Clustering
+                "clustering_method": self.command_panel[8],
+                "n_clusters": self.command_panel[9],
+                "affinity": self.command_panel[10],
+                "linkage": self.command_panel[11],
+                "random_state": self.command_panel[12],
+                #  CA Diagram
+                "x_axis": self.command_panel[14],
+                "y_axis": self.command_panel[15],
+                # Visualization
+                "top_n": self.command_panel[17],
+                "colors": self.command_panel[18],
+                "width": self.command_panel[19],
+                "height": self.command_panel[20],
+            },
+        )
+
+        DASH.__init__(self)
 
     def interactive_output(self, **kwargs):
 
@@ -539,20 +559,3 @@ class DASHapp(DASH, Model):
                 self.set_disabled("Height:")
 
 
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def co_word_analysis(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()

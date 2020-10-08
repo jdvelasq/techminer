@@ -6,6 +6,7 @@ from IPython.display import display
 from ipywidgets import GridspecLayout, Layout
 
 from techminer.core import explode, record_to_HTML
+import techminer.core.dashboard as dash
 
 
 class DASHapp:
@@ -20,32 +21,19 @@ class DASHapp:
         # Left panel controls
         #
         self.command_panel = [
-            widgets.HTML("<b>Display:</b>"),
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
             widgets.Checkbox(
                 value=True,
                 description="Show only abstract",
-                layout=Layout(width="auto"),
             ),
-            widgets.HTML(
-                "<hr><b>Column:</b>", layout=Layout(margin="15px 0px 0px 0px")
-            ),
-            widgets.Dropdown(
-                options=sorted(
-                    self.data.columns
-                ),  #  [z for z in COLUMNS if z in df.columns],
-                layout=Layout(width="auto"),
-            ),
-            widgets.HTML("<hr><b>Term:</b>", layout=Layout(margin="15px 0px 0px 0px")),
-            widgets.Dropdown(
-                options=[],
-                layout=Layout(width="auto"),
-            ),
-            widgets.HTML(
-                "<hr><b>Found articles:</b>", layout=Layout(margin="15px 0px 0px 0px")
-            ),
+            dash.HTML("Column:"),
+            dash.Dropdown(options=sorted(self.data.columns)),
+            dash.HTML("Term:"),
+            dash.Dropdown(options=[]),
+            dash.HTML("Found articles:"),
             widgets.Select(
                 options=[],
-                layout=Layout(height="379pt", width="auto"),
+                layout=Layout(height="360pt", width="auto"),
             ),
         ]
 

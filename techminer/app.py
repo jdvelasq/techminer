@@ -25,6 +25,9 @@ from techminer.column_explorer import DASHapp as ColumnExplorer
 from techminer.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.top_documents import DASHapp as TopDocuments
 
+from techminer.coverage import DASHapp as CoverageReporter
+from techminer.descriptive_stats import DASHapp as StatisticsReporter
+
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
 
@@ -53,25 +56,27 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
+    "Coverage": CoverageReporter,
+    "Descriptive Statistics": StatisticsReporter,
     "Column explorer": ColumnExplorer,
     "Matrix explorer": MatrixExplorer,
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
     "Top documents": TopDocuments,
     "Time analysis": YearAnalyzer,
-    "Term analysis": TermAnalyzer,
-    "Term per year analysis": TermYearAnalyzer,
-    "Growth indicators": GrowthIndicators,
-    "Bigraph analysis": BigraphAnalyzer,
-    "Graph analyzer": GraphAnalyzer,
-    "Correlation analysis": CorrelationAnalysis,
+    "*** Term analysis": TermAnalyzer,
+    "*** Term per year analysis": TermYearAnalyzer,
+    "*** Growth indicators": GrowthIndicators,
+    "*** Bigraph analysis": BigraphAnalyzer,
+    "*** Graph analyzer": GraphAnalyzer,
+    "*** Correlation analysis": CorrelationAnalysis,
     "Conceptual structure": ConceptualStructure,
     "Co-word analysis": CoWordAnalysis,
     "Comparative analysis": ComparativeAnalysis,
     "Factor analysis": FactorAnalysis,
     "Latent semantic analysis": LatentSemanticAnalysis,
-    "Thematic analysis": ThematicAnalysis,
-    "Document term analysis": DocumentTermAnalysis,
+    "*** Thematic analysis": ThematicAnalysis,
+    "*** Document term analysis": DocumentTermAnalysis,
 }
 
 
