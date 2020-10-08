@@ -225,12 +225,16 @@ def max_iter():
     )
 
 
-def max_items(description="Max items:"):
+def max_items(description="Max items:", options=None):
+    if options is None:
+        options = (
+            list(range(10, 40, 1))
+            + list(range(40, 100, 5))
+            + list(range(100, 3001, 100))
+        )
     return widgets.Dropdown(
         description=description,
-        options=list(range(10, 40, 1))
-        + list(range(40, 100, 5))
-        + list(range(100, 3001, 100)),
+        options=options,
         layout=Layout(width="auto"),
         style={"description_width": "130px"},
     )

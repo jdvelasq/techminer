@@ -30,6 +30,7 @@ from techminer.coverage import DASHapp as CoverageReporter
 from techminer.descriptive_stats import DASHapp as StatisticsReporter
 from techminer.core_authors import DASHapp as CoreAuthors
 from techminer.core_sources import DASHapp as CoreSources
+from techminer.bradford_law import DASHapp as BradfordLaw
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -65,6 +66,7 @@ APPS = {
     "*** Term per year analysis": TermYearAnalyzer,
     "*** Thematic analysis": ThematicAnalysis,
     "Bigraph analysis": BigraphAnalyzer,
+    "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,
     "Column explorer": ColumnExplorer,
     "Comparative analysis": ComparativeAnalysis,
