@@ -36,7 +36,7 @@ class ScopusImporter(DASH):
 
         self.command_panel = [
             widgets.HTML(
-                "<b>Scopus Filename:</b>", layout=Layout(margin="0px 0px 0px 5px")
+                "<b>Scopus Filename:</b>", layout=Layout(margin="0px 0px 0px 10px")
             ),
             widgets.FileUpload(
                 accept="scopus.csv",
@@ -45,7 +45,7 @@ class ScopusImporter(DASH):
             ),
             widgets.HTML("<hr>"),
             widgets.HTML(
-                "<b>Document types:</b>", layout=Layout(margin="0px 0px 0px 5px")
+                "<b>Document types:</b>", layout=Layout(margin="0px 0px 0px 10px")
             ),
             widgets.Checkbox(
                 value=True,

@@ -50,17 +50,19 @@ class DASHapp(DASH, Model):
         Model.__init__(self, data=data)
 
         self.command_panel = [
-            dash.HTML("Visualization:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
-                description="Top by:",
+            dash.HTML("Top by:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.RadioButtons(
                 options=[
                     "Num Documents",
                     "Global Citations",
                 ],
+                description=" ",
             ),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            dash.HTML("Colormap:"),
+            dash.cmap(description=None),
+            dash.HTML("Figure size:"),
+            dash.fig_width(slider=True),
+            dash.fig_height(slider=True),
         ]
 
         #
@@ -71,9 +73,9 @@ class DASHapp(DASH, Model):
             controls={
                 # Visualization:
                 "top_by": self.command_panel[1],
-                "colormap": self.command_panel[2],
-                "width": self.command_panel[3],
-                "height": self.command_panel[4],
+                "colormap": self.command_panel[3],
+                "width": self.command_panel[5],
+                "height": self.command_panel[6],
             },
         )
 

@@ -145,6 +145,15 @@ def clustering_method():
 
 
 def cmap(description="Colormap:"):
+
+    if description is None:
+
+        return widgets.Dropdown(
+            description=" ",
+            options=COLORMAPS,
+            layout=Layout(width="250px", margin="15px, 0px, 0px, 0px"),
+        )
+
     return widgets.Dropdown(
         description=description,
         options=COLORMAPS,
@@ -180,16 +189,23 @@ def decomposition_method(description="Decompostion method:"):
     )
 
 
-def Dropdown(options, description=""):
-    return widgets.Dropdown(
-        description=description,
-        options=options,
-        layout=Layout(width="auto"),
-        style={"description_width": "130px"},
-    )
+def fig_height(description="Height:", slider=False):
 
+    if slider is True:
 
-def fig_height(description="Height:"):
+        return widgets.IntSlider(
+            description=description,
+            value=5,
+            min=5,
+            max=25,
+            step=1,
+            readout=True,
+            readout_format="d",
+            continuous_update=False,
+            layout=Layout(width="auto"),
+            #  style={"description_width": "130px"},
+        )
+
     return widgets.Dropdown(
         description=description,
         options=range(5, 26, 1),
@@ -198,7 +214,23 @@ def fig_height(description="Height:"):
     )
 
 
-def fig_width(description="Width:"):
+def fig_width(description="Width:", slider=False):
+
+    if slider is True:
+
+        return widgets.IntSlider(
+            description=description,
+            value=5,
+            min=5,
+            max=25,
+            step=1,
+            readout=True,
+            readout_format="d",
+            continuous_update=False,
+            layout=Layout(width="auto"),
+            #  style={"description_width": "130px"},
+        )
+
     return widgets.Dropdown(
         description=description,
         options=range(5, 26, 1),
@@ -487,6 +519,24 @@ def network_clustering():
 ################################################################
 
 
+def Dropdown(options, description=""):
+    return widgets.Dropdown(
+        description=description,
+        options=options,
+        layout=Layout(width="auto"),
+        style={"description_width": "130px"},
+    )
+
+
+def RadioButtons(options, description=""):
+    return widgets.RadioButtons(
+        description=description,
+        options=options,
+        layout=Layout(width="auto"),
+        #  style={"description_width": "130px"},
+    )
+
+
 class DASH:
     def __init__(self):
 
@@ -526,7 +576,7 @@ class DASH:
         self.app_layout[:, 0] = widgets.VBox(
             self.command_panel,
             layout=Layout(
-                margin="10px 0px 4px 4px",
+                margin="10px 8px 5px 10px",
             ),
         )
 

@@ -60,7 +60,6 @@ header_style = """
 """
 
 APPS = {
-    "Scopus importer": ScopusImporter,
     "Bigraph analysis": BigraphAnalyzer,
     "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,
@@ -81,6 +80,7 @@ APPS = {
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
     "Matrix explorer": MatrixExplorer,
+    "Scopus importer": ScopusImporter,
     "Term analysis": TermAnalyzer,
     "Term per year analysis": TermYearAnalyzer,
     "TF*IDF analysis": DocumentTermAnalysis,
@@ -100,6 +100,7 @@ class App:
         apps_dropdown = widgets.Dropdown(
             options=[key for key in APPS.keys()],
             layout=Layout(width="70%"),
+            value="Scopus importer",
         ).add_class("select")
 
         #
