@@ -68,179 +68,6 @@ class Model:
         self.width = None
         self.view = None
 
-    def single_multiple_publication(self):
-
-
-    def impact(self):
-        x = self.data.copy()
-        last_year = x.Year.max()
-        x["Num_Documents"] = 1
-        x["First_Year"] = x.Year
-        if self.column == "Authors":
-            x = explode(
-                x[
-                    [
-                        self.column,
-                        "Frac_Num_Documents",
-                        "Num_Documents",
-                        "Global_Citations",
-                        "First_Year",
-                        "ID",
-                    ]
-                ],
-                self.column,
-            )
-            result = x.groupby(self.column, as_index=False).agg(
-                {
-                    "Frac_Num_Documents": np.sum,
-                    "Num_Documents": np.sum,
-                    "Global_Citations": np.sum,
-                    "First_Year": np.min,
-                }
-            )
-        else:
-            x = explode(
-                x[
-                    [
-                        self.column,
-                        "Num_Documents",
-                        "Global_Citations",
-                        "First_Year",
-                        "ID",
-                    ]
-                ],
-                self.column,
-            )
-            result = x.groupby(self.column, as_index=False).agg(
-                {
-                    "Num_Documents": np.sum,
-                    "Global_Citations": np.sum,
-                    "First_Year": np.min,
-                }
-            )
-
-        result["Last_Year"] = last_year
-        result = result.assign(Years=result.Last_Year - result.First_Year + 1)
-        result = result.assign(
-            Global_Citations_per_Year=result.Global_Citations / result.Years
-        )
-        result["Global_Citations_per_Year"] = result["Global_Citations_per_Year"].map(
-            lambda w: round(w, 2)
-        )
-        result = result.assign(
-            Avg_Global_Citations=result.Global_Citations / result.Num_Documents
-        )
-        result["Avg_Global_Citations"] = result["Avg_Global_Citations"].map(
-            lambda w: round(w, 2)
-        )
-
-        result["Global_Citations"] = result["Global_Citations"].map(lambda x: int(x))
-
-        #
-        # Indice H
-        #
-        z = x[[self.column, "Global_Citations", "ID"]].copy()
-        z = (
-            x.assign(
-                rn=x.sort_values("Global_Citations", ascending=False)
-                .groupby(self.column)
-                .cumcount()
-                + 1
-            )
-        ).sort_values(
-            [self.column, "Global_Citations", "rn"], ascending=[False, False, True]
-        )
-        z["rn2"] = z.rn.map(lambda w: w * w)
-
-        q = z.query("Global_Citations >= rn")
-        q = q.groupby(self.column, as_index=False).agg({"rn": np.max})
-        h_dict = {key: value for key, value in zip(q[self.column], q.rn)}
-
-        result["H_index"] = result[self.column].map(
-            lambda w: h_dict[w] if w in h_dict.keys() else 0
-        )
-
-        #
-        # indice M
-        #
-        result = result.assign(M_index=result.H_index / result.Years)
-        result["M_index"] = result["M_index"].map(lambda w: round(w, 2))
-
-        #
-        # indice G
-        #
-        q = z.query("Global_Citations >= rn2")
-        q = q.groupby(self.column, as_index=False).agg({"rn": np.max})
-        h_dict = {key: value for key, value in zip(q[self.column], q.rn)}
-        result["G_index"] = result[self.column].map(
-            lambda w: h_dict[w] if w in h_dict.keys() else 0
-        )
-
-        ## counters in axis names
-        result.index = result[self.column]
-
-        ## limit to / exclude options
-        result = limit_to_exclude(
-            data=result,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
-
-        result = add_counters_to_axis(
-            X=result, axis=0, data=self.data, column=self.column
-        )
-
-        ## Top by / Top N
-        top_by = self.top_by.replace(" ", "_").replace("-", "_").replace("/", "_")
-        if top_by in ["Num_Documents", "Global_Citations"]:
-            result = sort_axis(
-                data=result,
-                num_documents=(top_by == "Num_Documents"),
-                axis=0,
-                ascending=False,
-            )
-        else:
-            result = result.sort_values(top_by, ascending=False)
-        result = result.head(self.max_items)
-
-        ## Sort by
-        sort_by = self.sort_by.replace(" ", "_").replace("-", "_").replace("/", "_")
-        if sort_by in ["Alphabetic", "Num_Documents", "Global_Citations"]:
-            result = sort_by_axis(
-                data=result, sort_by=self.sort_by, ascending=self.ascending, axis=0
-            )
-        else:
-            result = result.sort_values(sort_by, ascending=self.ascending)
-
-        if self.view == "Table":
-            result.pop(self.column)
-            result.pop("Num_Documents")
-            result.pop("Global_Citations")
-            result.pop("First_Year")
-            result.pop("Last_Year")
-            result.pop("Years")
-            return result
-
-        if self.view == "Bar plot":
-            top_by = self.top_by.replace(" ", "_")
-            return bar_plot(
-                height=result[top_by],
-                cmap=self.colormap,
-                ylabel=self.top_by,
-                figsize=(self.width, self.height),
-            )
-
-        if self.view == "Horizontal bar plot":
-            top_by = self.top_by.replace(" ", "_")
-            return barh_plot(
-                width=result[top_by],
-                cmap=self.colormap,
-                xlabel=self.top_by,
-                figsize=(self.width, self.height),
-            )
-
     def compute_general_table(self):
 
         x = self.data.copy()
@@ -328,7 +155,7 @@ class Model:
 
         return result
 
-    def general(self):
+    def compute(self):
 
         result = self.compute_general_table()
 
@@ -458,6 +285,7 @@ class DASHapp(DASH, Model):
         """Dashboard app"""
 
         data = pd.read_csv("corpus.csv")
+        self.menu = "compute"
 
         Model.__init__(
             self,
@@ -466,75 +294,43 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         COLUMNS = sorted([column for column in data.columns])
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
-                options=[
-                    "General",
-                    "Impact",
-                    "Single/Multiple publication",
-                    "List of core source titles",
-                    "LIMIT TO python code",
-                    "Core source titles",
-                    "*** Core authors",
-                    "*** Most global cited documents",
-                    "*** Most local cited documents",
-                    "*** Bradford law",
-                    "*** Lotka law",
-                    "*** Worldmap",
-                    
-                ],
-            ),
-            dash.dropdown(
-                description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
-            ),
-            dash.min_occurrence(),
-            dash.max_items(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
-                description="View:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Table",
                     "Bar plot",
                     "Horizontal bar plot",
                     "Pie plot",
                     "Wordcloud",
-                    "Worldmap",
                     "Treemap",
-                    "S/D Ratio (bar)",
-                    "S/D Ratio (barh)",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
+                description="Column:",
+                options=[z for z in COLUMNS if z in data.columns],
+            ),
+            dash.min_occurrence(),
+            dash.max_items(),
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
                     "Global Citations",
-                    "Frac Num Documents",
-                    "Global Citations per Year",
-                    "Avg Global Citations",
-                    "H index",
-                    "M index",
-                    "G index",
+                    "Local Citations",
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort by:",
                 options=[
                     "Num Documents",
-                    "Frac Num Documents",
                     "Global Citations",
-                    "Global Citations per Year",
-                    "Avg Global Citations",
-                    "H index",
-                    "M index",
-                    "G index",
-                    "*Index*",
+                    "Local Citations",
                 ],
             ),
             dash.ascending(),
@@ -543,346 +339,26 @@ class DASHapp(DASH, Model):
             dash.fig_height(),
         ]
 
-    def set_menu_options(self):
-
-        config = {
-            "General": {
-                "Column:": sorted([column for column in self.data.columns]),
-                "View:": [
-                    "Table",
-                    "Bar plot",
-                    "Horizontal bar plot",
-                    "Pie plot",
-                    "Wordcloud",
-                    "Treemap",
-                ],
-                "Top by:": ["Num Documents", "Global Citations", "Local Citations"],
-                "Sort by:": ["Num Documents", "Global Citations", "Local Citations"],
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "view": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                # Visualization:
+                "top_by": self.command_panel[7],
+                "sort_by": self.command_panel[8],
+                "ascending": self.command_panel[9],
+                "colormap": self.command_panel[10],
+                "width": self.command_panel[11],
+                "height": self.command_panel[12],
             },
-            "Impact": {
-                "Column:": [
-                    "Authors",
-                    "Institutions",
-                    "Institution_1st_Author",
-                    "Countries",
-                    "Country_1st_Author",
-                    "Source_title",
-                ],
-                "View:": [
-                    "Table",
-                    "Bar plot",
-                    "Horizontal bar plot",
-                ],
-                "Top by:": [
-                    "Num Documents",
-                    "Global Citations",
-                    "Global Citations per Year",
-                    "Avg Global Citations",
-                    "H index",
-                    "M index",
-                    "G index",
-                ],
-                "Sort by:": [
-                    "Alphabetic",
-                    "Num Documents",
-                    "Global Citations",
-                    "Global Citations per Year",
-                    "Avg Global Citations",
-                    "H index",
-                    "M index",
-                    "G index",
-                ],
-            },
-            "Single/Multiple publication": {
-                "Column:": [
-                    "Authors",
-                    "Institutions",
-                    "Institution_1st_Author",
-                    "Countries",
-                    "Country_1st_Author",
-                ],
-                "View:": [
-                    "Table",
-                    "Bar plot",
-                    "Horizontal bar plot",
-                ],
-                "Top by:": ["Num Documents"],
-                "Sort by:": [
-                    "Alphabetic",
-                    "Num Documents",
-                    "Global Citations",
-                    "SD",
-                    "MD",
-                    "SMR",
-                ],
-            },
-            "Worldmap": {
-                "Column:": [
-                    "Countries",
-                    "Country_1st_Author",
-                ],
-                "Top by:": ["Num Documents", "Global Citations"],
-                "View": ["Worldmap"],
-            },
-            "Core authors": {},
-            "Core source titles": {},
-            "Most global cited documents": {},
-            "Most local cited documents": {},
-            "List of core source titles": {},
-            "Bradford law": {},
-            "Lotka law": {},
-            "LIMIT TO python code": {
-                "Column:": sorted([column for column in self.data.columns])
-            },
-        }
+        )
 
-        options = config[self.menu]
-        for key in options.keys():
-            self.set_options(key, options[key])
-            #  if key == "View:":
-            #      self.view = options[key][0]
-
-    def set_menu_interactive(self):
-
-        menu_names = {
-            0: "Column:",
-            1: "Min occurrence:",
-            2: "Max items:",
-            3: "View:",
-            4: "Top by:",
-            5: "Sort by:",
-            6: "Ascending:",
-            7: "Colormap:",
-            8: "Width:",
-            9: "Height:",
-        }
-
-        config = {
-            "General": {
-                "Table": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    False,
-                ],
-                "Bar plot": [True] * 10,
-                "Horizontal bar plot": [True] * 10,
-                "Pie plot": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    True,
-                    True,
-                    True,
-                ],
-                "Wordcloud": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    True,
-                    True,
-                    True,
-                ],
-                "Treemap": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    True,
-                    True,
-                    True,
-                ],
-            },
-            "Impact": {
-                "Table": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    False,
-                ],
-                "Bar plot": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                ],
-                "Horizontal bar plot": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                ],
-            },
-            "Single/Multiple publication": {
-                "Table": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    False,
-                    False,
-                    False,
-                ],
-                "Bar plot": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                ],
-                "Horizontal bar plot": [
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                    True,
-                ],
-            },
-            "Worldmap": {
-                "Worldmap": [
-                    False,
-                    False,
-                    False,
-                    True,
-                    False,
-                    False,
-                    False,
-                    True,
-                    True,
-                    True,
-                ]
-            },
-            "Core authors": None,
-            "Core source titles": None,
-            "Most global cited documents": None,
-            "Most local cited documents": None,
-            "List of core source titles": None,
-            "LIMIT TO python code": [
-                True,
-                True,
-                True,
-                False,
-                False,
-                False,
-                False,
-                False,
-                False,
-                False,
-            ],
-            "Bradford law": [
-                False,
-                False,
-                True,
-                False,
-                False,
-                False,
-                False,
-                True,
-                True,
-                True,
-            ],
-            "Lotka law": [
-                False,
-                False,
-                True,
-                False,
-                False,
-                False,
-                False,
-                True,
-                True,
-                True,
-            ],
-        }
-
-        options = config[self.menu]
-
-        if options is not None:
-
-            if isinstance(options, dict):
-                options = options[self.menu]
-
-            for i_option, option_value in enumerate(options):
-
-                if option_value is True:
-                    self.set_enabled(menu_names[i_option])
-                else:
-                    self.set_disabled(menu_names[i_option])
-
-        else:
-
-            for name in menu_names.values():
-                self.set_disabled(name)
-
-    def interactive_output(self, **kwargs):
-
-        DASH.interactive_output(self, **kwargs)
-        self.set_menu_options()
-        self.set_menu_interactive()
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def by_term_analysis(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
+        DASH.__init__(self)

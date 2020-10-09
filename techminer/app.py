@@ -5,33 +5,33 @@ import pandas as pd
 
 # from techminer.column_explorer import column_explorer
 from techminer.bigraph_analysis import DASHapp as BigraphAnalyzer
+from techminer.bradford_law import DASHapp as BradfordLaw
 from techminer.by_term_analysis import DASHapp as TermAnalyzer
 from techminer.by_term_per_year_analysis import MatrixDASHapp as TermYearAnalyzer
 from techminer.by_year_analysis import DASHapp as YearAnalyzer
 from techminer.co_word_analysis import DASHapp as CoWordAnalysis
-from techminer.conceptual_structure import DASHapp as ConceptualStructure
-from techminer.correlation_analysis import DASHapp as CorrelationAnalysis
+from techminer.collaboration_analysis import DASHapp as CollaborationAnalysis
+from techminer.column_explorer import DASHapp as ColumnExplorer
 from techminer.comparative_analysis import DASHapp as ComparativeAnalysis
+from techminer.conceptual_structure import DASHapp as ConceptualStructure
+from techminer.core_authors import DASHapp as CoreAuthors
+from techminer.core_sources import DASHapp as CoreSources
+from techminer.correlation_analysis import DASHapp as CorrelationAnalysis
+from techminer.coverage import DASHapp as CoverageReporter
+from techminer.descriptive_stats import DASHapp as StatisticsReporter
 from techminer.document_term_analysis import DASHapp as DocumentTermAnalysis
 from techminer.factor_analysis import DASHapp as FactorAnalysis
 from techminer.graph_analysis import DASHapp as GraphAnalyzer
 from techminer.growth_indicators import DASHapp as GrowthIndicators
+from techminer.impact_analysis import DASHapp as ImpactAnalysis
 from techminer.keywords_association import DASHapp as KeywordsAssociation
 from techminer.keywords_comparison import DASHapp as KeywordsComparison
 from techminer.latent_semantic_analysis import DASHapp as LatentSemanticAnalysis
+from techminer.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.scopus_importer import ScopusImporter
 from techminer.thematic_analysis import DASHapp as ThematicAnalysis
-from techminer.column_explorer import DASHapp as ColumnExplorer
-from techminer.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.top_documents import DASHapp as TopDocuments
 from techminer.worldmap import DASHapp as WorldMap
-from techminer.collaboration_analysis import DASHapp as CollaborationAnalysis
-
-from techminer.coverage import DASHapp as CoverageReporter
-from techminer.descriptive_stats import DASHapp as StatisticsReporter
-from techminer.core_authors import DASHapp as CoreAuthors
-from techminer.core_sources import DASHapp as CoreSources
-from techminer.bradford_law import DASHapp as BradfordLaw
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -61,7 +61,6 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
-    "*** Term analysis": TermAnalyzer,
     "*** Thematic analysis": ThematicAnalysis,
     "Bigraph analysis": BigraphAnalyzer,
     "Bradford law": BradfordLaw,
@@ -78,10 +77,12 @@ APPS = {
     "Factor analysis": FactorAnalysis,
     "Graph analyzer": GraphAnalyzer,
     "Growth indicators": GrowthIndicators,
+    "Impact analysis": ImpactAnalysis,
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
     "Matrix explorer": MatrixExplorer,
+    "Term analysis": TermAnalyzer,
     "Term per year analysis": TermYearAnalyzer,
     "TF*IDF analysis": DocumentTermAnalysis,
     "Time analysis": YearAnalyzer,
