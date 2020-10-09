@@ -70,79 +70,6 @@ class Model:
 
     def single_multiple_publication(self):
 
-        x = self.data.copy()
-        x["SD"] = x[self.column].map(
-            lambda w: 1 if isinstance(w, str) and len(w.split(";")) == 1 else 0
-        )
-        x["MD"] = x[self.column].map(
-            lambda w: 1 if isinstance(w, str) and len(w.split(";")) > 1 else 0
-        )
-        x = explode(
-            x[
-                [
-                    self.column,
-                    "SD",
-                    "MD",
-                    "ID",
-                ]
-            ],
-            self.column,
-        )
-        result = x.groupby(self.column, as_index=False).agg(
-            {
-                "SD": np.sum,
-                "MD": np.sum,
-            }
-        )
-        result["SMR"] = [
-            round(MD / max(SD, 1), 2) for SD, MD in zip(result.SD, result.MD)
-        ]
-        result = result.set_index(self.column)
-
-        ## limit to / exclude options
-        result = limit_to_exclude(
-            data=result,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
-
-        ## counters in axis names
-        result = add_counters_to_axis(
-            X=result, axis=0, data=self.data, column=self.column
-        )
-
-        ## Top by / Top N
-        result = sort_by_axis(data=result, sort_by=self.top_by, ascending=False, axis=0)
-        result = result.head(self.max_items)
-
-        ## Sort by
-        if self.sort_by in result.columns:
-            result = result.sort_values(self.sort_by, ascending=self.ascending)
-        else:
-            result = sort_by_axis(
-                data=result, sort_by=self.sort_by, ascending=self.ascending, axis=0
-            )
-
-        if self.view == "Table":
-            return result
-
-        if self.view == "Bar plot":
-            return stacked_bar(
-                X=result[["SD", "MD"]],
-                cmap=self.colormap,
-                ylabel="Num Documents",
-                figsize=(self.width, self.height),
-            )
-
-        if self.view == "Horizontal bar plot":
-            return stacked_barh(
-                X=result[["SD", "MD"]],
-                cmap=self.colormap,
-                xlabel="Num Documents",
-                figsize=(self.width, self.height),
-            )
 
     def impact(self):
         x = self.data.copy()
@@ -548,17 +475,18 @@ class DASHapp(DASH, Model):
                 description="MENU:",
                 options=[
                     "General",
-                    "Worldmap",
                     "Impact",
                     "Single/Multiple publication",
-                    "Core authors",
-                    "Core source titles",
-                    "Most global cited documents",
-                    "Most local cited documents",
                     "List of core source titles",
-                    "Bradford law",
-                    "Lotka law",
                     "LIMIT TO python code",
+                    "Core source titles",
+                    "*** Core authors",
+                    "*** Most global cited documents",
+                    "*** Most local cited documents",
+                    "*** Bradford law",
+                    "*** Lotka law",
+                    "*** Worldmap",
+                    
                 ],
             ),
             dash.dropdown(

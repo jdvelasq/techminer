@@ -25,6 +25,7 @@ from techminer.column_explorer import DASHapp as ColumnExplorer
 from techminer.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.top_documents import DASHapp as TopDocuments
 from techminer.worldmap import DASHapp as WorldMap
+from techminer.collaboration_analysis import DASHapp as CollaborationAnalysis
 
 from techminer.coverage import DASHapp as CoverageReporter
 from techminer.descriptive_stats import DASHapp as StatisticsReporter
@@ -65,6 +66,7 @@ APPS = {
     "Bigraph analysis": BigraphAnalyzer,
     "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,
+    "Collaboration analysis": CollaborationAnalysis,
     "Column explorer": ColumnExplorer,
     "Comparative analysis": ComparativeAnalysis,
     "Conceptual structure": ConceptualStructure,

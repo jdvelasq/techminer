@@ -445,22 +445,3 @@ class DASHapp(DASH, Model):
             self.set_enabled("Colormap:")
             self.set_enabled("Width:")
             self.set_enabled("Height:")
-
-
-###############################################################################
-##
-##  EXTERNAL INTERFACE
-##
-###############################################################################
-
-
-def growth_indicators(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
