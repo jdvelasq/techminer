@@ -491,7 +491,7 @@ COLUMNS = [
 class DASHapp(DASH, Model):
     def __init__(
         self,
-        thesaurus_file,
+        thesaurus_file="thesaurus/keywords.txt",
         limit_to=None,
         exclude=None,
         years_range=None,
@@ -506,11 +506,10 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Keywords by theme",
                     "Documents by theme",
@@ -520,24 +519,25 @@ class DASHapp(DASH, Model):
                     "Keywords plot",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in sorted(COLUMNS) if z in data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Min co-occurrence within:",
                 options=[1, 2, 3, 4, 5],
             ),
-            dash.separator(text="Clustering"),
+            dash.HTML("Clustering:"),
             dash.clustering_method(),
             dash.n_clusters(m=3, n=50, i=1),
             dash.affinity(),
             dash.linkage(),
             dash.random_state(),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
@@ -547,38 +547,84 @@ class DASHapp(DASH, Model):
             dash.top_n(
                 n=101,
             ),
-            dash.dropdown(
-                description="Colors:",
-                options=[
-                    "4 Quadrants",
-                    "Clusters",
-                    "Greys",
-                    "Purples",
-                    "Blues",
-                    "Greens",
-                    "Oranges",
-                    "Reds",
-                ],
-            ),
+            dash.color_scheme(),
             dash.x_axis(),
             dash.y_axis(),
             dash.fig_width(),
             dash.fig_height(),
         ]
 
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "min_co_occurrence_within": self.command_panel[6],
+                # Clustering
+                "clustering_method": self.command_panel[8],
+                "n_clusters": self.command_panel[9],
+                "affinity": self.command_panel[10],
+                "linkage": self.command_panel[11],
+                "random_state": self.command_panel[12],
+                # Visualization:
+                "top_by": self.command_panel[14],
+                "top_n": self.command_panel[15],
+                "colors": self.command_panel[16],
+                "x_axis": self.command_panel[17],
+                "y_axis": self.command_panel[18],
+                "width": self.command_panel[19],
+                "height": self.command_panel[20],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                # Display:
+                "menu": self.command_panel[1].value,
+                # Parameters:
+                "column": self.command_panel[3].value,
+                "min_occ": self.command_panel[4].value,
+                "max_items": self.command_panel[5].value,
+                "min_co_occurrence_within": self.command_panel[6].value,
+                # Clustering
+                "clustering_method": self.command_panel[8].value,
+                "n_clusters": self.command_panel[9].value,
+                "affinity": self.command_panel[10].value,
+                "linkage": self.command_panel[11].value,
+                "random_state": self.command_panel[12].value,
+                # Visualization:
+                "top_by": self.command_panel[14].value,
+                "top_n": self.command_panel[15].value,
+                "colors": self.command_panel[16].value,
+                "x_axis": self.command_panel[17].value,
+                "y_axis": self.command_panel[18].value,
+                "width": self.command_panel[19].value,
+                "height": self.command_panel[20].value,
+            }
+        )
+
     def interactive_output(self, **kwargs):
 
         DASH.interactive_output(self, **kwargs)
 
-        self.command_panel[-4].options = list(range(self.n_clusters))
-        self.command_panel[-3].options = list(range(self.n_clusters))
+        self.command_panel[17].options = list(range(self.n_clusters))
+        self.command_panel[18].options = list(range(self.n_clusters))
 
-        for i in [-1, -2, -3, -4, -5]:
+        for i in [16, 17, 18, 19, 20]:
             self.command_panel[i].disabled = self.menu in [
+                "Keywords by theme",
+                "Documents by theme",
+                "Meaningful contexts",
                 "Contingency table",
-                "Cluster members",
-                "Cluster ppal coordinates",
-                "Term ppal coordinates",
             ]
 
 

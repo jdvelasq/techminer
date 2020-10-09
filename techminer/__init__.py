@@ -23,10 +23,10 @@ from .create_keywords_thesaurus import create_keywords_thesaurus
 #  from .factor_analysis import factor_analysis
 # from .graph_analysis import graph_analysis
 # from .growth_indicators import growth_indicators
-from .scopus_importer import ScopusImporter
+#  from .scopus_importer import ScopusImporter
 
 #  from .latent_semantic_analysis import latent_semantic_analysis
-from .thematic_analysis import thematic_analysis
+#  from .thematic_analysis import thematic_analysis
 
 #  from .top_documents import top_documents
 # from .conceptual_structure import conceptual_structure

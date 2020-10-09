@@ -61,7 +61,6 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
-    "*** Thematic analysis": ThematicAnalysis,
     "Bigraph analysis": BigraphAnalyzer,
     "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,
@@ -85,6 +84,7 @@ APPS = {
     "Term analysis": TermAnalyzer,
     "Term per year analysis": TermYearAnalyzer,
     "TF*IDF analysis": DocumentTermAnalysis,
+    "Thematic analysis": ThematicAnalysis,
     "Time analysis": YearAnalyzer,
     "Top documents": TopDocuments,
     "Worldmap": WorldMap,
