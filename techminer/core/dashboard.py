@@ -203,7 +203,7 @@ def fig_height(description="Height:", slider=False):
             readout_format="d",
             continuous_update=False,
             layout=Layout(width="auto"),
-            #  style={"description_width": "130px"},
+            style={"description_width": "130px"},
         )
 
     return widgets.Dropdown(
@@ -228,7 +228,7 @@ def fig_width(description="Width:", slider=False):
             readout_format="d",
             continuous_update=False,
             layout=Layout(width="auto"),
-            #  style={"description_width": "130px"},
+            style={"description_width": "130px"},
         )
 
     return widgets.Dropdown(

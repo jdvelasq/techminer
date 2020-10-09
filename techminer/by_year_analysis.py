@@ -182,8 +182,9 @@ class DASHapp(DASH, Model):
                     "Cum Global Citations by Year",
                     "Avg Global Citations by Year",
                 ],
+                description=" ",
             ),
-            dash.HTML("Visualization:"),
+            dash.HTML("Ordering:"),
             dash.Dropdown(
                 description="Sort by:",
                 options=[
@@ -196,13 +197,14 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.ascending(),
+            dash.HTML("Plot:"),
             dash.Dropdown(
-                description="Plot:",
+                description="Plot type:",
                 options=["Bar plot", "Horizontal bar plot"],
             ),
             dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            dash.fig_width(slider=True),
+            dash.fig_height(slider=True),
         ]
 
         #
@@ -211,27 +213,45 @@ class DASHapp(DASH, Model):
         widgets.interactive_output(
             f=self.interactive_output,
             controls={
+                # Display
                 "menu": self.command_panel[1],
+                # Ordering
                 "sort_by": self.command_panel[3],
                 "ascending": self.command_panel[4],
-                "plot": self.command_panel[5],
-                "colormap": self.command_panel[6],
-                "width": self.command_panel[7],
-                "height": self.command_panel[8],
+                # Plot
+                "plot": self.command_panel[6],
+                "colormap": self.command_panel[7],
+                "width": self.command_panel[8],
+                "height": self.command_panel[9],
             },
         )
 
         DASH.__init__(self)
 
+        self.interactive_output(
+            **{
+                # Display
+                "menu": self.command_panel[1].value,
+                # Ordering
+                "sort_by": self.command_panel[3].value,
+                "ascending": self.command_panel[4].value,
+                # Plot
+                "plot": self.command_panel[6].value,
+                "colormap": self.command_panel[7].value,
+                "width": self.command_panel[8].value,
+                "height": self.command_panel[9].value,
+            }
+        )
+
     def interactive_output(self, **kwargs):
 
         DASH.interactive_output(self, **kwargs)
 
-        if self.menu == self.command_panel[1].options:
+        if self.menu == "Table":
 
             self.set_enabled("Sort by:")
             self.set_enabled("Ascending:")
-            self.set_disabled("Plot:")
+            self.set_disabled("Plot type:")
             self.set_disabled("Colormap:")
             self.set_disabled("Width:")
             self.set_disabled("Height:")
@@ -240,7 +260,7 @@ class DASHapp(DASH, Model):
 
             self.set_disabled("Sort by:")
             self.set_disabled("Ascending:")
-            self.set_enabled("Plot:")
+            self.set_enabled("Plot type:")
             self.set_enabled("Colormap:")
             self.set_enabled("Width:")
             self.set_enabled("Height:")
