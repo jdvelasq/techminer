@@ -356,11 +356,12 @@ class DASHapp(DASH, Model):
 
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
+            dash.RadioButtons(
                 options=[
                     "Concordances",
                     "Radial Diagram",
-                ]
+                ],
+                description="",
             ),
             dash.HTML("Keywords selection:"),
             dash.Dropdown(

@@ -173,7 +173,7 @@ class DASHapp(DASH, Model):
 
         self.command_panel = [
             dash.HTML("<b>Display:</b>", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
+            dash.RadioButtons(
                 options=[
                     "Table",
                     "Num Documents by Year",
@@ -182,7 +182,7 @@ class DASHapp(DASH, Model):
                     "Cum Global Citations by Year",
                     "Avg Global Citations by Year",
                 ],
-                description=" ",
+                description="",
             ),
             dash.HTML("Ordering:"),
             dash.Dropdown(

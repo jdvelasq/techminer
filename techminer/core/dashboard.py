@@ -533,7 +533,7 @@ def RadioButtons(options, description=""):
         description=description,
         options=options,
         layout=Layout(width="auto"),
-        #  style={"description_width": "130px"},
+        style={"description_width": "130px"},
     )
 
 

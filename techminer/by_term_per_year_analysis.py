@@ -370,8 +370,9 @@ class MatrixDASHapp(DASH, MatrixModel):
 
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
+            dash.RadioButtons(
                 options=["Matrix", "Heatmap", "Bubble plot", "Gant", "Gant0"],
+                description="",
             ),
             dash.HTML("Parameters:"),
             dash.Dropdown(

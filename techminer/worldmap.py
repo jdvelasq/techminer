@@ -56,7 +56,7 @@ class DASHapp(DASH, Model):
                     "Num Documents",
                     "Global Citations",
                 ],
-                description=" ",
+                description="",
             ),
             dash.HTML("Colormap:"),
             dash.cmap(description=None),

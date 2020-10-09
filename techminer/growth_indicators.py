@@ -329,7 +329,7 @@ class DASHapp(DASH, Model):
 
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
+            dash.RadioButtons(
                 options=[
                     "Table",
                     "Average Growth Rate",
@@ -337,6 +337,7 @@ class DASHapp(DASH, Model):
                     "Percentage of Documents in Last Years",
                     "Num Documents",
                 ],
+                description="",
             ),
             dash.HTML("Parameters:"),
             dash.Dropdown(

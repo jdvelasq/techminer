@@ -299,7 +299,7 @@ class DASHapp(DASH, Model):
 
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
+            dash.RadioButtons(
                 options=[
                     "Table",
                     "Bar plot",
@@ -308,6 +308,7 @@ class DASHapp(DASH, Model):
                     "Wordcloud",
                     "Treemap",
                 ],
+                description="",
             ),
             dash.HTML("Parameters:"),
             dash.Dropdown(

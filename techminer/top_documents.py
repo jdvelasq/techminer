@@ -2,13 +2,14 @@ import pandas as pd
 import ipywidgets as widgets
 from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
+import techminer.core.dashboard as dash
 
 
 class DASHapp:
     def __init__(self):
 
         command_panel = [
-            widgets.HTML("<b>Top N:</b>"),
+            dash.HTML("Top N:", hr=False, margin="0px, 0px, 0px, 5px"),
             widgets.IntSlider(
                 value=7,
                 min=10,
@@ -108,7 +109,7 @@ class DASHapp:
         self.app_layout[:, 0] = widgets.VBox(
             command_panel,
             layout=Layout(
-                margin="10px 0px 4px 4px",
+                margin="10px 8px 5px 10px",
             ),
         )
 
