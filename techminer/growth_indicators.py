@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import ipywidgets as widgets
+
 
 import techminer.core.dashboard as dash
 
@@ -324,11 +326,10 @@ class DASHapp(DASH, Model):
             exclude=exclude,
             years_range=years_range,
         )
-        DASH.__init__(self)
 
         self.command_panel = [
-            dash.dropdown(
-                description="MENU:",
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
                 options=[
                     "Table",
                     "Average Growth Rate",
@@ -337,18 +338,19 @@ class DASHapp(DASH, Model):
                     "Num Documents",
                 ],
             ),
-            dash.dropdown(
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
                 description="Column:",
                 options=[z for z in COLUMNS if z in self.data.columns],
             ),
             dash.min_occurrence(),
             dash.max_items(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Time window:",
                 options=[2, 3, 4, 5],
             ),
-            dash.separator(text="Visualization"),
-            dash.dropdown(
+            dash.HTML("Visualization:"),
+            dash.Dropdown(
                 description="Top by:",
                 options=[
                     "Num Documents",
@@ -361,7 +363,7 @@ class DASHapp(DASH, Model):
                     "Between",
                 ],
             ),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Sort by:",
                 options=[
                     "Alphabetic",
@@ -375,7 +377,7 @@ class DASHapp(DASH, Model):
                 ],
             ),
             dash.ascending(),
-            dash.dropdown(
+            dash.Dropdown(
                 description="Plot:",
                 options=["bar", "barh"],
             ),
@@ -383,6 +385,51 @@ class DASHapp(DASH, Model):
             dash.fig_width(),
             dash.fig_height(),
         ]
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "time_window": self.command_panel[6],
+                # Visualization:
+                "top_by": self.command_panel[8],
+                "sort_by": self.command_panel[9],
+                "ascending": self.command_panel[10],
+                "plot": self.command_panel[11],
+                "colormap": self.command_panel[12],
+                "width": self.command_panel[13],
+                "height": self.command_panel[14],
+            },
+        )
+
+        DASH.__init__(self)
+
+        self.interactive_output(
+            **{
+                "menu": self.command_panel[1].value,
+                # Parameters:
+                "column": self.command_panel[3].value,
+                "min_occ": self.command_panel[4].value,
+                "max_items": self.command_panel[5].value,
+                "time_window": self.command_panel[6].value,
+                # Visualization:
+                "top_by": self.command_panel[8].value,
+                "sort_by": self.command_panel[9].value,
+                "ascending": self.command_panel[10].value,
+                "plot": self.command_panel[11].value,
+                "colormap": self.command_panel[12].value,
+                "width": self.command_panel[13].value,
+                "height": self.command_panel[14].value,
+            }
+        )
 
     def interactive_output(self, **kwargs):
 

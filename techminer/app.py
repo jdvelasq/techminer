@@ -60,7 +60,6 @@ header_style = """
 
 APPS = {
     "Scopus importer": ScopusImporter,
-    "*** Growth indicators": GrowthIndicators,
     "*** Term analysis": TermAnalyzer,
     "*** Thematic analysis": ThematicAnalysis,
     "Bigraph analysis": BigraphAnalyzer,
@@ -76,6 +75,7 @@ APPS = {
     "Descriptive Statistics": StatisticsReporter,
     "Factor analysis": FactorAnalysis,
     "Graph analyzer": GraphAnalyzer,
+    "Growth indicators": GrowthIndicators,
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
