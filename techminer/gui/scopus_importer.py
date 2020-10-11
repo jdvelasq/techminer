@@ -20,10 +20,10 @@ from techminer.core.text import remove_accents
 
 from techminer.core.thesaurus import load_file_as_dict
 from techminer.core import DASH
-from techminer.create_institutions_thesaurus import create_institutions_thesaurus
-from techminer.apply_institutions_thesaurus import apply_institutions_thesaurus
-from techminer.create_keywords_thesaurus import create_keywords_thesaurus
-from techminer.apply_keywords_thesaurus import apply_keywords_thesaurus
+from techminer.core.create_institutions_thesaurus import create_institutions_thesaurus
+from techminer.core.apply_institutions_thesaurus import apply_institutions_thesaurus
+from techminer.core.create_keywords_thesaurus import create_keywords_thesaurus
+from techminer.core.apply_keywords_thesaurus import apply_keywords_thesaurus
 
 
 warnings.filterwarnings("ignore")
@@ -41,7 +41,9 @@ class ScopusImporter(DASH):
             widgets.FileUpload(
                 accept="scopus.csv",
                 multiple=False,
-                Layout=Layout(width="auto"),
+                description=" ",
+                Layout=Layout(width="auto", border="2px solid gray"),
+                style={"button_color": "#BDC3C7"},
             ),
             widgets.HTML("<hr>"),
             widgets.HTML(
@@ -168,6 +170,8 @@ class ScopusImporter(DASH):
 
     def on_click(self, args):
 
+        self.output.clear_output()
+
         ##
         ## Checks if a file was selected
         ##
@@ -195,7 +199,7 @@ class ScopusImporter(DASH):
         ##
         ## Steps
         ##
-        self.create_working_dirs()
+        #  self.create_working_dirs()
         self.rename_columns()
         self.select_documents()
         self.remove_accents()
@@ -251,7 +255,8 @@ class ScopusImporter(DASH):
         self.apply_institutions_thesaurus()
         self.create_keywords_thesaurus()
         self.apply_keywords_thesaurus()
-
+        #
+        self.create_KW_exclude()
         #
         self.logging_info("Finished!!!")
 
@@ -319,14 +324,19 @@ class ScopusImporter(DASH):
 
         self.data.index = range(len(self.data))
 
-    def create_working_dirs(self):
-        #
-        # Creates working directories
-        #
-        self.logging_info("Creating working directories ...")
-        for dirname in ["thesaurus", "keywords"]:
-            if not exists(dirname):
-                makedirs(dirname)
+    def create_KW_exclude(self):
+        filename = "KW_ignore.txt"
+        if not exists(filename):
+            open(filename, "a").close()
+
+    # def create_working_dirs(self):
+    #     #
+    #     # Creates working directories
+    #     #
+    #     self.logging_info("Creating working directories ...")
+    #     for dirname in ["thesaurus", "keywords"]:
+    #         if not exists(dirname):
+    #             makedirs(dirname)
 
     # def extract_title_keywords(self):
 
@@ -426,7 +436,7 @@ class ScopusImporter(DASH):
         self.logging_info("Translate british spelling to american spelling ...")
 
         module_path = dirname(__file__)
-        filename = join(module_path, "data/bg2am.data")
+        filename = join(module_path, "../data/bg2am.data")
         bg2am = load_file_as_dict(filename)
 
         for british_word in bg2am:

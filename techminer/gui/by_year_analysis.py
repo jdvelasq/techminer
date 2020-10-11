@@ -203,8 +203,8 @@ class DASHapp(DASH, Model):
                 options=["Bar plot", "Horizontal bar plot"],
             ),
             dash.cmap(),
-            dash.fig_width(slider=True),
-            dash.fig_height(slider=True),
+            dash.fig_width(slider=False),
+            dash.fig_height(slider=False),
         ]
 
         #

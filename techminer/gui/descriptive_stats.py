@@ -36,7 +36,7 @@ class DASHapp:
         self.output = widgets.Output().add_class("output_color")
         self.app_layout[0:, 0:] = widgets.VBox(
             [self.output],
-            layout=Layout(margin="10px 4px 4px 4px", border="1px solid gray"),
+            layout=Layout(margin="10px 10px 10px 10px", border="1px solid gray"),
         )
 
     def run(self):

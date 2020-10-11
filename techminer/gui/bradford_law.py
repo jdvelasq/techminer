@@ -119,11 +119,13 @@ class DASHapp(DASH, Model):
         self.menu = "bradford_law"
 
         self.command_panel = [
-            dash.HTML("Visualization:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.max_items(options=list(range(5, 21))),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            dash.HTML("Max items:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.IntSlider(value=5, min=5, max=25, step=1),
+            dash.HTML("Colormap:"),
+            dash.cmap(description=None),
+            dash.HTML("Figure size:"),
+            dash.fig_width(slider=True),
+            dash.fig_height(slider=True),
         ]
 
         #
@@ -132,11 +134,13 @@ class DASHapp(DASH, Model):
         widgets.interactive_output(
             f=self.interactive_output,
             controls={
-                # Visualization:
+                # Max items:
                 "max_items": self.command_panel[1],
-                "colormap": self.command_panel[2],
-                "width": self.command_panel[3],
-                "height": self.command_panel[4],
+                #  Colormap
+                "colormap": self.command_panel[3],
+                # Figure size
+                "width": self.command_panel[5],
+                "height": self.command_panel[6],
             },
         )
 
@@ -146,9 +150,9 @@ class DASHapp(DASH, Model):
             **{
                 # Visualization:
                 "max_items": self.command_panel[1].value,
-                "colormap": self.command_panel[2].value,
-                "width": self.command_panel[3].value,
-                "height": self.command_panel[4].value,
+                "colormap": self.command_panel[3].value,
+                "width": self.command_panel[5].value,
+                "height": self.command_panel[6].value,
             }
         )
 

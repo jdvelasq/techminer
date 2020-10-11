@@ -3,35 +3,35 @@ from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 import pandas as pd
 
-# from techminer.column_explorer import column_explorer
-from techminer.bigraph_analysis import DASHapp as BigraphAnalyzer
-from techminer.bradford_law import DASHapp as BradfordLaw
-from techminer.by_term_analysis import DASHapp as TermAnalyzer
-from techminer.by_term_per_year_analysis import MatrixDASHapp as TermYearAnalyzer
-from techminer.by_year_analysis import DASHapp as YearAnalyzer
-from techminer.co_word_analysis import DASHapp as CoWordAnalysis
-from techminer.collaboration_analysis import DASHapp as CollaborationAnalysis
-from techminer.column_explorer import DASHapp as ColumnExplorer
-from techminer.comparative_analysis import DASHapp as ComparativeAnalysis
-from techminer.conceptual_structure import DASHapp as ConceptualStructure
-from techminer.core_authors import DASHapp as CoreAuthors
-from techminer.core_sources import DASHapp as CoreSources
-from techminer.correlation_analysis import DASHapp as CorrelationAnalysis
-from techminer.coverage import DASHapp as CoverageReporter
-from techminer.descriptive_stats import DASHapp as StatisticsReporter
-from techminer.document_term_analysis import DASHapp as DocumentTermAnalysis
-from techminer.factor_analysis import DASHapp as FactorAnalysis
-from techminer.graph_analysis import DASHapp as GraphAnalyzer
-from techminer.growth_indicators import DASHapp as GrowthIndicators
-from techminer.impact_analysis import DASHapp as ImpactAnalysis
-from techminer.keywords_association import DASHapp as KeywordsAssociation
-from techminer.keywords_comparison import DASHapp as KeywordsComparison
-from techminer.latent_semantic_analysis import DASHapp as LatentSemanticAnalysis
-from techminer.matrix_explorer import DASHapp as MatrixExplorer
-from techminer.scopus_importer import ScopusImporter
-from techminer.thematic_analysis import DASHapp as ThematicAnalysis
-from techminer.top_documents import DASHapp as TopDocuments
-from techminer.worldmap import DASHapp as WorldMap
+
+from techminer.gui.bigraph_analysis import DASHapp as BigraphAnalyzer
+from techminer.gui.bradford_law import DASHapp as BradfordLaw
+from techminer.gui.by_term_analysis import DASHapp as TermAnalyzer
+from techminer.gui.by_term_per_year_analysis import MatrixDASHapp as TermYearAnalyzer
+from techminer.gui.by_year_analysis import DASHapp as YearAnalyzer
+from techminer.gui.co_word_analysis import DASHapp as CoWordAnalysis
+from techminer.gui.collaboration_analysis import DASHapp as CollaborationAnalysis
+from techminer.gui.column_explorer import DASHapp as ColumnExplorer
+from techminer.gui.comparative_analysis import DASHapp as ComparativeAnalysis
+from techminer.gui.conceptual_structure import DASHapp as ConceptualStructure
+from techminer.gui.core_authors import DASHapp as CoreAuthors
+from techminer.gui.core_sources import DASHapp as CoreSources
+from techminer.gui.correlation_analysis import DASHapp as CorrelationAnalysis
+from techminer.gui.coverage import DASHapp as CoverageReporter
+from techminer.gui.descriptive_stats import DASHapp as StatisticsReporter
+from techminer.gui.document_term_analysis import DASHapp as DocumentTermAnalysis
+from techminer.gui.factor_analysis import DASHapp as FactorAnalysis
+from techminer.gui.graph_analysis import DASHapp as GraphAnalyzer
+from techminer.gui.growth_indicators import DASHapp as GrowthIndicators
+from techminer.gui.impact_analysis import DASHapp as ImpactAnalysis
+from techminer.gui.keywords_association import DASHapp as KeywordsAssociation
+from techminer.gui.keywords_comparison import DASHapp as KeywordsComparison
+from techminer.gui.latent_semantic_analysis import DASHapp as LatentSemanticAnalysis
+from techminer.gui.matrix_explorer import DASHapp as MatrixExplorer
+from techminer.gui.scopus_importer import ScopusImporter
+from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
+from techminer.gui.top_documents import DASHapp as TopDocuments
+from techminer.gui.worldmap import DASHapp as WorldMap
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -107,9 +107,7 @@ class App:
         # Grid layout definition
         #
         self.app_layout = GridspecLayout(
-            11,
-            4,
-            height="902px",  # layout=Layout(border="1px solid #ff8000")
+            11, 4, height="902px", layout=Layout(border="1px solid #E0E9EF")  #
         ).add_class("app")
 
         #

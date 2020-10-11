@@ -113,7 +113,7 @@ PORTUGUES = ["BRA", "PRT"]
 
 def create_institutions_thesaurus(
     input_file="corpus.csv",
-    thesaurus_file="thesaurus/institutions.txt",
+    thesaurus_file="TH_institutions.txt",
     logging_info=None,
 ):
     #
@@ -182,7 +182,7 @@ def create_institutions_thesaurus(
     ## Valid names of institutions
     ##
     module_path = dirname(__file__)
-    with open(join(module_path, "data/institutions.data"), "r") as f:
+    with open(join(module_path, "../data/institutions.data"), "r") as f:
         VALID_NAMES = f.readlines()
     VALID_NAMES = [w.replace("\n", "").lower() for w in VALID_NAMES]
     VALID_NAMES = [w for w in VALID_NAMES if len(w) > 0]
@@ -191,7 +191,7 @@ def create_institutions_thesaurus(
     ## List of standardized country names
     ##
     module_path = dirname(__file__)
-    filename = join(module_path, "data/country_codes.data")
+    filename = join(module_path, "../data/country_codes.data")
     country_codes = load_file_as_dict(filename)
     country_names = list(country_codes.values())
     country_names = [w[0].lower() for w in country_names]

@@ -80,7 +80,7 @@ class DASHapp:
         self.app_layout[:, 0] = widgets.VBox(
             self.command_panel,
             layout=Layout(
-                margin="10px 0px 4px 4px",
+                margin="10px 8px 5px 10px",
             ),
         )
 

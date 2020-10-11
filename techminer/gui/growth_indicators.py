@@ -166,7 +166,7 @@ class Model:
             result = result.sort_values(["AGR", "ADY", "PDLY"], ascending=False)
         elif self.top_by == "Average Documents per Year":
             result = result.sort_values(["ADY", "AGR", "PDLY"], ascending=False)
-        elif self.top_by == "Percentage of Documents in Last Years":
+        elif self.top_by == "Perc of Documents in Last Years":
             result = result.sort_values(["PDLY", "ADY", "AGR"], ascending=False)
         elif self.top_by == "Before":
             result = result.sort_values(
@@ -254,7 +254,7 @@ class Model:
                 width=self.X_.ADY, cmap=self.colormap, figsize=(self.width, self.height)
             )
 
-    def percentage_of_documents_in_last_years(self):
+    def perc_of_documents_in_last_years(self):
         self.apply()
         if self.plot == "bar":
             return bar_plot(
@@ -334,7 +334,7 @@ class DASHapp(DASH, Model):
                     "Table",
                     "Average Growth Rate",
                     "Average Documents per Year",
-                    "Percentage of Documents in Last Years",
+                    "Perc of Documents in Last Years",
                     "Num Documents",
                 ],
                 description="",
@@ -358,7 +358,7 @@ class DASHapp(DASH, Model):
                     "Global Citations",
                     "Average Growth Rate",
                     "Average Documents per Year",
-                    "Percentage of Documents in Last Years",
+                    "Perc of Documents in Last Years",
                     "Number of Document Published",
                     "Before",
                     "Between",
@@ -372,7 +372,7 @@ class DASHapp(DASH, Model):
                     "Global Citations",
                     "Average Growth Rate",
                     "Average Documents per Year",
-                    "Percentage of Documents in Last Years",
+                    "Perc of Documents in Last Years",
                     "Before",
                     "Between",
                 ],

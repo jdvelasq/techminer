@@ -174,10 +174,11 @@ class DASHapp(DASH, Model):
                 options=["Core Authors", "Lotka Law plot"],
                 description="",
             ),
-            dash.HTML("Visualization:"),
-            dash.cmap(),
-            dash.fig_width(),
-            dash.fig_height(),
+            dash.HTML("Colormap:"),
+            dash.cmap(description=None),
+            dash.HTML("Figure size:"),
+            dash.fig_width(slider=True),
+            dash.fig_height(slider=True),
         ]
 
         #
@@ -188,10 +189,11 @@ class DASHapp(DASH, Model):
             controls={
                 # Display:
                 "menu": self.command_panel[1],
-                # Visualization:
+                # Colormap:
                 "colormap": self.command_panel[3],
-                "width": self.command_panel[4],
-                "height": self.command_panel[5],
+                # FIgure size
+                "width": self.command_panel[5],
+                "height": self.command_panel[6],
             },
         )
 
@@ -203,8 +205,8 @@ class DASHapp(DASH, Model):
                 "menu": self.command_panel[1].value,
                 # Visualization:
                 "colormap": self.command_panel[3].value,
-                "width": self.command_panel[4].value,
-                "height": self.command_panel[5].value,
+                "width": self.command_panel[5].value,
+                "height": self.command_panel[6].value,
             }
         )
 

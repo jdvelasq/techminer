@@ -6,7 +6,7 @@ from techminer.core.thesaurus import read_textfile
 
 def apply_keywords_thesaurus(
     input_file="corpus.csv",
-    thesaurus_file="thesaurus/keywords.txt",
+    thesaurus_file="TH_keywords.txt",
     output_file="corpus.csv",
 ):
 

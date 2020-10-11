@@ -1,6 +1,6 @@
 #  __path__ = __import__("pkgutil").extend_path(__path__, __name__)
-from .apply_institutions_thesaurus import apply_institutions_thesaurus
-from .apply_keywords_thesaurus import apply_keywords_thesaurus
+#  from .apply_institutions_thesaurus import apply_institutions_thesaurus
+#  from .apply_keywords_thesaurus import apply_keywords_thesaurus
 
 # from .bigraph_analysis import bigraph_analysis
 #  from .by_term_analysis import by_term_analysis
@@ -9,13 +9,13 @@ from .apply_keywords_thesaurus import apply_keywords_thesaurus
 
 #  from .by_year_analysis import by_year_analysis
 #  from .comparative_analysis import comparative_analysis
-from .concept_mapping import concept_mapping
+#  from .concept_mapping import concept_mapping
 
 # from .correlation_analysis import correlation_analysis
 
 #  from .coverage import coverage
-from .create_institutions_thesaurus import create_institutions_thesaurus
-from .create_keywords_thesaurus import create_keywords_thesaurus
+#  from .create_institutions_thesaurus import create_institutions_thesaurus
+#  from .create_keywords_thesaurus import create_keywords_thesaurus
 
 # from .descriptive_stats import descriptive_stats
 # from .document_term_analysis import document_term_analysis

@@ -7,7 +7,7 @@ from techminer.core.thesaurus import read_textfile
 
 def apply_institutions_thesaurus(
     input_file="corpus.csv",
-    thesaurus_file="thesaurus/institutions.txt",
+    thesaurus_file="TH_institutions.txt",
     output_file="corpus.csv",
     logging_info=None,
 ):

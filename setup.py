@@ -36,7 +36,7 @@ setup(
         "ipywidgets",
         "textblob",
     ],
-    packages=["techminer", "techminer.plots", "techminer.core"],
+    packages=["techminer", "techminer.plots", "techminer.core", "techminer.gui"],
     package_dir={"techminer": "techminer"},
     include_package_data=True,
     classifiers=[

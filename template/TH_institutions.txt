@@ -15,8 +15,6 @@ Army Medical University CHN
     department of military medical technology support, school of non-commissioned officer, army medical university, shijiazhuang, china
 Bahir Dar University ETH
     school of public health, bahir dar university, bahir dar, ethiopia
-Bambino Gesu Children Hospital ITA
-    bambino gesu children hospital, roma, italy
 Banaras Hindu University IND
     department of computer science, institute of science, banaras hindu university, varanasi, 221005, india
 Beijing Jiaotong University CHN
@@ -36,8 +34,6 @@ Brazilian Ministry of Economy BRA
     brazilian ministry of economy, brasilia, distrito federal  70048-900, brazil
 Burapha University THA
     department of mathematics, burapha university, 169 muangchonburi, thailand
-Carnegie Mellon University USA
-    computer science dept., carnegie mellon university, united states
 Carthage University TUN
     laboratory of environmental sciences and technologies, higher institute of sciences and technologies of environment, carthage university, tunis, tunisia
 Case Western Reserve University USA
@@ -51,14 +47,8 @@ Centre for Advanced Post Graduate Studies IND
     department of mechanical engineering, centre for advanced post graduate studies, bput, rourkela, odisha, india
 Centro de Investigacion En Matematicas MEX
     centro de investigacion en matematicas a.c., jalisco s/n, col. valenciana, cp: 36240, guanajuato, gto, mexico
-Chandigarh Engineering College IND
-    department of computer science and engineering, chandigarh engineering college, landran, mohali, india
-Chandrakasem Rajabhat University THA
-    information technology, faculty of science, chandrakasem rajabhat university, bangkok, thailand
 Changsha Research Institute of Mining and Metallurgy Co CHN
     changsha research institute of mining and metallurgy co.,ltd, changsha, hunan, 410000, china
-Childrens Hospital Informatics Program USA
-    children's hospital informatics program, boston children's hospital, boston, ma, united states
 China University of Geosciences CHN
     school of mathematics and physics, china university of geosciences, wuhan, 430074, china
     school of information engineering, china university of geosciences, beijing, 100083, china
@@ -84,8 +74,6 @@ Department of Biostatistics USA
     department of biostatistics, fielding school of public health, ucla, los angeles, ca, united states
 Department of Community and Family Medicine IND
     department of community and family medicine, aiims bhopal, madhya pradesh, india
-Department of Computer Science USA
-    department of computer science, virginia tech, blacksburg, va, united states
 Department of Emergency Medicine USA
     department of emergency medicine, david geffen school of medicine, ucla, los angeles, ca, united states
 Department of Epidemiology FRA
@@ -103,13 +91,9 @@ Department of Infectious Diseases GBR
 Department of Medicine USA
     department of medicine, david geffen school of medicine, ucla, los angeles, ca, united states
     department of medicine, uw school of medicine, seattle, wa, united states
-Department of Pediatrics USA
-    department of pediatrics, harvard medical school, boston, ma, united states
 Dongbei University of Finance and Economics CHN
     center of econometric analysis and forecasting, dongbei university of finance and economics, dalian 116025, china
     school of mathematics and quantitative economics, dongbei university of finance and economics, dalian 116025, china
-Earth Resource Observation and Science Center USA
-    earth resource observation and science (eros) center, united states geological survey, sioux falls, sd, united states
 East Asia Office IND
     operational research, the union south-east asia office, new delhi, delhi, india
 Estacio de Sa University BRA
@@ -148,8 +132,6 @@ Guangzhou Women and Childrens Medical Center CHN
     guangzhou women and children's medical center, guangzhou, 510623, china
 Gulf of Maine Research Institute USA
     gulf of maine research institute, portland, me, united states
-Harbin Institute of Technology CHN
-    department of computer science and technology, harbin institute of technology, harbin, china
 Harvard Medical School USA
     harvard medical school, boston, united states
 Helmholtz Institute Freiberg for Resource Technology DEU
@@ -157,15 +139,11 @@ Helmholtz Institute Freiberg for Resource Technology DEU
     helmholtz-zentrum dresden-rossendorf, helmholtz institute freiberg for resource technology, chemnitzer straße 40, freiberg, 09599, germany
 Hematology Hospital CHN
     hematology hospital, chinese academy of medical sciences, heping, tianjin, 300020, china
-Hiroshima University JPN
-    school of health science, hiroshima university, kasumi, minami-ku, hiroshima, japan
 Hokkaido University JPN
     hokkaido university, school of medicine, sapporo 060, japan
     faculty of engineering, hokkaido university, sapporo 060, japan
 Huaiyin Institute of Technology CHN
     school of life science and food engineering, huaiyin institute of technology, huaian, 223003, china
-Ibm Tj Watson Research Center USA
-    ibm t.j. watson research center, united states
 Ii Mechnikov Research Institute of Vaccines and Sera RUS
     i.i. mechnikov research institute of vaccines and sera, small kazenny lane, 5a, moscow, 105064, russian federation
     i.i. mechnikov research institute of vaccines and sera, moscow, russian federation
@@ -209,8 +187,6 @@ International Management Institute Bhubaneswar IND
     international management institute bhubaneswar, gothapatna, bhubaneswar, odisha, india
 International Union Against Tuberculosis and Lung Disease FRA
     centre for operational research, international union against tuberculosis and lung disease (the union), paris, france
-International University VNM
-    international university, vietnam national university hcmc, viet nam
 Iowa State University USA
     department of statistics, iowa state university, 2409 snedecor hall, ames, ia  50011, united states
 Iqra University PAK
@@ -218,7 +194,6 @@ Iqra University PAK
 Istanbul Gelisim University TUR
     department of computer engineering, faculty of engineering and architecture, istanbul gelisim university, istanbul, turkey
 Itmo University RUS
-    itmo university, saint-petersburg, russian federation
     itmo university, 49 kronverksky pr 197101, st. petersburg, russian federation
 J Selye University SVK
     department of mathematics, j. selye university, komarno, 94501, slovakia
@@ -244,18 +219,12 @@ Kerman University of Medical Sciences IRN
 King Abdulaziz University SAU
     department of mathematics, faculty of science, king abdulaziz university, jeddah, 21589, saudi arabia
     nonlinear analysis and applied mathematics (naam) research group, department of mathematics, faculty of science, king abdulaziz university, jeddah, 21589, saudi arabia
-Kookmin University KOR
-    nano and electronic physics, kookmin university, 136-702 seoul, south korea
-Korea Institute of Science and Technology KOR
-    sensor system research center, korea institute of science and technology (kist), 136-791 seoul, south korea
 Kunming University of Science and Technology CHN
     department of applied mathematics, kunming university of science and technology, kunming, yunnan 650093, china
 Kursk State University RUS
     department of theoretical physics, kursk state university, radishcheva st., 33, kursk, 305000, russian federation
 Kyushu Institute of Technology JPN
     faculty of computer science and systems engineering, kyushu institute of technology, kawazu 680-4, iizuka, fukuoka, 820-8502, japan
-Kyushu University JPN
-    igses, kyushu university, fukuoka, japan
 Laboratoire de Biometrie Et Biologie Evolutive FRA
     laboratoire de biometrie et biologie evolutive, equipe biotatistique-sante, cnrs umr5558, villeurbanne, france
 Laboratory of Ecohydrology Echo/Iste/Enac CHE
@@ -280,8 +249,6 @@ Mahidol University THA
     mahidol-oxford unit, faculty of tropical medicine, mahidol university, bangkok, thailand
     faculty of ict, mahidol university, nakhon pathom, thailand
     faculty of tropical medicine, mahidol university, bangkok, thailand
-Malaria Association ETH
-    health, development, and anti-malaria association, addis ababa, ethiopia
 Malla Reddy Engineering College IND
     department of computer science and engineering, malla reddy engineering college, hyderabad, india
 Marseille University FRA
@@ -290,8 +257,6 @@ Maulana Azad Medical College IND
     maulana azad medical college (mamc), new delhi, india
 Mbm Engineering College IND
     department of electrical engineering, m.b.m. engineering college, jodhpur, 342011, india
-Mcgill University CAN
-    department of epidemiology, biostatistics and occupational health, mcgill university, montreal, qc, canada
 Mcmaster University CAN
     dept. of mathematics and statistics, mcmaster university, hamilton, ont. l8s 4k1, canada
     department of mathematics and statistics, mcmaster university, hamilton, on l8s 4k1, canada
@@ -300,8 +265,6 @@ Meinian Institute of Healthbeijing  100191 CHN
     meinian institute of healthbeijing  100191, china
 Ministry of Environment IND
     member of indian forest service, ministry of environment, forest and climate change, new delhi, india
-Ministry of Health and Medical Education IRN
-    center for disease control and prevention, ministry of health and medical education, tehran, iran
 Montana State University USA
     northern rocky mountain science center, us geological survey, montana state university, bozeman, mt 59717, united states
     department of ecology, 229 ajm johnson hall, montana state university, bozeman, mt 59717, united states
@@ -316,8 +279,6 @@ Nanjing University of Posts and Telecommunications CHN
     center for control and intelligence technology, nanjing university of posts and telecommunications, nanjing 210003, china
 Nanjing University of Science and Technology CHN
     department of management science and engineering, nanjing university of science and technology, nanjing, 210094, china
-National Aerospace University UKR
-    mathematical modeling and artificial intelligence department, national aerospace university, kharkiv aviation institute, kharkiv, ukraine
 National Center for Atmospheric Research USA
     climate and global dynamics division, national center for atmospheric research, boulder, co, united states
 National Clinical Research Center for Geriatrics Diseases CHN
@@ -345,12 +306,6 @@ National University of Defense Technology CHN
     school of system engineer, national university of defense technology, changsha, hunan, 410012, china
 National University of Singapore SGP
     department of statistics and applied probability, risk management institute, national university of singapore, singapore
-Network Dynamics and Simulation Science Laboratory USA
-    network dynamics and simulation science laboratory, virginia tech, blacksburg, va  24060, united states
-Nguyen Tat Thanh University VNM
-    institute of science and technology of industry 4.0, nguyen tat thanh university, viet nam
-North China Electric Power University CHN
-    north china electric power university, beijing, china
 Obuda University HUN
     john von neumann faculty of informatics, obuda university, budapest, 1034, hungary
     kalman kando faculty of electrical engineering, obuda university, budapest, 1034, hungary
@@ -401,17 +356,11 @@ San Diego State University USA
     department of geography, san diego state university, storm hall 314, 5500 campanile drive, san diego, ca, 92182-4493, united states
 Santo Antonio de Padua College BRA
     santo antonio de padua college, santo antonio de padua, rj, brazil
-Sapienza Universita Di Roma ITA
-    dipartimento di informatica, sapienza universita di roma, italy
 Sapporo Medical University JPN
     department of hygiene, sapporo medical university, school of medicine, sapporo 060, japan
-    department of public health, sapporo medical university, chuo-ku,sapporo, japan
-    department of public health, sapporo medical university, japan, chuo-ku, sapporo, japan
 Sapporo Medical University School of Medicine JPN
     department of hygiene, sapporo medical university school of medicine, s-1, w-17, chuo-ku, sapporo 060-8556, japan
     center for medical education, department of liberal arts and sciences, sapporo medical university school of medicine, sapporo 060-8556, japan
-Satya Wacana Christian University IDN
-    department of informatics, satya wacana christian university, diponegoro 52-60, salatiga, 50711, indonesia
 Seacom Skills University IND
     department of geography, seacom skills university, kendradangal, bolpur, birbhum, west bengal  731236, india
 Sfax University TUN
@@ -423,21 +372,13 @@ Shanghai Jiao Tong University CHN
     school of electronic information and electrical engineering, shanghai jiao tong university, shanghai, 200240, china
     school of mechanical engineering, shanghai jiao tong university, shanghai, 200240, china
     zhiyuan college, shanghai jiao tong university, shanghai, 200240, china
-Shanghai University of Traditional Chinese Medicine CHN
-    shanghai university of traditional chinese medicine, shanghai, 201203, china
 Sheffield Hallam University GBR
     department of engineering and mathematics, sheffield hallam university, sheffield, s1 1wb, united kingdom
 Shenzhen University CHN
     college of economics, shenzhen university, shenzhen, guangdong  518060, china
-Shiraz University of Medical Sciences IRN
-    department of medical physics and engineering, shiraz university of medical sciences, shiraz, iran
 Sichuan University of Science and Engineering CHN
     school of mathematics and statistics, sichuan university of science and engineering, zigong, 643000, china
-Social Decision Analytics Laboratory USA
-    social decision analytics laboratory, virginia tech, united states
 South Dakota State University USA
-    geographic information science center of excellence, south dakota state university, brookings, sd, united states
-    department of electrical engineering and computer science, south dakota state university, brookings sd, united states
     geospatial sciences center of excellence, south dakota state university, brookings, sd, united states
     department of electrical engineering and computer science, south dakota state university, brookings, sd, united states
 Southeast University CHN
@@ -479,19 +420,10 @@ Texas Tech University USA
     department of mathematics and statistics, texas tech university, 2500 broadway, lubbock, tx  79409, united states
 Thapar Institute of Engineering  and  Technology IND
     dept. of ece, thapar institute of engineering & technology, patiala, india
-The Royal Institute of Technology SWE
-    the royal institute of technology, department of mathematics, 10044, stockholm, sweden
 Thuringian Institute of Sustainability and Climate Protection DEU
     thuringian institute of sustainability and climate protection, jena, 07743, germany
 Tianjin University of Science  and  Technology CHN
     college of science, tianjin university of science & technology, binhai, tianjin, 300457, china
-Tien Giang Preventive Health Center VNM
-    tien giang preventive health center, viet nam
-Ton Duc Thang University VNM
-    faculty of information technology, ton duc thang university, ho chi minh city, viet nam
-Tottori University JPN
-    information media center, tottori university, nishi-machi 86, yonago, japan
-    information media center, tottori university, japan, koyama, tottori, 4-101, japan
 Universidad Adolfo Ibanez CHL
     faculty of engineering & sciences, universidad adolfo ibanez, chile
 Universidad Finis Terrae CHL
@@ -539,10 +471,6 @@ Universita Degli Studi Di Milano ITA
     universita degli studi di milano, dipartimento di scienze della terra “a. desio”, via cicognara 7, milano, 20129, italy
 Universita Degli Studi Di Parma ITA
     dipartimento di scienze ambientali, universita degli studi di parma, 43100 parma, italy
-Universitas Padjadjaran IDN
-    department of mathematics, faculty of mathematics and natural sciences, universitas padjadjaran, jl. raya bandung-sumedang km 21, jatinangor, 45363, indonesia
-Universitat Autonoma de Barcelona ESP
-    dept. of telecommunications and systems engineering, universitat autonoma de barcelona, bellaterra, barcelona, 08193, spain
 Universitat Oldenburg DEU
     medizinische physik and cluster of excellence hearing4all, universitat oldenburg, oldenburg, 26111, germany
 Universitat de Girona ESP
@@ -586,7 +514,6 @@ University of Bremen DEU
 University of California USA
     biophysics graduate group, university of california at berkeley, 201 wellman hall, berkeley, ca 94720-3112, united states
     department of environmental science, policy and management, university of california at berkeley, 201 wellman hall, berkeley, ca 94720-3112, united states
-    dept. of computer science and engineering, university of california, riverside, united states
     mechatronics, embedded systems and automation lab, university of california, merced, merced, ca  95343, united states
 University of Cambridge GBR
     department of zoology, university of cambridge, cambridge cb2 3ej, united kingdom
@@ -635,8 +562,6 @@ University of Technology AUS
 University of Technology CHN
     department of management engineering, xuzhou university of technology, xuzhou, 221018, china
 University of Technology IRN
-    department of mechatronic engineering, k.n. toosi university of technology, tehran, iran
-    ece department, isfahan university of technology, iran
     biomedical engineering department, amirkabir university of technology, tehran, 15875-4413, iran
 University of Technology POL
     division of dynamics, lodz university of technology, stefanowskiego 1/15, lodz, 90-924, poland
@@ -647,8 +572,6 @@ University of Texas USA
     department of mathematics, university of texas at arlington, arlington, tx 76019, united states
     university of texas health science center at san antonio, san antonio, tx, united states
     school of mathematical and statistical sciences, the university of texas rio grande valley, 1201 w. university drive, edinburg, tx  78539, united states
-University of The Basque Country ESP
-    dept. of electricity and electronics, university of the basque country, bilbao, 48080, spain
 University of The Punjab PAK
     center for geographical information systems, university of the punjab, lahore, pakistan
     college for environmental and earth studies (cees), university of the punjab, lahore, pakistan
@@ -672,8 +595,6 @@ Utrecht University NLD
 Vidyasagar University IND
     department of remote sensing and gis, vidyasagar university, vidyasagar university rd, rangamati, midnapore, west bengal  721102, india
     department of geography, raja n l khan women’s college, vidyasagar university, rangamati, midnapore, west bengal  721102, india
-Virginia Bioinformatics Institute USA
-    network dynamics and simulation science laboratory, virginia bioinformatics institute, virginia tech, blacksburg, va, united states
 Wageningen University NLD
     quantitative veterinary epidemiology group, department of animal sciences, wageningen university, wageningen, netherlands
 Wageningen University and Research Centre NLD
@@ -685,8 +606,6 @@ Xiangya International Medical Center CHN
     xiangya international medical center, xiangya hospital, central south university, changsha, hunan, 410008, china
 Yebilaptsa General Hospital BTN
     yebilaptsa general hospital, zhemgang, bhutan
-York University USA
-    new york university school of medicine, new york, united states
 Zhejiang University CHN
     institute of islands and coastal ecozystems, zhejiang university, no. 866 yuhangtan rd., hangzhou, 310058, china
 Zhongshan University CHN

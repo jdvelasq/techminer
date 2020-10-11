@@ -6,7 +6,7 @@ from techminer.core.thesaurus import Thesaurus, load_file_as_dict, text_clusteri
 
 
 def create_keywords_thesaurus(
-    input_file="corpus.csv", thesaurus_file="thesaurus/keywords.txt"
+    input_file="corpus.csv", thesaurus_file="TH_keywords.txt"
 ):
 
     ##

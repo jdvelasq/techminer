@@ -149,7 +149,7 @@ def cmap(description="Colormap:"):
     if description is None:
 
         return widgets.Dropdown(
-            description=" ",
+            description="",
             options=COLORMAPS,
             layout=Layout(width="250px", margin="15px, 0px, 0px, 0px"),
         )
@@ -202,8 +202,8 @@ def fig_height(description="Height:", slider=False):
             readout=True,
             readout_format="d",
             continuous_update=False,
-            layout=Layout(width="auto"),
-            style={"description_width": "130px"},
+            layout=Layout(width="275px"),
+            style={"description_width": "50px"},
         )
 
     return widgets.Dropdown(
@@ -227,8 +227,8 @@ def fig_width(description="Width:", slider=False):
             readout=True,
             readout_format="d",
             continuous_update=False,
-            layout=Layout(width="auto"),
-            style={"description_width": "130px"},
+            layout=Layout(width="275px"),
+            style={"description_width": "50px"},
         )
 
     return widgets.Dropdown(
@@ -257,7 +257,7 @@ def max_iter():
     )
 
 
-def max_items(description="Max items:", options=None):
+def max_items(description="Max items:", options=None, description_width="130px"):
     if options is None:
         options = (
             list(range(10, 40, 1))
@@ -268,7 +268,7 @@ def max_items(description="Max items:", options=None):
         description=description,
         options=options,
         layout=Layout(width="auto"),
-        style={"description_width": "130px"},
+        style={"description_width": description_width},
     )
 
 
@@ -519,12 +519,12 @@ def network_clustering():
 ################################################################
 
 
-def Dropdown(options, description=""):
+def Dropdown(options, description="", description_width="130px"):
     return widgets.Dropdown(
         description=description,
         options=options,
         layout=Layout(width="auto"),
-        style={"description_width": "130px"},
+        style={"description_width": description_width},
     )
 
 
@@ -534,6 +534,22 @@ def RadioButtons(options, description=""):
         options=options,
         layout=Layout(width="auto"),
         style={"description_width": "130px"},
+    )
+
+
+def IntSlider(description="", value=1, min=1, max=10, step=1):
+
+    return widgets.IntSlider(
+        description=description,
+        value=value,
+        min=min,
+        max=max,
+        step=step,
+        readout=True,
+        readout_format="d",
+        continuous_update=False,
+        layout=Layout(width="275px"),
+        style={"description_width": "50px"},
     )
 
 
@@ -564,7 +580,7 @@ class DASH:
         calculate_button.on_click(self.on_click)
         self.command_panel += [
             widgets.HTML(
-                "<hr>",
+                '<hr style="color:#CACFD2">',
                 layout=Layout(margin="20px 0px 0px 0px"),
             ),
             calculate_button,
@@ -586,7 +602,7 @@ class DASH:
         self.output = widgets.Output().add_class("output_color")
         self.app_layout[0:, 1:] = widgets.VBox(
             [self.output],
-            layout=Layout(margin="10px 4px 4px 4px", border="1px solid gray"),
+            layout=Layout(margin="10px 4px 4px 4px", border="1px solid #CACFD2"),
         )
 
     def run(self):
