@@ -3,7 +3,7 @@ from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 import pandas as pd
 
-from techminer.gui.extract_keywords_from import DASHapp as ExtractKeywordsFrom
+
 from techminer.gui.bigraph_analysis import DASHapp as BigraphAnalyzer
 from techminer.gui.bradford_law import DASHapp as BradfordLaw
 from techminer.gui.by_term_analysis import DASHapp as TermAnalyzer
@@ -20,6 +20,7 @@ from techminer.gui.correlation_analysis import DASHapp as CorrelationAnalysis
 from techminer.gui.coverage import DASHapp as CoverageReporter
 from techminer.gui.descriptive_stats import DASHapp as StatisticsReporter
 from techminer.gui.document_term_analysis import DASHapp as DocumentTermAnalysis
+from techminer.gui.extract_keywords_from import DASHapp as ExtractKeywordsFrom
 from techminer.gui.factor_analysis import DASHapp as FactorAnalysis
 from techminer.gui.graph_analysis import DASHapp as GraphAnalyzer
 from techminer.gui.growth_indicators import DASHapp as GrowthIndicators
@@ -27,6 +28,7 @@ from techminer.gui.impact_analysis import DASHapp as ImpactAnalysis
 from techminer.gui.keywords_association import DASHapp as KeywordsAssociation
 from techminer.gui.keywords_comparison import DASHapp as KeywordsComparison
 from techminer.gui.latent_semantic_analysis import DASHapp as LatentSemanticAnalysis
+from techminer.gui.manage_columns import DASHapp as ManageColumns
 from techminer.gui.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.gui.scopus_importer import ScopusImporter
 from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
@@ -72,7 +74,7 @@ APPS = {
     "Correlation analysis": CorrelationAnalysis,
     "Coverage": CoverageReporter,
     "Descriptive Statistics": StatisticsReporter,
-    "Extract keywords from ...": ExtractKeywordsFrom,
+    "Extract user keywords": ExtractKeywordsFrom,
     "Factor analysis": FactorAnalysis,
     "Graph analyzer": GraphAnalyzer,
     "Growth indicators": GrowthIndicators,
@@ -80,6 +82,7 @@ APPS = {
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
+    "Manage columns": ManageColumns,
     "Matrix explorer": MatrixExplorer,
     "Scopus importer": ScopusImporter,
     "Term analysis": TermAnalyzer,
