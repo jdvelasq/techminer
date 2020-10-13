@@ -54,63 +54,6 @@ class DASHapp(DASH):
 
         DASH.__init__(self)
 
-    def extract_keywords(self):
-
-        valid_set = string.ascii_letters + string.digits + "_"
-
-        if len(self.new_column) == 0:
-            text = self.new_column
-            text += "<pre>{} - INFO - {}</pre>".format(
-                datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-                "A name for the new column must be specified",
-            )
-            text += "<pre>{} - INFO - {}</pre>".format(
-                datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-                "Process aborted",
-            )
-            text += "->" + self.new_column + "<-"
-            return widgets.HTML(text)
-
-        if self.new_column.strip(valid_set):
-            text = self.new_column
-            text += "<pre>{} - INFO - {}</pre>".format(
-                datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-                "Invalid column name",
-            )
-            text += "<pre>{} - INFO - {}</pre>".format(
-                datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-                "Process aborted",
-            )
-            text += "-->" + self.new_column + "<--"
-            return widgets.HTML(text)
-
-        self.data[self.new_column] = pd.NA
-
-        with open(self.keywords_list, "rt") as f:
-            keywords_list = f.readlines()
-        keywords_list = [k.replace("\n", "") for k in keywords_list]
-
-        keywords = Keywords(
-            ignore_case=self.ignore_case, full_match=self.full_match, use_re=self.use_re
-        )
-        keywords.add_keywords(keywords_list)
-        keywords.compile()
-
-        self.data[self.new_column] = self.data[self.from_column].map(
-            lambda w: keywords.extract_from_text(w), na_action="ignore"
-        )
-
-        self.data[self.new_column] = self.data[self.new_column].map(
-            lambda w: pd.NA if w is None else w, na_action="ignore"
-        )
-
-        self.data.to_csv("corpus.csv", index=False)
-
-        return self.data[self.new_column].dropna().head(15)
-
-    #   def interactive_output(self, **kwargs):
-    #       DASH.interactive_output(self, **kwargs)
-
     def manage(self):
 
         if (
@@ -199,6 +142,10 @@ class DASHapp(DASH):
 
                 is_na = self.data[self.new_column].map(lambda w: pd.isna(w))
                 self.data.loc[is_na, self.new_column] = self.data.loc[is_na, col]
+
+            self.data[self.new_column] = self.data[self.new_column].map(
+                lambda w: ";".join(sorted(set(w.split(";")))), na_action="ignore"
+            )
 
             self.data.to_csv("corpus.csv", index=False)
             self.command_panel[3].options = sorted(self.data.columns)

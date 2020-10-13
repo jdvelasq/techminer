@@ -34,6 +34,7 @@ from techminer.gui.scopus_importer import ScopusImporter
 from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
 from techminer.gui.top_documents import DASHapp as TopDocuments
 from techminer.gui.worldmap import DASHapp as WorldMap
+from techminer.gui.text_clustering import DASHapp as TextClustering
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -87,6 +88,7 @@ APPS = {
     "Scopus importer": ScopusImporter,
     "Term analysis": TermAnalyzer,
     "Term per year analysis": TermYearAnalyzer,
+    "Text clustering": TextClustering,
     "TF*IDF analysis": DocumentTermAnalysis,
     "Thematic analysis": ThematicAnalysis,
     "Time analysis": YearAnalyzer,
