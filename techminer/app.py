@@ -3,7 +3,7 @@ from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 import pandas as pd
 
-
+from techminer.gui.extract_keywords_from import DASHapp as ExtractKeywordsFrom
 from techminer.gui.bigraph_analysis import DASHapp as BigraphAnalyzer
 from techminer.gui.bradford_law import DASHapp as BradfordLaw
 from techminer.gui.by_term_analysis import DASHapp as TermAnalyzer
@@ -72,6 +72,7 @@ APPS = {
     "Correlation analysis": CorrelationAnalysis,
     "Coverage": CoverageReporter,
     "Descriptive Statistics": StatisticsReporter,
+    "Extract keywords from ...": ExtractKeywordsFrom,
     "Factor analysis": FactorAnalysis,
     "Graph analyzer": GraphAnalyzer,
     "Growth indicators": GrowthIndicators,

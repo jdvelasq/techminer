@@ -537,6 +537,23 @@ def RadioButtons(options, description=""):
     )
 
 
+def Text(description="", placeholder=""):
+    return widgets.Text(
+        description=description,
+        placeholder=placeholder,
+        layout=Layout(width="auto"),
+        style={"description_width": "130px"},
+    )
+
+
+def Checkbox(description=""):
+    return widgets.Checkbox(
+        description=description,
+        layout=Layout(width="auto"),
+        style={"description_width": "130px"},
+    )
+
+
 def IntSlider(description="", value=1, min=1, max=10, step=1):
 
     return widgets.IntSlider(

@@ -541,15 +541,3 @@ class DASHapp(DASH, Model):
 ##  EXTERNAL INTERFACE
 ##
 ###############################################################################
-
-
-def concept_mapping(
-    limit_to=None,
-    exclude=None,
-    years_range=None,
-):
-    return DASHapp(
-        limit_to=limit_to,
-        exclude=exclude,
-        years_range=years_range,
-    ).run()
