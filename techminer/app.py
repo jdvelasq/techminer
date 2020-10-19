@@ -4,6 +4,7 @@ from IPython.display import display
 import pandas as pd
 
 
+from techminer.gui.apply_thesaurus import DASHapp as ApplyThesaurus
 from techminer.gui.bigraph_analysis import DASHapp as BigraphAnalyzer
 from techminer.gui.bradford_law import DASHapp as BradfordLaw
 from techminer.gui.by_term_analysis import DASHapp as TermAnalyzer
@@ -31,10 +32,10 @@ from techminer.gui.latent_semantic_analysis import DASHapp as LatentSemanticAnal
 from techminer.gui.manage_columns import DASHapp as ManageColumns
 from techminer.gui.matrix_explorer import DASHapp as MatrixExplorer
 from techminer.gui.scopus_importer import ScopusImporter
+from techminer.gui.text_clustering import DASHapp as TextClustering
 from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
 from techminer.gui.top_documents import DASHapp as TopDocuments
 from techminer.gui.worldmap import DASHapp as WorldMap
-from techminer.gui.text_clustering import DASHapp as TextClustering
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -63,6 +64,7 @@ header_style = """
 """
 
 APPS = {
+    "Apply thesaurus": ApplyThesaurus,
     "Bigraph analysis": BigraphAnalyzer,
     "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,

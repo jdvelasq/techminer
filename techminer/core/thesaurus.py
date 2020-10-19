@@ -4,8 +4,14 @@ from os.path import dirname, join
 
 import pandas as pd
 
-from techminer.core.text import (find_string, fingerprint, one_gram,
-                                 stemmer_porter, stemmer_snowball, two_gram)
+from techminer.core.text import (
+    find_string,
+    fingerprint,
+    one_gram,
+    stemmer_porter,
+    stemmer_snowball,
+    two_gram,
+)
 
 
 def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=None):
@@ -181,8 +187,7 @@ class Thesaurus:
         )
 
     def __repr__(self):
-        """Returns a json representation of the Thesaurus.
-        """
+        """Returns a json representation of the Thesaurus."""
         text = json.dumps(self._thesaurus, indent=2, sort_keys=True)
         text += "\nignore_case={}, full_match={}, use_re={}, compiled={}".format(
             self._ignore_case.__repr__(),
@@ -366,8 +371,7 @@ class Thesaurus:
         return x
 
     def merge_keys(self, key, popkey):
-        """Adds the strings associated to popkey to key and delete popkey.
-        """
+        """Adds the strings associated to popkey to key and delete popkey."""
         if isinstance(popkey, list):
             for k in popkey:
                 self._thesaurus[key] = self._thesaurus[key] + self._thesaurus[k]
@@ -382,8 +386,7 @@ class Thesaurus:
             self.merge_keys(key, dict_[key])
 
     def pop_key(self, key):
-        """Deletes key from thesaurus.
-        """
+        """Deletes key from thesaurus."""
         self._thesaurus.pop(key)
 
     def change_key(self, current_key, new_key):
