@@ -240,6 +240,13 @@ class DASHapp(DASH):
         self.X_ = X
 
         ##
+        ## Cluster filters
+        ##
+        self.generate_cluster_filters(
+            cluster_name="CoWord", terms=X.index, labels=self.labels_
+        )
+
+        ##
         ## Cluster co-occurrence
         ##
         M = X.copy()

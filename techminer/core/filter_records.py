@@ -20,4 +20,8 @@ def filter_records(x):
         x.Document_Type.map(lambda w: w in dict_["selected_types"], na_action="ignore")
     ]
 
+    if dict_["selected_cluster"] != "---":
+        IDs = dict_[dict_["selected_cluster"]]
+        x = x[x.ID.map(lambda w: w in IDs)]
+
     return x

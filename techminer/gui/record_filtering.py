@@ -37,6 +37,22 @@ class DASHapp(DASH):
 
         with open("filters.json", "r") as f:
             self.filters = json.load(f)
+        clusters = [
+            key
+            for key in self.filters
+            if key
+            not in [
+                "bradford_law_zones",
+                "citations_range",
+                "citations",
+                "document_types",
+                "excluded_terms",
+                "selected_cluster",
+                "selected_types",
+                "year_range",
+                "years",
+            ]
+        ]
 
         self.command_panel = [
             dash.HTML("<b>Document types:</b>", hr=False),
@@ -118,9 +134,15 @@ class DASHapp(DASH):
                 max=self.filters["citations_range"][1],
                 step=1,
             ),
-            dash.HTML("Exclude keywords:"),
+            dash.HTML("Filters:"),
             dash.Dropdown(
+                description="Exclude:",
                 options=["---"] + glob.glob("KW_*.txt"),
+                value=self.filters["excluded_terms"],
+            ),
+            dash.Dropdown(
+                description="Clusters:",
+                options=["---"] + clusters,
                 value=self.filters["excluded_terms"],
             ),
         ]
@@ -153,6 +175,7 @@ class DASHapp(DASH):
                 "bradford_law_zones": self.command_panel[5],
                 "citations": self.command_panel[7],
                 "excluded_terms": self.command_panel[9],
+                "selected_cluster": self.command_panel[10],
             },
         )
 
@@ -202,6 +225,7 @@ class DASHapp(DASH):
         self.filters["citations"] = self.citations
         self.filters["bradford_law_zones"] = self.bradford_law_zones
         self.filters["excluded_terms"] = self.excluded_terms
+        self.filters["selected_cluster"] = self.selected_cluster
 
         with open("filters.json", "w") as f:
             print(json.dumps(self.filters, indent=4, sort_keys=True), file=f)

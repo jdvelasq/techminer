@@ -273,6 +273,7 @@ class ScopusImporter(DASH):
         dict_["document_types"] = list(set(self.data.Document_Type))
         dict_["selected_types"] = list(set(self.data.Document_Type))
         dict_["excluded_terms"] = "---"
+        dict_["selected_cluster"] = "---"
 
         with open("filters.json", "w") as f:
             print(json.dumps(dict_, indent=4, sort_keys=True), file=f)
