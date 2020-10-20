@@ -45,7 +45,7 @@ class Model:
 class DASHapp(DASH, Model):
     def __init__(self):
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(self, data=data)
 

@@ -17,7 +17,7 @@ from techminer.core import (
     add_counters_to_axis,
     corpus_filter,
     explode,
-    limit_to_exclude,
+    exclude_terms,
     sort_axis,
     sort_by_axis,
 )
@@ -34,6 +34,7 @@ from techminer.plots import (
 
 #  from techminer.core.dashboard import max_items, min_occurrence
 
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -96,15 +97,9 @@ class Model:
         result["Local_Citations"] = result["Local_Citations"].map(lambda w: int(w))
 
         ##
-        ## Limit To / Exclude items
+        ## Exclude items
         ##
-        result = limit_to_exclude(
-            data=result,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        result = exclude_terms(data=result, axis=0)
 
         ##
         ## Minimal occurrence
@@ -284,7 +279,7 @@ class DASHapp(DASH, Model):
     ):
         """Dashboard app"""
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
         self.menu = "compute"
 
         Model.__init__(

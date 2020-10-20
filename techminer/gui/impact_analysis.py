@@ -6,7 +6,7 @@ import ipywidgets as widgets
 from techminer.core import DASH
 from techminer.core import explode
 from techminer.core import (
-    limit_to_exclude,
+    exclude_terms,
     add_counters_to_axis,
     sort_by_axis,
     sort_axis,
@@ -16,6 +16,7 @@ from techminer.plots import (
     bar_plot,
     barh_plot,
 )
+from techminer.core.filter_records import filter_records
 
 
 class Model:
@@ -139,13 +140,7 @@ class Model:
         result.index = result[self.column]
 
         ## limit to / exclude options
-        result = limit_to_exclude(
-            data=result,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        result = exclude_terms(data=result, axis=0)
 
         result = add_counters_to_axis(
             X=result, axis=0, data=self.data, column=self.column
@@ -212,7 +207,7 @@ class DASHapp(DASH, Model):
     def __init__(
         self,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(self, data=data)
 

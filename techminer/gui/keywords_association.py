@@ -16,7 +16,7 @@ from techminer.core import (
     TF_matrix,
     add_counters_to_axis,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
     normalize_network,
     sort_by_axis,
     explode,
@@ -34,6 +34,8 @@ from techminer.plots import (
     expand_ax_limits,
 )
 from techminer.plots import set_spines_invisible
+
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -72,15 +74,9 @@ class Model:
         )
 
         ##
-        ##  Limit to/Exclude
+        ##  Exclude Terms
         ##
-        TF_matrix_ = limit_to_exclude(
-            data=TF_matrix_,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        TF_matrix_ = exclude_terms(data=TF_matrix_, axis=1)
 
         ##
         ##  Adds counters to axis
@@ -289,7 +285,7 @@ class DASHapp(DASH, Model):
     def __init__(
         self,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
         self.limit_to = None
         self.exclude = None
 

@@ -4,6 +4,7 @@ import warnings
 from os.path import dirname, join, exists
 from os import makedirs
 
+import json
 import numpy as np
 import pandas as pd
 
@@ -201,7 +202,7 @@ class ScopusImporter(DASH):
         ##
         #  self.create_working_dirs()
         self.rename_columns()
-        self.select_documents()
+        self.create_filters()
         self.remove_accents()
         self.remove_no_author_name_available()
         self.format_author_names()
@@ -259,6 +260,22 @@ class ScopusImporter(DASH):
         self.create_KW_exclude()
         #
         self.logging_info("Finished!!!")
+
+    def create_filters(self):
+
+        self.logging_info("Creating filters.json file ...")
+        dict_ = dict()
+        dict_["year_range"] = [int(self.data.Year.min()), int(self.data.Year.max())]
+        dict_["citations_range"] = [0, int(self.data.Global_Citations.max())]
+        dict_["bradford_law_zones"] = 2
+        dict_["years"] = [int(self.data.Year.min()), int(self.data.Year.max())]
+        dict_["citations"] = [0, int(self.data.Global_Citations.max())]
+        dict_["document_types"] = list(set(self.data.Document_Type))
+        dict_["selected_types"] = list(set(self.data.Document_Type))
+        dict_["excluded_terms"] = "---"
+
+        with open("filters.json", "w") as f:
+            print(json.dumps(dict_, indent=4, sort_keys=True), file=f)
 
     def create_institutions_thesaurus(self):
         self.logging_info("Creating institutions thesaurus ...")
@@ -1019,48 +1036,48 @@ class ScopusImporter(DASH):
         )
 
 
-def import_scopus(
-    input_file="scopus.csv",
-    output_file="techminer.csv",
-    article=True,
-    article_in_press=True,
-    book=True,
-    book_chapter=True,
-    business_article=True,
-    conference_paper=True,
-    conference_review=False,
-    data_paper=False,
-    editorial=False,
-    letter=False,
-    note=False,
-    review=True,
-    short_survey=True,
-    erratum=False,
-    report=False,
-    retracted=False,
-    abstract_report=False,
-    undefined=False,
-):
-    #
-    ScopusImporter(
-        input_file=input_file,
-        output_file=output_file,
-        article=article,
-        article_in_press=article_in_press,
-        book=book,
-        book_chapter=book_chapter,
-        business_article=business_article,
-        conference_paper=conference_paper,
-        conference_review=conference_review,
-        data_paper=data_paper,
-        editorial=editorial,
-        letter=letter,
-        note=note,
-        review=review,
-        short_survey=short_survey,
-        erratum=erratum,
-        report=report,
-        retracted=retracted,
-        abstract_report=abstract_report,
-        undefined=undefined,
-    ).run()
+# def import_scopus(
+#     input_file="scopus.csv",
+#     output_file="techminer.csv",
+#     article=True,
+#     article_in_press=True,
+#     book=True,
+#     book_chapter=True,
+#     business_article=True,
+#     conference_paper=True,
+#     conference_review=False,
+#     data_paper=False,
+#     editorial=False,
+#     letter=False,
+#     note=False,
+#     review=True,
+#     short_survey=True,
+#     erratum=False,
+#     report=False,
+#     retracted=False,
+#     abstract_report=False,
+#     undefined=False,
+# ):
+#     #
+#     ScopusImporter(
+#         input_file=input_file,
+#         output_file=output_file,
+#         article=article,
+#         article_in_press=article_in_press,
+#         book=book,
+#         book_chapter=book_chapter,
+#         business_article=business_article,
+#         conference_paper=conference_paper,
+#         conference_review=conference_review,
+#         data_paper=data_paper,
+#         editorial=editorial,
+#         letter=letter,
+#         note=note,
+#         review=review,
+#         short_survey=short_survey,
+#         erratum=erratum,
+#         report=report,
+#         retracted=retracted,
+#         abstract_report=abstract_report,
+#         undefined=undefined,
+#     ).run()

@@ -519,9 +519,12 @@ def network_clustering():
 ################################################################
 
 
-def Dropdown(options, description="", description_width="130px"):
+def Dropdown(options, description="", description_width="130px", value=None):
+    if value is None:
+        value = options[0]
     return widgets.Dropdown(
         description=description,
+        value=value,
         options=options,
         layout=Layout(width="auto"),
         style={"description_width": description_width},
@@ -546,11 +549,14 @@ def Text(description="", placeholder=""):
     )
 
 
-def Checkbox(description=""):
+def Checkbox(description="", value=True, disabled=False, indent=True):
     return widgets.Checkbox(
         description=description,
+        value=value,
         layout=Layout(width="auto"),
         style={"description_width": "130px"},
+        disabled=disabled,
+        indent=indent,
     )
 
 
@@ -567,6 +573,22 @@ def SelectMultiple(options, description="", rows=5):
 def IntSlider(description="", value=1, min=1, max=10, step=1):
 
     return widgets.IntSlider(
+        description=description,
+        value=value,
+        min=min,
+        max=max,
+        step=step,
+        readout=True,
+        readout_format="d",
+        continuous_update=False,
+        layout=Layout(width="275px"),
+        style={"description_width": "50px"},
+    )
+
+
+def IntRangeSlider(description="", value=1, min=1, max=10, step=1):
+
+    return widgets.IntRangeSlider(
         description=description,
         value=value,
         min=min,
@@ -636,7 +658,6 @@ class DASH:
         return self.app_layout
 
     def interactive_output(self, **kwargs):
-
         for key in kwargs.keys():
             setattr(self, key, kwargs[key])
 

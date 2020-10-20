@@ -10,7 +10,7 @@ from techminer.core import (
     TF_matrix,
     add_counters_to_axis,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
     sort_by_axis,
 )
 from techminer.core.dashboard import min_occurrence
@@ -21,6 +21,7 @@ from techminer.plots import (
     counters_to_node_sizes,
     heatmap,
 )
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -76,15 +77,9 @@ class Model:
             )
 
             ##
-            ##  Limit to/Exclude
+            ##  Exclude Terms
             ##
-            A = limit_to_exclude(
-                data=A,
-                axis=1,
-                column=self.column,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
+            A = exclude_terms(data=A, axis=1)
 
             ##
             ##   Select max_items
@@ -119,15 +114,9 @@ class Model:
             A = TF_matrix(data=w, column=self.column, scheme=None)
 
             ##
-            ##  Limit to/Exclude
+            ##  Exclude Terms
             ##
-            A = limit_to_exclude(
-                data=A,
-                axis=1,
-                column=self.column,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
+            A = exclude_terms(data=A, axis=1)
 
             ##
             ##  Minimal occurrence
@@ -271,7 +260,7 @@ class DASHapp(DASH, Model):
         exclude=None,
         years_range=None,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self,

@@ -9,7 +9,7 @@ from .explode import explode
 from .extract_country_name import extract_country_name
 from .extract_words import extract_words
 from .keywords_coverage import keywords_coverage
-from .limit_to_exclude import limit_to_exclude
+from .exclude_terms import exclude_terms
 from .logging_info import logging_info
 from .map import map_
 from .network import Network

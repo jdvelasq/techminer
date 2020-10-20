@@ -22,8 +22,17 @@ active cases
     active cases
 active transport
     active transport
+acute respiratory infection
+    acute respiratory infection
+ad hoc networks
+    ad hoc networks
 adaptive learning
     adaptive learning
+adaptive network fuzzy inference system
+    adaptive network fuzzy inference system
+    adaptive network fuzzy inference systems
+adaptive networks
+    adaptive networks
 administrative action
     administrative action
 adolescent
@@ -46,6 +55,12 @@ agent based models
     agent-based model
 agent-based simulations
     agent-based simulations
+agent-based technique
+    agent-based technique
+air traffics
+    air traffics
+airborne transmission
+    airborne transmission
 akaike information criterion
     akaike information criterion
 algorithm
@@ -57,10 +72,14 @@ analytical error
     analytical error
 analytical parameters
     analytical parameters
+analytical procedure
+    analytical procedure
 analytical solution
     analytical solution
 anfis
     anfis
+anfis model
+    anfis model
 animal
     animal
     animals
@@ -78,6 +97,8 @@ antigenicity
     antigenicity
 antigens, viral
     antigens, viral
+application programming interfaces (api)
+    application programming interfaces (api)
 approximation theory
     approximation theory
 arima
@@ -94,14 +115,20 @@ artificial intelligence
     artificial intelligence
 artificial neural network
     artificial neural network
+artificial neural networks
+    artificial neural networks
 arvi
     arvi
 asia
     asia
 asian continental ancestry group
     asian continental ancestry group
+assay
+    assay
 assessment
     assessment
+asymptotic approximation
+    asymptotic approximation
 asymptotic stability
     asymptotic stability
 asymptotically stable
@@ -131,6 +158,10 @@ auto-regressive integrated moving average
     auto-regressive integrated moving average
 autocorrelation
     autocorrelation
+autocorrelation coefficient
+    autocorrelation coefficient
+autocorrelation functions
+    autocorrelation functions
 autoencoder
     autoencoder
 automata theory
@@ -225,8 +256,12 @@ binomial distribution
     binomial distribution
 bioaccumulation
     bioaccumulation
+bioaerosols
+    bioaerosols
 bioengineering
     bioengineering
+bioinformatics
+    bioinformatics
 biological invasion
     biological invasion
 biological model
@@ -234,6 +269,8 @@ biological model
     models, biological
 biology
     biology
+biomedical engineering
+    biomedical engineering
 biometry
     biometry
 biostatistics
@@ -262,14 +299,22 @@ bovinae
     bovinae
 bovine spongiform encephalopathy
     bovine spongiform encephalopathy
+bows
+    bows
 box's dictum
     box's dictum
+bp artificial neural model
+    bp artificial neural model
+bp artificial neural network
+    bp artificial neural network
 brain
     brain
 brazil
     brazil
 bse
     bse
+c (programming language)
+    c (programming language)
 calculation
     calculation
 calibrated model
@@ -298,6 +343,10 @@ cellular automata
     cellular automata
 centers for disease control and prevention, u.s.
     centers for disease control and prevention, u.s.
+central java province
+    central java province
+cfd
+    cfd
 change trends
     change trends
 chaos
@@ -368,6 +417,8 @@ clinical feature
     clinical feature
 clinical laboratory techniques
     clinical laboratory techniques
+cloud computing
+    cloud computing
 coarse-grained
     coarse-grained
 coefficient values
@@ -393,6 +444,11 @@ compartmental epidemic model
     compartmental epidemic model
 compartmental model
     compartmental model
+compartmental models
+    compartmental models
+complex network model
+    complex network model
+    complex network models
 complex networks
     complex networks
 complex systems
@@ -401,6 +457,8 @@ computational analysis
     computational analysis
 computational biology
     computational biology
+computational fluid dynamics
+    computational fluid dynamics
 computational methodology
     computational methodology
 computational methods
@@ -417,16 +475,24 @@ computer prediction
     computer prediction
 computer program
     computer program
+computer science
+    computer science
 computer simulation
     computer simulation
 computer software
     computer software
 computer system
     computer system
+computer viruses
+    computer viruses
 computerized tomography
     computerized tomography
+computers
+    computers
 conceptual framework
     conceptual framework
+conference paper
+    conference paper
 confidence interval
     confidence interval
 connected graph
@@ -496,6 +562,8 @@ correlogram test
     correlogram test
 counterfactual prediction
     counterfactual prediction
+coupled analysis
+    coupled analysis
 coupling
     coupling
 covid-19
@@ -539,8 +607,12 @@ cumulative scale
     cumulative scale
 curve fitting
     curve fitting
+data acquisition
+    data acquisition
 data analysis
     data analysis
+data assimilation
+    data assimilation
 data augmentation
     data augmentation
     data augmentation (da)
@@ -609,6 +681,8 @@ diagnostic test
     diagnostic test
 diagnostic tests, routine
     diagnostic tests, routine
+dies
+    dies
 difference equations
     difference equations
 different structure
@@ -655,6 +729,8 @@ disease forecasting
     disease forecasting
 disease model
     disease model
+disease modeling
+    disease modeling
 disease outbreaks
     disease outbreaks
 disease prediction model
@@ -669,6 +745,8 @@ disease progression
     disease progression
 disease propagation
     disease propagation
+disease severity
+    disease severity
 disease simulation
     disease simulation
 disease spread
@@ -691,8 +769,13 @@ diskrete epidemic model
     diskrete epidemic model
 diskrete modeling
     diskrete modeling
+diskrete time
+    diskrete time
+    diskrete-time
 diskrete time (dt)
     diskrete time (dt)
+diskrete-time model
+    diskrete-time model
 diskrete-time modeling
     diskrete-time modeling
 diskrimination (psychology)
@@ -723,6 +806,8 @@ early warning system
     early-warning systems
 ebola
     ebola
+ebola disease modeling
+    ebola disease modeling
 ebola hemorrhagic fever
     ebola hemorrhagic fever
     hemorrhagic fever, ebola
@@ -738,6 +823,8 @@ econometric model
     econometric model
 economic analysis
     economic analysis
+economic profit
+    economic profit
 economics
     economics
 educational status
@@ -772,8 +859,14 @@ empirical assessment
     empirical assessment
 empirical research
     empirical research
+endemic area
+    endemic area
 endemic disease
     endemic disease
+endemic diseases
+    endemic diseases
+endemic equilibrium
+    endemic equilibrium
 endemism
     endemism
 ending process
@@ -808,6 +901,8 @@ environmental temperature
 epidemic
     epidemic
     epidemics
+epidemic activities
+    epidemic activities
 epidemic birth-death process
     epidemic birth-death process
 epidemic control
@@ -841,6 +936,8 @@ epidemic propagation
     epidemic propagation
 epidemic size
     epidemic size
+epidemic spread
+    epidemic spread
 epidemic spreading
     epidemic spreading
 epidemic threshold
@@ -849,6 +946,8 @@ epidemic transmission
     epidemic transmission
 epidemics trend
     epidemics trend
+epidemie disease
+    epidemie disease
 epidemiologic methods
     epidemiologic methods
 epidemiologic studies
@@ -857,6 +956,8 @@ epidemiologic surveillance
     epidemiologic surveillance
 epidemiological data
     epidemiological data
+epidemiological model
+    epidemiological model
 epidemiological model predictions
     epidemiological model predictions
 epidemiological models
@@ -865,6 +966,8 @@ epidemiological monitoring
     epidemiological monitoring
 epidemiological parameter
     epidemiological parameter
+epidemiological surveillance
+    epidemiological surveillance
 epidemiology
     epidemiology
 epitope
@@ -877,12 +980,16 @@ equation-free approach
     equation-free approach
 errors
     errors
+estimated parameter
+    estimated parameter
 estimation
     estimation
 estimation approaches
     estimation approaches
 estimation method
     estimation method
+estimation procedures
+    estimation procedures
 ethiopia
     ethiopia
 eurasia
@@ -916,6 +1023,8 @@ exponential regression
     exponential regression
 exponential smoothing
     exponential smoothing
+exponential smoothing method
+    exponential smoothing method
 exponential smoothing model
     exponential smoothing model
 exponential spectrum
@@ -946,6 +1055,8 @@ federal government
     federal government
 female
     female
+filtering technique
+    filtering technique
 filtration
     filtration
 final epidemic size
@@ -958,6 +1069,10 @@ fitting coefficient
     fitting coefficient
 fitting error
     fitting error
+flow visualization
+    flow visualization
+flu epidemics
+    flu epidemics
 flu incidence time series
     flu incidence time series
 flu like syndrome
@@ -967,8 +1082,12 @@ food availability
 forecast
     forecast
     forecasting
+forecast and analysis
+    forecast and analysis
 forecast feedback
     forecast feedback
+forecast information
+    forecast information
 forecasting accuracy
     forecasting accuracy
 forecasting method
@@ -994,16 +1113,26 @@ frequency analysis
     frequency analysis
 fundamental concepts
     fundamental concepts
+fuzzy inference
+    fuzzy inference
+fuzzy logic
+    fuzzy logic
 fuzzy mathematics
     fuzzy mathematics
+fuzzy neural networks
+    fuzzy neural networks
 fuzzy system
     fuzzy system
+fuzzy systems
+    fuzzy systems
 gallus gallus
     gallus gallus
 game theory
     game theory
 gaussian distribution
     gaussian distribution
+gaussian distribution model
+    gaussian distribution model
 gaussian mixture model
     gaussian mixture model
     gaussian mixture model (gmm)
@@ -1038,14 +1167,22 @@ geographically weighted logistic regression
     geographically weighted logistic regression
 geography
     geography
+geoinformatics
+    geoinformatics
 germany
     germany
+global health
+    global health
 global optimization
     global optimization
 global optimization algorithm
     global optimization algorithm
+global system for mobile communications
+    global system for mobile communications
 gmmp scheme
     gmmp scheme
+google maps
+    google maps
 government
     government
 government regulation
@@ -1056,6 +1193,8 @@ greece
     greece
 greenhouse effect
     greenhouse effect
+ground transportation systems
+    ground transportation systems
 group method of data handling
     group method of data handling
 group structure
@@ -1072,6 +1211,8 @@ guinea
     guinea
 gujarat
     gujarat
+h1n1
+    h1n1
 h1n1 subtype
     h1n1 subtype
 h7n7
@@ -1080,6 +1221,8 @@ hand hygiene
     hand hygiene
 hand washing
     hand washing
+harmonic analysis
+    harmonic analysis
 health
     health
 health care facility
@@ -1139,6 +1282,11 @@ homogeneous network
     homogeneous network
 homoscedasticity
     homoscedasticity
+hong kong
+    hong kong
+    hong-kong
+hospital data processing
+    hospital data processing
 hospital sector
     hospital sector
 hospital system
@@ -1195,12 +1343,22 @@ individual-based
     individual-based
 individual-based epidemic models
     individual-based epidemic models
+individual-based models
+    individual-based models
 indonesia
     indonesia
+indoor air environments
+    indoor air environments
+indoor air pollution
+    indoor air pollution
+indoor environment
+    indoor environment
 infant
     infant
 infected cases prediction
     infected cases prediction
+infected patients
+    infected patients
 infection
     infection
     infectivity
@@ -1215,6 +1373,8 @@ infection risk
     infection risk
 infection sensitivity
     infection sensitivity
+infectious bio-aerosol
+    infectious bio-aerosol
 infectious disease
     infectious disease
     infectious diseases
@@ -1222,6 +1382,8 @@ infectious disease dynamics
     infectious disease dynamics
 infectious disease medicine
     infectious disease medicine
+infectious disease outbreaks
+    infectious disease outbreaks
 infectious disease transmission, vertical
     infectious disease transmission, vertical
 inference
@@ -1240,6 +1402,10 @@ influenza a virus
     influenza virus a
 influenza a virus, h7n7 subtype
     influenza a virus, h7n7 subtype
+influenza epidemics
+    influenza epidemics
+influenza forecasting
+    influenza forecasting
 influenza h1n1
     influenza h1n1
 influenza in birds
@@ -1252,6 +1418,8 @@ influenza virus a h7n7
     influenza virus a h7n7
 influenza, human
     influenza, human
+information management
+    information management
 information processing
     information processing
 information retrieval
@@ -1276,6 +1444,8 @@ initial parameter
     initial parameter
 inspection
     inspection
+integrated circuits
+    integrated circuits
 integrated disease surveillance
     integrated disease surveillance
 intermethod comparison
@@ -1284,6 +1454,10 @@ internal demographics
     internal demographics
 internet
     internet
+internet public opinions
+    internet public opinions
+internet users
+    internet users
 interpretation rules
     interpretation rules
 intervention analysis
@@ -1317,6 +1491,9 @@ japan
 john hopkins university
     john hopkins university
     johns hopkins universities
+k-mean clustering
+    k-mean clustering
+    k-means clustering
 l-plot
     l-plot
 laboratory diagnosis
@@ -1343,6 +1520,9 @@ learning techniques
     learning techniques
 learning to rank
     learning to rank
+least square
+    least square
+    least-squares
 least squares approximations
     least squares approximations
 least squares estimation
@@ -1357,6 +1537,8 @@ likelihood functions
     likelihood functions
 limit cycle
     limit cycle
+linear fitting
+    linear fitting
 linear kernel functions
     linear kernel functions
 linear models
@@ -1410,6 +1592,8 @@ macroscopic levels
     macroscopic levels
 madagascar
     madagascar
+magnitude estimation method
+    magnitude estimation method
 major clinical study
     major clinical study
 malaria
@@ -1426,6 +1610,8 @@ malaysia
     malaysia
 male
     male
+malwares
+    malwares
 managed care
     managed care
 management
@@ -1437,6 +1623,8 @@ markov chain
 markov chain monte carlo method
     markov chain monte carlo method
     markov chain monte carlo methods
+markov chain state model
+    markov chain state model
 markov jump process
     markov jump process
 markov poisson
@@ -1480,6 +1668,8 @@ maximum likelihood method
     maximum likelihood method
 mean absolute error
     mean absolute error
+mean absolute percentage error
+    mean absolute percentage error
 mean square error
     mean square error
 measles
@@ -1508,6 +1698,8 @@ medical parameters
     medical parameters
 medical professionals
     medical professionals
+medline
+    medline
 metapopulation
     metapopulation
 meteorological factors
@@ -1524,6 +1716,8 @@ methodology
     methodology
 mexico
     mexico
+micro blogging
+    micro blogging
 middle aged
     middle aged
 misspecified models
@@ -1532,9 +1726,23 @@ mitigation measurements
     mitigation measurements
 mixing
     mixing
+mobile ad hoc networks
+    mobile ad hoc networks
 mobile application
     mobile application
     mobile applications
+mobile devices
+    mobile devices
+mobile security
+    mobile security
+mobile telecommunication systems
+    mobile telecommunication systems
+mobile users
+    mobile users
+mobility datum
+    mobility datum
+mobility model
+    mobility model
 model
     model
     modeling
@@ -1559,6 +1767,8 @@ model-based opc
     model-based opc
 modeling and predictions
     modeling and predictions
+models
+    models
 models, immunological
     models, immunological
 models, statistical
@@ -1583,6 +1793,8 @@ molecular mechanics
     molecular mechanics
 moment closure approximations
     moment closure approximations
+monitoring
+    monitoring
 monotonicity
     monotonicity
 monte carlo method
@@ -1606,8 +1818,12 @@ multi-stability and fractal basins
     multi-stability and fractal basins
 multi-step-ahead prediction
     multi-step-ahead prediction
+multilayer neural networks
+    multilayer neural networks
 multilevel analysis
     multilevel analysis
+multiple linear regressions
+    multiple linear regressions
 multiscale computations
     multiscale computations
 multiscales
@@ -1624,14 +1840,23 @@ muslim
     muslim
 national controls
     national controls
+nearest neighbor method
+    nearest neighbor method
 neighborhood
     neighborhood
 netherlands
     netherlands
 network links
     network links
+network security
+    network security
 networks
     networks
+neural modeling
+    neural modeling
+neural network
+    neural network
+    neural networks
 neural network autoregressive model
     neural network autoregressive model
 neural networks (computer)
@@ -1640,10 +1865,14 @@ new york
     new york
 new york city
     new york city
+newsprint
+    newsprint
 nlm)
     nlm)
 no reduction
     no reduction
+nocv1
+    nocv1
 node degree
     node degree
 noise
@@ -1682,6 +1911,8 @@ nonstandard finite difference schemes
     nonstandard finite difference schemes
 nonstandard finite differences
     nonstandard finite differences
+novosibirsk
+    novosibirsk
 nucleic acid detection
     nucleic acid detection
 nucleic acids
@@ -1695,6 +1926,8 @@ numerical comparison
 numerical model
     numerical model
     numerical modeling
+numerical predictions
+    numerical predictions
 numerical scheme
     numerical scheme
 numerical solution
@@ -1784,6 +2017,8 @@ parasite vector
     parasite vector
 parasitology
     parasitology
+partial autocorrelation function
+    partial autocorrelation function
 partial observation
     partial observation
 partially data-driven approach
@@ -1802,14 +2037,22 @@ patient compliance
     patient compliance
 patient isolation
     patient isolation
+patient treatment
+    patient treatment
 pattern recognition systems
     pattern recognition systems
+peak height
+    peak height
 peak prediction
     peak prediction
 peak time of epidemic
     peak time of epidemic
 perceptive diskrimination
     perceptive diskrimination
+perceptron
+    perceptron
+perceptron algorithms
+    perceptron algorithms
 perceptual masking
     perceptual masking
 performance analysis
@@ -1850,6 +2093,8 @@ pneumovirus
     pneumovirus
 poincare map
     poincare map
+point-to-point communication
+    point-to-point communication
 policy formulation
     policy formulation
 pop
@@ -1866,6 +2111,8 @@ population exposure
     population exposure
 population immunity
     population immunity
+population model
+    population model
 population models
     population models
 population research
@@ -1877,6 +2124,8 @@ population statistics
     population statistics
 population surveillance
     population surveillance
+portable equipment
+    portable equipment
 post pandemic
     post pandemic
 poultry
@@ -1897,6 +2146,12 @@ predator prey systems
 predator-prey model
     predator-prey model
     predator-prey modeling
+predictability of health-related phenomena
+    predictability of health-related phenomena
+predicting currents
+    predicting currents
+predicting future epidemics
+    predicting future epidemics
 prediction
     prediction
 prediction accuracy
@@ -1905,6 +2160,8 @@ prediction analysis
     prediction analysis
 prediction and forecasting
     prediction and forecasting
+prediction function
+    prediction function
 prediction performance
     prediction performance
     predictive performance
@@ -1970,8 +2227,14 @@ processing strategies
     processing strategies
 prognosis
     prognosis
+project management
+    project management
 projection
     projection
+projection algorithms
+    projection algorithms
+propagation mechanism
+    propagation mechanism
 propagation speed
     propagation speed
 propagation velocities
@@ -1999,10 +2262,16 @@ public health policies
     public health policies
 public health service
     public health service
+public health services
+    public health services
 public health surveillance
     public health surveillance
 public health systems
     public health systems
+public opinion mining
+    public opinion mining
+public opinions
+    public opinions
 purely data-driven approach
     purely data-driven approach
 python
@@ -2019,6 +2288,8 @@ quantitative parameters
     quantitative parameters
 quarantine
     quarantine
+quasi-stationary distribution
+    quasi-stationary distribution
 r software
     r software
 radiation
@@ -2137,6 +2408,8 @@ rolling update mechanism
     rolling update mechanism
 root mean square errors
     root mean square errors
+route predictions
+    route predictions
 rubella
     rubella
 run numbers
@@ -2190,6 +2463,8 @@ second moments
     second moments
 secondary 60g07
     secondary 60g07
+secure communication
+    secure communication
 seemingly unrelated equations
     seemingly unrelated equations
 seir
@@ -2224,6 +2499,8 @@ sexual transmission
 sexually transmitted disease
     sexually transmitted disease
     sexually transmitted diseases
+shelf life
+    shelf life
 short course therapy
     short course therapy
 short term prediction
@@ -2236,6 +2513,11 @@ si models
     si models
     sis model
     sis models
+si sir mathematical model linear fitting
+    si sir mathematical model linear fitting
+si(n)rs model
+    si(n)rs model
+    sirs models
 sierra leone
     sierra leone
 signal noise ratio
@@ -2255,6 +2537,12 @@ simulated data
     simulated data
 simulation
     simulation
+simulation example
+    simulation example
+simulation of epidemic process
+    simulation of epidemic process
+sir
+    sir
 sir and seir models
     sir and seir models
 sir and sirs models
@@ -2283,19 +2571,27 @@ smac
     smac
 small area surveillance
     small area surveillance
+social aspects
+    social aspects
 social class
     social class
+social datum
+    social datum
 social distance
     social distance
     social distancing
 social isolation
     social isolation
+social networking (online)
+    social networking (online)
 social sciences
     social sciences
 socioeconomics
     socioeconomics
 software
     software
+software matlab
+    software matlab
 solution of inverse problems
     solution of inverse problems
 south asia
@@ -2362,6 +2658,8 @@ standardized incidence ratio
     standardized incidence ratio
 standards
     standards
+state modeling
+    state modeling
 state of the art
     state of the art
 state variables
@@ -2429,6 +2727,8 @@ surrogate model
     surrogate model
 surveillance
     surveillance
+surveillance data
+    surveillance data
 surveys
     surveys
 suscep-tible-infected-removed models
@@ -2470,12 +2770,18 @@ system of ordinary differential equations
     system of ordinary differential equations
 system-level analysis
     system-level analysis
+systematic review
+    systematic review
 systemic inflammatory response syndrome
     systemic inflammatory response syndrome
 taiwan
     taiwan
 technique
     technique
+telecommunication networks
+    telecommunication networks
+telematics
+    telematics
 temperature
     temperature
 temperature dependence
@@ -2528,6 +2834,9 @@ time series
 time series analysis
     time series analysis
     time-series analysis
+time series classification
+    time series classification
+    time series classifications
 time series data
     time series data
 time series forecasting
@@ -2543,6 +2852,8 @@ time series prediction
     time series prediction
 time step
     time step
+time to extinction
+    time to extinction
 time variant
     time variant
 time varying
@@ -2555,26 +2866,38 @@ time-variant parameters
     time-variant parameters
 timestepper
     timestepper
+tipping point
+    tipping point
 traffic flow
     traffic flow
 trained immunity
     trained immunity
 training
     training
+training sets
+    training sets
 trajectory
     trajectory
 transfer learning
     transfer learning
 transience
     transience
+transition region
+    transition region
 transmission
     transmission
 transmission dynamics
     transmission dynamics
+transmission model
+    transmission model
 transmission processing
     transmission processing
 transmission rates
     transmission rates
+transportation
+    transportation
+transportation system
+    transportation system
 travel
     travel
 traveling front
@@ -2599,6 +2922,14 @@ tsirs
     tsirs
 tuberculosis
     tuberculosis
+twitter
+    twitter
+twitter apis
+    twitter apis
+twitter mining
+    twitter mining
+two section
+    two section
 uganda
     uganda
 uncertainty
@@ -2685,8 +3016,12 @@ virus vector
     virus vector
 virus virulence
     virus virulence
+virus writers
+    virus writers
 viruses
     viruses
+visualization
+    visualization
 voice
     voice
 voice quality
@@ -2706,6 +3041,18 @@ weather
     weather
 weather forecasting
     weather forecasting
+web based
+    web based
+web based information systems
+    web based information systems
+web services
+    web services
+web-based applications
+    web-based applications
+web-based data
+    web-based data
+websites
+    websites
 weighted overlay
     weighted overlay
 who

@@ -17,6 +17,7 @@ from techminer.core.dashboard import max_items, min_occurrence
 from techminer.plots import bubble_plot, gant0_plot, gant_plot, heatmap
 
 TEXTLEN = 40
+from techminer.core.filter_records import filter_records
 
 
 class BaseModel:
@@ -354,7 +355,7 @@ class MatrixDASHapp(DASH, MatrixModel):
     ):
         """Dashboard app"""
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         MatrixModel.__init__(
             self,

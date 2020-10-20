@@ -127,7 +127,7 @@ class DASHapp:
 
     def on_click(self, button):
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
         max_year = data["Year"].dropna().max()
         data["Global_Normalized_Citations"] = data.Global_Citations.map(
             lambda w: round(w / max_year, 3), na_action="ignore"

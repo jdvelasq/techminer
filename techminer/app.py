@@ -36,6 +36,7 @@ from techminer.gui.text_clustering import DASHapp as TextClustering
 from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
 from techminer.gui.top_documents import DASHapp as TopDocuments
 from techminer.gui.worldmap import DASHapp as WorldMap
+from techminer.gui.record_filtering import DASHapp as RecordFiltering
 
 #  from techminer.svd import DASHapp as SingleValueDecomposition
 
@@ -87,6 +88,7 @@ APPS = {
     "Latent semantic analysis": LatentSemanticAnalysis,
     "Manage columns": ManageColumns,
     "Matrix explorer": MatrixExplorer,
+    "Record filtering": RecordFiltering,
     "Scopus importer": ScopusImporter,
     "Term analysis": TermAnalyzer,
     "Term per year analysis": TermYearAnalyzer,

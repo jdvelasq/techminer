@@ -22,10 +22,15 @@ class DASHapp(DASH):
             dash.Dropdown(
                 options=glob.glob("TH_*.txt"),
             ),
-            dash.HTML("Options:"),
-            dash.Checkbox(description="Include unmatched items:"),
-            dash.HTML("Column:"),
+            dash.HTML("Include unmatched items:"),
+            dash.Checkbox(description=""),
+            dash.HTML("Apply to column:"),
             dash.Dropdown(options=sorted(self.data.columns)),
+            # dash.HTML("New column:"),
+            #  dash.Text(
+            #      description="",
+            #      placeholder="Column name",
+            #  ),
         ]
 
         #

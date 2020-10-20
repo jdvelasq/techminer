@@ -10,11 +10,12 @@ from techminer.core import (
     add_counters_to_axis,
     clustering,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
 )
 from techminer.core.dashboard import fig_height
 from techminer.plots import counters_to_node_sizes, xy_clusters_plot
 import ipywidgets as widgets
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -60,13 +61,7 @@ class Model:
         #
         # 2.-- Limit to / Exclude
         #
-        M = limit_to_exclude(
-            data=M,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        M = exclude_terms(data=M, axis=1)
 
         #
         # 3.-- Computtes TFIDF matrix and select max_term frequent terms
@@ -215,7 +210,7 @@ class DASHapp(DASH, Model):
         exclude=None,
         years_range=None,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self,

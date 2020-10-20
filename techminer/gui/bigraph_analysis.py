@@ -13,7 +13,7 @@ from techminer.core import (
     TF_matrix,
     add_counters_to_axis,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
     sort_by_axis,
 )
 
@@ -26,6 +26,7 @@ from techminer.plots import (
 )
 from techminer.plots import heatmap as heatmap_
 from techminer.plots import set_spines_invisible
+from techminer.core.filter_records import filter_records
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -93,20 +94,8 @@ class Model:
 
         if self.top_by == "Data":
 
-            A = limit_to_exclude(
-                data=A,
-                axis=1,
-                column=self.column,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
-            B = limit_to_exclude(
-                data=B,
-                axis=1,
-                column=self.by,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
+            A = exclude_terms(data=A, axis=1)
+            B = exclude_terms(data=B, axis=1)
             matrix = np.matmul(B.transpose().values, A.values)
             matrix = pd.DataFrame(matrix, columns=A.columns, index=B.columns)
 
@@ -147,25 +136,11 @@ class Model:
 
         if self.top_by in ["Num Documents", "Global Citations"]:
 
-            A = limit_to_exclude(
-                data=A,
-                axis=1,
-                column=self.column,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
-
-            B = limit_to_exclude(
-                data=B,
-                axis=1,
-                column=self.by,
-                limit_to=self.limit_to,
-                exclude=self.exclude,
-            )
+            A = exclude_terms(data=A, axis=1)
+            B = exclude_terms(data=B, axis=1)
 
             matrix = np.matmul(B.transpose().values, A.values)
             matrix = pd.DataFrame(matrix, columns=A.columns, index=B.columns)
-
             matrix = add_counters_to_axis(
                 X=matrix, axis=1, data=self.data, column=self.column
             )
@@ -644,7 +619,7 @@ class DASHapp(DASH, Model):
     ):
         """Dashboard app"""
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self,

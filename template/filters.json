@@ -1,0 +1,32 @@
+{
+    "bradford_law_zones": 2,
+    "citations": [
+        0,
+        155
+    ],
+    "citations_range": [
+        0,
+        155
+    ],
+    "document_types": [
+        "Book Chapter",
+        "Conference Paper",
+        "Review",
+        "Article"
+    ],
+    "excluded_terms": "---",
+    "selected_types": [
+        "Article",
+        "Book Chapter",
+        "Conference Paper",
+        "Review"
+    ],
+    "year_range": [
+        1997,
+        2020
+    ],
+    "years": [
+        1997,
+        2020
+    ]
+}

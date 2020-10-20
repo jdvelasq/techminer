@@ -5,6 +5,7 @@ import ipywidgets as widgets
 from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 
+from techminer.core.filter_records import filter_records
 
 ##
 ##
@@ -41,7 +42,7 @@ class DASHapp:
 
     def run(self):
 
-        x = pd.read_csv("corpus.csv")
+        x = filter_records(pd.read_csv("corpus.csv"))
 
         ##
         ##  General information

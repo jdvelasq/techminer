@@ -11,12 +11,13 @@ from techminer.core import (
     add_counters_to_axis,
     corpus_filter,
     explode,
-    limit_to_exclude,
+    exclude_terms,
     sort_axis,
     sort_by_axis,
 )
 from techminer.core.dashboard import max_items, min_occurrence
 from techminer.plots import bar_plot, barh_plot, stacked_bar, stacked_barh
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -139,13 +140,7 @@ class Model:
         result = result.reset_index(drop=True)
         result = result.set_index(self.column)
 
-        result = limit_to_exclude(
-            data=result,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        result = exclude_terms(data=result, axis=0)
 
         result = add_counters_to_axis(
             X=result, axis=0, data=self.data, column=self.column
@@ -317,7 +312,7 @@ class DASHapp(DASH, Model):
         exclude=None,
         years_range=None,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self,

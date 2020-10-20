@@ -14,7 +14,7 @@ from techminer.core import (
     add_counters_to_axis,
     clustering,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
     normalize_network,
     sort_axis,
     cluster_table_to_list,
@@ -26,6 +26,7 @@ from techminer.plots import (
     counters_to_node_sizes,
     xy_clusters_plot,
 )
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -85,12 +86,9 @@ class Model:
         ##
         ## Limit to / Exclude
         ##
-        TF_matrix_ = limit_to_exclude(
+        TF_matrix_ = exclude_terms(
             data=TF_matrix_,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
+            axis=1
         )
 
         ##
@@ -221,12 +219,9 @@ class Model:
         ##
         ## Limit to / Exclude
         ##
-        TF_matrix_ = limit_to_exclude(
+        TF_matrix_ = exclude_terms(
             data=TF_matrix_,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
+            axis=1
         )
 
         ##
@@ -287,13 +282,7 @@ class Model:
         ##
         ## Limit to / Exclude
         ##
-        TF_matrix_ = limit_to_exclude(
-            data=TF_matrix_,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        TF_matrix_ = exclude_terms(            data=TF_matrix_,            axis=1        )
 
         ##
         ## Computtes TFIDF matrix and select max_term frequent terms
@@ -411,7 +400,7 @@ class DASHapp(DASH, Model):
         exclude=None,
         years_range=None,
     ):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self,

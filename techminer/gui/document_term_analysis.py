@@ -7,10 +7,11 @@ from techminer.core import (
     TF_matrix,
     TFIDF_matrix,
     add_counters_to_axis,
-    limit_to_exclude,
+    exclude_terms,
     sort_by_axis,
 )
 from techminer.plots import bar_plot, barh_plot
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -45,13 +46,7 @@ class Model:
         ##
         ## Limit to / Exclude
         ##
-        matrix = limit_to_exclude(
-            data=matrix,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        matrix = exclude_terms(data=matrix, axis=1)
 
         ##
         ## TF*IDF matrix
@@ -159,7 +154,7 @@ COLUMNS = sorted(
 
 class DASHapp(DASH, Model):
     def __init__(self, limit_to=None, exclude=None, years_range=None):
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(
             self, data=data, limit_to=limit_to, exclude=exclude, years_range=years_range

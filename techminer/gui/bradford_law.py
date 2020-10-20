@@ -10,6 +10,8 @@ from IPython.display import display
 from techminer.core import DASH
 import techminer.core.dashboard as dash
 
+from techminer.core.filter_records import filter_records
+
 ###############################################################################
 ##
 ##  MODEL
@@ -111,7 +113,7 @@ class Model:
 class DASHapp(DASH, Model):
     def __init__(self):
 
-        data = pd.read_csv("corpus.csv")
+        data = filter_records(pd.read_csv("corpus.csv"))
 
         Model.__init__(self, data=data)
 

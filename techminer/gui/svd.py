@@ -5,7 +5,7 @@ from sklearn.decomposition import TruncatedSVD
 import techminer.common as cmn
 import techminer.dashboard as dash
 import techminer.plots as plt
-from techminer.core import limit_to_exclude
+from techminer.core import exclude_terms
 from techminer.dashboard import DASH
 from techminer.diagram_plot import diagram_plot
 from techminer.document_term import TF_matrix, TFIDF_matrix
@@ -126,13 +126,7 @@ class Model:
     def table(self):
         self.apply()
         X = self.components_
-        X = limit_to_exclude(
-            data=X,
-            axis=0,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        X = exclude_terms(data=X, axis=0)
         X = cmn.sort_by_axis(data=X, sort_by=self.top_by, ascending=False, axis=0)
         X = X.head(self.top_n)
         X = cmn.sort_by_axis(

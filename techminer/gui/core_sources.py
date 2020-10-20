@@ -7,6 +7,8 @@ from IPython.display import display
 
 from techminer.core import explode
 
+from techminer.core.filter_records import filter_records
+
 
 class DASHapp:
     def __init__(self) -> None:
@@ -20,7 +22,7 @@ class DASHapp:
 
     def run(self):
 
-        x = pd.read_csv("corpus.csv")
+        x = filter_records(pd.read_csv("corpus.csv"))
         self.data = x.copy()
         x["Num_Documents"] = 1
         x = explode(

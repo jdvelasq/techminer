@@ -13,7 +13,7 @@ from techminer.core import (
     add_counters_to_axis,
     clustering,
     corpus_filter,
-    limit_to_exclude,
+    exclude_terms,
     normalize_network,
     sort_by_axis,
     cluster_table_to_list,
@@ -29,6 +29,8 @@ from techminer.plots import (
     xy_cluster_members_plot,
 )
 
+from techminer.core.filter_records import filter_records
+
 ###############################################################################
 ##
 ##  MODEL
@@ -36,22 +38,85 @@ from techminer.plots import (
 ###############################################################################
 
 
-class Model:
-    def __init__(
-        self,
-        data,
-        limit_to,
-        exclude,
-        years_range,
-    ):
-        ##
-        if years_range is not None:
-            initial_year, final_year = years_range
-            data = data[(data.Year >= initial_year) & (data.Year <= final_year)]
+class DASHapp(DASH):
+    def __init__(self):
 
-        self.data = data
-        self.limit_to = limit_to
-        self.exclude = exclude
+        self.data = filter_records(pd.read_csv("corpus.csv"))
+
+        self.command_panel = [
+            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
+            dash.Dropdown(
+                options=[
+                    "MDS Keywords Map",
+                    "MDS Cluster Map",
+                    "MDS Keywords by Cluster (table)",
+                    "MDS Keywords by Cluster (list)",
+                    "MDS Keywords by Cluster (Python code)",
+                    "CA Keywords Map",
+                    "CA Cluster Map",
+                    "CA Keywords by Cluster (table)",
+                    "CA Keywords by Cluster (list)",
+                    "CA Keywords by Cluster (Python code)",
+                    "Strategic Map",
+                ],
+            ),
+            dash.HTML("Parameters:"),
+            dash.Dropdown(
+                description="Column:",
+                options=sorted(self.data.columns),
+            ),
+            dash.min_occurrence(),
+            dash.max_items(),
+            dash.normalization(include_none=False),
+            dash.HTML("Clustering"),
+            dash.clustering_method(),
+            dash.n_clusters(m=3, n=50, i=1),
+            dash.affinity(),
+            dash.linkage(),
+            dash.random_state(),
+            dash.HTML("CA diagram"),
+            dash.x_axis(),
+            dash.y_axis(),
+            dash.HTML("Visualization"),
+            dash.top_n(),
+            dash.color_scheme(),
+            dash.fig_width(),
+            dash.fig_height(),
+        ]
+
+        self.n_components = 10
+
+        DASH.__init__(self)
+
+        #
+        # interactive output function
+        #
+        widgets.interactive_output(
+            f=self.interactive_output,
+            controls={
+                # Display:
+                "menu": self.command_panel[1],
+                # Parameters:
+                "column": self.command_panel[3],
+                "min_occ": self.command_panel[4],
+                "max_items": self.command_panel[5],
+                "normalization": self.command_panel[6],
+                # Clustering
+                "clustering_method": self.command_panel[8],
+                "n_clusters": self.command_panel[9],
+                "affinity": self.command_panel[10],
+                "linkage": self.command_panel[11],
+                "random_state": self.command_panel[12],
+                #  CA Diagram
+                "x_axis": self.command_panel[14],
+                "y_axis": self.command_panel[15],
+                # Visualization
+                "top_n": self.command_panel[17],
+                "colors": self.command_panel[18],
+                "width": self.command_panel[19],
+                "height": self.command_panel[20],
+            },
+        )
 
         self.column = None
         self.min_occ = None
@@ -68,6 +133,42 @@ class Model:
         self.colors = None
         self.width = None
         self.height = None
+
+    def interactive_output(self, **kwargs):
+
+        DASH.interactive_output(self, **kwargs)
+
+        with self.output:
+
+            if self.menu in ["MDS Keywords Map", "MDS Cluster Map", "Strategic Map"]:
+
+                self.set_disabled("X-axis:")
+                self.set_disabled("Y-axis:")
+                self.set_enabled("Colors:")
+                self.set_enabled("Width:")
+                self.set_enabled("Height:")
+
+            if self.menu in ["CA Keywords Map", "CA Cluster Map"]:
+
+                self.set_enabled("X-axis:")
+                self.set_enabled("Y-axis:")
+                self.set_enabled("Colors:")
+                self.set_enabled("Width:")
+                self.set_enabled("Height:")
+
+            if self.menu in [
+                "MDS Keywords by Cluster (table)",
+                "MDS Keywords by Cluster (list)",
+                "MDS Keywords by Cluster (Python code)",
+                "CA Keywords by Cluster (table)",
+                "CA Keywords by Cluster (list)",
+                "CA Keywords by Cluster (Python code)",
+            ]:
+                self.set_disabled("X-axis:")
+                self.set_disabled("Y-axis:")
+                self.set_disabled("Colors:")
+                self.set_disabled("Width:")
+                self.set_disabled("Height:")
 
     def apply(self):
 
@@ -87,15 +188,9 @@ class Model:
         )
 
         ##
-        ##  Limit to/Exclude
+        ##  Exclude Terms
         ##
-        TF_matrix_ = limit_to_exclude(
-            data=TF_matrix_,
-            axis=1,
-            column=self.column,
-            limit_to=self.limit_to,
-            exclude=self.exclude,
-        )
+        TF_matrix_ = exclude_terms(data=TF_matrix_, axis=1)
 
         ##
         ##  Select max items
@@ -407,155 +502,3 @@ class Model:
             ylabel="Density",
             figsize=(self.width, self.height),
         )
-
-
-###############################################################################
-##
-##  DASHBOARD
-##
-###############################################################################
-
-COLUMNS = sorted(
-    [
-        "Abstract_words_CL",
-        "Abstract_words",
-        "Author_Keywords_CL",
-        "Author_Keywords",
-        "Index_Keywords_CL",
-        "Index_Keywords",
-        "Keywords_CL",
-        "Title_words_CL",
-        "Title_words",
-    ]
-)
-
-
-class DASHapp(DASH, Model):
-    def __init__(
-        self,
-        limit_to=None,
-        exclude=None,
-        years_range=None,
-    ):
-        data = pd.read_csv("corpus.csv")
-
-        Model.__init__(
-            self,
-            data=data,
-            limit_to=limit_to,
-            exclude=exclude,
-            years_range=years_range,
-        )
-
-        self.command_panel = [
-            dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
-            dash.Dropdown(
-                options=[
-                    "MDS Keywords Map",
-                    "MDS Cluster Map",
-                    "MDS Keywords by Cluster (table)",
-                    "MDS Keywords by Cluster (list)",
-                    "MDS Keywords by Cluster (Python code)",
-                    "CA Keywords Map",
-                    "CA Cluster Map",
-                    "CA Keywords by Cluster (table)",
-                    "CA Keywords by Cluster (list)",
-                    "CA Keywords by Cluster (Python code)",
-                    "Strategic Map",
-                ],
-            ),
-            dash.HTML("Parameters:"),
-            dash.Dropdown(
-                description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
-            ),
-            dash.min_occurrence(),
-            dash.max_items(),
-            dash.normalization(include_none=False),
-            dash.HTML("Clustering"),
-            dash.clustering_method(),
-            dash.n_clusters(m=3, n=50, i=1),
-            dash.affinity(),
-            dash.linkage(),
-            dash.random_state(),
-            dash.HTML("CA diagram"),
-            dash.x_axis(),
-            dash.y_axis(),
-            dash.HTML("Visualization"),
-            dash.top_n(),
-            dash.color_scheme(),
-            dash.fig_width(),
-            dash.fig_height(),
-        ]
-
-        self.n_components = 10
-
-        #
-        # interactive output function
-        #
-        widgets.interactive_output(
-            f=self.interactive_output,
-            controls={
-                # Display:
-                "menu": self.command_panel[1],
-                # Parameters:
-                "column": self.command_panel[3],
-                "min_occ": self.command_panel[4],
-                "max_items": self.command_panel[5],
-                "normalization": self.command_panel[6],
-                # Clustering
-                "clustering_method": self.command_panel[8],
-                "n_clusters": self.command_panel[9],
-                "affinity": self.command_panel[10],
-                "linkage": self.command_panel[11],
-                "random_state": self.command_panel[12],
-                #  CA Diagram
-                "x_axis": self.command_panel[14],
-                "y_axis": self.command_panel[15],
-                # Visualization
-                "top_n": self.command_panel[17],
-                "colors": self.command_panel[18],
-                "width": self.command_panel[19],
-                "height": self.command_panel[20],
-            },
-        )
-
-        DASH.__init__(self)
-
-    def interactive_output(self, **kwargs):
-
-        DASH.interactive_output(self, **kwargs)
-
-        with self.output:
-
-            if self.menu in ["MDS Keywords Map", "MDS Cluster Map", "Strategic Map"]:
-
-                self.set_disabled("X-axis:")
-                self.set_disabled("Y-axis:")
-                self.set_enabled("Colors:")
-                self.set_enabled("Width:")
-                self.set_enabled("Height:")
-
-            if self.menu in ["CA Keywords Map", "CA Cluster Map"]:
-
-                self.set_enabled("X-axis:")
-                self.set_enabled("Y-axis:")
-                self.set_enabled("Colors:")
-                self.set_enabled("Width:")
-                self.set_enabled("Height:")
-
-            if self.menu in [
-                "MDS Keywords by Cluster (table)",
-                "MDS Keywords by Cluster (list)",
-                "MDS Keywords by Cluster (Python code)",
-                "CA Keywords by Cluster (table)",
-                "CA Keywords by Cluster (list)",
-                "CA Keywords by Cluster (Python code)",
-            ]:
-                self.set_disabled("X-axis:")
-                self.set_disabled("Y-axis:")
-                self.set_disabled("Colors:")
-                self.set_disabled("Width:")
-                self.set_disabled("Height:")
-
-

@@ -6,6 +6,7 @@ from ipywidgets import GridspecLayout, Layout
 
 from techminer.core import corpus_filter, explode, record_to_HTML
 import techminer.core.dashboard as dash
+from techminer.core.filter_records import filter_records
 
 
 class DASHapp:
