@@ -143,7 +143,7 @@ class DASHapp(DASH):
             dash.Dropdown(
                 description="Clusters:",
                 options=["---"] + clusters,
-                value=self.filters["excluded_terms"],
+                value=self.filters["selected_cluster"],
             ),
         ]
 

@@ -162,6 +162,11 @@ class Model:
             name_prefix="Cluster {}",
         )
 
+        ##
+        ## Cluster filters
+        ##
+        self.generate_cluster_filters(terms=R.index, labels=self.labels_)
+
         R["Cluster"] = self.labels_
 
         self.coordinates_ = R

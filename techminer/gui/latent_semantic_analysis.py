@@ -142,6 +142,11 @@ class Model:
         )
 
         ##
+        ## Cluster filters
+        ##
+        self.generate_cluster_filters(terms=R.index, labels=self.labels_)
+
+        ##
         R["Cluster"] = self.labels_
 
         #

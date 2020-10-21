@@ -30,6 +30,7 @@ from techminer.plots import (
 from techminer.core.thesaurus import read_textfile
 
 from techminer.core.explode import explode
+from techminer.core.filter_records import filter_records
 
 ###############################################################################
 ##
@@ -170,6 +171,11 @@ class Model:
             name_prefix="Theme {}",
             documents=True,
         )
+
+        #
+        # Cluster filters
+        #
+        self.generate_cluster_filters(terms=TF_IDF_matrix_.index, labels=self.labels_)
 
         ##
         ## Column names in cluster members table

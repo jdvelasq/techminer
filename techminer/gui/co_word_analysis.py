@@ -242,9 +242,7 @@ class DASHapp(DASH):
         ##
         ## Cluster filters
         ##
-        self.generate_cluster_filters(
-            cluster_name="CoWord", terms=X.index, labels=self.labels_
-        )
+        self.generate_cluster_filters(terms=X.index, labels=self.labels_)
 
         ##
         ## Cluster co-occurrence

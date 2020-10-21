@@ -663,7 +663,7 @@ class DASH:
         for key in kwargs.keys():
             setattr(self, key, kwargs[key])
 
-    def generate_cluster_filters(self, cluster_name, terms, labels):
+    def generate_cluster_filters(self, terms, labels):
 
         terms = [" ".join(w.split(" ")[:-1]) for w in terms]
         dict_ = {key: value for key, value in zip(terms, labels)}
@@ -677,8 +677,22 @@ class DASH:
         with open("filters.json", "r") as f:
             filters = json.load(f)
 
+        for key in filters.copy():
+            if key not in [
+                "bradford_law_zones",
+                "citations_range",
+                "citations",
+                "document_types",
+                "excluded_terms",
+                "selected_cluster",
+                "selected_types",
+                "year_range",
+                "years",
+            ]:
+                filters.pop(key)
+
         for i_cluster in clusters.index.tolist():
-            filters[cluster_name + "_CLUST_" + "{:>02d}".format(i_cluster)] = sorted(
+            filters["CLUST_" + "{:>02d}".format(i_cluster)] = sorted(
                 set(clusters["ID"][i_cluster])
             )
 

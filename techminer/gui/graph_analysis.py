@@ -153,6 +153,18 @@ class Model:
             self.X_, axis=0, cmap=self.colormap, figsize=(self.width, self.height)
         )
 
+    def to_cluster_filters(self, table):
+        terms = []
+        labels = []
+        for i_cluster, cluster in enumerate(table.columns):
+            x = table[cluster].tolist()
+            x = [m for m in x if m.strip() != ""]
+            x = [" ".join(m.split(" ")[:-1]) for m in x]
+            terms += x
+            labels += [i_cluster] * len(x)
+
+        self.generate_cluster_filters(terms=terms, labels=labels)
+
     def network(self):
         self.apply()
         return Network(
@@ -171,23 +183,25 @@ class Model:
 
     def communities_table(self):
         self.apply()
-        return Network(
+        table = Network(
             X=self.X_,
             top_by=self.top_by,
             n_labels=self.n_labels,
             clustering=self.clustering,
         ).cluster_members_
+        self.to_cluster_filters(table)
+        return table
 
     def communities_list(self):
         self.apply()
-        members = Network(
+        table = Network(
             X=self.X_,
             top_by=self.top_by,
             n_labels=self.n_labels,
             clustering=self.clustering,
         ).cluster_members_
-
-        return cluster_table_to_list(table=members)
+        self.to_cluster_filters(table)
+        return cluster_table_to_list(table=table)
 
     def communities_python_code(self):
         self.apply()
@@ -197,6 +211,8 @@ class Model:
             n_labels=self.n_labels,
             clustering=self.clustering,
         ).cluster_members_
+
+        self.to_cluster_filters(members)
 
         dict_ = {}
         for i_cluster, cluster in enumerate(members.columns):

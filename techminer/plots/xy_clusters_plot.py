@@ -85,10 +85,16 @@ def xy_clusters_plot(
         cmap = pyplot.cm.get_cmap(color_scheme)
         max_node_sizes = max(node_sizes)
         min_node_sizes = min(node_sizes)
-        node_colors = [
-            cmap(0.4 + 0.60 * (i - min_node_sizes) / (max_node_sizes - min_node_sizes))
-            for i in node_sizes
-        ]
+        if max_node_sizes == min_node_sizes:
+            node_colors = [cmap(0.8) for i in node_sizes]
+        else:
+            node_colors = [
+                cmap(
+                    0.4
+                    + 0.60 * (i - min_node_sizes) / (max_node_sizes - min_node_sizes)
+                )
+                for i in node_sizes
+            ]
 
     ## plot bubbles
     ax.scatter(

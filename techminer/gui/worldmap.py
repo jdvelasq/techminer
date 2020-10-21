@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 
 from techminer.plots import worldmap
+from techminer.core.filter_records import filter_records
 
 
 class Model:

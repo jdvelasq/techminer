@@ -184,6 +184,14 @@ class Model:
             name_prefix="Cluster {}",
         )
 
+        ##
+        ## Cluster filters
+        ##
+        self.generate_cluster_filters(
+            terms=X.index,
+            labels=self.labels_,
+        )
+
         y = self.cluster_members_.copy()
         y = y.applymap(lambda w: pd.NA if w == "" else w)
         node_sizes = [500 + 2500 * len(y[m].dropna()) for m in y.columns]
@@ -229,6 +237,14 @@ class Model:
             random_state=self.random_state,
             top_n=self.top_n,
             name_prefix="Cluster {}",
+        )
+
+        ##
+        ## Cluster filters
+        ##
+        self.generate_cluster_filters(
+            terms=X.index,
+            labels=self.labels_,
         )
 
         y = self.cluster_members_.copy()
