@@ -20,7 +20,7 @@ from techminer.core.map import map_
 from techminer.core.text import remove_accents
 
 from techminer.core.thesaurus import load_file_as_dict
-from techminer.core import DASH
+from techminer.core import Dashboard
 from techminer.core.create_institutions_thesaurus import create_institutions_thesaurus
 from techminer.core.apply_institutions_thesaurus import apply_institutions_thesaurus
 from techminer.core.create_keywords_thesaurus import create_keywords_thesaurus
@@ -32,7 +32,7 @@ warnings.filterwarnings("ignore")
 from nltk import word_tokenize
 
 
-class ScopusImporter(DASH):
+class ScopusImporter(Dashboard):
     def __init__(self):
 
         self.command_panel = [

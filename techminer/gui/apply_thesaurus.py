@@ -1,7 +1,7 @@
 import pandas as pd
 import ipywidgets as widgets
 import techminer.core.dashboard as dash
-from techminer.core import DASH
+from techminer.core import Dashboard
 import string
 import pandas as pd
 import datetime
@@ -12,7 +12,7 @@ from techminer.core.thesaurus import read_textfile
 from techminer.core.map import map_
 
 
-class DASHapp(DASH):
+class App(Dashboard):
     def __init__(self):
 
         self.menu = "apply_thesaurus"

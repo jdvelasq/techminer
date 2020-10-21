@@ -488,7 +488,7 @@ COLUMNS = [
 ]
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(
         self,
         thesaurus_file="thesaurus/keywords.txt",
@@ -642,7 +642,7 @@ def thematic_analysis(
     exclude=None,
     years_range=None,
 ):
-    return DASHapp(
+    return App(
         thesaurus_file=thesaurus_file,
         limit_to=limit_to,
         exclude=exclude,

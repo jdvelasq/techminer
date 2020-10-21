@@ -152,7 +152,7 @@ COLUMNS = sorted(
 )
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(self, limit_to=None, exclude=None, years_range=None):
         data = filter_records(pd.read_csv("corpus.csv"))
 

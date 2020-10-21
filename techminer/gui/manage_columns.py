@@ -1,7 +1,7 @@
 import pandas as pd
 import ipywidgets as widgets
 import techminer.core.dashboard as dash
-from techminer.core import DASH
+from techminer.core import Dashboard
 import glob
 import string
 import pandas as pd
@@ -10,7 +10,7 @@ from techminer.core.keywords import Keywords
 import re
 
 
-class DASHapp(DASH):
+class App(Dashboard):
     def __init__(self):
 
         self.menu = "manage"

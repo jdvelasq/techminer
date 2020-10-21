@@ -1,42 +1,4 @@
 {
-    "CLUST_00": [
-        0,
-        10,
-        15,
-        17,
-        21,
-        60,
-        73,
-        84,
-        114,
-        116
-    ],
-    "CLUST_01": [
-        60,
-        73,
-        105
-    ],
-    "CLUST_02": [
-        17
-    ],
-    "CLUST_03": [
-        21
-    ],
-    "CLUST_04": [
-        0
-    ],
-    "CLUST_05": [
-        73
-    ],
-    "CLUST_06": [
-        84
-    ],
-    "CLUST_07": [
-        114
-    ],
-    "CLUST_08": [
-        116
-    ],
     "bradford_law_zones": 2,
     "citations": [
         0,
@@ -49,15 +11,15 @@
     "document_types": [
         "Book Chapter",
         "Conference Paper",
-        "Review",
-        "Article"
+        "Article",
+        "Review"
     ],
     "excluded_terms": "---",
-    "selected_cluster": "CLUST_00",
+    "selected_cluster": "---",
     "selected_types": [
-        "Article",
         "Book Chapter",
         "Conference Paper",
+        "Article",
         "Review"
     ],
     "year_range": [

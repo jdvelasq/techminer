@@ -1,6 +1,6 @@
 import ipywidgets as widgets
 import techminer.core.dashboard as dash
-from techminer.core import DASH, explode
+from techminer.core import Dashboard, explode
 
 import pandas as pd
 import numpy as np
@@ -43,7 +43,7 @@ class Model:
         )
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(self):
 
         data = filter_records(pd.read_csv("corpus.csv"))

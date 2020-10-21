@@ -17,7 +17,7 @@ from techminer.core.map import map_
 from techminer.core.text import remove_accents
 
 from techminer.core.thesaurus import load_file_as_dict
-from techminer.core import DASH
+from techminer.core import Dashboard
 import techminer.core.dashboard as dash
 from techminer.core.create_institutions_thesaurus import create_institutions_thesaurus
 from techminer.core.apply_institutions_thesaurus import apply_institutions_thesaurus
@@ -32,7 +32,7 @@ warnings.filterwarnings("ignore")
 from nltk import word_tokenize
 
 
-class DASHapp(DASH):
+class App(Dashboard):
     def __init__(self):
 
         with open("filters.json", "r") as f:

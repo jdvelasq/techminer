@@ -610,7 +610,7 @@ class Model:
 ###############################################################################
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(
         self,
         limit_to=None,

@@ -10,7 +10,7 @@ from techminer.core import explode
 from techminer.core.filter_records import filter_records
 
 
-class DASHapp:
+class App:
     def __init__(self) -> None:
 
         self.app_layout = GridspecLayout(9, 4, height="820px")

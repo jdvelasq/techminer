@@ -38,7 +38,7 @@ from techminer.core.filter_records import filter_records
 ###############################################################################
 
 
-class DASHapp(DASH):
+class App(Dashboard):
     def __init__(self):
 
         self.data = filter_records(pd.read_csv("corpus.csv"))

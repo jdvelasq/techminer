@@ -9,7 +9,7 @@ import techminer.core.dashboard as dash
 from techminer.core.filter_records import filter_records
 
 
-class DASHapp:
+class App:
     def __init__(self):
 
         #

@@ -7,7 +7,7 @@ import numpy as np
 import ipywidgets as widgets
 from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
-from techminer.core import DASH
+from techminer.core import Dashboard
 import techminer.core.dashboard as dash
 
 from techminer.core.filter_records import filter_records
@@ -163,7 +163,7 @@ class Model:
         return fig
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(self):
 
         data = filter_records(pd.read_csv("corpus.csv"))

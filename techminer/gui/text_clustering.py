@@ -1,7 +1,7 @@
 import pandas as pd
 import ipywidgets as widgets
 import techminer.core.dashboard as dash
-from techminer.core import DASH
+from techminer.core import Dashboard
 import string
 import pandas as pd
 import datetime
@@ -9,7 +9,7 @@ from techminer.core.keywords import Keywords
 from techminer.core.thesaurus import text_clustering
 
 
-class DASHapp(DASH):
+class App(Dashboard):
     def __init__(self):
 
         self.menu = "create_thesaurus"

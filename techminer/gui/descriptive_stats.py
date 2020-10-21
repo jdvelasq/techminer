@@ -30,7 +30,7 @@ def _count_terms(x, column):
     return len(_extract_terms(x, column))
 
 
-class DASHapp:
+class App:
     def __init__(self) -> None:
 
         self.app_layout = GridspecLayout(9, 4, height="820px")

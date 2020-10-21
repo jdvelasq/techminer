@@ -604,7 +604,7 @@ def IntRangeSlider(description="", value=1, min=1, max=10, step=1):
     )
 
 
-class DASH:
+class Dashboard:
     def __init__(self):
 
         #

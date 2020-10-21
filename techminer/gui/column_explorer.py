@@ -1,4 +1,4 @@
-from techminer.gui.bigraph_analysis import DASHapp
+from techminer.gui.bigraph_analysis import App
 import ipywidgets as widgets
 import numpy as np
 import pandas as pd
@@ -9,7 +9,7 @@ from techminer.core import explode, record_to_HTML
 import techminer.core.dashboard as dash
 
 
-class DASHapp:
+class App:
     def __init__(self, top_n=100, only_abstract=True):
 
         #

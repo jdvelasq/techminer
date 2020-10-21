@@ -6,7 +6,7 @@ import ipywidgets as widgets
 from ipywidgets import GridspecLayout, Layout
 
 import techminer.core.dashboard as dash
-from techminer.core import DASH
+from techminer.core import Dashboard
 
 #  from techminer.core.dashboard import ascending
 from techminer.plots import bar_plot, barh_plot
@@ -165,7 +165,7 @@ COLORMAPS = [
 ]
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(self, years_range=None):
         #
         # Generic code

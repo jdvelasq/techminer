@@ -253,7 +253,7 @@ class Model:
 ###############################################################################
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(
         self,
         limit_to=None,
@@ -435,7 +435,7 @@ def correlation_analysis(
     years_range=None,
 ):
 
-    return DASHapp(
+    return App(
         limit_to=limit_to,
         exclude=exclude,
         years_range=years_range,

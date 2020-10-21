@@ -5,7 +5,7 @@ from IPython.display import display
 import techminer.core.dashboard as dash
 
 
-class DASHapp:
+class App:
     def __init__(self):
 
         command_panel = [

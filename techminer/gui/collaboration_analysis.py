@@ -3,7 +3,7 @@ import pandas as pd
 
 import techminer.core.dashboard as dash
 import ipywidgets as widgets
-from techminer.core import DASH
+from techminer.core import Dashboard
 from techminer.core import explode
 from techminer.core import exclude_terms, add_counters_to_axis, sort_by_axis
 
@@ -100,7 +100,7 @@ COLUMNS = [
 ]
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(
         self,
     ):

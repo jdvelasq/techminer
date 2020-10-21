@@ -4,41 +4,41 @@ from IPython.display import display
 import pandas as pd
 
 
-from techminer.gui.apply_thesaurus import DASHapp as ApplyThesaurus
-from techminer.gui.bigraph_analysis import DASHapp as BigraphAnalyzer
-from techminer.gui.bradford_law import DASHapp as BradfordLaw
-from techminer.gui.by_term_analysis import DASHapp as TermAnalyzer
-from techminer.gui.by_term_per_year_analysis import MatrixDASHapp as TermYearAnalyzer
-from techminer.gui.by_year_analysis import DASHapp as YearAnalyzer
-from techminer.gui.co_word_analysis import DASHapp as CoWordAnalysis
-from techminer.gui.collaboration_analysis import DASHapp as CollaborationAnalysis
-from techminer.gui.column_explorer import DASHapp as ColumnExplorer
-from techminer.gui.comparative_analysis import DASHapp as ComparativeAnalysis
-from techminer.gui.conceptual_structure import DASHapp as ConceptualStructure
-from techminer.gui.core_authors import DASHapp as CoreAuthors
-from techminer.gui.core_sources import DASHapp as CoreSources
-from techminer.gui.correlation_analysis import DASHapp as CorrelationAnalysis
-from techminer.gui.coverage import DASHapp as CoverageReporter
-from techminer.gui.descriptive_stats import DASHapp as StatisticsReporter
-from techminer.gui.document_term_analysis import DASHapp as DocumentTermAnalysis
-from techminer.gui.extract_keywords_from import DASHapp as ExtractKeywordsFrom
-from techminer.gui.factor_analysis import DASHapp as FactorAnalysis
-from techminer.gui.graph_analysis import DASHapp as GraphAnalyzer
-from techminer.gui.growth_indicators import DASHapp as GrowthIndicators
-from techminer.gui.impact_analysis import DASHapp as ImpactAnalysis
-from techminer.gui.keywords_association import DASHapp as KeywordsAssociation
-from techminer.gui.keywords_comparison import DASHapp as KeywordsComparison
-from techminer.gui.latent_semantic_analysis import DASHapp as LatentSemanticAnalysis
-from techminer.gui.manage_columns import DASHapp as ManageColumns
-from techminer.gui.matrix_explorer import DASHapp as MatrixExplorer
+from techminer.gui.apply_thesaurus import App as ApplyThesaurus
+from techminer.gui.bigraph_analysis import App as BiGraphAnalysis
+from techminer.gui.bradford_law import App as BradfordLaw
+from techminer.gui.by_term_analysis import App as TermAnalysis
+from techminer.gui.by_term_per_year_analysis import MatrixApp as TermYearAnalysis
+from techminer.gui.by_year_analysis import App as YearAnalysis
+from techminer.gui.co_word_analysis import App as CoWordAnalysis
+from techminer.gui.collaboration_analysis import App as CollaborationAnalysis
+from techminer.gui.column_explorer import App as ColumnExplorer
+from techminer.gui.comparative_analysis import App as ComparativeAnalysis
+from techminer.gui.conceptual_structure import App as ConceptualStructure
+from techminer.gui.core_authors import App as CoreAuthors
+from techminer.gui.core_sources import App as CoreSources
+from techminer.gui.correlation_analysis import App as CorrelationAnalysis
+from techminer.gui.coverage import App as Coverage
+from techminer.gui.descriptive_stats import App as DescriptiveStats
+from techminer.gui.document_term_analysis import App as DocumentTermAnalysis
+from techminer.gui.extract_keywords_from import App as ExtractKeywordsFrom
+from techminer.gui.factor_analysis import App as FactorAnalysis
+from techminer.gui.graph_analysis import App as GraphAnalysis
+from techminer.gui.growth_indicators import App as GrowthIndicators
+from techminer.gui.impact_analysis import App as ImpactAnalysis
+from techminer.gui.keywords_association import App as KeywordsAssociation
+from techminer.gui.keywords_comparison import App as KeywordsComparison
+from techminer.gui.latent_semantic_analysis import App as LatentSemanticAnalysis
+from techminer.gui.manage_columns import App as ManageColumns
+from techminer.gui.matrix_explorer import App as MatrixExplorer
 from techminer.gui.scopus_importer import ScopusImporter
-from techminer.gui.text_clustering import DASHapp as TextClustering
-from techminer.gui.thematic_analysis import DASHapp as ThematicAnalysis
-from techminer.gui.top_documents import DASHapp as TopDocuments
-from techminer.gui.worldmap import DASHapp as WorldMap
-from techminer.gui.record_filtering import DASHapp as RecordFiltering
+from techminer.gui.text_clustering import App as TextClustering
+from techminer.gui.thematic_analysis import App as ThematicAnalysis
+from techminer.gui.top_documents import App as TopDocuments
+from techminer.gui.worldmap import App as WorldMap
+from techminer.gui.record_filtering import App as RecordFiltering
 
-#  from techminer.svd import DASHapp as SingleValueDecomposition
+#  from techminer.svd import App as SingleValueDecomposition
 
 
 header_style = """
@@ -66,7 +66,7 @@ header_style = """
 
 APPS = {
     "Apply thesaurus": ApplyThesaurus,
-    "Bigraph analysis": BigraphAnalyzer,
+    "Bigraph analysis": BiGraphAnalysis,
     "Bradford law": BradfordLaw,
     "Co-word analysis": CoWordAnalysis,
     "Collaboration analysis": CollaborationAnalysis,
@@ -76,11 +76,11 @@ APPS = {
     "Core authors analysis": CoreAuthors,
     "Core sources analysis": CoreSources,
     "Correlation analysis": CorrelationAnalysis,
-    "Coverage": CoverageReporter,
-    "Descriptive Statistics": StatisticsReporter,
+    "Coverage": Coverage,
+    "Descriptive Statistics": DescriptiveStats,
     "Extract user keywords": ExtractKeywordsFrom,
     "Factor analysis": FactorAnalysis,
-    "Graph analyzer": GraphAnalyzer,
+    "Graph analyzer": GraphAnalysis,
     "Growth indicators": GrowthIndicators,
     "Impact analysis": ImpactAnalysis,
     "Keywords association": KeywordsAssociation,
@@ -90,12 +90,12 @@ APPS = {
     "Matrix explorer": MatrixExplorer,
     "Record filtering": RecordFiltering,
     "Scopus importer": ScopusImporter,
-    "Term analysis": TermAnalyzer,
-    "Term per year analysis": TermYearAnalyzer,
+    "Term analysis": TermAnalysis,
+    "Term per year analysis": TermYearAnalysis,
     "Text clustering": TextClustering,
     "TF*IDF analysis": DocumentTermAnalysis,
     "Thematic analysis": ThematicAnalysis,
-    "Time analysis": YearAnalyzer,
+    "Time analysis": YearAnalysis,
     "Top documents": TopDocuments,
     "Worldmap": WorldMap,
 }

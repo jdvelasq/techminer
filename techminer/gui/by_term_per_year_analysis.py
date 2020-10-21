@@ -346,7 +346,7 @@ class MatrixModel(BaseModel):
 ###############################################################################
 
 
-class MatrixDASHapp(DASH, MatrixModel):
+class MatrixApp(DASH, MatrixModel):
     def __init__(
         self,
         limit_to=None,
@@ -578,7 +578,7 @@ class MatrixListModel(BaseModel):
 ###############################################################################
 
 
-class MatrixListDASHapp(DASH, MatrixListModel):
+class MatrixListApp(DASH, MatrixListModel):
     def __init__(
         self,
         limit_to=None,
@@ -659,13 +659,13 @@ def by_term_per_year_analysis(
 ):
 
     if tab == 1:
-        return MatrixListDASHapp(
+        return MatrixListApp(
             limit_to=limit_to,
             exclude=exclude,
             years_range=years_range,
         ).run()
 
-    return MatrixDASHapp(
+    return MatrixApp(
         limit_to=limit_to,
         exclude=exclude,
         years_range=years_range,

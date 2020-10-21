@@ -1,4 +1,4 @@
-from techminer.gui.bigraph_analysis import DASHapp
+from techminer.gui.bigraph_analysis import App
 import pandas as pd
 
 import ipywidgets as widgets
@@ -6,7 +6,7 @@ from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 
 
-class DASHapp:
+class App:
     def __init__(self) -> None:
 
         self.app_layout = GridspecLayout(9, 4, height="820px")

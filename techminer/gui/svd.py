@@ -184,7 +184,7 @@ COLUMNS = [
 ]
 
 
-class DASHapp(DASH, Model):
+class App(DASH, Model):
     def __init__(
         self,
         limit_to=None,
@@ -318,7 +318,7 @@ def app(
     limit_to=None,
     exclude=None,
 ):
-    return DASHapp(
+    return App(
         limit_to=limit_to,
         exclude=exclude,
     ).run()
