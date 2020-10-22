@@ -72,6 +72,11 @@ class App(Dashboard):
         ##
         self.data = self.data.applymap(lambda w: w.strip() if isinstance(w, str) else w)
 
+        # El error de sara
+        self.data["Source title"] = self.data["Source title"].map(
+            lambda w: w.replace(";", "."), na_action="ignore"
+        )
+
         ##
         ## Document ID
         ##

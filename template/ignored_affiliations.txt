@@ -1,124 +1,49 @@
-stylingai inc
-google brain
-amazon ai
-ibm research
-sensetime group limited
-department of computer science and engineering, texas a and m university
-tsinghua university
-simon fraser university, jd.com
-cornell university
-the intensivist group/sound physicians, tacoma, wa
-uc davis health, davis, united states
-scottish imaging network, a platform for scientific excellence (sinapse) collaboration, edinburgh, united kingdom
-gnosis data analysis pc, heraklion, gr700-13, greece
-ibm krakow software lab, cracow, poland
-ilyeum insights, ilyeum, paris, france
-microsoft, seattle, wa, united states
-amazon ai, palo alto, ca, united states
-unaffiliated, united states
-google, mountain view, ca, united states
-pinterest, palo alto, ca, united states
-jd intelligent cities business unit and jd intelligent cities research, beijing, china
-bytedance, beijing, china
-bytedance and huawei noah's ark lab, shenzhen, china
-huawei noah's ark lab, shenzhen, china
-cardinal health, inc., united states
-4paradigm, beijing, china
-chalearn, united states
-la paillasse, france
-, india
-fraunhofer iosb, am vogelherd 90, ilmenau, 98693, germany
-kraken robotics, 189 glencoe drive, mount pearl, nl  a1n 4p6, canada
-kraken robotik, bremen, 28197, germany
-science and technology park of crete, n. plastira 100, vassilika vouton gr-700 13, heraklion, greece
-feature labs, boston, ma, united states
-ibm research, dublin, ireland
-ibm research, yorktown, united states
-tencent ai lab, machine learning group, shenzhen, 518000, china
-microsoft, redmond, wa  98052, united states
-idlab ghent unversity imec ghent, belgium
-decisions flanders make, leuven, belgium
-codesigns flanders make, leuven, belgium
-4paradigm inc., hong kong, hong kong
-compute science ucla, united states
-dept. of computer science and engineering, hkust, china
-knime gmbh, konstanz, germany
-ant financial services group, china
-howard brain sciences foundation, providence, ri, united states
-ikerbasque, basque foundation for science, bilbao, 48011, spain
-riopele, pousada de saramagos, portugal
-siemens ag, otto-hahn-ring 6, munich, 81739, germany
-ikerbasque, basque foundation for science, bilbao, spain
-bnearit ab, lulea, 972 34, sweden
-uemg, divinopolis, brazil
-ufjf, juiz de fora, brazil
-uerj, rio de janeiro, brazil
-sap france, france
-sap se, germany
-deparment of computer science, eth zurich, switzerland
-google, mountain view, united states
-aerospace jiangnan group co., ltd, guiyang, china
-basf se, carl-bosch-str. 38, ludwigshafen, 67056, germany
-bosch corporate research, robert bosch gmbh, renningen, germany
-bmw ag, munich, germany
-ibm research, 1101 kitchawan road, yorktown heights, ny  10598, united states
-service de radiologie, hopital louis mourier, assistance publique-hopitaux de paris (aphp), 178, rue des renouillers, colombes cedex, 92701, france
-ovh, lille, france
-ibm research, united states
-deepscale inc, united states
-nec system platform research laboratories, kanagawa, japan
-huiying medical technology, beijing, china
-paul wurth, luxembourg, luxembourg
-independent researcher, palo alto, ca  94303, united states
-4paradigm inc., beijing, china
-embedded systems and robotics, research and innovation, tata consultancy services, kolkata, india
-zhaw datalab, winterthur, switzerland
-usi, lugano, switzerland
-pricewaterhousecoopers ag (pwc), zurich, switzerland
-ibm research - china, china
-ibm systems, china
-mit, united states
-philips healthcare, andover, ma, united states
-saudi aramco, saudi arabia
-iscte-iul, cisuc, istar-iul, portugal
-afosr, arlington, va  22203, united states
-maana, inc., bellevue, wa, united states
-podiatry care partners inc, doral, fl, united states
-south west yorkshire partnership nhs foundation trust, wakefield, united kingdom
-gnosis data analysis pc, heraklion, greece
-cisco systems, united states
-kakao brain, pangyo, seongnam, gyeonggi, south korea
-lenovo group ltd., beijing, china
-vuno inc., seoul, south korea
-ikerbasque, basque foundation for science, bilbao, biscay  48011, spain
-delc-ct, ufsm, santa maria, 97105-900, brazil
-intermolecular inc., san jose, ca  95134, united states
-total american services, inc., 82 south street, hopkington, ma  01748, united states
-microsoft research redmondwa, united states
-south west yorkshire partnership nhs foundation trust, united kingdom
-gnosis data analysis pc, greece
-tenet healthcare, tn, nashville, united states
-dept. of computer science, nccu taipei, taipei, taiwan
-nokia bell labsnj, united states
-microsoft research, new england, united states
-causal consulting, rottenburg, germany
-google brain, united states
-presenso, israel
-schrodinger inc., 120 west 45th street, new york, ny  10036, united states
-schrodinger gmbh, dynamostrasse 13, mannheim, baden-wurttemberg, 68165, germany
-schrodinger inc., 101 sw main street, portland, or  97204, united states
-ibm research, almaden, ca, united states
-dept. of randd, kokusai kogyo co, ltd, 2-24-1 harumi-cho, fuchu-shi,tokyo, 183-0057, japan
-dept. of electrical engineering, ku leuven, stadius kasteelpark arenberg 10, leuven, 3001, belgium
-rpi, united states
-uea, united kingdom
-inaoe, mexico
-cvc, uab, ub, spain
-ibm, united states
-andorra, united states
-nyu, united states
-fast, pakistan
-microsoft, united states
-volavis gmbh, schuckenteichweg. 31, 33818 leopoldshohe, germany
-next level solutions, raleigh, nc, united states
-glaxo wellcome, research triangle park, nc, united states
+sektion young sonographers, schweizerische gesellschaft fur ultraschall in der medizin (sgum), switzerland
+abteilung fur allgemeine innere medizin und nephrologie, klinik hirslanden zurich, switzerland
+ucla, united states
+jovision, hamburg, 22083, germany
+stmik indonesia padang, padang, indonesia
+marlina univeritas negeri jakarta, jakarta, indonesia
+eit digital, italy
+dept of computer science and engineering, gono bishwbidyalay, bangladesh
+sekolah tinggi agama islam negeri (stain), sorong, indonesia
+ergonomics and aerosol technology, lund, 221 00, sweden
+uts:insearc, australia
+campus skelleftea, skelleftea, sweden
+allgemeine innere medizin, fmh, leiter arbeitsgruppe wbk, sgum/ssum, via cantonale 37a, bedano, 6930, switzerland
+agoranov, paris, france
+kth, stockholm, sweden
+eit digital, brussels, belgium
+julius-maximilians-university wurzburg, faculty of medicine, wurzburg, germany
+royal literary fund, london, united kingdom
+trinity education, san antonio, tx, united states
+learning designer and media producer openleaming, australia
+tei of ionian islands, m. minotou-giannopoulou, zakynthos, 29100, greece
+languages and computer systems, upv/ehu, donostia-san sebastian, spain
+contact north, 1139 alloy drive, suite 104, thunder bay, on  p7b 6m8, canada
+gymnasium st. christophorus, kardinal-von-galen-str. 1, werne, 59368, germany
+fao, viale delle terme di caracalla, rome, 00153, italy
+tei of ionian islands, zakynthos, greece
+tu dresden, zentrum fur lehrerbildung, schul-und berufsbildungsforschung, zellescher weg 20, dresden, 01217, germany
+tu dresden, fakultat informatik, ag didaktik der informatik/lehrerbildung, nothnitzer straße 46, dresden, 01187, germany
+dept. of speech and language therapy, tei of epirus, ioannina, greece
+promethean, science park ii, 20 science park road, singapore, 117674, singapore
+atr intelligent robotics and communication laboratories, japan
+compugroup medical deutschland ag, geschaftsbereich telemed, koblenz, germany
+gymnasium st. christophorus of werne, germany
+joanneum research, graz, austria
+magnolia consulting llc, charlottesville, va, united states
+uned, spain
+edaktik gmbh, moodle services, purkersdorf, austria
+technology supported learning research group, united kingdom
+directorate of education, govt. of goa, panaji, goa, india
+itesm campus puebla, mexico
+net-base computer and network-technology, zinkmattenstrasse 6, 79108 freiburg, germany
+inst. of pathology, kantonsspital winterthur, brauerstr. 15, ch-8401 winterthur, switzerland
+aulatika s.l., madrid 28042, spain
+departamento de lenguajes y sistemas informaticos, uned, madrid, spain
+deutsche gesellschaft fur nuklearmedizin, gottingen, germany
+early learning research unit, cape town, south africa
+catholic un. co. kaho st-lieven, gent, belgium
+helsinki metropolia uas, helsinki, finland
+london knowledge lab, 23-29 emerald street, london, wc1n 3qs, united kingdom
