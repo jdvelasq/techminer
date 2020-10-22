@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA, FactorAnalysis, FastICA, TruncatedSVD
 from sklearn.manifold import MDS
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     CA,
     TF_matrix,
     TFIDF_matrix,
@@ -403,7 +403,7 @@ RANDOM_STATE=[
 
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -573,7 +573,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -597,7 +597,7 @@ class App(DASH, Model):
     def interactive_output(self, **kwargs):
 
         with self.output:
-            DASH.interactive_output(self, **kwargs)
+            Dashboard.interactive_output(self, **kwargs)
 
         if self.menu in ["Keywords Map"] and self.method in [
             "Multidimensional Scaling",

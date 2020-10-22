@@ -7,7 +7,7 @@ import techminer.core.dashboard as dash
 
 #  from techminer.by_term_per_year_analysis import by_year_analysis
 from techminer.core import (
-    DASH,
+    Dashboard,
     add_counters_to_axis,
     corpus_filter,
     explode,
@@ -305,7 +305,7 @@ COLUMNS = sorted(
 )
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -406,7 +406,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -429,7 +429,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         if self.menu == "Table":
             self.set_disabled("Plot:")

@@ -99,6 +99,9 @@ def clustering(
     for cluster in M.Cluster.tolist():
         dict_[cluster] = M[M.Cluster == cluster]["K"].tolist()[0]
     cluster_members = pd.DataFrame(dict_)
+    ###
+    cluster_members.columns = ["CLUST_{}".format(i) for i in cluster_members.columns]
+    ###
     cluster_members = cluster_members.applymap(lambda w: "" if pd.isna(w) else w)
 
     ##

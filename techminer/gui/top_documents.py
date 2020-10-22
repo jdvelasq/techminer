@@ -3,6 +3,7 @@ import ipywidgets as widgets
 from ipywidgets import GridspecLayout, Layout
 from IPython.display import display
 import techminer.core.dashboard as dash
+from techminer.core.filter_records import filter_records
 
 
 class App:

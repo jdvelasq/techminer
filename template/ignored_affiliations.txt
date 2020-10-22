@@ -1,25 +1,124 @@
-school of public health and social work
-suwa trust co., ltd., ohmori, tokyo 143, japan
-coppe/ufrj, cidade universitria, p.o. box 68510, 21945-970 - rio de janeiro, brazil
-dept. of infectious/tropical dis., london sch. of hygiene/tropical med., keppel street, london wc1e 7ht, united kingdom
-who, collab. ctr. electron. dis. survlnc., paris, france
-assit. publique-hopitaux de paris, paris, france
-escola nacional de saude publica, dept. de endemias samuel pessoa, rua leopoldo bulhoes, 21041-210 rio de janeiro, rj, brazil
-winnipeg regional health authority, winnipeg, mb, canada
-consiglio nazionale di ricerca, napoli, italy
-service de biostatistique, hospices civils de lyon, lyon, france
-health, development and anti-malaria association, addis ababa, ethiopia
-virginia tech, united states
-albert-ludwigs-universitat freiburg, ernst-zermelo strasse 1, freiburg, 79104, germany
-deep earth imaging-future science platform, csiro, perth, australia
-technical adviser (health systems and policy), health systems research india initiative (hsrii), trivandrum, india
-analytics and performance reporting branch, alberta health, edmonton, alberta  t5j 2n3, canada
-arena235 research lab - sao jose dos campos, sao jose dos campos, sp, brazil
-secretaria de salud publica municipal de cali, cali, colombia
-action group immunoglobulins in anticancer therapy (agigat), rodermark, germany
-d-a-ch gesellschaft pravention, herz-kreislauf-erkrankungen e.v., mannheim, germany
-arbeitsgemeinschaft immunoglobuline in anticancer anti-inflammation therapie, po box 200232, r dermark, 63308, germany
-paul-ehrlich-institut, langen, germany
-santa casa de misericordia, fortaleza-ce, brazil
-fundacao getulio vargas, brazil
-covid-19 modeling task force, minas gerais, brazil
+stylingai inc
+google brain
+amazon ai
+ibm research
+sensetime group limited
+department of computer science and engineering, texas a and m university
+tsinghua university
+simon fraser university, jd.com
+cornell university
+the intensivist group/sound physicians, tacoma, wa
+uc davis health, davis, united states
+scottish imaging network, a platform for scientific excellence (sinapse) collaboration, edinburgh, united kingdom
+gnosis data analysis pc, heraklion, gr700-13, greece
+ibm krakow software lab, cracow, poland
+ilyeum insights, ilyeum, paris, france
+microsoft, seattle, wa, united states
+amazon ai, palo alto, ca, united states
+unaffiliated, united states
+google, mountain view, ca, united states
+pinterest, palo alto, ca, united states
+jd intelligent cities business unit and jd intelligent cities research, beijing, china
+bytedance, beijing, china
+bytedance and huawei noah's ark lab, shenzhen, china
+huawei noah's ark lab, shenzhen, china
+cardinal health, inc., united states
+4paradigm, beijing, china
+chalearn, united states
+la paillasse, france
+, india
+fraunhofer iosb, am vogelherd 90, ilmenau, 98693, germany
+kraken robotics, 189 glencoe drive, mount pearl, nl  a1n 4p6, canada
+kraken robotik, bremen, 28197, germany
+science and technology park of crete, n. plastira 100, vassilika vouton gr-700 13, heraklion, greece
+feature labs, boston, ma, united states
+ibm research, dublin, ireland
+ibm research, yorktown, united states
+tencent ai lab, machine learning group, shenzhen, 518000, china
+microsoft, redmond, wa  98052, united states
+idlab ghent unversity imec ghent, belgium
+decisions flanders make, leuven, belgium
+codesigns flanders make, leuven, belgium
+4paradigm inc., hong kong, hong kong
+compute science ucla, united states
+dept. of computer science and engineering, hkust, china
+knime gmbh, konstanz, germany
+ant financial services group, china
+howard brain sciences foundation, providence, ri, united states
+ikerbasque, basque foundation for science, bilbao, 48011, spain
+riopele, pousada de saramagos, portugal
+siemens ag, otto-hahn-ring 6, munich, 81739, germany
+ikerbasque, basque foundation for science, bilbao, spain
+bnearit ab, lulea, 972 34, sweden
+uemg, divinopolis, brazil
+ufjf, juiz de fora, brazil
+uerj, rio de janeiro, brazil
+sap france, france
+sap se, germany
+deparment of computer science, eth zurich, switzerland
+google, mountain view, united states
+aerospace jiangnan group co., ltd, guiyang, china
+basf se, carl-bosch-str. 38, ludwigshafen, 67056, germany
+bosch corporate research, robert bosch gmbh, renningen, germany
+bmw ag, munich, germany
+ibm research, 1101 kitchawan road, yorktown heights, ny  10598, united states
+service de radiologie, hopital louis mourier, assistance publique-hopitaux de paris (aphp), 178, rue des renouillers, colombes cedex, 92701, france
+ovh, lille, france
+ibm research, united states
+deepscale inc, united states
+nec system platform research laboratories, kanagawa, japan
+huiying medical technology, beijing, china
+paul wurth, luxembourg, luxembourg
+independent researcher, palo alto, ca  94303, united states
+4paradigm inc., beijing, china
+embedded systems and robotics, research and innovation, tata consultancy services, kolkata, india
+zhaw datalab, winterthur, switzerland
+usi, lugano, switzerland
+pricewaterhousecoopers ag (pwc), zurich, switzerland
+ibm research - china, china
+ibm systems, china
+mit, united states
+philips healthcare, andover, ma, united states
+saudi aramco, saudi arabia
+iscte-iul, cisuc, istar-iul, portugal
+afosr, arlington, va  22203, united states
+maana, inc., bellevue, wa, united states
+podiatry care partners inc, doral, fl, united states
+south west yorkshire partnership nhs foundation trust, wakefield, united kingdom
+gnosis data analysis pc, heraklion, greece
+cisco systems, united states
+kakao brain, pangyo, seongnam, gyeonggi, south korea
+lenovo group ltd., beijing, china
+vuno inc., seoul, south korea
+ikerbasque, basque foundation for science, bilbao, biscay  48011, spain
+delc-ct, ufsm, santa maria, 97105-900, brazil
+intermolecular inc., san jose, ca  95134, united states
+total american services, inc., 82 south street, hopkington, ma  01748, united states
+microsoft research redmondwa, united states
+south west yorkshire partnership nhs foundation trust, united kingdom
+gnosis data analysis pc, greece
+tenet healthcare, tn, nashville, united states
+dept. of computer science, nccu taipei, taipei, taiwan
+nokia bell labsnj, united states
+microsoft research, new england, united states
+causal consulting, rottenburg, germany
+google brain, united states
+presenso, israel
+schrodinger inc., 120 west 45th street, new york, ny  10036, united states
+schrodinger gmbh, dynamostrasse 13, mannheim, baden-wurttemberg, 68165, germany
+schrodinger inc., 101 sw main street, portland, or  97204, united states
+ibm research, almaden, ca, united states
+dept. of randd, kokusai kogyo co, ltd, 2-24-1 harumi-cho, fuchu-shi,tokyo, 183-0057, japan
+dept. of electrical engineering, ku leuven, stadius kasteelpark arenberg 10, leuven, 3001, belgium
+rpi, united states
+uea, united kingdom
+inaoe, mexico
+cvc, uab, ub, spain
+ibm, united states
+andorra, united states
+nyu, united states
+fast, pakistan
+microsoft, united states
+volavis gmbh, schuckenteichweg. 31, 33818 leopoldshohe, germany
+next level solutions, raleigh, nc, united states
+glaxo wellcome, research triangle park, nc, united states

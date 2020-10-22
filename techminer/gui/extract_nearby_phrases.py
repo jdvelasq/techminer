@@ -52,7 +52,7 @@ class App(Dashboard):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def extract_keywords(self):
 
@@ -109,4 +109,4 @@ class App(Dashboard):
         return self.data[self.new_column].dropna().head(15)
 
     def interactive_output(self, **kwargs):
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)

@@ -5,7 +5,7 @@ import ipywidgets as widgets
 
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     Network,
     TF_matrix,
     add_counters_to_axis,
@@ -253,7 +253,7 @@ class Model:
 ###############################################################################
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -381,11 +381,11 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         if self.menu in [
             "Matrix",

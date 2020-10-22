@@ -21,7 +21,7 @@ from techminer.gui.correlation_analysis import App as CorrelationAnalysis
 from techminer.gui.coverage import App as Coverage
 from techminer.gui.descriptive_stats import App as DescriptiveStats
 from techminer.gui.document_term_analysis import App as DocumentTermAnalysis
-from techminer.gui.extract_keywords_from import App as ExtractKeywordsFrom
+from techminer.gui.extract_user_keywords import App as ExtractUserKeywords
 from techminer.gui.factor_analysis import App as FactorAnalysis
 from techminer.gui.graph_analysis import App as GraphAnalysis
 from techminer.gui.growth_indicators import App as GrowthIndicators
@@ -31,14 +31,12 @@ from techminer.gui.keywords_comparison import App as KeywordsComparison
 from techminer.gui.latent_semantic_analysis import App as LatentSemanticAnalysis
 from techminer.gui.manage_columns import App as ManageColumns
 from techminer.gui.matrix_explorer import App as MatrixExplorer
-from techminer.gui.scopus_importer import ScopusImporter
+from techminer.gui.record_filtering import App as RecordFiltering
+from techminer.gui.scopus_importer import App as ScopusImporter
 from techminer.gui.text_clustering import App as TextClustering
 from techminer.gui.thematic_analysis import App as ThematicAnalysis
 from techminer.gui.top_documents import App as TopDocuments
-from techminer.gui.worldmap import App as WorldMap
-from techminer.gui.record_filtering import App as RecordFiltering
-
-#  from techminer.svd import App as SingleValueDecomposition
+from techminer.gui.worldmap import App as Worldmap
 
 
 header_style = """
@@ -78,9 +76,9 @@ APPS = {
     "Correlation analysis": CorrelationAnalysis,
     "Coverage": Coverage,
     "Descriptive Statistics": DescriptiveStats,
-    "Extract user keywords": ExtractKeywordsFrom,
+    "Extract user keywords": ExtractUserKeywords,
     "Factor analysis": FactorAnalysis,
-    "Graph analyzer": GraphAnalysis,
+    "Graph analysis": GraphAnalysis,
     "Growth indicators": GrowthIndicators,
     "Impact analysis": ImpactAnalysis,
     "Keywords association": KeywordsAssociation,
@@ -97,7 +95,7 @@ APPS = {
     "Thematic analysis": ThematicAnalysis,
     "Time analysis": YearAnalysis,
     "Top documents": TopDocuments,
-    "Worldmap": WorldMap,
+    "Worldmap": Worldmap,
 }
 
 

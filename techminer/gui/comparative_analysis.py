@@ -6,7 +6,7 @@ import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
     CA,
-    DASH,
+    Dashboard,
     TF_matrix,
     TFIDF_matrix,
     add_counters_to_axis,
@@ -281,7 +281,7 @@ COLUMNS = [
 ]
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -362,11 +362,11 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         def visualization_disabled():
 

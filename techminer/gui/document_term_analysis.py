@@ -3,7 +3,7 @@ import pandas as pd
 
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     TF_matrix,
     TFIDF_matrix,
     add_counters_to_axis,
@@ -152,7 +152,7 @@ COLUMNS = sorted(
 )
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(self, limit_to=None, exclude=None, years_range=None):
         data = filter_records(pd.read_csv("corpus.csv"))
 
@@ -243,8 +243,8 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)

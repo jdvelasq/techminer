@@ -11,6 +11,7 @@ import pandas as pd
 from IPython.display import display
 from ipywidgets import GridspecLayout, Layout
 import ipywidgets as widgets
+import techminer.core.dashboard as dash
 
 from techminer.core import explode
 from techminer.core.extract_country_name import extract_country_name
@@ -32,13 +33,11 @@ warnings.filterwarnings("ignore")
 from nltk import word_tokenize
 
 
-class ScopusImporter(Dashboard):
+class App(Dashboard):
     def __init__(self):
 
         self.command_panel = [
-            widgets.HTML(
-                "<b>Scopus Filename:</b>", layout=Layout(margin="0px 0px 0px 10px")
-            ),
+            dash.HTML("Scopus Filename:", hr=False),
             widgets.FileUpload(
                 accept="scopus.csv",
                 multiple=False,
@@ -46,128 +45,9 @@ class ScopusImporter(Dashboard):
                 Layout=Layout(width="auto", border="2px solid gray"),
                 style={"button_color": "#BDC3C7"},
             ),
-            widgets.HTML("<hr>"),
-            widgets.HTML(
-                "<b>Document types:</b>", layout=Layout(margin="0px 0px 0px 10px")
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Article",
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Article in press",
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Book",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Book chapter",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Business article",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Conference paper",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Conference review",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Data paper",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Editorial",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Letter",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Note",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Review",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=True,
-                description="Short survey",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Erratum",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Report",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Retracted",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Abstract report",
-                layout=Layout(width="auto"),
-            ),
-            widgets.Checkbox(
-                value=False,
-                description="Undefinided",
-                layout=Layout(width="auto"),
-            ),
         ]
 
-        #
-        # interactive output function
-        #
-        widgets.interactive_output(
-            f=self.interactive_output,
-            controls={
-                "article": self.command_panel[4],
-                "article_in_press": self.command_panel[5],
-                "book": self.command_panel[4],
-                "book_chapter": self.command_panel[5],
-                "business_article": self.command_panel[6],
-                "conference_paper": self.command_panel[8],
-                "conference_review": self.command_panel[9],
-                "data_paper": self.command_panel[10],
-                "editorial": self.command_panel[11],
-                "letter": self.command_panel[12],
-                "note": self.command_panel[13],
-                "review": self.command_panel[14],
-                "short_survey": self.command_panel[15],
-                "erratum": self.command_panel[16],
-                "report": self.command_panel[17],
-                "retracted": self.command_panel[18],
-                "abstract_report": self.command_panel[19],
-                "undefinided": self.command_panel[20],
-            },
-        )
-
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def on_click(self, args):
 

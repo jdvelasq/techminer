@@ -127,8 +127,7 @@ import pandas as pd
 
 
 class Keywords:
-    """Creates a Keywords object used to find, extract or remove terms of interest from a string.
-    """
+    """Creates a Keywords object used to find, extract or remove terms of interest from a string."""
 
     def __init__(
         self, keywords=None, sep=None, ignore_case=True, full_match=False, use_re=False
@@ -340,10 +339,19 @@ class Keywords:
         if x is None or not isinstance(x, str):
             return None
         result = []
-        for pattern in self._patterns:
-            match = pattern.search(x)
-            if match is not None:
-                result.extend([match[0]])
+        if sep is None:
+            for pattern in self._patterns:
+                match = pattern.search(x)
+                if match is not None:
+                    result.append(match[0])
+            return result
+        else:
+            for pattern in self._patterns:
+                for word in x.split(";"):
+                    match = pattern.search(word)
+                    if match is not None:
+                        result.append(match[0])
+
         if len(result):
             return sep.join(sorted(list(set(result))))
         return None

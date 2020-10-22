@@ -8,7 +8,7 @@ import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
     CA,
-    DASH,
+    Dashboard,
     TF_matrix,
     TFIDF_matrix,
     exclude_terms,
@@ -488,7 +488,7 @@ COLUMNS = [
 ]
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         thesaurus_file="thesaurus/keywords.txt",
@@ -584,7 +584,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -614,7 +614,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         self.command_panel[17].options = list(range(self.n_clusters))
         self.command_panel[18].options = list(range(self.n_clusters))

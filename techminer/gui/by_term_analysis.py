@@ -13,7 +13,7 @@ from nltk.corpus.reader.ieer import documents
 
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     add_counters_to_axis,
     corpus_filter,
     explode,
@@ -270,7 +270,7 @@ class Model:
 ###############################################################################
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -357,4 +357,4 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)

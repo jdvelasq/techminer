@@ -184,7 +184,7 @@ COLUMNS = [
 ]
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -193,7 +193,7 @@ class App(DASH, Model):
         data = pd.read_csv("corpus.csv")
 
         Model.__init__(self, data, limit_to, exclude)
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.data = data
         self.limit_to = limit_to
@@ -257,7 +257,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         if self.menu in ["Table"]:
             self.set_enabled("Top by:")

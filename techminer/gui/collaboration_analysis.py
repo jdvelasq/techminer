@@ -100,7 +100,7 @@ COLUMNS = [
 ]
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
     ):
@@ -169,7 +169,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -190,7 +190,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         if self.view == "Table":
             self.set_disabled("Colormap:")

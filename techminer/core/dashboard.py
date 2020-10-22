@@ -522,7 +522,7 @@ def network_clustering():
 
 
 def Dropdown(options, description="", description_width="130px", value=None):
-    if value is None:
+    if value is None and len(options) > 0:
         value = options[0]
     return widgets.Dropdown(
         description=description,
@@ -617,7 +617,7 @@ class Dashboard:
         # Grid size (Generic)
         #
         self.app_layout = GridspecLayout(
-            max(9, len(self.command_panel) + 1), 4, height="820px"
+            max(9, len(self.command_panel) + 1), 4, height="818px"
         )
 
         #

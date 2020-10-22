@@ -10,7 +10,7 @@ import networkx as nx
 
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     Network,
     TF_matrix,
     add_counters_to_axis,
@@ -333,7 +333,7 @@ COLORMAPS = [
 ]
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
     ):
@@ -391,7 +391,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -402,7 +402,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         #
         # Populate Keywords with all terms

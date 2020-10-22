@@ -9,7 +9,7 @@ from pyvis.network import Network
 import ipywidgets as widgets
 import techminer.core.dashboard as dash
 from techminer.core import (
-    DASH,
+    Dashboard,
     TF_matrix,
     add_counters_to_axis,
     corpus_filter,
@@ -610,7 +610,7 @@ class Model:
 ###############################################################################
 
 
-class App(DASH, Model):
+class App(Dashboard, Model):
     def __init__(
         self,
         limit_to=None,
@@ -728,7 +728,7 @@ class App(DASH, Model):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         self.interactive_output(
             **{
@@ -761,7 +761,7 @@ class App(DASH, Model):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         with self.output:
             if self.column == self.by:
@@ -795,8 +795,3 @@ class App(DASH, Model):
                 self.set_disabled("NX K:")
                 self.set_disabled("NX scale:")
                 self.set_disabled("Random State:")
-
-        # if self.menu == "Network" and self.layout == "Spring":
-        #     self.set_enabled("nx interations:")
-        # else:
-        #     self.set_disabled("nx iterations:")

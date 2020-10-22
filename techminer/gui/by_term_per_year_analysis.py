@@ -5,7 +5,7 @@ import techminer.core.dashboard as dash
 
 #  from techminer.by_year_analysis import by_year_analysis
 from techminer.core import (
-    DASH,
+    Dashboard,
     add_counters_to_axis,
     corpus_filter,
     explode,
@@ -346,7 +346,7 @@ class MatrixModel(BaseModel):
 ###############################################################################
 
 
-class MatrixApp(DASH, MatrixModel):
+class MatrixApp(Dashboard, MatrixModel):
     def __init__(
         self,
         limit_to=None,
@@ -426,11 +426,11 @@ class MatrixApp(DASH, MatrixModel):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
         if self.menu == "Matrix":
             self.set_disabled("Width:")
@@ -578,7 +578,7 @@ class MatrixListModel(BaseModel):
 ###############################################################################
 
 
-class MatrixListApp(DASH, MatrixListModel):
+class MatrixListApp(Dashboard, MatrixListModel):
     def __init__(
         self,
         limit_to=None,
@@ -599,7 +599,7 @@ class MatrixListApp(DASH, MatrixListModel):
             clusters=clusters,
             cluster=cluster,
         )
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
         COLUMNS = sorted([column for column in data.columns])
 
@@ -641,7 +641,7 @@ class MatrixListApp(DASH, MatrixListModel):
 
     def interactive_output(self, **kwargs):
 
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
 
 
 ###############################################################################

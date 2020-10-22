@@ -26,11 +26,6 @@ class App(Dashboard):
             dash.Checkbox(description=""),
             dash.HTML("Apply to column:"),
             dash.Dropdown(options=sorted(self.data.columns)),
-            # dash.HTML("New column:"),
-            #  dash.Text(
-            #      description="",
-            #      placeholder="Column name",
-            #  ),
         ]
 
         #
@@ -39,14 +34,16 @@ class App(Dashboard):
         widgets.interactive_output(
             f=self.interactive_output,
             controls={
-                # parameters:
-                "thesarus": self.command_panel[1],
+                # Thesaurus file::
+                "thesaurus": self.command_panel[1],
+                # Include unmatched items:
                 "unmatched": self.command_panel[3],
+                #  Apply to column:
                 "column": self.command_panel[5],
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def apply_thesaurus(self):
         def f_strict(x):
@@ -65,4 +62,4 @@ class App(Dashboard):
 
         self.data.to_csv("corpus.csv", index=False)
 
-        return self.data[self.column].head(15)
+        return self.data[self.column].head(40)

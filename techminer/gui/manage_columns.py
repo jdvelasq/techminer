@@ -52,7 +52,7 @@ class App(Dashboard):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def manage(self):
 

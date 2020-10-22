@@ -4,7 +4,7 @@ from .cluster_table_to_list import cluster_table_to_list
 from .cluster_table_to_python_code import cluster_table_to_python_code
 from .clustering import clustering
 from .corpus_filter import corpus_filter
-from .dashboard import DASH
+from .dashboard import Dashboard
 from .explode import explode
 from .extract_country_name import extract_country_name
 from .extract_words import extract_words

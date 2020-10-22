@@ -30,9 +30,9 @@ class App(Dashboard):
                 placeholder="Column name",
             ),
             dash.HTML("Options:"),
-            dash.Checkbox(description="Full match"),
-            dash.Checkbox(description="Ignore case"),
-            dash.Checkbox(description="Use re"),
+            dash.Checkbox(description="Full match", value=False),
+            dash.Checkbox(description="Ignore case", value=True),
+            dash.Checkbox(description="Use re", value=False),
         ]
 
         #
@@ -52,7 +52,7 @@ class App(Dashboard):
             },
         )
 
-        DASH.__init__(self)
+        Dashboard.__init__(self)
 
     def extract_keywords(self):
 
@@ -109,4 +109,4 @@ class App(Dashboard):
         return self.data[self.new_column].dropna().head(15)
 
     def interactive_output(self, **kwargs):
-        DASH.interactive_output(self, **kwargs)
+        Dashboard.interactive_output(self, **kwargs)
