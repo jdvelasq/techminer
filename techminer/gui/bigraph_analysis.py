@@ -645,7 +645,7 @@ class App(Dashboard, Model):
             dash.HTML("Column parameters:"),
             dash.Dropdown(
                 description="Column:",
-                options=[z for z in COLUMNS if z in data.columns],
+                options=sorted(data.columns),
             ),
             dash.min_occurrence(description="Min OCC COL"),
             dash.max_items(description="Max items COL"),
@@ -662,7 +662,7 @@ class App(Dashboard, Model):
             dash.HTML("Index parameters:"),
             dash.Dropdown(
                 description="By:",
-                options=[z for z in COLUMNS if z in data.columns],
+                options=sorted(data.columns),
             ),
             dash.min_occurrence(description="Min OCC by:"),
             dash.max_items(description="Max items by:"),

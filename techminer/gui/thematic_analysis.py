@@ -522,7 +522,7 @@ class App(Dashboard, Model):
             dash.HTML("Parameters:"),
             dash.Dropdown(
                 description="Column:",
-                options=[z for z in sorted(COLUMNS) if z in data.columns],
+                options=sorted(data.columns),
             ),
             dash.min_occurrence(),
             dash.max_items(),

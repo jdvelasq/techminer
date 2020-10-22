@@ -215,7 +215,7 @@ class App(Dashboard, Model):
             ),
             dash.dropdown(
                 desc="Column:",
-                options=[t for t in data if t in COLUMNS],
+                options=sorted(self.data.columns),
             ),
             dash.min_occurrence(),
             dash.max_items(),

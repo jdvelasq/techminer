@@ -466,7 +466,7 @@ class App(Dashboard, Model):
             ),
             widgets.Dropdown(
                 description="Column:",
-                options=[z for z in data.columns if "keywords" in z.lower()],
+                options=sorted(data.columns),
                 layout=Layout(width="auto"),
                 style={"description_width": "130px"},
             ),

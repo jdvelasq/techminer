@@ -309,8 +309,8 @@ class App(Dashboard, Model):
                 ],
             ),
             dash.HTML("Parameters:"),
-            dash.Dropdown(description="Column:", options=COLUMNS),
-            dash.Dropdown(description="By:", options=COLUMNS),
+            dash.Dropdown(description="Column:", options=sorted(data.columns)),
+            dash.Dropdown(description="By:", options=sorted(data.columns)),
             dash.Dropdown(
                 description="Method:", options=["pearson", "kendall", "spearman"]
             ),

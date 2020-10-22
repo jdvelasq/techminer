@@ -176,7 +176,7 @@ class App(Dashboard, Model):
             dash.HTML("Parameters:"),
             dash.Dropdown(
                 description="Column:",
-                options=[t for t in sorted(data.columns) if t in COLUMNS],
+                options=sorted(data.columns),
             ),
             dash.Dropdown(
                 description="Norm:",

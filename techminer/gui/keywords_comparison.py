@@ -360,7 +360,7 @@ class App(Dashboard, Model):
             ),
             dash.HTML("Keywords selection:"),
             dash.Dropdown(
-                options=[z for z in data.columns if "keywords" in z.lower()],
+                options=sorted(data.columns),
                 description="Column:",
             ),
             dash.Dropdown(options=[], description="Keyword A:"),
