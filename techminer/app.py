@@ -38,6 +38,7 @@ from techminer.gui.text_clustering import App as TextClustering
 from techminer.gui.thematic_analysis import App as ThematicAnalysis
 from techminer.gui.top_documents import App as TopDocuments
 from techminer.gui.worldmap import App as Worldmap
+from techminer.gui.citation_analysis import App as CitationAnalysis
 
 
 header_style = """
@@ -67,6 +68,7 @@ APPS = {
     "Apply thesaurus": ApplyThesaurus,
     "Bigraph analysis": BiGraphAnalysis,
     "Bradford law": BradfordLaw,
+    "Citation analysis": CitationAnalysis,
     "Co-word analysis": CoWordAnalysis,
     "Collaboration analysis": CollaborationAnalysis,
     "Column explorer": ColumnExplorer,

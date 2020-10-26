@@ -121,9 +121,9 @@ class App(Dashboard):
             dash.HTML("Bradford law zones:"),
             dash.Dropdown(
                 options=[
-                    ("Core sources", 0),
-                    ("Core + Zone 2 sources", 1),
-                    ("All sources", 2),
+                    ("Core sources", 1),
+                    ("Core + Zone 2 sources", 2),
+                    ("All sources", 3),
                 ],
                 value=self.filters["bradford_law_zones"],
             ),
