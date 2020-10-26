@@ -617,7 +617,7 @@ class Dashboard:
         # Grid size (Generic)
         #
         self.app_layout = GridspecLayout(
-            max(9, len(self.command_panel) + 1), 4, height="818px"
+            max(9, len(self.command_panel) + 1), 4, height="948px"
         )
 
         #

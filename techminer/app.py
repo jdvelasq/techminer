@@ -119,8 +119,10 @@ class App:
         # Grid layout definition
         #
         self.app_layout = GridspecLayout(
-            11, 4, height="902px", layout=Layout(border="1px solid #E0E9EF")  #
-        ).add_class("app")
+            17, 4, height="1000px", layout=Layout(border="1px solid #E0E9EF")  #
+        ).add_class(
+            "app"
+        )  #  902
 
         #
         # Populates the grid
