@@ -29,6 +29,7 @@ from techminer.gui.impact_analysis import App as ImpactAnalysis
 from techminer.gui.keywords_association import App as KeywordsAssociation
 from techminer.gui.keywords_comparison import App as KeywordsComparison
 from techminer.gui.latent_semantic_analysis import App as LatentSemanticAnalysis
+from techminer.gui.main_path_analysis import App as MainPathAnalysis
 from techminer.gui.manage_columns import App as ManageColumns
 from techminer.gui.matrix_explorer import App as MatrixExplorer
 from techminer.gui.record_filtering import App as RecordFiltering
@@ -84,6 +85,7 @@ APPS = {
     "Keywords association": KeywordsAssociation,
     "Keywords comparison": KeywordsComparison,
     "Latent semantic analysis": LatentSemanticAnalysis,
+    "Main path analysis": MainPathAnalysis,
     "Manage columns": ManageColumns,
     "Matrix explorer": MatrixExplorer,
     "Record filtering": RecordFiltering,
