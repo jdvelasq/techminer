@@ -42,6 +42,7 @@ class App(Dashboard):
             dash.Dropdown(
                 description="",
                 options=glob.glob("*.csv"),
+                value="scopus.csv",
             ),
         ]
 

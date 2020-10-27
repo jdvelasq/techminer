@@ -9,7 +9,7 @@ from IPython.display import display
 class App:
     def __init__(self) -> None:
 
-        self.app_layout = GridspecLayout(9, 4, height="820px")
+        self.app_layout = GridspecLayout(9, 4, height="870px")
         self.output = widgets.Output().add_class("output_color")
         self.app_layout[0:, 0:] = widgets.VBox(
             [self.output],

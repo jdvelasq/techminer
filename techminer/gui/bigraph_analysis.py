@@ -629,8 +629,6 @@ class App(Dashboard, Model):
             years_range=years_range,
         )
 
-        COLUMNS = sorted([column for column in data.columns])
-
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
             dash.Dropdown(

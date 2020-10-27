@@ -365,10 +365,6 @@ class MatrixApp(Dashboard, MatrixModel):
             years_range=years_range,
         )
 
-        COLUMNS = sorted(
-            [column for column in data.columns if column != "Abstract_phrase_words"]
-        )
-
         self.command_panel = [
             dash.HTML("Display:", hr=False, margin="0px, 0px, 0px, 5px"),
             dash.RadioButtons(
@@ -600,8 +596,6 @@ class MatrixListApp(Dashboard, MatrixListModel):
             cluster=cluster,
         )
         Dashboard.__init__(self)
-
-        COLUMNS = sorted([column for column in data.columns])
 
         self.app_title = "Terms by Year Analysis"
         self.menu_options = [
