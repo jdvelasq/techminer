@@ -1,37 +1,32 @@
 {
-    "bradford_law_zones": 2,
+    "bradford_law_zones": 3,
     "citations": [
         0,
-        327
+        31
     ],
     "citations_range": [
         0,
-        327
+        31
     ],
     "document_types": [
-        "Conference Paper",
         "Article",
-        "Book",
-        "Article in Press",
+        "Letter",
+        "Editorial",
         "Review",
-        "Book Chapter"
+        "Note"
     ],
     "excluded_terms": "---",
     "selected_cluster": "---",
     "selected_types": [
-        "Conference Paper",
         "Article",
-        "Book",
-        "Article in Press",
-        "Review",
-        "Book Chapter"
+        "Review"
     ],
     "year_range": [
-        2010,
-        2021
+        2008,
+        2019
     ],
     "years": [
-        2010,
-        2021
+        2008,
+        2019
     ]
 }

@@ -21,15 +21,7 @@ from techminer.core.filter_records import filter_records
 
 
 class Model:
-    def __init__(
-        self,
-        data,
-        years_range,
-    ):
-        ##
-        if years_range is not None:
-            initial_year, final_year = years_range
-            data = data[(data.Year >= initial_year) & (data.Year <= final_year)]
+    def __init__(self, data):
 
         self.data = data
         #
@@ -42,6 +34,7 @@ class Model:
 
     def apply(self):
         ##
+        print(self.data)
         data = self.data[["Year", "Global_Citations", "ID"]].explode("Year")
         data["Num_Documents"] = 1
         result = data.groupby("Year", as_index=False).agg(
@@ -166,13 +159,12 @@ COLORMAPS = [
 
 
 class App(Dashboard, Model):
-    def __init__(self, years_range=None):
+    def __init__(self):
         #
         # Generic code
         #
         data = filter_records(pd.read_csv("corpus.csv"))
-
-        Model.__init__(self, data, years_range=years_range)
+        Model.__init__(self, data)
 
         self.command_panel = [
             dash.HTML("<b>Display:</b>", hr=False, margin="0px, 0px, 0px, 5px"),

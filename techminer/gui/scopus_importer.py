@@ -151,7 +151,7 @@ class App(Dashboard):
         dict_ = dict()
         dict_["year_range"] = [int(self.data.Year.min()), int(self.data.Year.max())]
         dict_["citations_range"] = [0, int(self.data.Global_Citations.max())]
-        dict_["bradford_law_zones"] = 2
+        dict_["bradford_law_zones"] = 3
         dict_["years"] = [int(self.data.Year.min()), int(self.data.Year.max())]
         dict_["citations"] = [0, int(self.data.Global_Citations.max())]
         dict_["document_types"] = list(set(self.data.Document_Type))

@@ -1,49 +1,119 @@
-sektion young sonographers, schweizerische gesellschaft fur ultraschall in der medizin (sgum), switzerland
-abteilung fur allgemeine innere medizin und nephrologie, klinik hirslanden zurich, switzerland
-ucla, united states
-jovision, hamburg, 22083, germany
-stmik indonesia padang, padang, indonesia
-marlina univeritas negeri jakarta, jakarta, indonesia
-eit digital, italy
-dept of computer science and engineering, gono bishwbidyalay, bangladesh
-sekolah tinggi agama islam negeri (stain), sorong, indonesia
-ergonomics and aerosol technology, lund, 221 00, sweden
-uts:insearc, australia
-campus skelleftea, skelleftea, sweden
-allgemeine innere medizin, fmh, leiter arbeitsgruppe wbk, sgum/ssum, via cantonale 37a, bedano, 6930, switzerland
-agoranov, paris, france
-kth, stockholm, sweden
-eit digital, brussels, belgium
-julius-maximilians-university wurzburg, faculty of medicine, wurzburg, germany
-royal literary fund, london, united kingdom
-trinity education, san antonio, tx, united states
-learning designer and media producer openleaming, australia
-tei of ionian islands, m. minotou-giannopoulou, zakynthos, 29100, greece
-languages and computer systems, upv/ehu, donostia-san sebastian, spain
-contact north, 1139 alloy drive, suite 104, thunder bay, on  p7b 6m8, canada
-gymnasium st. christophorus, kardinal-von-galen-str. 1, werne, 59368, germany
-fao, viale delle terme di caracalla, rome, 00153, italy
-tei of ionian islands, zakynthos, greece
-tu dresden, zentrum fur lehrerbildung, schul-und berufsbildungsforschung, zellescher weg 20, dresden, 01217, germany
-tu dresden, fakultat informatik, ag didaktik der informatik/lehrerbildung, nothnitzer straße 46, dresden, 01187, germany
-dept. of speech and language therapy, tei of epirus, ioannina, greece
-promethean, science park ii, 20 science park road, singapore, 117674, singapore
-atr intelligent robotics and communication laboratories, japan
-compugroup medical deutschland ag, geschaftsbereich telemed, koblenz, germany
-gymnasium st. christophorus of werne, germany
-joanneum research, graz, austria
-magnolia consulting llc, charlottesville, va, united states
-uned, spain
-edaktik gmbh, moodle services, purkersdorf, austria
-technology supported learning research group, united kingdom
-directorate of education, govt. of goa, panaji, goa, india
-itesm campus puebla, mexico
-net-base computer and network-technology, zinkmattenstrasse 6, 79108 freiburg, germany
-inst. of pathology, kantonsspital winterthur, brauerstr. 15, ch-8401 winterthur, switzerland
-aulatika s.l., madrid 28042, spain
-departamento de lenguajes y sistemas informaticos, uned, madrid, spain
-deutsche gesellschaft fur nuklearmedizin, gottingen, germany
-early learning research unit, cape town, south africa
-catholic un. co. kaho st-lieven, gent, belgium
-helsinki metropolia uas, helsinki, finland
-london knowledge lab, 23-29 emerald street, london, wc1n 3qs, united kingdom
+moscow power electrical institute
+corporacion para investigaciones biologicas-cib, unidad biotecnologia vegetal
+grupo de investigacion en minerales, biohidrometalurgia y medio ambiente
+i&d, cementos argos sa, medellin, colombia
+departamento de smart grids, gers, cali, colombia
+fluvia, bogota, colombia
+tecnoparque nodo pereira, risaralda, colombia
+clayuca, palmira, colombia
+specialist in equipment at monsanto, brazil
+clinica imbanaco, cali, colombia
+region de tarapaca, pozo almonte, iquique, chile
+energias del agro san juan, playas, ecuador
+iteico group, ecuador
+gerente general, tecnogestion, bucaramanga, colombia
+ecopetrol, bogota, colombia
+grupo de control de procesos, intec - conicet, santa fe, argentina
+earthshift global llc, kittery, united states
+grupo sobiotech. sobiotech s.a.s, guarne, colombia
+cardiovascular dynamic research group, medellin, colombia
+distribuidora de quimicosindustriales s.a, medellin, colombia
+erecos s.a.s, medellin, colombia
+enel colombia, bogota dc, colombia
+bt latam bogota, colombia (british telecommunications), london, united kingdom
+biofenix s.a.s, area ingenieria de procesos, medellin, colombia
+hill consulting s.a.s, bogota, colombia
+grupo giticap, potencia y tecnologias incorporadas s.a, cali, colombia
+consultant robust engineering, madrid, spain
+grupo de investigacion en nanotecnologia y materiales, nanomat, medellin, colombia
+ac ingenieria virtual, bucaramanga, colombia
+cepes (centro panamericano de estudios superiores), morelia, mexico
+industrial & systems engineering, virginia tech., blacksburg, va, united states
+industrias medicas sampedro, la estrella colombia
+prometeo, secretaria nacional de educacion superior, ciencia, tecnologia e innovacion -senescyt, quito, ecuador
+grupo de investigacion industrial en diseno de materiales a partir de minerales y procesos (idimap), sumicol sa.s., sabaneta, colombia
+comcel s.a., bogota, colombia
+proes consultores, s.a., madrid, spain
+projeto educampo cafe coocacer, cooperativa dos cafeicultores do cerrado monte carmelo ltda, monte carmelo, brazil
+ceo, progal bt, medellin, colombia
+dst, barranquilla, colombia
+vigia austral spa, puerto varas, chile
+concepcion, chile
+steinsvik chile s.a, chile
+conacyt - cicese, ensenada, b.c, mexico
+el alcazar s.a.s, cali, colombia
+kassouf engineering, itatiba, brazil
+faculty of integrated metropolitan campinas (metrocamp), foundations of civil engineering diskiplines i and ii and soil mechanics, brazil
+civil engineering, agricultural engineering and geology, brazil
+germanischer lloyd spain, ltd, spain
+biosys ltda, colombia
+departamento de marketing comercial, avon cosmetics s.a.u, madrid, spain
+isla, santarem, portugal
+healthy generation, lisboa, portugal
+departamento de mecanica aplicada, ceit, donostia san sebastian, spain
+departamento i+d+i, construcciones azvi, sevilla, spain
+bmw group, germany
+ciemat, plataforma solar de almeria, almeria, spain
+interconexion electrica s.a (isa), medellin, colombia
+corponarino, colombia
+division de recursos naturales e infraestructura, cepal - naciones unidas, santiago de chile, chile
+ciatec, guanajuato, mexico
+inacap, vitacura, chile
+gestion tecnologica, sumicol s.a, medellin, colombia
+developmet team, sequoia space, bogota, colombia
+koppert de mexico s. a. de c. v, mexico
+comimsa - conacyt (national council of science and technology), saltillo, coahuila, mexico
+general de hormigones s.a, spain
+cicata-ipn, queretaro, mexico
+fluvia/hydrocloro tech, sas, bogota, colombia
+research and development, cementos argos s.a, colombia
+departamento tecnico, hispana suiza de perfilados, switzerland
+hidromod, portugal
+hmv ingenieros, colombia
+sab miller bavaria, colombia
+ing. logyca, investigacion, colombia
+consultora-investigadora, colombia
+core biotechnology-bioengineering barranquilla, colombia
+promindsa (productos minerales para la industria, s.a.), zaragoza, spain
+becario colciencias, colombia
+ci2ma y departamento de ingenieria matematica, u. de concepcion, chile
+dept. of civil and environmental engineering, northwestern univ, evanston, united states
+independent consultant, houston, tx, united states
+departamento de materiales y minerales, colombia
+esp electric division, colombia
+inria-visages research team, rennes, france
+organizacion basica electrica camaguey, cuba
+indisa s.a., medellin, colombia
+auxiliar de ingenieria indisa s.a, medellin, colombia
+ingeniera de proyectos indisa s.a, medellin, colombia
+industrias medicas sampedro, spain
+analista de informacion, xm s.a. e.s.p., medellin, colombia
+sucroal s.a, colombia
+automatizacion y control industrial, itm, colombia
+grupo automatica y electronica, itm, colombia
+departamento de quimica analitica, valladolid, spain
+cinvestav-ipn, seccion de mecatronica, mexico
+oral and maxillofacial surgery research group, united states
+gorenje gospodinjski aparati d.d, velenje, slovenia
+indisa s.a, medellin, colombia
+emicol eletro eletronica s/a, s.p, brazil
+ing. quimico, grupo de investigacion aguas y aguas de pereira, linea agua potable, colombia
+quimico industrial, grupo de investigacion aguas y aguas de pereira, linea agua potable, colombia
+emgesa s.a.e.s.p., bogota, colombia
+ingenieria agricola, cenicafe, colombia
+conicet, fundacion bariloche, bariloche, argentina
+ingenieria geotecnica, colombia
+technical educational foundation souza marques, rio de janeiro, brazil
+structural engineer, acciona, madrid, spain
+steer davies gleave, colombia
+cefetmg, belo horizonte-mg, brazil
+investigador del conicet, argentina
+ingeniera de petroleos, grupo de investigacion en geomecanica aplicada - giga, colombia
+aridos do mendo s.l, chans da salgosa s/n 36457, oleiros, salvaterra do mino, spain
+cinvestav-saltillo, coahuila, mexico
+suramericana de seguros s.a, colombia
+facultad de ingenieria, ingenieria sanitaria, grupo de ingenieria and gestion ambiental, giga, colombia
+spt group, united states
+gemico-ensic, france
+direccion gestion red, isa: interconexion electrica s.a, colombia
+subdireccion de geologia basica, ingeominas, bogota d.c, colombia
