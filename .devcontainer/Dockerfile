@@ -22,3 +22,4 @@ RUN python3 -c "import nltk; nltk.download('stopwords'); nltk.download('wordnet'
 EXPOSE   8888  5000
 WORKDIR /datalake
 ENTRYPOINT /etc/init.d/ssh start && jupyter lab
+ 

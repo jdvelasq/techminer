@@ -467,9 +467,9 @@ def random_state():
     )
 
 
-def HTML(text, margin="20px 0px 0px 5px", hr=True):
+def HTML(text, margin="0px 0px 0px 5px", hr=True):
     text = "<b>" + text + "</b>"
-    if hr:
+    if hr is True:
         text = "<hr>" + text
     return widgets.HTML(text, layout=Layout(margin=margin))
 
@@ -632,7 +632,7 @@ class Dashboard:
         self.command_panel += [
             widgets.HTML(
                 '<hr style="color:#CACFD2">',
-                layout=Layout(margin="20px 0px 0px 0px"),
+                layout=Layout(margin="0px 0px 0px 0px"),
             ),
             calculate_button,
         ]
