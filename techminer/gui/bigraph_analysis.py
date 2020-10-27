@@ -642,7 +642,7 @@ class App(Dashboard, Model):
                     "Slope chart",
                 ],
             ),
-            dash.HTML("Column parameters:", hr=False),
+            dash.HTML("Column parameters:", hr=True),
             dash.Dropdown(
                 description="Column:",
                 options=sorted(data.columns),
@@ -659,7 +659,7 @@ class App(Dashboard, Model):
                 ],
             ),
             dash.c_axis_ascending(),
-            dash.HTML("Index parameters:", hr=False),
+            dash.HTML("Index parameters:", hr=True),
             dash.Dropdown(
                 description="By:",
                 options=sorted(data.columns),
@@ -676,7 +676,7 @@ class App(Dashboard, Model):
                 ],
             ),
             dash.r_axis_ascending(),
-            dash.HTML("Visualization:", hr=False),
+            dash.HTML("Visualization:", hr=True),
             dash.Dropdown(
                 description="Top by:",
                 options=[
