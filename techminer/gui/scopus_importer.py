@@ -27,6 +27,7 @@ from techminer.core.apply_institutions_thesaurus import apply_institutions_thesa
 from techminer.core.create_keywords_thesaurus import create_keywords_thesaurus
 from techminer.core.apply_keywords_thesaurus import apply_keywords_thesaurus
 
+import glob
 
 warnings.filterwarnings("ignore")
 
@@ -38,12 +39,9 @@ class App(Dashboard):
 
         self.command_panel = [
             dash.HTML("Scopus Filename:", hr=False),
-            widgets.FileUpload(
-                accept="scopus.csv",
-                multiple=False,
-                description=" ",
-                Layout=Layout(width="auto", border="2px solid gray"),
-                style={"button_color": "#BDC3C7"},
+            dash.Dropdown(
+                description="",
+                options=glob.glob("*.csv"),
             ),
         ]
 
@@ -63,7 +61,7 @@ class App(Dashboard):
         ##
         ## Load data
         ##
-        [filename] = self.command_panel[1].value
+        filename = self.command_panel[1].value
         self.logging_info("File '{}' selected for importation.".format(filename))
         self.data = pd.read_csv(filename)
 
