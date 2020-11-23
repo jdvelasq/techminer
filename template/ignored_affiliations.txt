@@ -1,119 +1,65 @@
-moscow power electrical institute
-corporacion para investigaciones biologicas-cib, unidad biotecnologia vegetal
-grupo de investigacion en minerales, biohidrometalurgia y medio ambiente
-i&d, cementos argos sa, medellin, colombia
-departamento de smart grids, gers, cali, colombia
-fluvia, bogota, colombia
-tecnoparque nodo pereira, risaralda, colombia
-clayuca, palmira, colombia
-specialist in equipment at monsanto, brazil
-clinica imbanaco, cali, colombia
-region de tarapaca, pozo almonte, iquique, chile
-energias del agro san juan, playas, ecuador
-iteico group, ecuador
-gerente general, tecnogestion, bucaramanga, colombia
-ecopetrol, bogota, colombia
-grupo de control de procesos, intec - conicet, santa fe, argentina
-earthshift global llc, kittery, united states
-grupo sobiotech. sobiotech s.a.s, guarne, colombia
-cardiovascular dynamic research group, medellin, colombia
-distribuidora de quimicosindustriales s.a, medellin, colombia
-erecos s.a.s, medellin, colombia
-enel colombia, bogota dc, colombia
-bt latam bogota, colombia (british telecommunications), london, united kingdom
-biofenix s.a.s, area ingenieria de procesos, medellin, colombia
-hill consulting s.a.s, bogota, colombia
-grupo giticap, potencia y tecnologias incorporadas s.a, cali, colombia
-consultant robust engineering, madrid, spain
-grupo de investigacion en nanotecnologia y materiales, nanomat, medellin, colombia
-ac ingenieria virtual, bucaramanga, colombia
-cepes (centro panamericano de estudios superiores), morelia, mexico
-industrial & systems engineering, virginia tech., blacksburg, va, united states
-industrias medicas sampedro, la estrella colombia
-prometeo, secretaria nacional de educacion superior, ciencia, tecnologia e innovacion -senescyt, quito, ecuador
-grupo de investigacion industrial en diseno de materiales a partir de minerales y procesos (idimap), sumicol sa.s., sabaneta, colombia
-comcel s.a., bogota, colombia
-proes consultores, s.a., madrid, spain
-projeto educampo cafe coocacer, cooperativa dos cafeicultores do cerrado monte carmelo ltda, monte carmelo, brazil
-ceo, progal bt, medellin, colombia
-dst, barranquilla, colombia
-vigia austral spa, puerto varas, chile
-concepcion, chile
-steinsvik chile s.a, chile
-conacyt - cicese, ensenada, b.c, mexico
-el alcazar s.a.s, cali, colombia
-kassouf engineering, itatiba, brazil
-faculty of integrated metropolitan campinas (metrocamp), foundations of civil engineering diskiplines i and ii and soil mechanics, brazil
-civil engineering, agricultural engineering and geology, brazil
-germanischer lloyd spain, ltd, spain
-biosys ltda, colombia
-departamento de marketing comercial, avon cosmetics s.a.u, madrid, spain
-isla, santarem, portugal
-healthy generation, lisboa, portugal
-departamento de mecanica aplicada, ceit, donostia san sebastian, spain
-departamento i+d+i, construcciones azvi, sevilla, spain
-bmw group, germany
-ciemat, plataforma solar de almeria, almeria, spain
-interconexion electrica s.a (isa), medellin, colombia
-corponarino, colombia
-division de recursos naturales e infraestructura, cepal - naciones unidas, santiago de chile, chile
-ciatec, guanajuato, mexico
-inacap, vitacura, chile
-gestion tecnologica, sumicol s.a, medellin, colombia
-developmet team, sequoia space, bogota, colombia
-koppert de mexico s. a. de c. v, mexico
-comimsa - conacyt (national council of science and technology), saltillo, coahuila, mexico
-general de hormigones s.a, spain
-cicata-ipn, queretaro, mexico
-fluvia/hydrocloro tech, sas, bogota, colombia
-research and development, cementos argos s.a, colombia
-departamento tecnico, hispana suiza de perfilados, switzerland
-hidromod, portugal
-hmv ingenieros, colombia
-sab miller bavaria, colombia
-ing. logyca, investigacion, colombia
-consultora-investigadora, colombia
-core biotechnology-bioengineering barranquilla, colombia
-promindsa (productos minerales para la industria, s.a.), zaragoza, spain
-becario colciencias, colombia
-ci2ma y departamento de ingenieria matematica, u. de concepcion, chile
-dept. of civil and environmental engineering, northwestern univ, evanston, united states
-independent consultant, houston, tx, united states
-departamento de materiales y minerales, colombia
-esp electric division, colombia
-inria-visages research team, rennes, france
-organizacion basica electrica camaguey, cuba
-indisa s.a., medellin, colombia
-auxiliar de ingenieria indisa s.a, medellin, colombia
-ingeniera de proyectos indisa s.a, medellin, colombia
-industrias medicas sampedro, spain
-analista de informacion, xm s.a. e.s.p., medellin, colombia
-sucroal s.a, colombia
-automatizacion y control industrial, itm, colombia
-grupo automatica y electronica, itm, colombia
-departamento de quimica analitica, valladolid, spain
-cinvestav-ipn, seccion de mecatronica, mexico
-oral and maxillofacial surgery research group, united states
-gorenje gospodinjski aparati d.d, velenje, slovenia
-indisa s.a, medellin, colombia
-emicol eletro eletronica s/a, s.p, brazil
-ing. quimico, grupo de investigacion aguas y aguas de pereira, linea agua potable, colombia
-quimico industrial, grupo de investigacion aguas y aguas de pereira, linea agua potable, colombia
-emgesa s.a.e.s.p., bogota, colombia
-ingenieria agricola, cenicafe, colombia
-conicet, fundacion bariloche, bariloche, argentina
-ingenieria geotecnica, colombia
-technical educational foundation souza marques, rio de janeiro, brazil
-structural engineer, acciona, madrid, spain
-steer davies gleave, colombia
-cefetmg, belo horizonte-mg, brazil
-investigador del conicet, argentina
-ingeniera de petroleos, grupo de investigacion en geomecanica aplicada - giga, colombia
-aridos do mendo s.l, chans da salgosa s/n 36457, oleiros, salvaterra do mino, spain
-cinvestav-saltillo, coahuila, mexico
-suramericana de seguros s.a, colombia
-facultad de ingenieria, ingenieria sanitaria, grupo de ingenieria and gestion ambiental, giga, colombia
-spt group, united states
-gemico-ensic, france
-direccion gestion red, isa: interconexion electrica s.a, colombia
-subdireccion de geologia basica, ingeominas, bogota d.c, colombia
+sedenion research
+bartlit beck herman palenchar & scott llp, chicago, il  60654, united states
+greymaths inc., chicago, il  60602, united states
+afd—agence francaise de developpement, paris, 75012, france
+courbevoie, 92400, france
+quantcloud brothers inc., setauket, ny  11733, united states
+grandata labs, 550 15th street, san francisco, ca  94103, united states
+atomic intelligence, zagreb, 10000, croatia
+nber, 1050 massachusetts avenue, cambridge, ma  02138-5398, united states
+division of science and technology, fujian rural credit union, fujian, 350003, china
+100credit financial information service co., ltd, beijing, 100089, china
+gft group, valencia, spain
+nomura, new york, ny, united states
+surinameweg 4, haarlem, 2035 va, netherlands
+gf securities, guangzhou, china
+atos spain, s.a., albarracin, 25, madrid, 28037, spain
+fachhochschule oberosterreich fakultat fur management, steyr, austria
+architecture coe, broadridge financial solutions (india) pvt. ltd, hyderabad, telangana, 500081, india
+consorzio milano ricerche, italy
+european alliance for personalised medicine, avenue de l'arme 10, brussels, be-1040, belgium
+shanghai shangda hairun information system co., ltd., shanghai, 200444, china
+creditease, china
+quality software solutions llc, russian federation
+surinameweg, haarlem, 42035 va, netherlands
+dept. of computer science, gbpec, pauri, uttarakhand, india
+ariadne business analytics ag, alpenstrasse 16, zug, 6300, switzerland
+ku leuven, belgium
+v.p. risk management, voya investment management, atlanta, ga  30327, united states
+deloitte consulting, 1507 blue meadow road, rockville, md  20854, united states
+institute for development of cross-strait small and medium enterprise, hubei province, china
+technical expert group on sustainable finance, dg fisma, european union, belgium
+boeing, charleston, united states
+ucl, london, united kingdom
+advanced risk and portfolio management, new york, ny  10023, united states
+daf, information technology division, eindhoven, netherlands
+capgemini, i and d risk, regulations and compliance, utrecht, netherlands
+ias management consultant, hyderabad, india
+udai omni and apollo health city, hyderabad, india
+digital marketing and social media, hyderabad, india
+athena energy ventures, new delhi, india
+iscap, porto, portugal
+data engineering at amazon.com, 33 rives de clausen 312165, luxembourg
+eu innovation policy, italy
+european projects, gft italia srl, genova, italy
+research and development, innov-acts ltd, nicosia, cyprus
+pointnext advisory & professional services, hewlett-packard italiana srl, cernusco s/n, milan, italy
+vwd: vereinigte wirtschaftsdienste gmbh, germany
+vwd: vereinigte wirtschaftsdienste gmbh, kaiserslautern, germany
+vwd: vereinigte wirtschaftsdienste gmbh, frankfurt a.m., germany
+swingtum prediction, australia
+nchain and lse systemic risk, london, united kingdom
+otto-von-guericke-university, magdeburg, germany
+ultra tendency gmbh, magdeburg, germany
+advanced risk and portfolio management (arpm)ny  10023, united states
+bai7, iim bangalore, bengaluru, india
+g.b.p.e.c., pauri, india
+forecastrix ltd., hong kong
+xiamen xindeco iot ltd., xiamen, fujian, 361015, china
+exprivia spa, bari, italy
+peracton ltd., dublin, ireland
+financial intergroup, london, united kingdom
+be informed, apeldoorn, netherlands
+ubitech, athens, greece
+attica wealth management, athens, greece
+nomura holdings, london, united kingdom

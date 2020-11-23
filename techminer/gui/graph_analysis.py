@@ -76,8 +76,6 @@ class Model:
 
     def apply(self):
 
-        print(self.column)
-
         ##
         ##  Computes TF_matrix with occurrence >= min_occurrence
         ##
