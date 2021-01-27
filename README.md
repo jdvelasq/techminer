@@ -1,2 +1,2 @@
-# techminer-dev
+# techminer
 TechMiner development branch
