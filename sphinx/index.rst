@@ -59,7 +59,7 @@ To run the *TechMiner* GUI, the user must execute
 in a cell of Jupiter Lab or Google Colaboratory.
 
 
-**List of analysis functions**:
+**List of analysis tools**:
 
 .. toctree::
    :maxdepth: 2
