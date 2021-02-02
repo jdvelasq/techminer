@@ -53,8 +53,8 @@ master_doc = "index"
 
 # General information about the project.
 project = "TechMiner - A Package for Bibliographical Analysis using Python"
-copyright = "2020, Juan D. Velasquez & Ivanohe J. Garces"
-author = "Juan D. Velasquez & Ivanohe J. Garces"
+copyright = "2021, Juan D. Velasquez"
+author = "Juan D. Velasquez"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

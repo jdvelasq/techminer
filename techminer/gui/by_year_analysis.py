@@ -8,7 +8,6 @@ from ipywidgets import GridspecLayout, Layout
 import techminer.core.dashboard as dash
 from techminer.core import Dashboard
 
-#  from techminer.core.dashboard import ascending
 from techminer.plots import bar_plot, barh_plot
 
 from techminer.core.filter_records import filter_records
