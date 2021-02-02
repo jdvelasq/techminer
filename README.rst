@@ -23,6 +23,14 @@ of the library and develop advanced analysis. The package can be used to:
 *TechMiner* is an open source (distributed under the MIT license) and friendly-user
 package developed and tested in Python version 3.6. 
 
+*TechMiner* runs on top of Jupyter Lab and Google Colaboratory with its own
+graphical user interfase. This feature allows to new user to run *TechMiner* 
+easily. This is particulary benefical because of the large number of analysis
+functions that the tool has. Due to the design of the package, it is easy 
+to use techMiner with the tools available in the ecosystem
+of open source tools.
+
+
 
 Getting Started
 ---------------------------------------------------------
@@ -31,52 +39,51 @@ The current stable version can be installed from the command line using:
 
 ``$ pip install techminer``
 
-*TechMiner** can be used interactively at the Python’s command prompt, but a better
-experience is achieved when IPython or Jupyter’s notebook are used, allows the
-user to fully document the analysis and draw conclusions. Due to the design of
-the package, it is easy to use techMiner with the tools available in the ecosystem
-of open source tools.
-
 
 The current development version can be installed by clonning the GitHub repo 
-`<https://github.com/jdvelasq/tech-miner>`_ and executing 
+`<https://github.com/jdvelasq/techminer>`_ and executing 
 
 ``$ python3 setup.py install develop``
 
 at the command prompt.
 
-The `Tutorial <https://jdvelasq.github.io/tech-miner/tutorial/index.html>`_ section contains
-a basic tutorial for analyzing bibliographical data extracted from Scopus by the user.
+To run the *TechMiner* GUI, the user must execute
+
+``
+from techminer.app import App
+
+App().run()
+``
+
+in a cell of Jupiter Lab or Google Colaboratory.
+
 
 
 Release Information
 ---------------------------------------------------
 
-* **Authors**:
+* **Author**:
 
     | Prof. Juan David Velásquez-Henao, MSc, PhD
     | Universidad Nacional de Colombia, Sede Medellín.
     | jdvelasq@unal.edu.co
 
-    | Ivanohe Johana Garcés-Correa, MSc.
-    | Universidad Nacional de Colombia, Sede Medellín.
-    | ijgarcesc@unal.edu.co
 
 * **Date**: 
 
-    September 01, 2019  **Version**: 0.0.0
+    February 01, 2021  **Version**: 0.0.0
 
 * **Binary Installers:** 
    
-    `<https://pypi.org/project/tech-miner>`_
+    `<https://pypi.org/project/techminer>`_
 
 * **Source Repository**: 
 
-    `<https://github.com/jdvelasq/tech-miner>`_
+    `<https://github.com/jdvelasq/techminer>`_
 
 * **Documentation**: 
 
-    `<https://jdvelasq.github.io/tech-miner/>`_
+    `<https://jdvelasq.github.io/techminer/>`_
 
 
 Table of Contents
@@ -99,7 +106,7 @@ Table of Contents
 MIT license
 -------------------------------------------------------------------------------
 
-Copyright (c) 2020 Juan David Velásquez-Henao, Ivanohe Johana Garces-Correa.
+Copyright (c) 2021 Juan David Velásquez-Henao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
