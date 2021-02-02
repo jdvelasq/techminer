@@ -219,6 +219,23 @@
 </style>
 <div class="section" id="scopus-importer">
 <h1>Scopus Importer<a class="headerlink" href="#scopus-importer" title="Permalink to this headline">¶</a></h1>
+<p>This app imports a scopus CSV file for analysis. The following settings are
+recomended</p>
+<a class="reference internal image-reference" href="_images/scopus-settings.png"><img alt="_images/scopus-settings.png" class="align-center" src="_images/scopus-settings.png" style="width: 800px;" /></a>
+<p>This app creates several files. The file <cite>corpus.csv</cite> has the imported dataset, but
+all created files must be saved in order to reproduce the analysis.</p>
+<p>The actions executed by the app include:</p>
+<ul class="simple">
+<li><p>Rename and select columns of the original dataset.</p></li>
+<li><p>Remove accents.</p></li>
+<li><p>Format author names.</p></li>
+<li><p>Disambiguate author names.</p></li>
+<li><p>Extract countries and institutions for authors.</p></li>
+<li><p>Remove copyright mark from the abstracts.</p></li>
+<li><p>Translate british spelling to american spelling.</p></li>
+<li><p>Create new columns with aditional information.</p></li>
+</ul>
+<p>The file <cite>corpus.csv</cite> can be read by the user for aditional analyses.</p>
 <a class="reference internal image-reference" href="_images/scopus-importer.png"><img alt="_images/scopus-importer.png" class="align-center" src="_images/scopus-importer.png" style="width: 800px;" /></a>
 </div>
 
