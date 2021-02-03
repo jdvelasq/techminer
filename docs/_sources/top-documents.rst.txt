@@ -1,6 +1,12 @@
 Top Documents
 ===============================================================================
 
+.. image:: ./images/top-documents.png
+    :width: 800px
+    :align: center
+
+
+
 Prints a table with the top N most cited documents in the database.
 
 * **Top N**: Number of documents. 
@@ -12,7 +18,13 @@ Prints a table with the top N most cited documents in the database.
 * **Detailed data**: When true, prints a table with authors, year, title, source title and citations fields of each document. Otherwise, prints authors, year, title and citations as text.
 
 
+This app can be executed using:
 
-.. image:: ./images/top-documents.png
-    :width: 800px
-    :align: center
+.. code:: python
+    
+    import techminer as tech
+
+    tech.gui.top_documents.App().run()
+
+
+

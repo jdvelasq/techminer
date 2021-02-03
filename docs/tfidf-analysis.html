@@ -111,7 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="growth-indicators.html">Growth Indicators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="impact-analysis.html">Impact Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keywords-association.html">Keywords Associations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords-comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latent-semantic-analysis.html">Latent Semantic Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="main-path-analysis.html">Main Path Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manage-columns.html">Manage Columns</a></li>
@@ -219,12 +219,18 @@
 </style>
 <div class="section" id="tf-idf-analysis">
 <h1>TF*IDF Analysis<a class="headerlink" href="#tf-idf-analysis" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/tfidf-analysis.png"><img alt="_images/tfidf-analysis.png" class="align-center" src="_images/tfidf-analysis.png" style="width: 800px;" /></a>
 <p>Computes the TF-IDF values for the selected column. The app uses sklearn for
 computing the values. Options description and computations are described in
 <a class="reference external" href="https://scikit-learn.org/stable/modules/feature_extraction.html#tfidf-term-weighting">https://scikit-learn.org/stable/modules/feature_extraction.html#tfidf-term-weighting</a></p>
 <p><em>Min OCC</em> is the minimum occurrency value for selected terms. <em>Max items</em> is the
 maximum number of items reported in the app.</p>
-<a class="reference internal image-reference" href="_images/tfidf-analysis.png"><img alt="_images/tfidf-analysis.png" class="align-center" src="_images/tfidf-analysis.png" style="width: 800px;" /></a>
+<p>This app can be executed using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">techminer</span> <span class="k">as</span> <span class="nn">tech</span>
+
+<span class="n">tech</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">document_term_analysis</span><span class="o">.</span><span class="n">App</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 
 

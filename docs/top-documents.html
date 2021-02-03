@@ -111,7 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="growth-indicators.html">Growth Indicators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="impact-analysis.html">Impact Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keywords-association.html">Keywords Associations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords-comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latent-semantic-analysis.html">Latent Semantic Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="main-path-analysis.html">Main Path Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manage-columns.html">Manage Columns</a></li>
@@ -219,6 +219,7 @@
 </style>
 <div class="section" id="top-documents">
 <h1>Top Documents<a class="headerlink" href="#top-documents" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/top-documents.png"><img alt="_images/top-documents.png" class="align-center" src="_images/top-documents.png" style="width: 800px;" /></a>
 <p>Prints a table with the top N most cited documents in the database.</p>
 <ul class="simple">
 <li><p><strong>Top N</strong>: Number of documents.</p></li>
@@ -226,7 +227,12 @@
 <li><p><strong>Normalized citatiions</strong>: When true, divides the citations of the document by its age.</p></li>
 <li><p><strong>Detailed data</strong>: When true, prints a table with authors, year, title, source title and citations fields of each document. Otherwise, prints authors, year, title and citations as text.</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/top-documents.png"><img alt="_images/top-documents.png" class="align-center" src="_images/top-documents.png" style="width: 800px;" /></a>
+<p>This app can be executed using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">techminer</span> <span class="k">as</span> <span class="nn">tech</span>
+
+<span class="n">tech</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">top_documents</span><span class="o">.</span><span class="n">App</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 
 

@@ -1,6 +1,11 @@
 Scopus Importer
 ===============================================================================
 
+.. image:: ./images/scopus-importer.png
+    :width: 800px
+    :align: center
+
+
 This app imports a scopus CSV file for analysis. The following settings are 
 recomended
 
@@ -32,7 +37,12 @@ The actions executed by the app include:
 The file `corpus.csv` can be read by the user for aditional analyses.
 
 
+This app can be executed using:
 
-.. image:: ./images/scopus-importer.png
-    :width: 800px
-    :align: center
+.. code:: python
+    
+    import techminer as tech
+
+    tech.gui.scopus_importer.App().run()
+
+

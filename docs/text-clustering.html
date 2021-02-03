@@ -111,7 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="growth-indicators.html">Growth Indicators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="impact-analysis.html">Impact Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keywords-association.html">Keywords Associations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords-comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords-comparison.html">Keywords comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latent-semantic-analysis.html">Latent Semantic Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="main-path-analysis.html">Main Path Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manage-columns.html">Manage Columns</a></li>
@@ -219,11 +219,17 @@
 </style>
 <div class="section" id="text-clustering">
 <h1>Text Clustering<a class="headerlink" href="#text-clustering" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/text-clustering.png"><img alt="_images/text-clustering.png" class="align-center" src="_images/text-clustering.png" style="width: 800px;" /></a>
 <p>Creates a thesaurus for the terms in the selected column. The thesaurus is saved
 to disk in text format. Any text editor can be used to modify the file. The
 <em>Apply thesaurus</em> app can be used to apply the generated thesaurus to a column
 of the biblographic dataset.</p>
-<a class="reference internal image-reference" href="_images/text-clustering.png"><img alt="_images/text-clustering.png" class="align-center" src="_images/text-clustering.png" style="width: 800px;" /></a>
+<p>This app can be executed using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">techminer</span> <span class="k">as</span> <span class="nn">tech</span>
+
+<span class="n">tech</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">text_clustering</span><span class="o">.</span><span class="n">App</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 
 
