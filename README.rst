@@ -37,23 +37,28 @@ Getting Started
 
 The current stable version can be installed from the command line using:
 
-``$ pip install techminer``
+.. code:: bash
+
+    $ pip install techminer
 
 
 The current development version can be installed by clonning the GitHub repo 
 `<https://github.com/jdvelasq/techminer>`_ and executing 
 
-``$ python3 setup.py install develop``
+.. code:: bash
+
+    $ python3 setup.py install develop
 
 at the command prompt.
 
 To run the *TechMiner* GUI, the user must execute
 
-``
-from techminer.app import App
+.. code:: python
 
-App().run()
-``
+    from techminer.app import App
+
+    App().run()
+
 
 in a cell of Jupiter Lab or Google Colaboratory.
 
