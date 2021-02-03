@@ -9,26 +9,26 @@
         85
     ],
     "document_types": [
-        "Editorial",
-        "Note",
-        "Article in Press",
         "Review",
-        "Book",
-        "Book Chapter",
         "Conference Paper",
-        "Article"
+        "Editorial",
+        "Article in Press",
+        "Note",
+        "Book Chapter",
+        "Article",
+        "Book"
     ],
     "excluded_terms": "---",
     "selected_cluster": "---",
     "selected_types": [
-        "Editorial",
-        "Note",
-        "Article in Press",
         "Review",
-        "Book",
-        "Book Chapter",
         "Conference Paper",
-        "Article"
+        "Editorial",
+        "Article in Press",
+        "Note",
+        "Book Chapter",
+        "Article",
+        "Book"
     ],
     "year_range": [
         2013,

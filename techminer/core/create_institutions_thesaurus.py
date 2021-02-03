@@ -1,3 +1,4 @@
+import io
 import json
 import os.path
 import re
@@ -182,7 +183,7 @@ def create_institutions_thesaurus(
     ## Valid names of institutions
     ##
     module_path = dirname(__file__)
-    with open(join(module_path, "../data/institutions.data"), "r") as f:
+    with io.open(join(module_path, "../data/institutions.data"), "r", encoding="utf-8") as f:
         VALID_NAMES = f.readlines()
     VALID_NAMES = [w.replace("\n", "").lower() for w in VALID_NAMES]
     VALID_NAMES = [w for w in VALID_NAMES if len(w) > 0]
@@ -274,7 +275,7 @@ def create_institutions_thesaurus(
     ##
     ## list of ignored affiliations for manual review
     ##
-    with open("ignored_affiliations.txt", "w") as f:
+    with io.open("ignored_affiliations.txt", "w", encoding="utf-8") as f:
         for aff in ignored_affiliations:
             print(aff, file=f)
 
