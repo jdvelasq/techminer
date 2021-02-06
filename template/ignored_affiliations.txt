@@ -1,65 +1,108 @@
-sedenion research
-bartlit beck herman palenchar & scott llp, chicago, il  60654, united states
-greymaths inc., chicago, il  60602, united states
-afd—agence francaise de developpement, paris, 75012, france
-courbevoie, 92400, france
-quantcloud brothers inc., setauket, ny  11733, united states
-grandata labs, 550 15th street, san francisco, ca  94103, united states
-atomic intelligence, zagreb, 10000, croatia
-nber, 1050 massachusetts avenue, cambridge, ma  02138-5398, united states
-division of science and technology, fujian rural credit union, fujian, 350003, china
-100credit financial information service co., ltd, beijing, 100089, china
-gft group, valencia, spain
-nomura, new york, ny, united states
-surinameweg 4, haarlem, 2035 va, netherlands
-gf securities, guangzhou, china
-atos spain, s.a., albarracin, 25, madrid, 28037, spain
-fachhochschule oberosterreich fakultat fur management, steyr, austria
-architecture coe, broadridge financial solutions (india) pvt. ltd, hyderabad, telangana, 500081, india
-consorzio milano ricerche, italy
-european alliance for personalised medicine, avenue de l'arme 10, brussels, be-1040, belgium
-shanghai shangda hairun information system co., ltd., shanghai, 200444, china
-creditease, china
-quality software solutions llc, russian federation
-surinameweg, haarlem, 42035 va, netherlands
-dept. of computer science, gbpec, pauri, uttarakhand, india
-ariadne business analytics ag, alpenstrasse 16, zug, 6300, switzerland
-ku leuven, belgium
-v.p. risk management, voya investment management, atlanta, ga  30327, united states
-deloitte consulting, 1507 blue meadow road, rockville, md  20854, united states
-institute for development of cross-strait small and medium enterprise, hubei province, china
-technical expert group on sustainable finance, dg fisma, european union, belgium
-boeing, charleston, united states
-ucl, london, united kingdom
-advanced risk and portfolio management, new york, ny  10023, united states
-daf, information technology division, eindhoven, netherlands
-capgemini, i and d risk, regulations and compliance, utrecht, netherlands
-ias management consultant, hyderabad, india
-udai omni and apollo health city, hyderabad, india
-digital marketing and social media, hyderabad, india
-athena energy ventures, new delhi, india
-iscap, porto, portugal
-data engineering at amazon.com, 33 rives de clausen 312165, luxembourg
-eu innovation policy, italy
-european projects, gft italia srl, genova, italy
-research and development, innov-acts ltd, nicosia, cyprus
-pointnext advisory & professional services, hewlett-packard italiana srl, cernusco s/n, milan, italy
-vwd: vereinigte wirtschaftsdienste gmbh, germany
-vwd: vereinigte wirtschaftsdienste gmbh, kaiserslautern, germany
-vwd: vereinigte wirtschaftsdienste gmbh, frankfurt a.m., germany
-swingtum prediction, australia
-nchain and lse systemic risk, london, united kingdom
-otto-von-guericke-university, magdeburg, germany
-ultra tendency gmbh, magdeburg, germany
-advanced risk and portfolio management (arpm)ny  10023, united states
-bai7, iim bangalore, bengaluru, india
-g.b.p.e.c., pauri, india
-forecastrix ltd., hong kong
-xiamen xindeco iot ltd., xiamen, fujian, 361015, china
-exprivia spa, bari, italy
-peracton ltd., dublin, ireland
-financial intergroup, london, united kingdom
-be informed, apeldoorn, netherlands
-ubitech, athens, greece
-attica wealth management, athens, greece
-nomura holdings, london, united kingdom
+modelling and simulation centre, the university of manchester, oxford road, manchester, uk, modelling and simulation centre, the university of manchester, oxford road, manchester, uk
+dalton nuclear institute, the university of manchester, manchester, m13 9pl, uk, dalton nuclear institute, the university of manchester, manchester m13 9pl, uk
+department of geodynamics, stratigraphy and paleontology
+faculty of geology
+vicomtech foundation, basque research and technology alliance (brta), mikeletegi 57, san sebastian, 20009, spain
+fraunhofer itwm, kaiserslautern, germany
+tu kaiserslautern, kaiserslautern, germany
+cirad, umr tetis, sainte-clotilde, reunion, france
+ligo hanford observatory, richland, wa  99352, united states
+ligo livingston observatory, livingston, la  70754, united states
+aernnova engineering division s.a., madrid, 28034, spain
+luminem, italy
+agroecology and environment, agroscope, reckenholzstrasse 191, zurich, 8046, switzerland
+cnr - ismac, via de marini 6, genoa, 16149, italy
+cnr - imati, via de marini 6, genoa, 16149, italy
+isti-cnr, pisa, italy
+nikhef, science park 105, xg amsterdam, 1098, netherlands
+caligoo inc., united states
+bayer ag, alfred-nobel-str. 50, monheim, 40789, germany
+centrum wiskunde & informatica, science park 123, 1098xg amsterdam, netherlands
+koninklijk nederlands meteorologisch instituut, utrechtseweg 297, 3731 ga de bilt, netherlands
+tno, cyber security & robustness, anna van buerenplein 1, the hague, 2595da, netherlands
+devon energy, oklahoma cityok, united states
+aeronautical engineering branch, israeli air force, tel-aviv, 6473428, israel
+ems research group, tu ilmenau, germany
+vicomtech foundation, basque research and technology alliance (brta), san sebastian, spain
+bonn-rhein-sieg university oas, sankt augustin, germany
+berkeley education alliance for research in singapore, singapore
+hkv consultants, netherlands
+tunnel engineering consultants (tec), amersfoort, netherlands
+vattenfall, netherlands
+sinberbest, berkeley education alliance for research in singapore, singapore
+kitware inc., clifton parkny, united states
+helmholtz-zentrum dresden - rossendorf, dresden, germany
+mta-szte research group on artificial intelligence, hungary
+ibm research, zurich, switzerland
+istituto di calcolo e reti ad alte prestazioni - c.n.r. via ugo la malfa, palermo, 153, italy
+ursa space systems, ithaca, ny, united states
+asapp, new york, ny, united states
+inesc-id, lisbon, portugal
+max-planck-institut fur physik (werner-heisenberg-institut), fohringer ring 6, munchen, d-80805, germany
+silicon austria labs, europastraße 12, villach, 9500, austria
+associacao fraunhofer portugal research, rua alfredo allen 455/461, porto, portugal
+numericor gmbh, graz, austria
+akselos inc., 2101 west blvd., houston, tx  77042, united states
+biomedical signal processing unit (utsb), faculte de medecine et maieutique, uclille, lille, f-59800, france
+faculty of biological sciences, friedrich-schiller-university jena, germany
+max planck computing and data facility (mpcdf), gießenbachstraße 2, garching, 85748, germany
+siemens healthcare ltd, frimley, united kingdom
+centrum wiskunde & informatica, science park 123, amsterdam, 1098xg, netherlands
+odyssey systems consulting, llc, 550 lipoa parkway, kihei, maui, hi, united states
+re/max professionals, toronto, on, canada
+puc minas - icei - dcc - viplab, brazil
+cnpq, brazil
+fondazione bruno kessler, via sommarive 18, trento, 38123, italy
+istituto di fotonica e nanotecnologie, ifn-cnr, via alla cascata 56/c, trento, 38123, italy
+engys uk, studio 20, royal victoria patriotic building, john archer way, london, sw18 3sx, ireland
+vatnaskil, sidumuli 28, reykjavik, 108, iceland
+max-planck-institut fur quantenoptik, hans-kopfermann-straße 1, garching bei munchen, 85748, germany
+theoretische physik, eth zurich, zurich, 8093, switzerland
+first street foundation, 247 water street, suite 401, brooklyn, ny  11201, united states
+fondazione bruno kessler, italy
+cluster of excellence phoenixd (photonics, optics, and engineering - innovation across disciplines), hannover, germany
+josiah johnston, phd consulting & research, united states
+i/ogistics, toronto, canada
+ibm research, switzerland
+diamond light source ltd., diamond house, harwell science & innovation campus, didcot, oxfordshire, ox11 0de, united kingdom
+the research complex at harwell, didcot, oxfordshire, ox11 0fa, united kingdom
+quorumetrix solutions, canada
+imaginea, netherlands
+ogs-istituto nazionale di oceanografia e di geofisica sperimentale, borgo grotta gigante 42c, sgonico, trieste, italy
+complexity science hub vienna, josefstadterstraße 39, vienna, a-1080, austria
+statnett sf, oslo, norway
+bits pilani, hyderabad campus, jawahar nagar, hyderabad, telangana  500078, india
+unite de neurosciences, information et complexite (unic), cnrs, 1 ave de la terrasse, gif-sur-yvette, 91198, france
+imt atlantique, umr cnrs 6285 lab-sticc, ubl, brest, f-29238, france
+pattern recognition lab, friedrich-alexander-universtat erlangen-nurnberg, erlangen, 91058, germany
+intel, germany
+ogs - istituto nazionale di oceanografia e di geofisica sperimentale, borgo grotta gigante 42c, trieste, sgonico, italy
+the research complex at harwell, didcot, oxfordshire, ox110 fa, united kingdom
+helmholtz-zentrum berlin fur materialien und energie, berlin, d-14109, germany
+geoscience australia, gpo box 378, canberra, act  2601, australia
+kichwa coders ltd., 1 plomer green avenue, downley, high, wycombe, hp135 ln, united kingdom
+acato information management, llc, 114 union valley rd., oak ridge, tn  37830, united states
+ardent data analytics, llc. delray beachfl, united states
+geodesy section, community safety and earth monitoring division, geoscience australia, gpo box 378, canberraact 2601, australia
+gns science, 1 fairway dr, avalon, lower hutt, 5011, new zealand
+research complex at harwell, harwell campusox11 0qx, united kingdom
+liceo scientifico statale “c. de giorgi”, viale de pietro 14, lecce, i-73100, italy
+ps consulting, ul. zaporoska 8/4, krakow, 30-389, poland
+research and development division, statnett sf, oslo, norway
+embl, cell biology and biophysics, meyerhofstrasse 1, heidelberg, germany
+max-planck-institute for radio astronomy, auf dem hugel 69, bonn, 53121, germany
+max-planck-institute for extraterrestrial physics, giessenbachstrasse 1, garching, 85748, germany
+azti, txatxarramendi ugartea z/g, sukarrieta, 48395, spain
+azti, herrera kaia, pasaia, 20000, spain
+ismar-cnr, via gobetti, 101, bologna, 40129, italy
+independent researcher, monte san pietro, italy
+fao/iaea, division of nuclear techniques in food and agriculture, austria
+i-gis, aarhus, denmark
+sap hungary, 7 zahony utca, budapest, 1031, hungary
+chem.co consultant, via j.f. kennedy 2, occhiobello (ro), 45030, italy
+control system design, rolls-royce deutschland, blankenfelde-mahlow, germany
+driver assistance controls group, systems development, scania cv ab, sodertalje, 151 87, sweden
+dhi water and environment singapore, 1 cleantech loop 03-05 cleantech one, singapore, 637141, singapore
+lively disposition, cohoes, ny, united states
+joint bsccrg-irb program in computational biology, barcelona, spain
+kitware, inc, 28 corporate drive, clifton park, ny  12065, united states
