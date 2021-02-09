@@ -17,7 +17,7 @@ class BuildPyCommand(build_py):
 setup(
     cmdclass={"build_py": BuildPyCommand},
     name="techminer",
-    version="0.0.0",
+    version="0.1.0",
     author="Juan D. Velasquez",
     author_email="jdvelasq@unal.edu.co",
     license="MIT",

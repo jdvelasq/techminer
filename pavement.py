@@ -22,7 +22,7 @@ def pylint():
 @task
 def pypi():
     """Instalation on PyPi"""
-    sh("python setup.py sdist")
+    sh("python3 setup.py sdist")
     sh("twine upload dist/*")
 
 
