@@ -44,10 +44,21 @@ def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=N
     ##
     ## Delete terms between '(' and ')'
     ## Repace & by and
+    ## Delete 'of'
     ##
     x["word_alt"] = x["word"].copy()
     x["word_alt"] = x["word_alt"].map(lambda w: remove_parenthesis(w))
     x["word_alt"] = x["word_alt"].map(lambda w: w.replace("&", "and"))
+    x["word_alt"] = x["word_alt"].map(lambda w: w.replace(" of ", ""))
+
+    ##
+    ## Search for joined terms
+    ##
+    keywords_with_2_words = x.word_alt[x.word_alt.map(lambda w: len(w) == 2)]
+    keywords_with_1_word = keywords_with_2_words.map(lambda w: w.replace(" ", ""))
+    for w1, w2 in zip(keywords_with_1_word, keywords_with_2_words):
+        if w1 in x.word_alt.tolist():
+            x["word_alt"] = x["word_alt"].map(lambda w: w.replace(w1, w2))
 
     ##
     ## British to american english
