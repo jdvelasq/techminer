@@ -343,8 +343,14 @@ class App(Dashboard):
 
         for british_word in bg2am:
 
+            # self.data = self.data.applymap(
+            #     lambda w: w.replace(british_word, bg2am[british_word][0])
+            #     if isinstance(w, str)
+            #     else w
+            # )
+
             self.data = self.data.applymap(
-                lambda w: w.replace(british_word, bg2am[british_word][0])
+                lambda w: re.sub(r"\b%s\b" % british_word, bg2am[british_word][0], w)
                 if isinstance(w, str)
                 else w
             )
