@@ -35,6 +35,7 @@ setup(
         "networkx",
         "ipywidgets",
         "textblob",
+        "python-Levenshtein",
     ],
     packages=["techminer", "techminer.plots", "techminer.core", "techminer.gui"],
     package_dir={"techminer": "techminer"},

@@ -23,6 +23,13 @@ def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=N
             x = " ".join([w.strip() for w in x.split()])
         return x
 
+    def remove_brackets(x):
+        if "[" in x:
+            text_to_remove = x[x.find("[") : x.find("]") + 1]
+            x = x.replace(text_to_remove, "")
+            x = " ".join([w.strip() for w in x.split()])
+        return x
+
     def translate(x):
         z = [bg2am_[z][0] if z in bg2am_.keys() else z for z in x.split()]
         return " ".join(z)
@@ -42,11 +49,12 @@ def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=N
     x = pd.DataFrame({"word": x.tolist()})
 
     ##
-    ## Delete terms between '(' and ')'
+    ## Delete terms between '(' and ')' or '[' and ']'
     ## Repace & by and
     ## Delete 'of'
     ##
     x["word_alt"] = x["word"].copy()
+    x["word_alt"] = x["word_alt"].map(lambda w: remove_brackets(w))
     x["word_alt"] = x["word_alt"].map(lambda w: remove_parenthesis(w))
     x["word_alt"] = x["word_alt"].map(lambda w: w.replace("&", "and"))
     x["word_alt"] = x["word_alt"].map(lambda w: w.replace(" of ", ""))
@@ -112,8 +120,26 @@ def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=N
         grp["groupname"] = grp.word.map(
             lambda w: sorted(w.tolist(), key=len, reverse=False)[0]
         )
+
+    ##
+    ## Preffer names with '-'
+    ##
+    names_with_hyphen = grp.word.map(lambda w: [i for i in w if "-" in i])
+    names_with_hyphen = names_with_hyphen.map(lambda w: w[0] if len(w) > 0 else None)
+    grp["groupname"] = [
+        hyphen_name if hyphen_name is not None else original_name
+        for original_name, hyphen_name in zip(grp["groupname"], names_with_hyphen)
+    ]
+
+    ##
+    ## Transformer
+    ##
     if transformer is not None:
         grp["groupname"] = grp.groupname.map(transformer)
+
+    ##
+    ## Thesaurus building
+    ##
     result = {
         key: sorted(value.tolist()) for key, value in zip(grp.groupname, grp.word)
     }
