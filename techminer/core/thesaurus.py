@@ -127,7 +127,7 @@ def text_clustering(x, name_strategy="mostfrequent", key="porter", transformer=N
     names_with_hyphen = grp.word.map(lambda w: [i for i in w if "-" in i])
     names_with_hyphen = names_with_hyphen.map(lambda w: w[0] if len(w) > 0 else None)
 
-    with open("hyphen.txt", "w") as file:
+    with open("/Volumes/GitHub/hyphen.txt", "w") as file:
         file.write(names_with_hyphen)
 
     grp["groupname"] = [
