@@ -163,6 +163,8 @@ class Model:
             terms += x
             labels += [i_cluster] * len(x)
 
+        print(labels)
+
         self.generate_cluster_filters(terms=terms, labels=labels)
 
     def network(self):
