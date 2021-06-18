@@ -116,8 +116,6 @@ class App(Dashboard):
             data = self.data[["Historiograph_ID", "ID"]]
             data = data[data.Historiograph_ID.map(lambda w: w in x)]
 
-            print(col, x, data.Historiograph_ID.tolist(), sep=" --- ")
-
             filters[col] = list(data["ID"])
 
         with open("filters.json", "w") as f:
