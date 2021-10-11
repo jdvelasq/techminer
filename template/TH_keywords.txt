@@ -487,6 +487,8 @@ automatic detection
     automatic detection
 automatic differentiations
     automatic differentiations
+automatic discovery
+    automatic discovery
 automatic diskovery
     automatic diskovery
 automatic documentation
@@ -1682,6 +1684,8 @@ cuda
     cuda
 cultural diversity
     cultural diversity
+cultural ecosystem services
+    cultural ecosystem services
 cultural ecozystem services
     cultural ecozystem services
 cultural groups
@@ -2095,6 +2099,51 @@ directory trees
     directory trees
 disaster risk reductions
     disaster risk reductions
+discontinuous elements
+    discontinuous elements
+discontinuous finite element method
+    discontinuous finite element method
+discontinuous functions
+    discontinuous functions
+discontinuous galerkin
+    discontinuous galerkin
+discontinuous galerkin method
+    discontinuous galerkin method
+    discontinuous galerkin methods
+discrete cosine transforms
+    discrete cosine transforms
+discrete element method
+    discrete element method
+discrete element modeling
+    discrete element modeling
+discrete event models
+    discrete event models
+discrete event simulation
+    discrete event simulation
+discrete event system specification
+    discrete event system specification
+discrete fracture network
+    discrete fracture network
+discrete measure
+    discrete measure
+discrete probability distribution
+    discrete probability distribution
+discrete reconstruction
+    discrete reconstruction
+discrete spectrum
+    discrete spectrum
+discrete time
+    discrete time
+discrete wavelet transforms
+    discrete wavelet transforms
+discrete-element approach
+    discrete-element approach
+discrete-event
+    discrete-event
+discrete-time tfds
+    discrete-time tfds
+discretizations
+    discretizations
 disease vectors
     disease vectors
 diseases
@@ -2354,6 +2403,12 @@ ecopath with ecosim
     ecopath with ecosim
 ecosampler
     ecosampler
+ecosystem services
+    ecosystem services
+ecosystem-based management
+    ecosystem-based management
+ecosystems
+    ecosystems
 ecozystem services
     ecozystem services
 ecozystem-based management
@@ -2398,6 +2453,8 @@ efficient implementation
     efficient implementation
 eigen-pairs
     eigen-pairs
+eigenanalysis of the discrete laplace-beltrami operator
+    eigenanalysis of the discrete laplace-beltrami operator
 eigenanalysis of the diskrete laplace-beltrami operator
     eigenanalysis of the diskrete laplace-beltrami operator
 eigenvalues
@@ -2607,6 +2664,8 @@ engineering community
     engineering community
 engineering design
     engineering design
+engineering disciplines
+    engineering disciplines
 engineering diskiplines
     engineering diskiplines
 engineering education
@@ -2666,6 +2725,8 @@ equivalent temperature
     equivalent temperature
 erasure coding
     erasure coding
+erdf analyser
+    erdf analyser
 erdf analyzer
     erdf analyzer
 erosion
@@ -2851,6 +2912,8 @@ falling film
     falling films
 falling liquid films
     falling liquid films
+false discovery
+    false discovery
 false diskovery
     false diskovery
 fast and accurate simulations
@@ -4252,6 +4315,8 @@ interconnect resistance
     interconnect resistance
 interdependent networks
     interdependent networks
+interdisciplinary fields
+    interdisciplinary fields
 interdiskiplinary fields
     interdiskiplinary fields
 interface
@@ -4423,6 +4488,9 @@ knowledge base
     knowledge base
 knowledge based systems
     knowledge based systems
+knowledge discovery in database
+    knowledge discovery in database
+    knowledge discovery in databases
 knowledge diskovery in database
     knowledge diskovery in database
     knowledge diskovery in databases
@@ -4699,6 +4767,8 @@ local decision-making
 local density approximation
     local density approximation
     local density approximations
+local discomforts
+    local discomforts
 local diskomforts
     local diskomforts
 local elastic properties
@@ -4709,6 +4779,8 @@ local parts
     local parts
 local stability
     local stability
+local thermal discomfort
+    local thermal discomfort
 local thermal diskomfort
     local thermal diskomfort
 local time stepping
@@ -6459,6 +6531,10 @@ photoemission
     photoemission
 photoexcited carriers
     photoexcited carriers
+photogrammetry
+    photogrammetry
+photogrammetry tutorial
+    photogrammetry tutorial
 photogramtry
     photogramtry
 photogramtry tutorial
@@ -7518,6 +7594,8 @@ scientific data management
     scientific data management
 scientific data processing
     scientific data processing
+scientific discipline
+    scientific discipline
 scientific diskipline
     scientific diskipline
 scientific experiments
@@ -8086,6 +8164,8 @@ spatial data infrastructure
     spatial data infrastructure
 spatial data mining
     spatial data mining
+spatial discretizations
+    spatial discretizations
 spatial diskretizations
     spatial diskretizations
 spatial filtering

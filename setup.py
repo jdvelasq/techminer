@@ -33,7 +33,7 @@ setup(
         "cdlib",
         "pyvis",
         "networkx",
-        "ipywidgets",
+        "ipywidgets==7.5.1",
         "textblob",
         "python-Levenshtein",
     ],
