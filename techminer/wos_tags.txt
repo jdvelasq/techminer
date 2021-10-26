@@ -32,7 +32,7 @@
 #  ER     End of Record
 #  FN     File Name \\ Source
 #  FT     Foreign Title
-#  FU     Funding Agency and Grant Numbe
+#  FU     Funding Agency and Grant Number
 #  FX     Funding Text
 #  J9     29-Character Source Abbreviation \\ Abbreviated Source Title
 #  JI     ISO Source Abbreviation
