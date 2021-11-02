@@ -1,5 +1,5 @@
 import json
-
+import pandas as pd
 
 def filter_records(x):
 
@@ -11,6 +11,7 @@ def filter_records(x):
         (x.Global_Citations >= dict_["citations"][0])
         & (x.Global_Citations <= dict_["citations"][1])
     ]
+    x["Bradford_Law_Zone"] = x["Bradford_Law_Zone"].fillna(3)
     x = x[
         x.Bradford_Law_Zone.map(
             lambda w: w <= dict_["bradford_law_zones"], na_action="ignore"

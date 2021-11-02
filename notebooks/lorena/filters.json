@@ -1,0 +1,41 @@
+{
+    "bradford_law_zones": 3,
+    "citations": [
+        0,
+        180
+    ],
+    "citations_range": [
+        0,
+        180
+    ],
+    "document_types": [
+        "Book",
+        "Article",
+        "Retracted",
+        "Conference Paper",
+        "Book Chapter",
+        "Review",
+        "Editorial",
+        "Conference Review"
+    ],
+    "excluded_terms": "---",
+    "selected_cluster": "---",
+    "selected_types": [
+        "Book",
+        "Article",
+        "Retracted",
+        "Conference Paper",
+        "Book Chapter",
+        "Review",
+        "Editorial",
+        "Conference Review"
+    ],
+    "year_range": [
+        1989,
+        2020
+    ],
+    "years": [
+        1989,
+        2020
+    ]
+}

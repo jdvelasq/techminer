@@ -1,0 +1,816 @@
+Aalen University of Applied Science DEU
+    aalen university of applied science, beethovenstraße 1, aalen, 73430, germany
+Ahliyya Amman University JOR
+    al-ahliyya amman university, jordan
+Al Ahliyya Amman University JOR
+    al ahliyya amman university, department of information systems, jordan
+Al Ain University of Science and Technology ARE
+    department of mis, al ain university of science and technology, p.o. box 112612, abu dhabi, united arab emirates
+    al ain university of science and technology, united arab emirates
+Al-Balqa Applied University JOR
+    faculty of business administration, al-balqa applied university, al-salt, 19117, jordan
+Alain University ARE
+    department of business administration, college of business, alain university, abu dhabi campus, p.o. box 112612, abu dhabi, united arab emirates
+Alexander Technological Educational Institute of Thessaloniki GRC
+    department of rural development and agribusiness management, alexander technological educational institute of thessaloniki, greece
+Allameh Tabatabai University IRN
+    department of industrial management, allameh tabataba'i university, tehran, iran
+American University of Madaba JOR
+    american university of madaba, jordan
+Anhui Institute of Finance and Trade CHN
+    school of mathematics and statistics, anhui institute of finance and trade, bengbu, china
+Ankara University TUR
+    ankara university, faculty of political sciences, cebeci, ankara, 06590, turkey
+Ariel University ISR
+    ariel university, israel
+Aristotle University of Thessaloniki GRC
+    aristotle university of thessaloniki, greece
+    school of agriculture, forestry and natural environment, aristotle university of thessaloniki, greece
+Assiut University EGY
+    assiut university, faculty of commerce, assiut, egypt
+Athabasca University CAN
+    department of marketing, entrepreneurship and information systems, athabasca university, athabasca, canada
+Avondale Business School AUS
+    avondale business school, faculty of education, business and science, po box 19, cooranbong, nsw  2265, australia
+Balqa Applied University JOR
+    faculty of planning and management, al-balqa' applied university, al-salt, jordan
+Beijing University of Posts and Telecommunications CHN
+    pcn and cad center, beijing university of posts and telecommunications, beijing, china
+Bina Nusantara University IDN
+    school of business management, bina nusantara university, jakarta, indonesia
+    school of information systems, bina nusantara university, jakarta, indonesia
+Binus Business School Undergraduate Program Bina Nusantara University IDN
+    binus entrepreneurship center, management department, binus business school undergraduate program bina nusantara university, jakarta, 11480, indonesia
+Birmingham City University GBR
+    birmingham city university, birmingham, united kingdom
+    faculty of business law and social sciences, birmingham city university, birmingham, united kingdom
+    birmingham city business school, birmingham city university, birmingham, united kingdom
+Bournemouth University GBR
+    faculty of management, bournemouth university, fern barrow, poole, bh12 5bb, united kingdom
+Brawijaya University IDN
+    faculty of administrative sciences, brawijaya university, malang, indonesia
+Bundelkhand University IND
+    bundelkhand university, jhansi, india
+Cairo University Business School EGY
+    cairo university business school, cairo university, cairo, egypt
+California State University Dominguez Hills USA
+    college of business administration and public policy, california state university dominguez hills, carson, ca, united states
+California State University at Fullerton USA
+    california state university at fullerton, united states
+Campus Universitario Darcy Ribeiro BRA
+    postgraduate program in business management, university of brasilia, campus universitario darcy ribeiro, brasilia, brazil
+    experimenta research group, university of brasilia, campus universitario darcy ribeiro, brasilia, brazil
+Cankaya University TUR
+    cankaya university, ankara, turkey
+Cardiff Metropolitan University GBR
+    next tourism generation alliance, cardiff metropolitan university, western avenue, llandaff, cardiff, wales, cf5 2sp, united kingdom
+Cardiff University GBR
+    cardiff university, united kingdom
+Carleton University CAN
+    sprott school of business, carleton university, ottawa, canada
+Carnegie Mellon University USA
+    tepper school of business, carnegie mellon university, pittsburgh, pa 15213, united states
+Centre for Internationalisation and Enterprise Research GBR
+    centre for internationalisation and enterprise research (cier), department of management, university of glasgow, gilbert scott building, university avenue, glasgow g12 8qq, united kingdom
+Chiang Mai University THA
+    chiang mai university, chiang mai, thailand
+Chongqing Technology and Business University CHN
+    school of management, chongqing key laboratory of electronic commerce and supply chain system, chongqing technology and business university, chongqing, china
+Chulalongkorn University THA
+    social research institute, chulalongkorn university, bangkok, thailand
+City University GBR
+    cass business school, city university, london, united kingdom
+City University of Hong Kong CHN
+    department of systems engineering and engineering management, city university of hong kong, kowloon tong, hong kong
+Columbia University USA
+    columbia business school, columbia university, new york, ny 10027, united states
+Comsats Institute of Information Technology PAK
+    department of computer science, comsats institute of information technology, wah, pakistan
+Comsats University Islamabad PAK
+    department of management sciences, comsats university islamabad, lahore campus, punjab, 54000, pakistan
+    department of economics, comsats university islamabad, lahore campus, punjab, 54000, pakistan
+Corvinus University of Budapest HUN
+    corvinus university of budapest, fovam ter 8., budapest, h-1093, hungary
+Dalian University CHN
+    school of tourism, dalian university, no. 10, xuefu street, jinzhou new district, dalian, 116622, china
+Deakin University AUS
+    school of information systems, deakin university, vic 3125, australia
+Department of Industrial Economics NOR
+    department of industrial economics, norwegian inst. of sci./technology, norway
+Department of International Trade GRC
+    department of international trade, technological educational institute of west macedonia, greece
+Department of Management IND
+    department of management, siksha ‘o’ anusandhan (deemed to be university), bhubaneswar, india
+Department of Management Stie Indonesia Jakarta IDN
+    department of management stie indonesia jakarta, indonesia
+Department of Management Studies IND
+    jrf, department of management studies, indian school of mines, dhanbad, india
+    department of management studies, indian school of mines, dhanbad, india
+Department of Marketing and International Business SWE
+    department of marketing and international business, umea school of business and economics, umea university, se-901 87 umea, sweden
+Diponegoro University IDN
+    decision support laboratory, industrial engineering, diponegoro university, indonesia
+Dublin City University IRL
+    school of computing, dublin city university, dublin, ireland
+Durham University Business School GBR
+    durham university business school, united kingdom
+Durham University GBR
+    computer science, durham university, durham, united kingdom
+Edith Cowan University AUS
+    school of business and law, edith cowan university, joondalup, australia
+Entrepreneurship Universiti Kuala Lumpur MYS
+    department of management, entrepreneurship universiti kuala lumpur, business school kuala lumpur, malaysia
+Essex Business School GBR
+    essex business school, ebs.3.84 colchester campus, colchester, united kingdom
+Facultad de Ciencias Economicas y Empresariales ESP
+    facultad de ciencias economicas y empresariales, area de comunicacion audiovisual, c/ parralillos s/n, 09001 burgos, spain
+    facultad de ciencias economicas y empresariales, area de comercializacion e investigacion de mercados, c/ parralillos s/n, 09001 burgos, spain
+Florida State University USA
+    florida state university, united states
+    department of business administration, florida state university - panama city, panama city, fl, united states
+Fudan University CHN
+    fudan university, china
+Geetanjali Institute of Technical Studies IND
+    geetanjali institute of technical studies, udaipur, india
+Global Arch/Core Technologies Group FRA
+    global arch./core technologies group, accenture, sophia antipolis, france
+Global Institute of Software Technology CHN
+    global institute of software technology, suzhou, china
+Graduate School of Pancasila University IDN
+    graduate school of pancasila university, indonesia
+Groupe Sup de Co Montpellier Business School FRA
+    groupe sup de co montpellier business school, montpellier research in management, 2300 avenue des moulins, montpellier, 34185, france
+Guilin University of Electronic Technology CHN
+    school of management, guilin university of electronic technology, guilin, china
+Gulf College OMN
+    gulf college, muscat, oman
+Hansung Universityks013 KOR
+    dept. of smart convergence consulting, hansung universityks013, south korea
+Hanyang University KOR
+    food and nutrition, hanyang university, south korea
+    food and nutrition, college of human ecology, hanyang university, seoul, 04763, south korea
+Hee University KOR
+    kyung-hee university, south korea
+Himachal Pradesh University IND
+    department of commerce, faculty of commerce and management, himachal pradesh university, shimla, himachal pradesh, india
+Hmr Institute of Technology and Management IND
+    department of computer science and engineering, hmr institute of technology and management, hamidpur, delhi, india
+Hohai University CHN
+    business school, hohai university, nanjing, 210098, china
+Hong Kong University of Science and Technology CHN
+    hong kong university of science and technology, kowloon, hong kong
+Ibm Tj Watson Research Center USA
+    ibm t.j. watson research center, new york, ny, united states
+Idaho State University USA
+    idaho state university, pocatello, id, united states
+Imagineering Institute MYS
+    imagineering institute, nusajaya, malaysia
+Indian Institute of Management Calcutta IND
+    department of management information systems, indian institute of management calcutta, kolkata, india
+Indian Institute of Management Lucknow IND
+    department of information technology and systems, indian institute of management lucknow, lucknow, india
+    department of operations management, indian institute of management lucknow, lucknow, india
+Indian Institute of Technology Delhi IND
+    department of management studies, indian institute of technology delhi, india
+Indian Institute of Technology IND
+    dms, indian institute of technology, delhi, india
+Indonesia University of Education IDN
+    indonesia university of education, indonesia
+Indonesian Institute of Sciences IDN
+    indonesian institute of sciences, jakarta, 12710, indonesia
+Information System Department IDN
+    information system department, stmik pontianak, pontianak, west kalimantan, indonesia
+    information system department, stmik pontianak pontianak, west kalimantan, indonesia
+Information System Department Stmik Pontianak Pontianak IDN
+    information system department stmik pontianak pontianak, kalimantan barat, indonesia
+Institucion Universitaria Salazar y Herrera Iush COL
+    institucion universitaria salazar y herrera iush, colombia
+Institut Teknologi Bandung IDN
+    department of industrial engineering and engineering management, institut teknologi bandung, bandung, 40132, indonesia
+    department of industrial engineering and engineering management, institut teknologi bandung, bandung, indonesia
+International Business School MYS
+    international business school, universiti teknologi malaysia, kuala lumpur, malaysia
+International Business Universiti Kuala Lumpur MYS
+    department of marketing, international business universiti kuala lumpur, business school kuala lumpur, malaysia
+International School CHN
+    international school, beijing university of posts and telecommunications, beijing, china
+Islamic Azad University IRN
+    department of business management, qazvin branch, islamic azad university, qazvin, iran
+    management and productivity research center, qazvin branch, islamic azad university, qazvin, iran
+It and Business School NGA
+    it and business school, blue sapphire e-solutions ltd, kano, nigeria
+Jaipur Engineering College  and  Research Centre IND
+    jaipur engineering college & research centre, jaipur, india
+Jaipuria Institute of Management Indore IND
+    department of marketing, jaipuria institute of management indore, indore, india
+Jilin Normal University CHN
+    school of management, jilin normal university, siping, china
+Kakatiya Institute of Technology and Science IND
+    department of management, kakatiya institute of technology & science, warangal (autonomous), telangana state, india
+Karunya Institute of Technology and Sciences IND
+    department of management, karunya institute of technology and sciences, tamilnadu, india
+Kazan Federal University RUS
+    kazan federal university, russian federation
+Keele University GBR
+    research institute for law, politics and justice, keele university, keele, united kingdom
+Kings College London GBR
+    king's business school, king's college london, london, united kingdom
+Kings College USA
+    department of business and management, king’s college, wilkes-barre, pa, united states
+Kognitiv Corporation AUT
+    kognitiv corporation, vienna, 1070, austria
+Kokteyl Corporation TUR
+    kokteyl corporation, istanbul, turkey
+Kwansei Gakuin University JPN
+    school of science and technology, kwansei gakuin university, japan
+Leeds Metropolitan University GBR
+    leeds business school, leeds metropolitan university, leeds, united kingdom
+Leipzig University DEU
+    leipzig university, leipzig, germany
+Leuphana University Luneburg DEU
+    leuphana university luneburg, germany
+Liverpool University CHN
+    department of business, economics and management, xi'an jiaotong-liverpool university, suzhou, china
+    department of computer science and software engineering, xi'an jiaotong-liverpool university, suzhou, china
+Lund University SWE
+    department of business administration, lund university, lund, sweden
+Lynchburg College USA
+    school of business and economics, lynchburg college, va, united states
+Mae Fah Luang University THA
+    economics department, school of management, mae fah luang university, chiang rai, thailand
+Manchester Metropolitan University Business School GBR
+    marketing and retail division, manchester metropolitan university business school, aytoun building, aytoun street, manchester, m1 3gh, united kingdom
+    marketing and retail division, manchester metropolitan university business school, aytoun street, manchester, m1 3gh, united kingdom
+Manchester Metropolitan University GBR
+    department of marketing, retail and tourism, manchester metropolitan university, manchester, united kingdom
+    retail management subject group, manchester metropolitan university, business school, manchester, united kingdom
+Masaryk University Brno CZE
+    masaryk university brno, faculty of informatics, department of computer science, czech republic
+    masaryk university brno, faculty of informatics, czech republic
+Mcmaster University CAN
+    mcmaster university, canada
+Meiji Gakuin University JPN
+    faculty of economics, meiji gakuin university, tokyo, japan
+Mendel University In Brno CZE
+    department of regional and business economics, mendel university in brno, brno, czech republic
+Mercer University USA
+    mercer university, united states
+Metropolitan University GBR
+    welsh centre for tourism research, metropolitan university, western avenue, llandaff, cardiff, wales, cf5 2sp, united kingdom
+Michigan State University USA
+    department of horticulture, michigan state university, 1066 bogue street, east lansing, mi  48824, united states
+Middlesex University GBR
+    department of marketing, branding, and tourism, the business school, middlesex university, london, united kingdom
+Minnan University of Science and Technology CHN
+    apparel and art design college, minnan university of science and technology, quan zhou, fu jian, china
+Monash University AUS
+    department of marketing, monash university, melbourne, australia
+    department of management, faculty of business and economics, monash university, victoria, australia
+Nagoya University JPN
+    graduate school of human informatics, nagoya university, japan
+Nanyang Technological University SGP
+    nanyang technological university, nanyang avenue, singapore 639798, singapore
+Napier University GBR
+    social computing group, school of computing, napier university, edinburgh, united kingdom
+National Chengchi University TWN
+    national chengchi university, taiwan
+    national chengchi university, taipei, taiwan
+National Chiao Tung University TWN
+    national chiao tung university, hsinchu, 300, taiwan
+    department of computer science, national chiao tung university, hsinchu, 300, taiwan
+National Chiaotung University TWN
+    national chiaotung university, taiwan
+National Foundation for Celiac Awareness USA
+    national foundation for celiac awareness, ambler, pa, united states
+National Research University RUS
+    south ural state university, national research university, chelyabinsk, russian federation
+National Tsing Hua University TWN
+    institute of information systems and applications, national tsing hua university, taiwan
+National University of Computer Emerging Sciences PAK
+    national university of computer emerging sciences, pakistan
+National University of Ireland IRL
+    national university of ireland (maynooth), ireland
+Newcastle University London GBR
+    department of marketing, newcastle university london, newcastle, london, united kingdom
+Ningbo University CHN
+    communication department, ningbo university, zhejiang, china
+Normal University CHN
+    business school of chinawest, normal university, nanchong, china
+Nottingham Trent University GBR
+    computer clothing research ctr, nottingham trent university, burton street, nottingham ng1 4bu, united kingdom
+Nottingham Trent University Nottingham Business School GBR
+    nottingham trent university nottingham business school, nottingham, united kingdom
+Open University Business School GBR
+    accounting and finance research unit, open university business school, milton keynes, united kingdom
+Open University of The Netherlands NLD
+    open university of the netherlands, heerlen, netherlands
+Oregon State University USA
+    college of public health and human sciences, school of social and behavioral sciences, oregon state university, corvallis, or, united states
+Oxford University GBR
+    oxford university, oxford, united kingdom
+Pancasila University IDN
+    faculty of tourism, pancasila university, indonesia
+Pasundan University IDN
+    pasundan university, indonesia
+Petra Christian University IDN
+    faculty of economics, petra christian university, surabaya, indonesia
+    petra christian university, jl. siwalankerto 121-131, surabaya, indonesia
+Plymouth University GBR
+    faculty of health, plymouth university, 3 portland villas, plymouth pl4 8aa, united kingdom
+    department of psychology, plymouth university, portland square, plymouth, pl4 8aa, united kingdom
+Politecnico Di Torino ITA
+    politecnico di torino, ict, italy
+Politehnica University of Bucharest ROU
+    politehnica university of bucharest (upb), faculty of entrepreneurship, business engineering and management, romania
+Polytechnic Institute of Leiria PRT
+    ciic - computer science and communication research - estg, polytechnic institute of leiria, leiria, portugal
+    citur - tourism applied research centre - estm, polytechnic institute of leiria, leiria, portugal
+Prince Sultan University SAU
+    department of accounting, prince sultan university, riyadh, 11586, saudi arabia
+    prince sultan university, saudi arabia
+Princess Sumaya University for Technology JOR
+    princess sumaya university for technology, king tala school of business and technology, jordan
+Punjab Technical University IND
+    punjab technical university, kapurthala, punjab, india
+Purdue University USA
+    department of horticulture & landscape architecture and agricultural economics, purdue university, 625 agriculture mall drive, west lafayette, in  47907, united states
+Qatar University QAT
+    college of business and economics, qatar university, qatar
+Queens University Belfast GBR
+    queen’s university belfast, united kingdom
+Queensland University of Technology AUS
+    school of business, queensland university of technology, brisbane, australia
+    faculty of business, school of advertising, marketing and public relations, queensland university of technology, 2 george street, brisbane, qld 4000, australia
+Renmin University of China CHN
+    renmin university of china, china
+    school of finance, renmin university of china, beijin, china
+Robert Gordon University GBR
+    the charles p. skene centre for entrepreneurship, aberdeen business school, robert gordon university, aberdeen, united kingdom
+    centre for knowledge management, robert gordon university, aberdeen, united kingdom
+    school of information and media, robert gordon university, aberdeen, united kingdom
+Saint Francis University USA
+    school of business, saint francis university, loretto, pa  15940, united states
+Sangga Buana University IDN
+    sangga buana university, indonesia
+Seoul Media Institute of Technology KOR
+    department of new media, seoul media institute of technology (smit), 99 hwagok-ro 61-gil, gangseo-gu, seoul, 07590, south korea
+Shippensburg University USA
+    the john l. grove college of business, shippensburg university, 1871 old main drive, shippensburg, pa 17257, united states
+Shri Khandelwal Vaish P G College IND
+    shri khandelwal vaish p g college, jaipur, india
+Skidmore College USA
+    department of management and business, skidmore college, saratoga springs, ny, united states
+Social Crm Research Center DEU
+    social crm research center, leipzig, germany
+South Bank University GBR
+    south bank university, london, united kingdom
+    south bank university, united kingdom
+Southampton University School of Management GBR
+    southampton university school of management, southampton, united kingdom
+Ss Cyril and Methodius University In Skopje MKD
+    faculty of economics - skopje, ss. cyril and methodius university in skopje, bul. krste misirkov b.b., 1000 skopje, north macedonia
+St Andrews University JPN
+    faculty of business administration, st. andrew’s university, osaka, japan
+Staffordshire University Business School GBR
+    economics, staffordshire university business school, stafford, united kingdom
+State University of Singaperbangsa Karawang IDN
+    industrial engineering department, state university of singaperbangsa karawang, karawang, indonesia
+Suan Sunandha Rajabhat University THA
+    graduate school, suan sunandha rajabhat university, bangkok, thailand
+    suan sunandha rajabhat university, bangkok, thailand
+Sungkyunkwan University KOR
+    skk business school, sungkyunkwan university, seoul, south korea
+Sunway University Business School Selangor MYS
+    department of marketing, sunway university business school selangor, malaysia
+Swansea University GBR
+    emerging markets research centre (emarc), school of management, swansea university, swansea, united kingdom
+Tamkang University TWN
+    department of information management, tamkang university, taiwan
+Tanta University Faculty of Commerce EGY
+    tanta university faculty of commerce, tanta, egypt
+Technical University of Liberec CZE
+    faculty of economics, technical university of liberec, czech republic
+    technical university of liberec, faculty of economics, department of informatics, czech republic
+Technical University of Madrid ESP
+    department of agricultural economics, technical university of madrid, spain
+Temple University USA
+    temple university, united states
+Tennessee Tech University USA
+    tennessee tech university, united states
+Texas A and M University at Commerce USA
+    texas aandm university at commerce, commerce, tx, united states
+The Irish Software Research Centre IRL
+    lero - the irish software research centre, limerick, ireland
+The Manchester Metropolitan University Cheshire GBR
+    department of business and management studies, the manchester metropolitan university cheshire, crewe, united kingdom
+Titu Maiorescu University ROU
+    titu maiorescu university, romania
+Tomas Bata University In Zlin CZE
+    faculty of management and economics, tomas bata university in zlin, mostni 5139, zlin, 760 01, czech republic
+Transilvania University of Brașov ROU
+    transilvania university of brașov, brașov, 500030, romania
+Tsinghua National Laboratory for Information Science and Technology CHN
+    tsinghua national laboratory for information science and technology, tsinghua university, beijing 100084, china
+Tsinghua University CHN
+    state key laboratory of intelligent technology and systems, tsinghua university, beijing 100084, china
+    department of computer science and technology, tsinghua university, beijing 100084, china
+Twente University NLD
+    twente graduate school, faculty of behavioural, management and social science, twente university, netherlands
+Uludag University TUR
+    uludag university, faculty of agriculture, department of agricultural economics, bursa, turkey
+    uludag university, faculty of agriculture, department of agricultural economics, bursa 16059, turkey
+Umea University SWE
+    umea university, sweden
+Unidad Asociada Grupo Scimago ESP
+    csic, unidad asociada grupo scimago, madrid, spain
+United Arab Emirates University ARE
+    united arab emirates university, al ain, united arab emirates
+Univ of Warwick GBR
+    univ of warwick, united kingdom
+Universidad Carlos Iii ESP
+    universidad carlos iii, department of computer science and engineering, madrid, spain
+Universidad Libre COL
+    facultad de ciencias economicas administrativas y contables, universidad libre seccional cali, diagonal 37a, n° 3-29, cali, colombia
+Universidad Nacional Abierta y A Distancia (Unad) COL
+    escuela de ciencias basicas, tecnologia e ingenieria (ecbti), universidad nacional abierta y a distancia (unad), carrera 14 no. 14 sur-23, bogota, colombia
+Universidad Peruana de Ciencias Aplicadas PER
+    ingeneria de gestion empresarial, universidad peruana de ciencias aplicadas (upc), lima, peru
+    direccion de investigacion, universidad peruana de ciencias aplicadas (upc), lima, peru
+Universidad Politecnica de Madrid ESP
+    universidad politecnica de madrid, spain, spain
+Universidad Publica de Navarra ESP
+    universidad publica de navarra, spain
+Universidad Simon Bolivar COL
+    universidad simon bolivar, facultad de administracion y negocios, barranquilla, 080001, colombia
+Universidad de Castilla-La Mancha ESP
+    faculty of economics and business, marketing department, university of castilla-la mancha, albacete, spain
+Universidad de Cordoba ESP
+    department of computer science, university of cordoba, spain
+Universidad de Granada ESP
+    department of translation and interpreting, faculty of translation and interpreting, university of granada, c/buensuceso, 11, granada, 18003, spain
+    department of information and communication, university of granada, colegio maximo de cartuja, campus cartuja s/n, granada, 18071, spain
+    universidad de granada, facultad de traduccion e interpretacion, granada, c.p. 18003, spain
+    universidad de granada, facultad de comunicacion y documentacion, granada, c.p. 18071, spain
+Universidad de Murcia ESP
+    departamento de informacion y documentacion, facultad de comunicacion y documentacion, universidad de murcia, campus de espinardo s/n, 30100 espinardo murcia, spain
+Universita Degli Studi Dellinsubria ITA
+    department of economics, universita degli studi dell'insubria, italy
+Universita Politecnica Delle Marche ITA
+    universita politecnica delle marche, piazzale martelli n 8, ancona, 60121, italy
+    department of management, universita politecnica delle marche, italy
+Universitas Bina Nusantara IDN
+    universitas bina nusantara, indonesia
+Universitas Bina Nusantara11480 IDN
+    school of business management, universitas bina nusantara11480, indonesia
+Universitas Dian Nuswantoro IDN
+    universitas dian nuswantoro, semarang, indonesia
+Universitas Gadjah Mada IDN
+    department of agro industrial industry technology, faculty of agriculture technology, universitas gadjah mada, indonesia
+Universitas Islam Negeri Raden Intan Lampung IDN
+    department of mathematics education, universitas islam negeri raden intan lampung, indonesia
+Universitas Jambi IDN
+    faculty of economic and business, universitas jambi, jambi, indonesia
+Universitas Komputer IDN
+    departemen of magister management, universitas komputer, indonesia
+Universitas Komputer Indonesia IDN
+    faculty of postgraduate program, universitas komputer indonesia, indonesia
+Universitas Lampung IDN
+    universitas lampung, indonesia
+Universitas Muhamadiyah IDN
+    faculty of economic, universitas muhamadiyah, jambi, indonesia
+Universitas Muhammadiyah Gresik IDN
+    universitas muhammadiyah gresik, gresik, indonesia
+Universitas Negeri Yogyakarta IDN
+    department of mechanical engineering education, universitas negeri yogyakarta, indonesia
+    department of civic education, universitas negeri yogyakarta, indonesia
+    department of management, universitas negeri yogyakarta, indonesia
+Universitas Padjadjaran IDN
+    department of mathematics, faculty of mathematics and natural sciences, universitas padjadjaran, indonesia
+Universitas Sultan Ageng Tirtayasa IDN
+    department of industrial engineering, universitas sultan ageng tirtayasa, jl. jend. sudirman km. 3 cilegon, banten, 42435, indonesia
+Universitas Sumatera Utara IDN
+    faculty of economic and business, universitas sumatera utara, medan, indonesia
+    department of accounting, faculty of economic and business, universitas sumatera utara, medan, indonesia
+Universitas Sumatra Utara IDN
+    universitas sumatra utara, medan, indonesia
+Universitas Terbuka IDN
+    fkip, universitas terbuka, indonesia
+Universitat Autonoma de Barcelona ESP
+    universitat autonoma de barcelona, departament de comunicacio audiovisual i publicitat, 08193 bellaterra, spain
+Universiti Kebangsaan MYS
+    graduate school of business, universiti kebangsaan, 43600 selangor, malaysia
+    universiti kebangsaan, 43600 selangor, malaysia
+Universiti Malaysia MYS
+    universiti malaysia, kelantan, malaysia
+Universiti Sains Malaysia MYS
+    universiti sains malaysia, malaysia
+Universiti Sultan Zainal Abidin MYS
+    faculty of business management and accountancy, universiti sultan zainal abidin, terengganu, malaysia
+    faculty of innovative design and technology, universiti sultan zainal abidin, terengganu, malaysia
+    faculty of agriculture and biotechnology, universiti sultan zainal abidin, terengganu, malaysia
+Universiti Teknikal Malaysia Melaka MYS
+    universiti teknikal malaysia melaka (utem), malaysia
+Universiti Teknologi Malaysia MYS
+    utm razak school, universiti teknologi malaysia, kuala lumpur, malaysia
+Universiti Teknologi Mara MYS
+    faculty of information management, universiti teknologi mara, malaysia
+Universiti Tun Hussein Onn Malaysia MYS
+    faculty of computer science and information technology, universiti tun hussein onn malaysia, parit raja, batu pahat, johor, 86400, malaysia
+Universiti Tunku Abdul Rahman MYS
+    universiti tunku abdul rahman, 31900 kampar, malaysia
+University Dannunzio of Chieti and Pescara ITA
+    department of economic studies, university d'annunzio of chieti and pescara, viale pindaro 42, pescara, 65127, italy
+University Politehnica of Bucharest ROU
+    university politehnica of bucharest, bucharest, romania
+    faculty of entrepreneurship, business engineering and management, university politehnica of bucharest, bucharest, 060042, romania
+    university politehnica of bucharest, romania
+    dept. of entrepreneurship and management, university politehnica of bucharest, romania
+University Portucalense PRT
+    3ijp, remit, university portucalense, porto, portugal
+University The Philippines Cebu PHL
+    university the philippines cebu, philippines
+University Tun Hussein Onn Malaysia MYS
+    department of production and operations, university tun hussein onn malaysia, malaysia
+University of Aarhus DNK
+    university of aarhus, department of management, school of economics and management, denmark
+University of Akron USA
+    department of education, university of akron, akron, oh, united states
+University of Applied Science Htw CHE
+    swiss institute for entrepreneurship, university of applied science htw, chur, switzerland
+University of Applied Sciences and Arts Northwestern Switzerland Fhnw CHE
+    school of business, university of applied sciences and arts northwestern switzerland fhnw, olten, switzerland
+University of Arkansas USA
+    department of biostatistics, fay w. boozman college of public health, center for the study of tobacco, university of arkansas for medical sciences, little rock, ar, united states
+    department health behavior and health education, fay w. boozman college of public health, center for the study of tobacco, university of arkansas for medical sciences, little rock, ar, united states
+University of Aveiro PRT
+    govcopp, department of economics, management, industrial engineering and tourism, university of aveiro, aveiro, portugal
+University of Barcelona ESP
+    faculty of economics and business, atonomous university of barcelona, barcelona, spain
+University of Batamriau Islands IDN
+    faculty of economics, university of batamriau islands, indonesia
+University of Birmingham GBR
+    birmingham business school, university house, university of birmingham, edgbaston, birmingham, b15 2ty, united kingdom
+University of Bolton GBR
+    centre for global logistics and scm, institute of management, university of bolton, bolton, united kingdom
+    bolton business school, the university of bolton, bolton, united kingdom
+University of Bradford GBR
+    university of bradford, school of management, united kingdom
+University of Brighton GBR
+    business school, university of brighton, brighton, united kingdom
+University of Business and Informatics Indonesia IDN
+    university of business and informatics indonesia, jl. soekarno-hatta no.643, sukapura, kiaracondong, bandung city, west java, 40285, indonesia
+University of Calgary CAN
+    haskayne school of business, university of calgary, 2500 university drive nw, calgary, alta. t2n 1n4, canada
+    haskayne school of business, university of calgary, 2500 university drive nw, calgary, ab, t2n 1n4, canada
+University of Cape Town ZAF
+    graduate school of business, university of cape town, cape town, south africa
+    graduate school of business - breakwater campus, university of cape town, cape town, south africa
+University of Chicago Graduate School of Business USA
+    the university of chicago graduate school of business, chicago, il, united states
+University of Connecticut USA
+    department of marketing, university of connecticut, storrs, ct 06269-1041, united states
+    university of connecticut, storrs, ct 06269-1041, united states
+University of Craiova ROU
+    university of craiova, romania
+University of Delaware USA
+    department of plant & soil sciences, university of delaware, 146 townsend hall, newark, de  19716, united states
+    department of plant and soil sciences, university of delaware, 146 townsend hall, newark, de  19716, united states
+University of Dharmawangsa IDN
+    university of dharmawangsa, medan, north sumatra, indonesia
+University of Economics CZE
+    department of entrepreneurship, university of economics, prague, czech republic
+University of Economics POL
+    university of economics, akademia ekonomiczna ul katowice, poland
+University of Engineering and Technology PAK
+    department of computer science, university of engineering and technology, taxila, pakistan
+University of Fort Hare ZAF
+    department of business management, university of fort hare, po box 7426, east london 5201, south africa
+University of Glamorgan Business School GBR
+    welsh enterprise institute, university of glamorgan business school, united kingdom
+University of Harapan IDN
+    university of harapan, medan, north sumatra, indonesia
+University of Hawaii Cancer Center USA
+    cancer prevention and control program, university of hawaii cancer center, university of hawaii at manoa, honolulu, hi, united states
+    university of hawaii cancer center, university of hawaii at manoa, honolulu, hi, united states
+University of Indonesia IDN
+    laboratory of enterprise computing lab., faculty of computer science, university of indonesia, indonesia
+University of Innsbruck AUT
+    semantic technology institute (sti) innsbruck, department of computer science, university of innsbruck, innsbruck, 6020, austria
+University of Johannesburg ZAF
+    department of business management, college of business and economics, university of johannesburg, johannesburg, south africa
+University of Jyvaskyla FIN
+    school of business and economics, university of jyvaskyla, jyvaskyla, finland
+University of Kent GBR
+    university of kent, united kingdom
+University of Lancashire GBR
+    university of lancashire, lancashire business school, preston, united kingdom
+University of Louisiana Monroe USA
+    school of management, university of louisiana monroe, monroe, la, united states
+University of Luton GBR
+    university of luton, luton business school, vicarage street, luton, beds, united kingdom
+    university of luton, united kingdom
+University of Macedonia GRC
+    university of macedonia, dpt. of accounting and finance, greece
+    dpt of informatics, university of macedonia, greece
+University of Malaya MYS
+    department of business, law international university of malaya, wales kuala lumpur, malaysia
+    business policy and strategy, faculty of business and accountancy, university of malaya, 50603 lembah pantai, kuala lumpur, malaysia
+University of Manchester GBR
+    manchester business school, the university of manchester, manchester, united kingdom
+University of Massachusetts USA
+    university of massachusetts dartmouth, united states
+    charlton college of business, university of massachusetts dartmouth, 285 old westport road, north dartmouth, ma 02747, united states
+    department of management and marketing, charlton college of business, university of massachusetts dartmouth, 285 old westport road, north dartmouth, ma 02747, united states
+University of Montenegro MNE
+    university of montenegro, faculty of economics, montenegro
+University of Muhammadiyah Sumatera Utara IDN
+    university of muhammadiyah sumatera utara, medan, north sumatra, indonesia
+University of Naples Federico Ii ITA
+    department of chemical, materials and industrial production engineering, university of naples federico ii, p.le tecchio, 80, naples, 80125, italy
+    department of industrial engineering, university of naples federico ii, p.le tecchio 80, naples, 80125, italy
+University of New Brunswick CAN
+    university of new brunswick, saint john campus, canada
+    university of new brunswick saint john, canada
+University of Newcastle AUS
+    newcastle business school, university of newcastle, central coast campus, ourimbah, nsw  2258, australia
+University of Nicosia CYP
+    university of nicosia, nicosia, cyprus
+    department of marketing, university of nicosia, p.o. box 24005, 1700 nicosia, cyprus
+    school of business, university of nicosia, p.o. box 24005, 1700 nicosia, cyprus
+University of North Carolina USA
+    university of north carolina at greensboro, department of marketing, entrepreneurship, hospitality and tourism, greensboro, nc, united states
+    kenan-flagler business school, university of north carolina at chapel hill, chapel hill, nc 27599, united states
+    university of north carolina, wilmington, 601 s. college road, wilmington, nc 28403, united states
+University of Novi Sad SRB
+    university of novi sad, faculty of technical sciences, novi sad-kosancic ivana 18, serbia
+    university of novi sad, faculty of technical sciences, serbia
+University of Otago NZL
+    university of otago, commerce building, dunedin, new zealand
+    university of otago, dunedin, new zealand
+University of Ottawa CAN
+    telfer school of management, university of ottawa, ottawa, canada
+University of Oxford GBR
+    st antony's college, university of oxford, oxford, ox2 6jf, united kingdom
+University of Pardubice CZE
+    department of system engineering and informatics, university of pardubice, pardubice, czech republic
+University of Patras GRC
+    university of patras, greece
+University of Pembangunan Panca Budi IDN
+    university of pembangunan panca budi, medan, north sumatra, indonesia
+University of Pennsylvania USA
+    bloomsburg university of pennsylvania, 400 east second street, bloomsburg, pa 17815, united states
+University of Perugia ITA
+    university of perugia, italy
+    department of economics and food sciences, university of perugia, italy
+University of Pitesti ROU
+    university of pitesti, pitesti, romania
+University of Rennes 1 FRA
+    university of rennes 1 - crem-cnrs, 7 place hoche, rennes cedex, 35065, france
+University of Rijeka HRV
+    university of rijeka, faculty of maritime studies, studentska 2, 51000 rijeka, croatia
+University of Roehampton GBR
+    business school, university of roehampton, london, united kingdom
+University of Sadat City EGY
+    university of sadat city, sadat city, egypt
+University of Salento ITA
+    department of management, economics, mathematics and statistics, university of salento, lecce, italy
+University of San Jose PHL
+    university of san jose-recoletos, philippines
+University of Science and Technology Beijing CHN
+    university of science and technology beijing, donlinks school of economics and management, beijing, china
+University of Sheffield GBR
+    information school, university of sheffield, sheffield, united kingdom
+University of South Africa ZAF
+    department of business management, university of south africa, pretoria, south africa
+University of South Florida USA
+    college of business administration, university of south florida, united states
+University of Southampton GBR
+    southampton business school, university of southampton, building 2, highfield campus, southampton, so17 1bj, united kingdom
+    university of southampton, southampton, united kingdom
+    school of management, university of southampton, southampton, united kingdom
+University of Southampton School of Management GBR
+    university of southampton school of management, southhampton, united kingdom
+University of Southern Mississippi USA
+    department of marketing, university of southern mississippi, hattiesburg, ms, united states
+University of St Augustine USA
+    department of physical therapy, university of st. augustine, st augustine, fl, united states
+University of Stellenbosch ZAF
+    department of business management, university of stellenbosch, private bag x1, stellenbosch 7600, south africa
+University of Stirling GBR
+    department of marketing, faculty of management, university of stirling, stirling, united kingdom
+University of Strathclyde Business School GBR
+    university of strathclyde business school, united kingdom
+University of Strathclyde GBR
+    university of strathclyde, united kingdom
+    department of marketing, university of strathclyde, glasgow, united kingdom
+University of Surrey GBR
+    surrey european management school, university of surrey, united kingdom
+    university of surrey, guilford, united kingdom
+    school of management, university of surrey, guildford, surrey, gu2 7xh, united kingdom
+    department of marketing, school of management, university of surrey, guildford, surrey, gu2 7xh, united kingdom
+University of Sussex GBR
+    department of informatics, university of sussex, brighton, east sussex, bn1 9qj, united kingdom
+University of Tasmania AUS
+    school of management, university of tasmania, hobart, australia
+University of Technology AUS
+    school of information systems, curtin university of technology, australia
+    school of software, university of technology, sydney, nsw, australia
+    school of software, university of technology, sydney, australia
+    school of information systems, swinburne university of technology, john st. hawthorn, vic, australia
+    school of management, swinburne university of technology, john st. hawthorn, vic, australia
+University of Technology AUT
+    know-center, graz university of technology, graz, austria
+University of Technology CHN
+    institute of systems engineering, school of management science and engineering, dalian university of technology, dalian, 116024, china
+University of Technology FIN
+    kouvola research unit, lappeenranta university of technology, lappeeranta, finland
+University of Technology POL
+    lublin university of technology, ul. nadbystrzycka 38, lublin, 20-618, poland
+    lublin university of technology, poland
+University of Technology THA
+    rajamangala university of technology, thanyaburi, pathumtani, thailand
+    rajamangala university of technology thanyaburi, pratumtanee, 12110, thailand
+University of Technology ZAF
+    faculty of business and management sciences, cape peninsula university of technology, south africa
+    department of business support studies, central university of technology, bloemfontein, south africa
+    vaal university of technology, private bag x021, vanderbijlpark, 1900, south africa
+    department of marketing and retail management, faculty of management sciences, durban university of technology, south africa
+University of Texas USA
+    department of biology, university of texas rio grande valley, united states
+University of The Basque Country ESP
+    department of applied economics iii (econometrics and statistics), university of the basque country, bilbao, spain
+    department of applied economics v, university of the basque country, bilbao, spain
+University of The West of England GBR
+    department of computer science, university of the west of england, bristol, united kingdom
+University of The Western Cape ZAF
+    university of the western cape, faculty of economic and management sciences, department of information systems, south africa
+University of Toulouse 1 FRA
+    center of management research, university of toulouse 1-capitole, 2 doyen gabriel marty street, toulouse cedex 9, 31042, france
+University of Tras PRT
+    university of tras-os-montes e alto douro, vila real, portugal
+    utad - university of tras-os-montes e alto douro, portugal
+University of Twente NLD
+    school of management and governance, business administration/nikos, university of twente, enschede, netherlands
+    university of twente, enschede, netherlands
+University of Udine ITA
+    department of economics and statistics, university of udine, via francesco tomadini 30, udine, 33100, italy
+University of Ulster GBR
+    university of ulster, united kingdom
+    school of marketing, entrepreneurship and strategy, university of ulster, jordanstown, united kingdom
+    university of ulster, magee college, ulster, united kingdom
+    university of ulster, northland road, derry bt48 7jl, united kingdom
+    university of ulster, coleraine, northern ireland, united kingdom
+University of Valladolid ESP
+    university of valladolid, spain
+    department of signal theory and communications, university of valladolid, spain
+University of Verona ITA
+    department of business administration, university of verona, verona, italy
+University of Vigo ESP
+    informatics department, university of vigo, vigo, spain
+University of Wales GBR
+    school of management and business, university of wales, aberystwyth, united kingdom
+University of Wales Lampeter GBR
+    university of wales lampeter, ceredigion, united kingdom
+    university of wales lampeter, united kingdom
+University of West London GBR
+    university of west london, london, united kingdom
+University of Western Australia AUS
+    business school, university of western australia, perth, australia
+    university of western australia, uwa business school, crawley, wa, australia
+    university of western australia, uwa business school-m261, 35 stirling highway, crawley, wa 6009, australia
+University of Wisconsin USA
+    school of business administration, university of wisconsin-milwaukee, p.o. box 742, milwaukee, wi 53201, united states
+    department of finance, college of business and economics, university of wisconsin-whitewater, 800 west main street, whitewater, wi 53190, united states
+University of Wollongong AUS
+    marketing research innovation centre, faculty of commerce, university of wollongong, wollongong, nsw 2522, australia
+Vaxjo University SWE
+    vaxjo university, vaxjo, sweden
+Victoria University AUS
+    victoria university, australia
+    centre for hospitality and tourism research, victoria university, melbourne, australia
+Vienna University of Economics and Business AUT
+    vienna university of economics and business, vienna, austria
+Vienna University of Economics and Business Administration AUT
+    department of information systems and operations, institute for information business, vienna university of economics and business administration, augasse 2-6, a1090 vienna, austria
+Virginia Commonwealth University USA
+    department of psychology, center for the study of tobacco products, virginia commonwealth university, richmond, va, united states
+Walden University USA
+    school of management, walden university, minneapolis, mn, united states
+West Chester University USA
+    west chester university, united states
+Western Sydney University AUS
+    western sydney university, penrith, nsw, australia
+Widyatama University IDN
+    widyatama university, indonesia
+Wuhan University CHN
+    management school, donghu college, wuhan university, wuhan 430212, china
+Xian Polytechnic University CHN
+    apparel and art design college, xi'an polytechnic university, xi'an, shaanxi  710048, china
+Xian Shiyou University CHN
+    college of economics and management, xi'an shiyou university, xi'an, china
+Xuzhou Institute of Technology CHN
+    xuzhou institute of technology, xuzhou, 221000, china
+Zheijiang University CHN
+    school of management, zheijiang university, hangzhou, 310058, china
+Zhejiang University CHN
+    computer science, zhejiang university, zhejiang, china
