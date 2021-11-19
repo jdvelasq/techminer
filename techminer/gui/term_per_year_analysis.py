@@ -227,7 +227,7 @@ class MatrixModel(BaseModel):
         ##
         ## Table pivot
         ##
-        result = pd.pivot_table(
+        result = table.pivot(
             result,
             values=selected_col,
             index="Year",
